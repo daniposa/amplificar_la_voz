@@ -2,4 +2,4 @@
 alwaysApply: true
 ---
 
-- Do not modify or delete the data content unles I explicitly ask. You can change the format, but not the texts.
+- Do not modify or delete the data content unles I explicitly ask. You can change the format, but not the texts. If I ask you for changes on the content.data.ts file, please reformat what is already in there to fit the new data structure without deleting the chronicle texts or title names unless I speciffiacly ask for. 
