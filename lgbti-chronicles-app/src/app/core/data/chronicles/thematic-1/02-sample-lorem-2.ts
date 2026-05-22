@@ -32,4 +32,7 @@ noreferrer">Diplomatie.gouv.fr</a></p>`,
 <p><img src="images/image4.jpg" alt="Example" width="220"></p>`,
     },
   },
+  contextInfo: {
+    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+  },
 };

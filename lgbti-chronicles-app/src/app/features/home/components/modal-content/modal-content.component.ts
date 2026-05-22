@@ -1,8 +1,10 @@
-import { Component, EventEmitter, Input, Output, inject, computed, signal } from '@angular/core';
+import { Component, EventEmitter, Input, Output, SecurityContext, inject, computed, signal } from '@angular/core';
+import { DomSanitizer, type SafeHtml } from '@angular/platform-browser';
 import { TextParserService, type TextSegment } from '../../../../core/services/text-parser.service';
 import { TooltipDirective } from '../../../../shared/directives/tooltip.directive';
 import { LanguageService, type Language } from '../../../../core/services/language.service';
-import type { LocalizedModalContent } from '../../../../core/models/content.model';
+import { CHRONICLE_UI } from '../../../../core/data/content.data';
+import type { LocalizedModalContent, PartialLocalizedContent } from '../../../../core/models/content.model';
 
 interface ResolvedModalContent {
   title: string;
@@ -36,13 +38,29 @@ interface ResolvedModalContent {
                 }
               </div>
             }
-            @if (langService.language() !== 'es') {
+            @if (langService.language() !== 'es' || hasContextInfo()) {
               <div class="action-bar">
-                <button class="flip-btn" (click)="showSpanish.set(true)">
-                  <span class="material-icons">translate</span>
-                  Ver en español
-                  <span class="material-icons arrow-right">chevron_right</span>
-                </button>
+                @if (langService.language() !== 'es') {
+                  <button class="flip-btn" (click)="showSpanish.set(true)">
+                    <span class="material-icons">translate</span>
+                    Ver en español
+                    <span class="material-icons arrow-right">chevron_right</span>
+                  </button>
+                }
+                @if (hasContextInfo()) {
+                  <button
+                    type="button"
+                    class="flip-btn context-btn"
+                    [class.active]="showContext()"
+                    (click)="showContext.set(!showContext())"
+                  >
+                    <span class="material-icons">info_outline</span>
+                    {{ contextInfoBtnLabel() }}
+                  </button>
+                }
+                @if (showContext() && safeContextHtml(); as html) {
+                  <div class="context-panel" [innerHTML]="html"></div>
+                }
               </div>
             }
           </div>
@@ -72,6 +90,20 @@ interface ResolvedModalContent {
                 <span class="material-icons arrow-left">chevron_left</span>
                 {{ backLabel() }}
               </button>
+              @if (hasSpanishContextInfo()) {
+                <button
+                  type="button"
+                  class="flip-btn context-btn"
+                  [class.active]="showContextEs()"
+                  (click)="showContextEs.set(!showContextEs())"
+                >
+                  <span class="material-icons">info_outline</span>
+                  {{ spanishContextBtnLabel }}
+                </button>
+              }
+              @if (showContextEs() && safeSpanishContextHtml(); as html) {
+                <div class="context-panel" [innerHTML]="html"></div>
+              }
             </div>
           </div>
 
@@ -175,6 +207,33 @@ interface ResolvedModalContent {
       margin-top: var(--space-lg);
       padding-top: var(--space-md);
       border-top: 1px solid var(--color-border-soft);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+    .context-panel {
+      flex: 1 1 100%;
+      margin-top: var(--space-sm);
+      padding: var(--space-md);
+      border: 1px solid var(--color-border-soft);
+      border-radius: 4px;
+      background: var(--color-paper-warm);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--color-ink);
+      line-height: 1.6;
+    }
+    .context-panel ::ng-deep p {
+      margin: 0 0 var(--space-xs) 0;
+    }
+    .context-panel ::ng-deep p:last-child {
+      margin-bottom: 0;
+    }
+    .flip-btn.context-btn.active {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      background: rgba(139, 105, 20, 0.05);
     }
     .flip-btn {
       display: inline-flex;
@@ -216,16 +275,23 @@ interface ResolvedModalContent {
 })
 export class ModalContentComponent {
   private parser = inject(TextParserService);
+  private sanitizer = inject(DomSanitizer);
   langService = inject(LanguageService);
 
   @Input() set content(value: LocalizedModalContent | null) {
     this.localizedContent.set(value);
     this.showSpanish.set(false);
+    this.showContext.set(false);
+    this.showContextEs.set(false);
   }
   @Output() close = new EventEmitter<void>();
 
   private localizedContent = signal<LocalizedModalContent | null>(null);
   showSpanish = signal(false);
+  showContext = signal(false);
+  showContextEs = signal(false);
+
+  readonly spanishContextBtnLabel = CHRONICLE_UI.contextInfoButton.es;
 
   resolvedContent = computed<ResolvedModalContent | null>(() =>
     this.resolve(this.langService.language())
@@ -239,6 +305,41 @@ export class ModalContentComponent {
     this.langService.language() === 'fr' ? 'Volver al francés' : 'Volver al inglés'
   );
 
+  contextInfoBtnLabel = computed(
+    () => CHRONICLE_UI.contextInfoButton[this.langService.language()]
+  );
+
+  resolvedContextHtml = computed(() =>
+    resolvePartialLocalized(
+      this.localizedContent()?.contextInfo,
+      this.langService.language()
+    )
+  );
+
+  hasContextInfo = computed(() => this.resolvedContextHtml() !== null);
+
+  safeContextHtml = computed((): SafeHtml | null => {
+    const html = this.resolvedContextHtml();
+    if (!html) return null;
+    const clean =
+      this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '';
+    return this.sanitizer.bypassSecurityTrustHtml(clean);
+  });
+
+  spanishContextHtml = computed(() =>
+    resolvePartialLocalized(this.localizedContent()?.contextInfo, 'es')
+  );
+
+  hasSpanishContextInfo = computed(() => this.spanishContextHtml() !== null);
+
+  safeSpanishContextHtml = computed((): SafeHtml | null => {
+    const html = this.spanishContextHtml();
+    if (!html) return null;
+    const clean =
+      this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '';
+    return this.sanitizer.bypassSecurityTrustHtml(clean);
+  });
+
   private resolve(lang: Language): ResolvedModalContent | null {
     const lc = this.localizedContent();
     if (!lc) return null;
@@ -251,4 +352,22 @@ export class ModalContentComponent {
     const segments = this.parser.parseMarkedText(rawText, tooltips);
     return { title, segments };
   }
+}
+
+function resolvePartialLocalized(
+  partial: PartialLocalizedContent | undefined,
+  current: Language
+): string | null {
+  if (!partial) return null;
+  const order: Language[] = [current, 'es', 'fr', 'en'];
+  const seen = new Set<Language>();
+  for (const lang of order) {
+    if (seen.has(lang)) continue;
+    seen.add(lang);
+    const value = partial[lang];
+    if (typeof value === 'string' && value.trim().length > 0) {
+      return value;
+    }
+  }
+  return null;
 }

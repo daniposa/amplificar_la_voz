@@ -6,6 +6,13 @@ export interface LocalizedContent {
   en: string;
 }
 
+/** Per-language strings where each locale is optional (used for contextual info HTML). */
+export interface PartialLocalizedContent {
+  es?: string | null;
+  fr?: string | null;
+  en?: string | null;
+}
+
 export interface ModalContent {
   title: string;
   rawText: string;
@@ -21,6 +28,11 @@ export interface LocalizedModalContent {
    * `<img src="images/…" alt="…" width="…">` (paths under `images/` work at runtime).
    */
   tooltips: Record<number, LocalizedContent>;
+  /**
+   * Optional HTML for the "Contextual information" panel (one fragment per language).
+   * Resolved at render time: current lang → es → fr → en. Same safe tags as tooltips.
+   */
+  contextInfo?: PartialLocalizedContent;
 }
 
 export interface Hotspot {

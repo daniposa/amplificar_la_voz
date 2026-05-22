@@ -19,4 +19,7 @@ d’exemple.`,
       en: '<p>Sample tooltip for chronicle T1-36.</p>',
     },
   },
+  contextInfo: {
+    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+  },
 };

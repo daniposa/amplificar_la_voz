@@ -92,4 +92,9 @@ rel="noopener noreferrer">Wikipedia</a>. </p>
 <p><img src="images/image3.jpg" alt="Thumbnail" width="160"></p>`,
     },
   },
+  contextInfo: {
+    es: '<p>Año: 2004-2005</p><p>Actor del conflicto armado: FARC-EP</p><p>Ubicación: Arauquita, Arauca</p>',
+    fr: '<p>Année : 2004-2005</p><p>Acteur du conflit armé : FARC-EP</p><p>Lieu : Arauquita, Arauca</p>',
+    en: '<p>Year: 2004-2005</p><p>Armed conflict actor: FARC-EP</p><p>Location: Arauquita, Arauca</p>',
+  },
 };

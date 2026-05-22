@@ -37,4 +37,9 @@ humains</a>.</p>`,
 noreferrer">OHCHR</a>.</p>`,
     },
   },
+  contextInfo: {
+    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+    fr: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+    en: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+  },
 };

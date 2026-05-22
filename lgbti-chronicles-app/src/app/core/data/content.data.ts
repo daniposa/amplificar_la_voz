@@ -11,6 +11,15 @@ import { buildGridHotspots } from './chronicles/hotspot-layout';
 /** Path to the panoramic image shown behind the cards in the Chronicles tab. */
 export const PANORAMA_IMAGE = 'images/paisajes/0.webp';
 
+/** Labels for chronicle modal UI (contextual info button). */
+export const CHRONICLE_UI = {
+  contextInfoButton: {
+    es: 'Información contextual',
+    fr: 'Informations contextuelles',
+    en: 'Contextual information',
+  } satisfies LocalizedContent,
+};
+
 export const PAGE_CONFIG = {
   /** Main page title (header and browser tab) */
   title: {
