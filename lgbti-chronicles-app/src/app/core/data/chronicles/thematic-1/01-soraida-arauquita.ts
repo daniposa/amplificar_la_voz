@@ -18,41 +18,21 @@ yo no tenía el pelo tan largo y me agarró del cabello y me pegaba en la cara. 
 “Bueno, pero como usted quiere ser mujer, pues vamos a hacerle lo que se les hace a las mujeres”. \
 Me agarró las manos y me violó. A lo último me seguía pegando, diciendo cosas, y con una pistola \
 me apuntaba y me gritaba: “Te voy a matar”. En una de esas sacó una navaja y me hizo una incisión \
-en el recto. Tenía 10 años». Mujer trans, estudiante, activista.</p>`,
+en el recto. Tenía 10 años». Mujer trans, estudiante, activista</p>`,
     fr: `La Commission a appris que, dans les montagnes de Montes de María, de nombreux hommes \
 homosexuels et des femmes transgenres ont été victimes de traitements cruels, inhumains et \
 dégradants. De la part des groupes paramilitaires et de la force publique au cours de la première \
 décennie des années 2000. Dans certains cas, il s’agissait de tortures physiques et \
 psychologiques, comme celles que Soraida, une femme transgenre victime de violence de la part des \
 {1}FARC-EP{/1} entre 2004 et 2005 dans la municipalité d’Arauquita. Soraida a endurées des \
-atrocités elle raconte : « Quand j’ai levé le visage, j’ai senti le coup de pied qui m’a brisée. \
-Je n’ai pas levé les yeux ; ils m’ont frappée et je me suis agrippée à la clôture. Quand j’ai vu \
-le sang, j’ai pressée ma blessure et je suis sortie. J’ai pris le T-shirt que j’avais laissé \
-dehors et je l’ai placé là pour contenir le saignement. Ensuite, le guérillero m’a proféré des \
-injures et m’a dit toutes sortes d’insanités. Il m’a frappé deux fois au visage et m’a dit qu’il \
-allait me tuer. J’ai commencé à pleurer. Il m’a dit que les « pédés » et les  {2}«  GAYtorades \
-»{/2} n’étaient pas autorisés ici parce que nous allions pervertir les autres gars …. À l’époque, \
-je n’avais pas les cheveux aussi longs, mais il m’a quand même prise par les cheveux et me \
-frappait au visage. Ensuite il m’a dit : « Puisque tu veux être une femme, on va te faire ce qu’on \
-fait aux femmes ». Il m’a attaché et m’a violée. À la fin, il continuait à me frapper, à proférer \
-des menaces, et en pointant un pistolet sur moi il criait : « Je vais te tuer ». À un moment \
-donné, il a sorti un couteau et m’a fait une entaille dans le rectum. J’avais 10 ans”. Femme \
-trans, étudiante, activiste. `,
+atrocités elle raconte : « Quand j’ai levé le visage, j’ai senti le coup de pied qui m’a brisée. Je n’ai pas levé les yeux ; ils m’ont frappée et je me suis agrippée à la clôture. Quand j’ai vu le sang, j’ai pressée ma blessure et je suis sortie. J’ai pris le T-shirt que j’avais laissé dehors et je l’ai placé là pour contenir le saignement. Ensuite, le guérillero m’a proféré des injures et m’a dit toutes sortes d’insanités. Il m’a frappé deux fois au visage et m’a dit qu’il allait me tuer. J’ai commencé à pleurer. Il m’a dit que les “pédés” et les  et les  {2}"GAYtorades"{/2} n’étaient pas autorisés ici parce que nous allions pervertir les autres gars... À l’époque, je n’avais pas les cheveux aussi longs, mais il m’a quand même prise par les cheveux et me frappait au visage. Ensuite il m’a dit : “Puisque tu veux être une femme, on va te faire ce qu’on fait aux femmes.” Il m’a attaché et m’a violée. À la fin, il continuait à me frapper, à proférer des menaces, et en pointant un pistolet sur moi il criait : “Je vais te tuer.” À un moment donné, il a sorti un couteau et m’a fait une entaille dans le rectum. J’avais 10 ans. » Femme \
+trans, étudiante, activiste `,
     en: `The Commission learned that, in Los Montes de María, many gay men and trans women were \
 victims of cruel, inhumane, and degrading acts committed by paramilitary and police men during the \
 2000’s. In some cases, these acts included physical and psychological torture, such as those \
 suffered by Soraida, a trans female victim of the {1}FARC-EP{/1}between 2004 and 2005, in the town \
-of Arauquita, Arauca: “When I lifted my head up, I felt the kick that broke me. I didn’t look up \
-but I felt someone hitting me, so I grabbed onto the fence. When I saw blood pouring out, I tried \
-to stop the bleeding and got out. I grabbed the T-shirt I had left outside and put it on the wound \
-to stop the bleeding. The guerrilla member started insulting me and calling me names. He hit me in \
-the face like twice and told me he was gonna kill me. I started to cry. He said no “faggots” or \
-{2}“GAYtorades”{/2} were allowed there because we would corrupt the other kids… Back then, my hair \
-wasn’t that long, but he grabbed me by the hair anyways and kept punching me in the face. Then, he \
-said: ´Well, since you want to be a woman, I’ll do to you what we do to women´ He grabbed my hands \
-and raped me. Up until the end, he kept hitting me and saying stuff, pointed at me with a gun and \
-yelling, ‘I’ll kill you’. He then took out a blade and made a cut in my rectum. I was 10 years \
-old.” Trans woman, student, activist.`,
+of Arauquita, Arauca: “When I lifted my head up, I felt the kick that broke me. I didn’t look up but I felt someone hitting me, so I grabbed onto the fence. When I saw blood pouring out, I tried to stop the bleeding and got out. I grabbed the T-shirt I had left outside and put it on the wound to stop the bleeding. The guerrilla member started insulting me and calling me names. He hit me in the face like twice and told me he was gonna kill me. I started to cry. He said no ‘faggots’ or 
+{2}'GAYtorades'{/2} were allowed there because we would corrupt the other kids… Back then, my hair wasn’t that long, but he grabbed me by the hair anyways and kept punching me in the face. Then, he said: ‘Well, since you want to be a woman, I’ll do to you what we do to women.’ He grabbed my hands and raped me. Up until the end, he kept hitting me and saying stuff, pointed at me with a gun and yelling, ‘I’ll kill you.’ He then took out a blade and made a cut in my rectum. I was 10 years old.” Trans woman, student, activist`,
   },
   tooltips: {
     1: {
@@ -62,40 +42,25 @@ del Pueblo.</p>
 target="_blank" rel="noopener noreferrer">Naciones Unidas</a>.</p>
 <p><strong>Ejemplo de imagen</strong> en tooltip (ruta bajo <code>images/</code>):</p>
 <p><img src="images/image4.jpg" alt="Ilustración de ejemplo" width="200"></p>`,
-      fr: `<p><strong>FARC-EP</strong> — Forces armées révolutionnaires de Colombie – Armée du \
-peuple.</p>
-<p>Lien externe d’exemple : <a href="https://www.un.org/fr" target="_blank" rel="noopener \
-noreferrer">Site de l’ONU</a>.</p>
-<p>Image locale :</p>
-<p><img src="images/image5.jpg" alt="Exemple visuel" width="200"></p>`,
-      en: `<p><strong>FARC-EP</strong> (Fuerzas Armadas Revolucionarias de Colombia – Ejército del \
-Pueblo) are an insurgent politic-military organization that has existed for over 50 years in \
-Colombia. ''FARC-EP (Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo) are an \
-insurgent politic-military organization that has existed for over 50 years in Colombia. </p>
-<p>External link example: <a href="https://www.un.org/en" target="_blank" rel="noopener \
-noreferrer">United Nations</a>.</p>
-<p>Local asset example:</p>
-<p><img src="images/image6.jpg" alt="Sample image in tooltip" width="200"></p>`,
+      fr: `<p><strong>FARC-EP guerrillas</strong></p>
+<p>FARC-EP (<i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) are an insurgent politic-military organization that has existed for over 50 years in Colombia.  </p>`,
+      en: `<p><strong>FARC-EP guerrillas</strong></p>
+<p>Les FARC-EP ( <i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) sont une organisation politico-militaire insurgée qui existe depuis plus de 50 ans en Colombie.  </p>`,
     },
     2: {
       es: `<p>Juego de palabras entre «gay» y la bebida «Gatorade». Referencia: <a \
 href="https://es.wikipedia.org/wiki/Gatorade" target="_blank" rel="noopener noreferrer">Gatorade \
 en Wikipedia</a>.</p>
 <p><img src="images/image1.jpg" alt="Miniatura" width="160"></p>`,
-      fr: `<p>Jeu de mots entre « gay » et la boisson « Gatorade ». <a \
-href="https://fr.wikipedia.org/wiki/Gatorade" target="_blank" rel="noopener noreferrer">Article \
-Wikipédia</a>.</p>
-<p><img src="images/image2.jpg" alt="Vignette" width="160"></p>`,
-      en: `<p>A play on words between the terms “gay” and the energy drink “Gatorade.” Due to the \
-similar pronunciation of “gay” and “ga” (in English), it has been coined as a way to refer to \
-homosexual men as an insult <a href="https://en.wikipedia.org/wiki/Gatorade" target="_blank" \
-rel="noopener noreferrer">Wikipedia</a>. </p>
-<p><img src="images/image3.jpg" alt="Thumbnail" width="160"></p>`,
+      fr: `<p><strong>GAYtorade</strong></p>
+<p>A play on words between the terms “gay” and the energy drink “Gatorade.” Due to the similar pronunciation of “gay” and “ga” (in English), it has been coined as a way to refer to homosexual men as an insult. </p>`,
+      en: `<p><strong>GAYtorade</strong></p>
+<p>Ceci est un jeu de mot entre les termes “gay” et la boisson énergisante “Gaterode.”  De par la prononciation similaire de “gay” et “ga” (en anglais), ce jeu de mot est utilisé comme insulte envers les homosexuels.  </p>`,
     },
   },
   contextInfo: {
-    es: '<p>Año: 2004-2005</p><p>Actor del conflicto armado: FARC-EP</p><p>Ubicación: Arauquita, Arauca</p>',
-    fr: '<p>Année : 2004-2005</p><p>Acteur du conflit armé : FARC-EP</p><p>Lieu : Arauquita, Arauca</p>',
-    en: '<p>Year: 2004-2005</p><p>Armed conflict actor: FARC-EP</p><p>Location: Arauquita, Arauca</p>',
+    es: '<p>Lugar: Arauquita, Arauca</p><p>Año: 2004-2005</p><p>Hecho(s) victimizante(s): abuso físico, tortura</p><p>Actor armado: FARC-EP</p>',
+    fr: '<p>Lieu : Arauquita, Arauca</p><p>Date : 2004-2005</p><p>Fait(s) victimisant(s) : violence physique, torture</p><p>Acteur armé : FARC-EP</p>',
+    en: '<p>Place: Arauquita, Arauca</p><p>Date: 2004-2005</p><p>Victimizing act(s): physical abuse, torture</p><p>Armed actor: FARC-EP</p>',
   },
 };
