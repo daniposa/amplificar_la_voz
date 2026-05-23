@@ -1,13 +1,14 @@
 import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_01: LocalizedModalContent = {
-  title: { es: 'Crónica I', fr: 'Chronique I', en: 'Chronicle I' },
+  title: { es: 'Soraida', fr: 'Soraida', en: 'Soraida' },
   rawText: {
-    es: `La Comisión conoció que, en los Montes de María, muchos hombres gais y mujeres trans \
+    es: `<p>La Comisión conoció que, en los Montes de María, muchos hombres gais y mujeres trans \
 fueron víctimas de tratos crueles, inhumanos y degradantes por parte de los paramilitares y de la \
 fuerza pública en la primera década de 2000. En algunos casos, estos incluyeron torturas físicas y \
 psicológicas, como las que padeció Soraida, mujer trans víctima de integrantes de las FARC-EP \
-entre 2004 y 2005, en el municipio de Arauquita (Arauca):</p><br><p>«Cuando levanté la cara sentí \
+entre 2004 y 2005, en el municipio de Arauquita (Arauca):</p>\
+<p>«Cuando levanté la cara sentí \
 la patada que me partió. No miré hacia arriba, sino que me pegaron y me agarré de la barda. Cuando \
 vi la sangre, me la apreté y salí. Cogí la camiseta que había dejado afuera y me la puse allí para \
 obstruirla. Entonces el guerrillero me decía improperios y un poco de pendejadas. Me pegó como dos \
@@ -17,7 +18,7 @@ yo no tenía el pelo tan largo y me agarró del cabello y me pegaba en la cara. 
 “Bueno, pero como usted quiere ser mujer, pues vamos a hacerle lo que se les hace a las mujeres”. \
 Me agarró las manos y me violó. A lo último me seguía pegando, diciendo cosas, y con una pistola \
 me apuntaba y me gritaba: “Te voy a matar”. En una de esas sacó una navaja y me hizo una incisión \
-en el recto. Tenía 10 años». Mujer trans, estudiante, activista.`,
+en el recto. Tenía 10 años». Mujer trans, estudiante, activista.</p>`,
     fr: `La Commission a appris que, dans les montagnes de Montes de María, de nombreux hommes \
 homosexuels et des femmes transgenres ont été victimes de traitements cruels, inhumains et \
 dégradants. De la part des groupes paramilitaires et de la force publique au cours de la première \
