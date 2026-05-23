@@ -21,6 +21,14 @@ export interface ModalContent {
 
 export interface LocalizedModalContent {
   title: LocalizedContent;
+  /**
+   * Chronicle body as a small HTML fragment (one per language). Same safe tag set as
+   * `tooltips` / `contextInfo`: `<p>`, `<br>`, `<strong>`, `<em>`,
+   * `<a href="https://…" target="_blank" rel="noopener noreferrer">`,
+   * `<img src="images/…" alt="…" width="…">`, etc.
+   * Use `{N}…{/N}` anywhere inside the fragment to mark tooltip highlights.
+   * Plain text without block tags is wrapped in a single implicit `<p>` at render time.
+   */
   rawText: LocalizedContent;
   /**
    * Tooltip HTML for each highlight marker id. Use a small HTML fragment: `<p>`, `<br>`,
