@@ -42,9 +42,9 @@ del Pueblo.</p>
 target="_blank" rel="noopener noreferrer">Naciones Unidas</a>.</p>
 <p><strong>Ejemplo de imagen</strong> en tooltip (ruta bajo <code>images/</code>):</p>
 <p><img src="images/image4.jpg" alt="Ilustración de ejemplo" width="200"></p>`,
-      fr: `<p><strong>FARC-EP guerrillas</strong></p>
-<p>FARC-EP (<i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) are an insurgent politic-military organization that has existed for over 50 years in Colombia.  </p>`,
       en: `<p><strong>FARC-EP guerrillas</strong></p>
+<p>FARC-EP (<i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) are an insurgent politic-military organization that has existed for over 50 years in Colombia.  </p>`,
+      fr: `<p><strong>FARC-EP guerrillas</strong></p>
 <p>Les FARC-EP ( <i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) sont une organisation politico-militaire insurgée qui existe depuis plus de 50 ans en Colombie.  </p>`,
     },
     2: {
@@ -52,9 +52,9 @@ target="_blank" rel="noopener noreferrer">Naciones Unidas</a>.</p>
 href="https://es.wikipedia.org/wiki/Gatorade" target="_blank" rel="noopener noreferrer">Gatorade \
 en Wikipedia</a>.</p>
 <p><img src="images/image1.jpg" alt="Miniatura" width="160"></p>`,
-      fr: `<p><strong>GAYtorade</strong></p>
-<p>A play on words between the terms “gay” and the energy drink “Gatorade.” Due to the similar pronunciation of “gay” and “ga” (in English), it has been coined as a way to refer to homosexual men as an insult. </p>`,
       en: `<p><strong>GAYtorade</strong></p>
+<p>A play on words between the terms “gay” and the energy drink “Gatorade.” Due to the similar pronunciation of “gay” and “ga” (in English), it has been coined as a way to refer to homosexual men as an insult. </p>`,
+      fr: `<p><strong>GAYtorade</strong></p>
 <p>Ceci est un jeu de mot entre les termes “gay” et la boisson énergisante “Gaterode.”  De par la prononciation similaire de “gay” et “ga” (en anglais), ce jeu de mot est utilisé comme insulte envers les homosexuels.  </p>`,
     },
   },
