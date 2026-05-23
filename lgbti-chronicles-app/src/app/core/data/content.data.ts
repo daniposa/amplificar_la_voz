@@ -109,7 +109,7 @@ export const CARDS_DATA: CardData[] = [
       fr: 'Français: Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       en: 'English: Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
-    imagePath: 'images/paisajes/que paso.webp',
+    imagePath: 'images/paisajes/paisaje_que_paso.avif',
     hotspots: buildGridHotspots(CHRONICLES_T1, { prefix: 't1' }),
   },
   {
@@ -120,7 +120,7 @@ export const CARDS_DATA: CardData[] = [
       fr: 'Français: Sed do eiusmod tempor incididunt ut labore et dolore.',
       en: 'English: Sed do eiusmod tempor incididunt ut labore et dolore.',
     },
-    imagePath: 'images/paisajes/que paso.webp',
+    imagePath: 'images/paisajes/paisaje_que_paso.avif',
     hotspots: buildGridHotspots(CHRONICLES_T2, { prefix: 't2' }),
   },
   {
@@ -135,7 +135,7 @@ export const CARDS_DATA: CardData[] = [
       fr: 'Français: Ut enim ad minim veniam, quis nostrud exercitation.',
       en: 'English: Ut enim ad minim veniam, quis nostrud exercitation.',
     },
-    imagePath: 'images/paisajes/que paso.webp',
+    imagePath: 'images/paisajes/paisaje_que_paso.avif',
     hotspots: buildGridHotspots(CHRONICLES_T3, { prefix: 't3' }),
   },
 ];
