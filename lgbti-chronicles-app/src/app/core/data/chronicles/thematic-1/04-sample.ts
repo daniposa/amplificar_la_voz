@@ -13,17 +13,17 @@ export const CHRONICLE_T1_04: LocalizedModalContent = {
   },
   tooltips: {
     1: {
-      es: '<p>Nota de ejemplo para la crónica T1-04.</p>',
+      es: '<p>Cerca a Chigorodó está la vereda Tascón, del municipio de Dabeiba. Allí, varios integrantes del Frente 5 de las FARC-EP, incluido un tío de la víctima, violentaron a Angie, mujer lesbiana que entre 1991 y 1994 fue sometida a violaciones, amenazas y tortura, cuando apenas tenía 12 años: «Esto me pasó en varias ocasiones en diferentes veredas. Quedé embarazada de uno de los miembros de las FARC, llamado Juan Carlos, que pertenecía al mismo frente de alias Karina. Por todo eso tuve que irme».</p><p><i>Mujer lesbiana</i></p>',
       fr: `<p><strong><i>Vereda</i></strong></p>
 <p><img src="images/flotantes/vereda.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
-<p><small><i>Vereda</i> de Punta Larga à Popayán, dans le Cauca. On peut y accéder directement depuis l'autoroute panaméricaine.</small></p>
+<p><small><i>Vereda</i> de Punta Larga à Popayán, dans le Cauca. On peut y accéder directement depuis l'autoroute panaméricaine</small></p>
 <p>Selon le DANE (Département administratif national des statistiques), une <i>vereda</i> est une « division territoriale administrative dans les zones rurales des municipalités, établie par un accord municipal ».</p>
 <p>Au-delà de sa définition administrative, une <i>vereda</i> représente également un espace de vie communautaire rural très soudé. Comme les maisons et les <i>fincas</i> sont relativement proches les unes des autres, les habitants ont tendance à développer de bonnes relations avec le voisinage par le biais d'interactions quotidiennes (que ce soit dans le cadre d'un travail partagé, de réunions locales ou de rencontres sociales). En ce sens, la <i>vereda</i> fonctionne non seulement comme une division géographique, mais aussi comme un espace social où se construisent et se maintiennent les liens communautaires.
 </p>
 <p><a href="https://conceptos.dane.gov.co/conceptos/conceptos/6002/ficha/" target="_blank" rel="noopener noreferrer">DANE</a></p>`,
       en: `<p><strong><i>Vereda</i></strong></p>
 <p><img src="images/flotantes/vereda.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
-<p><small><i>Vereda</i> of Punta Larga in Popayán, Cauca. It can be reached directly from Pan-American Highway.</small></p>
+<p><small><i>Vereda</i> of Punta Larga in Popayán, Cauca. It can be reached directly from Pan-American Highway</small></p>
 <p>According to the DANE (National Administrative Department of Statistics), a <i>vereda</i> is an “Administrative territorial division in rural areas of municipalities, established by municipal agreement.”</p>
 <p>Beyond its administrative definition, a <i>vereda</i> also represents a space of close-knit rural community life. Because homes and <i>fincas</i> are located in relative proximity, residents tend to develop strong neighborly relationships through daily interactions (whether through shared work, local meetings, or social gatherings). In this sense, the vereda functions not only as a geographic division but also as a social space where community ties are built and maintained.
 </p>
