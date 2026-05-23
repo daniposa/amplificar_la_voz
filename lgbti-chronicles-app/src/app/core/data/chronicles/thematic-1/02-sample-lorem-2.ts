@@ -18,9 +18,11 @@ export const CHRONICLE_T1_02: LocalizedModalContent = {
 <p><a href="https://www.colombia.co" target="_blank" rel="noopener noreferrer">Colombia.co</a></p>`,
       fr: `<p><strong><i>Finca</i></strong></p>
 <p><img src="images/flotantes/finca.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
+<p><small>Une <i>finca</i> en Antioquia</small></p>
 <p>En Colombie, le terme « finca » est habituellement utilisé pour désigner une maison, quel qu’en soit la taille, située dans une zone rurale. Une <i>finca</i> peut désigner aussi bien une petite maison de campagne comme une grande maison avec ses propres terres agricoles. Ces terres agricoles peuvent être des grandes étendues utilisées générer des bénéfices importants, ou elles peuvent être des petits potagers. Cela peut aussi être des terrains vagues, n’ayant pas d’utilité particulière mise à part d’être un lieu où l’on peut passer le temps hors de la ville.</p>`,
       en: `<p><strong><i>Finca</i></strong></p>
 <p><img src="images/flotantes/finca.avif" alt="A <i>finca</i> in Antioquia" width="220"></p>
+<p><small>A <i>finca</i> in Antioquia</small></p>
 <p>In Colombia, “finca” is a term commonly used to refer to a house, regardless of its size, located in a rural area. A <i>finca</i> can range from a small country house to a large house with its own plantation. These agricultural plantations can be large expanses of land intended to produce a significant profit, or they can be small vegetable gardens. They may also be empty plots of land that serve no particular purpose, except to provide a place to spend time outside of any city or village.</p>`,
     },
     2: {
