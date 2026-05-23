@@ -9,7 +9,7 @@ import { buildGridHotspots } from './chronicles/hotspot-layout';
  * All titles support Spanish (es), French (fr), and English (en).
  */
 /** Path to the panoramic image shown behind the cards in the Chronicles tab. */
-export const PANORAMA_IMAGE = 'images/paisajes/0.webp';
+export const PANORAMA_IMAGE = 'images/fondos/fondo_ingles.avif';
 
 /** Labels for chronicle modal UI (contextual info button). */
 export const CHRONICLE_UI = {
@@ -120,7 +120,7 @@ export const CARDS_DATA: CardData[] = [
       fr: 'Français: Sed do eiusmod tempor incididunt ut labore et dolore.',
       en: 'English: Sed do eiusmod tempor incididunt ut labore et dolore.',
     },
-    imagePath: 'images/paisajes/paisaje_que_paso.avif',
+    imagePath: 'images/paisajes/paisaje_por_que_paso.avif',
     hotspots: buildGridHotspots(CHRONICLES_T2, { prefix: 't2' }),
   },
   {
@@ -135,7 +135,7 @@ export const CARDS_DATA: CardData[] = [
       fr: 'Français: Ut enim ad minim veniam, quis nostrud exercitation.',
       en: 'English: Ut enim ad minim veniam, quis nostrud exercitation.',
     },
-    imagePath: 'images/paisajes/paisaje_que_paso.avif',
+    imagePath: 'images/paisajes/paisaje_que paso_con_lo_que_paso.avif',
     hotspots: buildGridHotspots(CHRONICLES_T3, { prefix: 't3' }),
   },
 ];
