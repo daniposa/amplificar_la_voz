@@ -31,7 +31,7 @@ Qu'ils étaient, eux aussi, des êtres humains ?</p><p><i>Femme, métisse, citad
 `,
     en: `<p>How much pain I feel to know<br>
 of so many disappeared ones<br> 
-knowing nothing from them, buried in the escombreras.<br> 
+knowing nothing from them, buried in the <b><u><i>{1}escombreras{/1}</i></u></b>.<br> 
 How much sorrow I feel to think,<br> 
 if they are hungry or if they are cold.<br> 
 Their happiness was ripped out of them, and they were sentenced to be forgotten.<br> 
