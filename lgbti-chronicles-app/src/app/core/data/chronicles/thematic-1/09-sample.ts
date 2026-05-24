@@ -19,28 +19,28 @@ export const CHRONICLE_T1_09: LocalizedModalContent = {
       es: `<p>Nota de ejemplo para la crónica T1-09.</p>`,
       fr: `<p><strong>Groupes de nettoyage sociaux</strong></p>
 <p>Le CNMH (Centre National de la Mémoire Historique) définit ces groupes de nettoyage social comme "des groupes de personnes agissant sous couverture, souvent dans l'obscurité de la nuit, qui assassinent d'autres personnes sans aucune défense. Leurs convictions révèlent qu'ils pensent bien faire, car les victimes qu'ils choisissent ont une identité bien définie : ils vivent dans la rue, sont des travailleurs du sexe, commettent des délits, sont des jeunes populaires, ce qui, selon les auteurs, condamne et prive les victimes de toute dignité, les réduisant à l'état de mal qu'il faut éradiquer". Ils mènent ces actions sous prétexte que "l'arbre qui ne porte pas de fruits doit être coupé" ou "ce qui ne sert à rien ne doit pas gêner."</p>
-<p><a href="https://centrodememoriahistorica.gov.co/limpieza-social-una-violencia-mal-nombrada/" rel="noopener noreferrer">CNMH</a></p>`,
+<p><a href="https://centrodememoriahistorica.gov.co/limpieza-social-una-violencia-mal-nombrada/" target="_blank" rel="noopener noreferrer">CNMH</a></p>`,
       en: `<p><strong>Social cleansing groups</strong></p>
 <p>The CNMH (National Center for Historical Memory) defines these social cleansing groups as “groups of people operating undercover, often cloaked in the darkness of night, who murder other people that are completely defenseless. Their convictions reveal that they believe they are doing the right thing, as the victims carry with them a mark of identity: living on the streets, working in the sex trade, committing crimes, being a popular young person, which, according to the perpetrators, condemns and strips the victims of all dignity, reducing them to the status of evil that must be eradicated,” actions they carry out under premises such as “a tree that does not bear fruit must be cut down” or “what is useless should not get in the way.”</p>
-<p><a href="https://centrodememoriahistorica.gov.co/limpieza-social-una-violencia-mal-nombrada/" rel="noopener noreferrer">CNMH</a></p>`,
+<p><a href="https://centrodememoriahistorica.gov.co/limpieza-social-una-violencia-mal-nombrada/" target="_blank" rel="noopener noreferrer">CNMH</a></p>`,
     },
     2: {
       es: `<p>Nota de ejemplo para la crónica T1-09.</p>`,
       fr: `<p><strong>F2</strong></p>
 <p>La F2, anciennement connue sous le nom de DIPEC (Division de la recherche, de la police judiciaire et des statistiques criminelles), était une unité de renseignement et d'enquête judiciaire de la police nationale colombienne, active jusqu'à sa dissolution en 1995. Initialement chargée des enquêtes criminelles, de la collecte de renseignements et des fonctions de police judiciaire, l'unité s'est progressivement associée à des pratiques controversées au cours de la seconde moitié du XXe siècle. De nombreux rapports sur les droits de la personne et enquêtes judiciaires ont établi un lien entre des membres du F2 et des cas de détention arbitraire, de torture et de disparitions forcées, en particulier pendant des périodes marquées par de fortes politiques anti-insurrectionnelles. Ces événements, ainsi que d'autres allégations de nettoyage social », de collaboration avec des groupes paramilitaires et de répression de la dissidence politique, ont contribué à l'héritage controversé de l'unité et, finalement, aux réformes institutionnelles qui l'ont remplacée par de nouveaux services de renseignement et d'enquête criminelle au sein de la police colombienne dans les années 1990.</p>
-<p><a href="https://www.elespectador.com/colombia-20/jep-y-desaparecidos/desaparicion-forzada-en-bogota-caso-colectivo-82-la-busqueda-de-jovenes-desaparecidos-por-policia-en-1982/" rel="noopener noreferrer">F2</a></p>`,
+<p><a href="https://www.elespectador.com/colombia-20/jep-y-desaparecidos/desaparicion-forzada-en-bogota-caso-colectivo-82-la-busqueda-de-jovenes-desaparecidos-por-policia-en-1982/" target="_blank" rel="noopener noreferrer">F2</a></p>`,
       en: `<p><strong>F2</strong></p>
 <p>The F2, formally known as the DIPEC (Division of Research, Judicial Police, and Criminal Statistics), was an intelligence and judicial investigation unit of the Colombian National Police, active until its dissolution in 1995. Originally responsible for criminal investigations, intelligence gathering, and judicial police functions, the unit gradually became associated with controversial practices during the second half of the twentieth century. Numerous human rights reports and judicial investigations have linked members of the F2 to cases of arbitrary detention, torture, and forced disappearance, particularly during periods marked by strong anti-insurgency policies. These events, along with other allegations of “social cleansing,” collaboration with paramilitary groups, and repression of political dissent, contributed to the controversial legacy of the unit and eventually to the institutional reforms that replaced it with new intelligence and criminal investigation bodies within the Colombian police in the 1990s.</p>
-<p><a href="https://www.elespectador.com/colombia-20/jep-y-desaparecidos/desaparicion-forzada-en-bogota-caso-colectivo-82-la-busqueda-de-jovenes-desaparecidos-por-policia-en-1982/" rel="noopener noreferrer">F2</a></p>`,
+<p><a href="https://www.elespectador.com/colombia-20/jep-y-desaparecidos/desaparicion-forzada-en-bogota-caso-colectivo-82-la-busqueda-de-jovenes-desaparecidos-por-policia-en-1982/" target="_blank" rel="noopener noreferrer">F2</a></p>`,
     },
     3: {
       es: `<p>Nota de ejemplo para la crónica T1-09.</p>`,
       fr: `<p><strong>Indumil</strong></p>
 <p>Abréviation qui désigne l'Institut national de l'industrie militaire. Il supervise la production et le commerce d'armes, de munitions, d'engins explosifs et d'accessoires de dynamitage, en vertu d'un mandat constitutionnel.</p>
-<p><a href="https://www.indumil.gov.co/ " rel="noopener noreferrer">Indumil</a></p>`,
+<p><a href="https://www.indumil.gov.co/ " target="_blank" rel="noopener noreferrer">Indumil</a></p>`,
       en: `<p><strong>Indumil</strong></p>
 <p>Abbreviation for the National Institute of Military Industry. It oversees the production and trading of weapons, ammunition, explosive devices, and blasting accessories, by constitutional mandate.</p>
-<p><a href="https://www.indumil.gov.co/ " rel="noopener noreferrer">Indumil</a></p>`,
+<p><a href="https://www.indumil.gov.co/ " target="_blank" rel="noopener noreferrer">Indumil</a></p>`,
     },
   },
   contextInfo: {
