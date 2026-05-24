@@ -2,24 +2,35 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_14: LocalizedModalContent = {
   title: {
-    es: 'Crónica T1-14 (muestra)',
-    fr: 'Chronique T1-14 (échantillon)',
-    en: 'Chronicle T1-14 (sample)',
+    es: 'Lucellys ',
+    fr: 'Lucellys ',
+    en: 'Lucellys',
   },
   rawText: {
-    es: 'Texto de muestra para la crónica T1-14. {1}Frase destacada{/1} con una nota de ejemplo.',
-    fr: `Texte d’échantillon pour la chronique T1-14. {1}Phrase mise en évidence{/1} avec une note \
-d’exemple.`,
-    en: 'Sample text for chronicle T1-14. {1}Highlighted phrase{/1} with an example tooltip.',
+    es: `<p>«Cuando me reclutó la guerrilla solo me hicieron trabajar. Cuando se me notaba lo femenino me ponían a cocinar. Raspar coca daña las manos. No puedo decir nada de la guerrilla, solo me hicieron trabajar. Pero tenía que ser hombre, porque la regla de las FARC-EP era “LGBT no”».</p><p><i>Mujer trans</p></i>
+`,
+    fr: `<p>« Quand les guérilleros m’ont recruté, on m’a seulement fait travailler. Dès qu’on a remarqué que j’étais efféminée, on m’a mis à la cuisine. Gratter les feuilles de coca abîme les mains. Je ne peux pas dire grand-chose sur la guérilla ; on m’a juste fait travailler. Mais je devais me comporter comme un vrai homme, parce que la règle des <b><u>{1}FARC-EP{/1}</u></b> était “interdit aux LGBT”. »</p><p><i>Femme trans</i></p>
+`,
+    en: `<p>“When the guerrillas recruited me, they only made me work. Whenever they noticed I was effeminate, they made me cook for them. Scraping coca leaves damages the hands. I can’t say much about the guerrillas; they just made me work. But I had to act like a true man, because the <b><u>{1}FARC-EP{/1}</u></b>'s rule was ‘No LGBT.’”</p><p><i>Trans woman</i></p>
+`,
   },
   tooltips: {
     1: {
-      es: '<p>Nota de ejemplo para la crónica T1-14.</p>',
-      fr: '<p>Note d’exemple pour la chronique T1-14.</p>',
-      en: '<p>Sample tooltip for chronicle T1-14.</p>',
+      es: `<p><strong>FARC-EP</strong> — Fuerzas Armadas Revolucionarias de Colombia – Ejército \
+del Pueblo.</p>
+<p>Organización político-militar. Más contexto (enlace externo): <a href="https://www.un.org/es" \
+target="_blank" rel="noopener noreferrer">Naciones Unidas</a>.</p>
+<p><strong>Ejemplo de imagen</strong> en tooltip (ruta bajo <code>images/</code>):</p>
+<p><img src="images/image4.jpg" alt="Ilustración de ejemplo" width="200"></p>`,
+      en: `<p><strong>FARC-EP guerrillas</strong></p>
+<p>FARC-EP (<i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) are an insurgent politic-military organization that has existed for over 50 years in Colombia.  </p>`,
+      fr: `<p><strong>FARC-EP guerrillas</strong></p>
+<p>Les FARC-EP (<i>Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo</i>) sont une organisation politico-militaire insurgée qui existe depuis plus de 50 ans en Colombie. </p>`,
     },
   },
   contextInfo: {
-    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+    es: `<p>Lugar: Belén de los Andaquíes</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): reclutamiento forzado, labor forzada</p><p>Actor armado: FARC-EP</p>`,
+    fr: `<p>Lieu : Belén de los Andaquíes</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : recrutement forcé, travail forcé</p><p>Acteur armé : FARC-EP</p>`,
+    en: `<p>Place: Belén de los Andaquíes</p><p>Date: N/A</p><p>Victimizing act(s): forced recruitment, forced labor</p><p>Armed actor: FARC-EP</p>`,
   },
 };
