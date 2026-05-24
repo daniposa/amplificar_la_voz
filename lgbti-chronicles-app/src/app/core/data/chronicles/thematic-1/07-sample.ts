@@ -31,6 +31,6 @@ target="_blank" rel="noopener noreferrer">Naciones Unidas</a>.</p>
   contextInfo: {
     es: `<p>Lugar: Vereda San José de Urama, Dadeiba</p><p>Año: 2003</p><p>Hecho(s) victimizante(s): violencia sexual, tortura, amenazas, intimidaciones, intento de reclutamiento forzado</p><p>Actor armado: FARC-EP</p>`,
     fr: `<p>Lieu : <i>Vereda</i> San José de Urama, Dadeiba, Antioquia</p><p>Date : 2003</p><p>Fait(s) victimisant(s) : violence sexuelle, torture, menaces, intimidations, tentative de recrutement forcé</p><p>Acteur armé : FARC-EP</p>`,
-    en: `<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>`,
+    en: `<p>Place: <i>Vereda</i> of San José de Urama, Dadeiba, Antioquia</p><p>Date: 2003</p><p>Victimizing act(s): sexual violence, torture, threats, intimidation, attempted forced recruitment</p><p>Armed actor: FARC-EP</p>`,
   },
 };
