@@ -26,8 +26,8 @@ export const CHRONICLE_T1_17: LocalizedModalContent = {
     },
     2: {
       es: `<p>Nota de ejemplo para la crónica T1-17.</p>`,
-      fr: `<p><a href="https://www.unidadvictimas.gov.co/justicia-y-paz/" target="_blank" rel="noopener noreferrer">Site officiel</a></p>`,
-      en: `<p><a href="https://www.unidadvictimas.gov.co/justicia-y-paz/" target="_blank" rel="noopener noreferrer">Official website</a></p>`,
+      fr: `<p><strong>Justicia y Paz</strong></p><p><a href="https://www.unidadvictimas.gov.co/justicia-y-paz/" target="_blank" rel="noopener noreferrer">Site officiel</a></p>`,
+      en: `<p><strong>Justicia y Paz</strong></p><p><a href="https://www.unidadvictimas.gov.co/justicia-y-paz/" target="_blank" rel="noopener noreferrer">Official website</a></p>`,
     },
   },
   contextInfo: {
