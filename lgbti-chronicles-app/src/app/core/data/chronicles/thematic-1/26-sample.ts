@@ -23,7 +23,7 @@ export const CHRONICLE_T1_26: LocalizedModalContent = {
   },
   contextInfo: {
     es: `<p>Lugar: Nariño</p><p>Año: N/A </p><p>Hecho(s) victimizante(s): violencia sexual, tortura, tentativa de homicidio, tentativa de aborto forzado</p><p>Actor armado: Ejército Nacional</p>`,
-    fr: `<p>Lieu : Nariño</p><p>Date : N/A </p><p>Fait(s) victimisant(s) : violences sexuelles, torture, tentative d'homicide, tentative d'avortement forcé/p><p>Acteur armé : Armée nationale</p>`,
+    fr: `<p>Lieu : Nariño</p><p>Date : N/A </p><p>Fait(s) victimisant(s) : violences sexuelles, torture, tentative d'homicide, tentative d'avortement forcé</p><p>Acteur armé : Armée nationale</p>`,
     en: `<p>Place: Nariño</p><p>Date: N/A </p><p>Victimizing act(s): sexual violence, torture, attempted murder, attempted forced abortion</p><p>Armed actor: National Army</p>`,
   },
 };
