@@ -22,13 +22,13 @@ export const CHRONICLE_T1_18: LocalizedModalContent = {
     2: {
       es: `<p>Nota de ejemplo para la crónica T1-18.</p>`,
       fr: `<p><strong>Le peuple Wayuu</strong></p>
+      <p>« Les Wayuu, communément appelés Guajiros, sont un groupe qui a été capable de préserver sa culture à travers le temps. Ils ont leur propre langue, le wayúunaiki, et vivent principalement dans la péninsule de Guajira, au nord de la Colombie et au nord-ouest du Venezuela, près de la mer des Caraïbes. »</p>
+      <p>Source: <a href="https://wayuutaya.org/the-wayuu" target="_blank" rel="noopener \
+noreferrer">Fondation Wayuu Taya</a>.</p>`,
+      en: `<p><strong>Wayuu people</strong></p>
       <p>« “The Wayuu, commonly known as Guajiros, are a group that has been able to maintain their culture throughout time. They have their own language, Wayúunaiki, and live mostly in the Guajira peninsula, at the north of Colombia and northwest of Venezuela, near the Caribbean Sea.” Wayuu Taya Foundation. (s. f.). The Wayuu.</p>
       <p>Source: <a href="https://wayuutaya.org/the-wayuu" target="_blank" rel="noopener \
 noreferrer">Wayuu Taya Foundation</a>.</p>`,
-      en: `<p><strong>Wayuu people</strong></p>
-      <p>« Les Wayuu, communément appelés Guajiros, sont un groupe qui a été capable de préserver sa culture à travers le temps. Ils ont leur propre langue, le wayúunaiki, et vivent principalement dans la péninsule de Guajira, au nord de la Colombie et au nord-ouest du Venezuela, près de la mer des Caraïbes.»</p>
-      <p>Source: <a href="https://wayuutaya.org/the-wayuu" target="_blank" rel="noopener \
-noreferrer">Fondation Wayuu Taya</a>.</p>`,
     },
     3: {
       es: `<p>Nota de ejemplo para la crónica T1-18.</p>`,
