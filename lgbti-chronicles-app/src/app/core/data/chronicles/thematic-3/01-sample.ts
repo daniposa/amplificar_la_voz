@@ -18,6 +18,7 @@ export const CHRONICLE_T3_01: LocalizedModalContent = {
       <p>Une <i>kermesse</i> est une fête populaire et communautaire qui se déroule généralement en plein air. En Colombie, ils ne sont pas nécessairement liés à des contextes scolaires ou religieux.</p>`,
       en: `<p><strong><i>Kermesses</i></strong></p>
       <p>A <i>kermesse</i> is a popular and community festivity normally held outdoors. In Colombia they are not necessarily related to school contexts.</p>`,
+    },
     2: {
       es: `<p>Nota de ejemplo para la crónica T3-01.</p>`,
       fr: `<p><strong><i>Finca</i></strong></p>
