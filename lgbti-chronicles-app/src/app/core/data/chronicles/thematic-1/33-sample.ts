@@ -2,26 +2,27 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_33: LocalizedModalContent = {
   title: {
-    es: 'Crónica T1-33 (muestra)',
-    fr: 'Chronique T1-33 (échantillon)',
-    en: 'Chronicle T1-33 (sample)',
+    es: 'Julia',
+    fr: 'Julia',
+    en: 'Julia',
   },
   rawText: {
-    es: 'Texto de muestra para la crónica T1-33. {1}Frase destacada{/1} con una nota de ejemplo.',
-    fr: `Texte d’échantillon pour la chronique T1-33. {1}Phrase mise en évidence{/1} avec une note \
-d’exemple.`,
-    en: 'Sample text for chronicle T1-33. {1}Highlighted phrase{/1} with an example tooltip.',
+    es: `<p>«Yo también he sido agredida, yo también he sido víctima. Conocer el nasa yuwe es fundamental, yo medio me acordaba del tartamudeo de mi abuela y trataba de poner orden cuando ella dijo: “Aquí, donde yo vivo, esos grupos armados venían y bajaban costales de remesa. Dejaban aquí, cargaban y se iban”. Ella veía que era gente del común y muchas veces conocidos, pero no sabía lo que iba a ocurrir después de todo eso. Dijo que hubo momentos de combate fuerte y les tocaba pasarse todo el tiempo refugiados debajo de sus camas. Ella nunca se fue porque tenía animalitos que cuidar. Los demás sí emigraron, pero ella se quedó con la hija y ocurrió que subieron los que se dicen “¡héroes de la patria!”, que para mí de héroes no tienen nada. Contó, con lágrimas en los ojos, que a las cinco de la mañana llegó un grupo grande de ellos, patearon la puerta, entraron y preguntaron: “¿Dónde están estos insurgentes o subversivos?”. Ella no entendía, porque poco sabía del idioma. Entonces salió la hija: que les habían dicho que esa casa estaba minada de guerrilla, dijeron. Lo último que me acuerdo es que a mí me golpearon en la cabeza, me tiraron hacia un zaguán grande; yo escuchaba los gritos de mi hija y era que la estaban violando. Me fui a defenderla y la abuela también fue abusada. Ahí se quedaron tres días, arrumadas por allá en un rincón. ¿A quién le pedíamos ayuda si la gente en medio del combate se había desplazado? Ella le pedía a Dios que no las fueran a matar. Lo único que les decían, mientras abusaban de ellas, era “sapas”, “guerrilleras”».</p><p><i>Mujer indígena nasa</i></p>`,
+    fr: `<p>« Comme les autres, j’ai été agressée, comme les autres, j’ai été une victime. Il est essentiel à connaître le <b><u>{1}Nasa Yuwe{/1}</u></b>. À ce moment je me rappelais un peu comme comprendre le bredouillage en Nasa Yuwe de ma grand-mère et j’essayais de faire abouter ses mots quand elle a dit : “Ici, où j’habite, ces groupes armes venaient des montagnes avec sacs de provisions. Ils déchargeaient ici quelques choses, rechargeaient les sacs et partaient.” Elle voyait qu’ils étaient personnes ordinaires et souvent personnes qu’elle connaissait, mais malgré ça, elle ne s’attendait pas à ce qui après allait arriver. Elle a dit qu’il y avait périodes de combats intenses pendant elle et quelques personnes devaient se réfugier sous leurs lits. Elle n’a jamais quitté de là parce qu’elle prenait soin de ses chers animaux. Mais les outres ont émigré, seulement elle est restée là, avec sa fille. Jusqu’à un jour les soit-disent “héros du pays” — qu’à mon avis n’ont rien d’héros — sont venus. Avec des larmes aux yeux, elle a raconté qu’à 5 heures du matin ils sont venus en grand nombre. Ils ont enfoncé la porte, sont entrés, et puis ont demandé : “Où sont ces insurgés ? Ces rebelles ?” Comme elle connaissait juste un peu de leur langue, elle ne pouvait pas les comprendre. Ensuite, sa fille est venue, et ils l’ont dit : On nous a dit chez vous était comble de la guérrilla. La dernière chose que je me souviens c’est qu’ils me sont frappée la tête et me sont jetée à une grande chambre ; là j’écoutais les cris de ma fille et je me suis rendu compte qu’ils l’étaient violée donc je suis venue à la défendre. Ma grand-mère a été agressée aussi. Elles sont restées dans le même lieu par trois jours, entassées là, dans un coin. À quelle personne pourrions-nous demander pour aide si tout le monde s’était déplacé pendant le conflit ? Elle a prié à Dieu qu’ils ne les tueraient pas. La seule chose qu’ils les disaient pendant les agressaient a été “moucharde”, “guérilleras”. »</p><p><i>Femme Autochtone Nasa</i></p>`,
+    en: `<p>“Like others, I have been attacked, I have been victimized. Understanding <b><u>{1}Nasa Yuwe{/1}</u></b> is essential. I vaguely remembered how to grasp my grandma Nasa Yuwe stammering, and I’m trying to put her words together when she said: ‘Here, where I live, those armed groups used to come with sacks of groceries. They would leave some things here, upload the sacks, and then leave.’ She saw they were normal people, often times familiar faces, but she didn’t know what was going to happen next. She said there were moments of intense combat when she and others had to take refuge under their beds and stay there for a long time. She never left because she had to take care of her dear animals. Everyone else did emigrate, but she stayed there with her daughter. And one day, those who call themselves ‘the heroes of the country’ —who in my opinion are not heroes at all— came. With tears in her eyes, she told us that they had shown up at 5 a.m. They kicked the door, got in, and asked, ‘Where are the insurgents and insurrectionists?’ She didn’t understand what they said because she only knew a few words of the language. So, her daughter came out. They said that someone had informed them that this house was fraught with guerrillas. The last thing I remember is that they hit me on my head. They threw me into a big hallway. I heard my daughter scream, and then I realized they were raping her. I went to defend her. Her grandma was assaulted too. The two of them stayed in the same place for three days, piled up at a corner. Who could we ask for help if everyone else had been displaced during the conflict? She prayed to God that they wouldn’t kill them. The only thing they said while they abused them, was ‘snitches,’ ‘guerrilleras.’”</p><p><i>Nasa Indigenous woman</i></p>`,
   },
   tooltips: {
     1: {
-      es: '<p>Nota de ejemplo para la crónica T1-33.</p>',
-      fr: '<p>Note d’exemple pour la chronique T1-33.</p>',
-      en: '<p>Sample tooltip for chronicle T1-33.</p>',
+      es: `<p>Nota de ejemplo para la crónica T1-33.</p>`,
+      fr: `<p><strong>Nasa Yuwe</strong></p>
+      <p>Nasa Yuwe, traduit littéralement par langage Nasa. C’est le langage du peuple de Páez, la deuxième plus grande communauté autochtone de Colombie.</p>`,
+      en: `<p><strong>Nasa Yuwe</strong></p>
+      <p>Nasa Yuwe, literally translated as Nasa language, is the language of the Páez people, the second largest Colombian indigenous community.</p>`,
     },
   },
   contextInfo: {
-    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
-    fr: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
-    en: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+    es: `<p>Lugar: Cauca</p><p>Fecha: N/A</p><p>Hecho(s) victimizante(s): violencia sexual</p><p>Actor armado: fuerzas del Estado</p>`,
+    fr: `<p>Lieu : Cauca</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : violence sexuelle</p><p>Acteur armé : l'État</p>`,
+    en: `<p>Place: Cauca</p><p>Date: N/A</p><p>Victimizing act(s): sexual violence</p><p>Armed actor: State forces</p>`,
   },
 };
