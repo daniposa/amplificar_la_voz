@@ -23,7 +23,7 @@ export const CHRONICLE_T3_41: LocalizedModalContent = {
     },
   },
   contextInfo: {
-    es: `<p>Lugar: Putumayo</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): violencia sexual</p><p>Actor armado: N/A</p>`,
+    es: `<p>Lugar: Putumayo</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): violencia sexual</p><p>Actor armado: Frente 32 de las FARC-EP</p>`,
     fr: `<p>Lieu : Putumayo</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : violence sexuelle</p><p>Acteur armé : Front 32 des FARC-EP</p>`,
     en: `<p>Place: Putumayo</p><p>Date: N/A</p><p>Victimizing act(s): sexual violence</p><p>Armed actor: 32nd Front of FARC-EP</p>`,
   },
