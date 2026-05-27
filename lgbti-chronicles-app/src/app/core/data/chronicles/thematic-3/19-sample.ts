@@ -2,24 +2,59 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T3_19: LocalizedModalContent = {
   title: {
-    es: 'Crónica T3-19 (muestra)',
-    fr: 'Chronique T3-19 (échantillon)',
-    en: 'Chronicle T3-19 (sample)',
+    es: 'Las Tamboreras del Cauca',
+    fr: 'Las Tamboreras del Cauca',
+    en: 'Las Tamboreras del Cauca',
   },
   rawText: {
-    es: 'Texto de muestra para la crónica T3-19. {1}Frase destacada{/1} con una nota de ejemplo.',
-    fr: `Texte d’échantillon pour la chronique T3-19. {1}Phrase mise en évidence{/1} avec une note \
-d’exemple.`,
-    en: 'Sample text for chronicle T3-19. {1}Highlighted phrase{/1} with an example tooltip.',
+    es: `Texto de muestra para la crónica T3-19. {1}Frase destacada{/1} con una nota de ejemplo.`,
+    fr: `<p><b><u>{1}Las Tamboreras del Cauca{/1}</u></b></p>   
+
+  
+
+<p>Je me souviens de mon enfance à l’odeur de sureau et de jasmin ;<br>   
+
+  
+
+Le murmure de la rivière, le parfum du jardin<br>    
+
+  
+
+Des émotions qui donnent joie et énergie, je ressens la paix, la sécurité et l’harmonie.<br>     
+
+  
+
+Mon sourire et mon cœur vaincront les ténèbres et la peur.<br>     
+
+  
+
+Je suis feu, eau, air et terre. Je fais partie de la création.</p> 
+
+ `,
+    en: `<p><b><u>{1}Las Tamboreras del Cauca{/1}</u></b></p>
+
+<p>I remember my childhood filled with the scent of jasmine and elderflower in bloom,<br>   
+
+the river’s sweet lullaby and the garden’s perfume.<br>   
+
+Emotions that fill with strength and cheer, I feel peaceful, in harmony, with nothing to fear.<br> 
+
+With my heart and a smile, I’ll defeat darkness and despair.<br> 
+
+I am part of the creation, I am fire, water, earth and air.</p>`,
   },
   tooltips: {
     1: {
-      es: '<p>Nota de ejemplo para la crónica T3-19.</p>',
-      fr: '<p>Note d’exemple pour la chronique T3-19.</p>',
-      en: '<p>Sample tooltip for chronicle T3-19.</p>',
+      es: `<p>Nota de ejemplo para la crónica T3-19.</p>`,
+      fr: `<p><strong>Las Tamboreras del Cauca</strong></p>
+      <p>Les Tamboreras del Cauca sont un groupe de femmes du Cauca, en Colombie, qui ont été victimes du conflit armé. Ce groupe résiste et transforme leur douleur grâce à l’art. Leur processus de guérison émotionnelle repose sur la fabrication de tambours, le chant et la pratique du théâtre, transformant la musique en un outil de mémoire, de paix et d'émancipation.</p>`,
+      en: `<p><strong>Las Tamboreras del Cauca</strong></p>
+      <p>Tamboreras del Cauca are a group of women from Cauca, Colombia who have been victims of the armed conflict. This group resists and transforms their pain through art. Their emotional healing process is based on the crafting of drums, singing, and performing theater, turning music into a tool for memory, peace, and empowerment. </p>`,
     },
   },
   contextInfo: {
-    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+    es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): N/A</p><p>Actor armado: N/A</p>`,
+    fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : N/A</p><p>Acteur armé : N/A</p>`,
+    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): N/A</p><p>Armed actor: N/A</p>`,
   },
 };
