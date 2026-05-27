@@ -27,11 +27,11 @@ export const CHRONICLE_T3_26: LocalizedModalContent = {
       fr: `<p><strong><i>Ranchería</i> wayuu</strong></p>
 <p><img src="images/flotantes/rancheria.avif" alt="Ranchería" width="220"></p>
 <p><small>Saldarriaga Roa, A. (2019). Photographie d’une <i>ranchería</i> wayuu en Guajira</small></p>
-<p><a href="https://www.banrepcultural.org/biblioteca-virtual/credencial-historia/numero-351/la-rancheria-de-los-wayuu-en-la-guajira" target="_blank" rel="noopener noreferrer">anco de la República – Credencial Historia</a></p>`,
+<p><a href="https://www.banrepcultural.org/biblioteca-virtual/credencial-historia/numero-351/la-rancheria-de-los-wayuu-en-la-guajira" target="_blank" rel="noopener noreferrer">Banco de la República – Credencial Historia</a></p>`,
       en: `<p><strong>Wayuu <i>ranchería</i></strong></p>
 <p><img src="images/flotantes/rancheria.avif" alt="Ranchería" width="220"></p>
 <p><small>Saldarriaga Roa, A. (2019). Picture of a wayuu <i>ranchería</i> in Guajira</small></p>
-<p><a href="https://www.banrepcultural.org/biblioteca-virtual/credencial-historia/numero-351/la-rancheria-de-los-wayuu-en-la-guajira" target="_blank" rel="noopener noreferrer">anco de la República – Credencial Historia</a></p>`,
+<p><a href="https://www.banrepcultural.org/biblioteca-virtual/credencial-historia/numero-351/la-rancheria-de-los-wayuu-en-la-guajira" target="_blank" rel="noopener noreferrer">Banco de la República – Credencial Historia</a></p>`,
     },
   },
   contextInfo: {
