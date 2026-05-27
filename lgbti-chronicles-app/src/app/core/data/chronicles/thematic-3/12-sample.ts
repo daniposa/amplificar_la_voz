@@ -119,6 +119,6 @@ Quietly, I wait for you. When you are close, words are there, it makes me feel I
   contextInfo: {
     es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): N/A</p><p>Actor armado: N/A</p>`,
     fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : N/A</p><p>Acteur armé : N/A</p>`,
-    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): N/A</p><p>Armed actor: N/A`,
+    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): N/A</p><p>Armed actor: N/A</p>`,
   },
 };
