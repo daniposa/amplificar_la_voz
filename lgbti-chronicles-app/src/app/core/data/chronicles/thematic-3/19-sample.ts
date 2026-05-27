@@ -7,12 +7,26 @@ export const CHRONICLE_T3_19: LocalizedModalContent = {
     en: 'Las Tamboreras del Cauca',
   },
   rawText: {
-    es: `Texto de muestra para la crónica T3-19. {1}Frase destacada{/1} con una nota de ejemplo.`,
-    fr: `<p><b><u>{1}Las Tamboreras del Cauca{/1}</u></b></p>   
+    es: `<p><i>Recuerdo mi infancia con olor a sauco y jazmín;<br>    
 
   
 
-<p>Je me souviens de mon enfance à l’odeur de sureau et de jasmin ;<br>   
+el arrullo del río y el aroma del jardín.<br>   
+
+  
+
+Emociones que dan fuerza y alegría, siento paz, seguridad y armonía.<br>   
+
+  
+
+Miedo y oscuridad serán vencidos con mi sonrisa y corazón.<br>   
+
+  
+
+Soy fuego, agua, aire y tierra. Soy parte de la creación.</i></p>
+<p>Las Tamboreras del Cauca</p>`,
+    fr: `  
+<p><i>Je me souviens de mon enfance à l’odeur de sureau et de jasmin ;<br>   
 
   
 
@@ -28,12 +42,12 @@ Mon sourire et mon cœur vaincront les ténèbres et la peur.<br>
 
   
 
-Je suis feu, eau, air et terre. Je fais partie de la création.</p> 
+Je suis feu, eau, air et terre. Je fais partie de la création.</i></p> 
+<p><b><u>{1}Las Tamboreras del Cauca{/1}</u></b></p>
 
  `,
-    en: `<p><b><u>{1}Las Tamboreras del Cauca{/1}</u></b></p>
-
-<p>I remember my childhood filled with the scent of jasmine and elderflower in bloom,<br>   
+    en: `
+<p><i>I remember my childhood filled with the scent of jasmine and elderflower in bloom,<br>   
 
 the river’s sweet lullaby and the garden’s perfume.<br>   
 
@@ -41,7 +55,9 @@ Emotions that fill with strength and cheer, I feel peaceful, in harmony, with no
 
 With my heart and a smile, I’ll defeat darkness and despair.<br> 
 
-I am part of the creation, I am fire, water, earth and air.</p>`,
+I am part of the creation, I am fire, water, earth and air.</i></p>
+<p><b><u>{1}Las Tamboreras del Cauca{/1}</u></b></p>
+`,
   },
   tooltips: {
     1: {
