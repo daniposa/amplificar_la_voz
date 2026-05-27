@@ -9,7 +9,7 @@ export const CHRONICLE_T3_18: LocalizedModalContent = {
   rawText: {
     es: `<p><i>[...] ya pocos tejen tejidos de colchas, de amores y de palabras. Los hombres destejen lo que las mujeres tejen; deshilan con sus gritos, con sus silencios, con sus granadas; descosen y desconocen la labor diaria. Las mujeres hacen teteros y aromáticas de limonaria; tejen el tejido muerto, insuflan su hálito en las palabras vida-muerte, muerte-vida.</i></p>`,
     fr: `<p><i>[...] peu de gens tissent encore des tissus de patchwork, d’amours et de paroles. Les hommes détricotent ce que les femmes tricotent ; ils effilochent avec leurs cris, leurs silences, leurs grenades ; ils décousent et méprisent l’ouvrage quotidien. Les femmes préparent des biberons et des tisanes de citronnelle ; elles tissent le tissu mort, insufflent leur souffle dans les mots vie-mort, mort-vie.</i></p>`,
-    en: `<p><i>[...] peu de gens tissent encore des tissus de patchwork, d’amours et de paroles. Les hommes détricotent ce que les femmes tricotent ; ils effilochent avec leurs cris, leurs silences, leurs grenades ; ils décousent et méprisent l’ouvrage quotidien. Les femmes préparent des biberons et des tisanes de citronnelle ; elles tissent le tissu mort, insufflent leur souffle dans les mots vie-mort, mort-vie.</i></p>`,
+    en: `<p><i>[...] ... there are few people who still knit quilts, who still weave love and words. Men unknit what women knit; they unravel threads with their shouting, with their silence, with their grenades. They rip seams, undo, and disregard the daily handwork. Women prepare baby bottles and lemongrass infusions; they knit the dead fibers, breathing life into the words life-death, death-life.</i></p>`,
   },
   tooltips: {
     1: {
