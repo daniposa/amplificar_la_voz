@@ -2,7 +2,7 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T3_14: LocalizedModalContent = {
   title: {
-    es: '<strong>Omar</strong>',
+    es: 'Omar',
     fr: 'Omar',
     en: 'Omar',
   },
