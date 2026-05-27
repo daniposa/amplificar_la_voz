@@ -20,7 +20,7 @@ export const CHRONICLE_T3_07: LocalizedModalContent = {
   },
   contextInfo: {
     es: `<p>Lugar: Urabá, Antioquia</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): N/A</p><p>Actor armado: N/A</p>`,
-    fr: `<p>Lugar: Urabá, Antioquia</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): N/A</p><p>Actor armado: N/A</p>`,
-    en: `<p>Lugar: Urabá, Antioquia</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): N/A</p><p>Actor armado: N/A</p>`,
+    fr: `<p>Lieu : Urabá, Antioquia</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : N/A</p><p>Acteur armé : N/A</p>`,
+    en: `<p>Place: Urabá, Antioquia</p><p>Date: N/A</p><p>Victimizing act(s): N/A</p><p>Armed actor: N/A</p>`,
   },
 };
