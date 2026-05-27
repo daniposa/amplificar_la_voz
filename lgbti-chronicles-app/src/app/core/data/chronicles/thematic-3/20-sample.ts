@@ -176,7 +176,7 @@ White are the four candles, white are the four candles.<br>
       en: `<p><strong>Song</strong></p>
       <p><a href="https://youtu.be/u1tC3gmhjio?si=t7OV0anAhzFZ0ubl" target="_blank" rel="noopener noreferrer">YouTube</a></p>`,
     },
-    1: {
+    2: {
       es: `<p>Nota de ejemplo para la crónica T3-20.</p>`,
       fr: `<p><strong>Cantaoras Esperanza y Paz de Tumaco</strong></p>
       <p>Le groupe de chanteuses Esperanza y Paz del Pacífico Nariñense a été créé à Tumaco, Nariño. À travers la musique et le chant, les femmes recherchent leurs fils, leurs maris et leurs proches disparus. Cette pratique ancestrale leur permet d’exprimer leur douleur provoquée par l’absence constante de ceux qui ne sont plus parmi nous aujourd’hui.</p>
