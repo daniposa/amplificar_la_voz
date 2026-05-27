@@ -18,7 +18,7 @@ export const CHRONICLE_T3_32: LocalizedModalContent = {
       <p>Le Red Mariposas de Alas Nuevas Construyendo Futuro est un groupe de femmes qui défendent les droits et la vie à Buenaventura. Elles apportent leur soutien à d'autres femmes ayant subi des violences. Ils guérissent grâce au <i>comadreo</i>, à un rassemblement collectif et à leurs traditions ancestrales.</p>
       <p><a href="https://redmariposasakina.org/" target="_blank" rel="noopener noreferrer">Site officiel</a></p>`,
       en: `<p><strong>Red  Mariposas de Alas Nuevas</strong></p>
-      <p>Le Red Mariposas de Alas Nuevas Construyendo Futuro est un groupe de femmes qui défendent les droits et la vie à Buenaventura. Elles apportent leur soutien à d'autres femmes ayant subi des violences. Ils guérissent grâce au <i>comadreo</i>, à un rassemblement collectif et à leurs traditions ancestrales.</p>
+      <p>Red Mariposas de Alas Nuevas: The Red Mariposas de Alas Nuevas Construyendo Futuro is a group of women who defend rights and life in Buenaventura. They support other women who have experienced situations of violence. They heal through <i>comadreo</i>, collective gathering, and their ancestral traditions.</p>
       <p><a href="https://redmariposasakina.org/" target="_blank" rel="noopener noreferrer">Official website</a></p>`,
     },
   },
