@@ -182,7 +182,7 @@ White are the four candles, white are the four candles.<br>
       <p>Le groupe de chanteuses Esperanza y Paz del Pacífico Nariñense a été créé à Tumaco, Nariño. À travers la musique et le chant, les femmes recherchent leurs fils, leurs maris et leurs proches disparus. Cette pratique ancestrale leur permet d’exprimer leur douleur provoquée par l’absence constante de ceux qui ne sont plus parmi nous aujourd’hui.</p>
      <p><a href="https://www.comisiondelaverdad.co/cantar-la-ausencia" target="_blank" rel="noopener noreferrer">Comisión de la Verdad</a></p>`,
       en: `<p><strong>Cantaoras Esperanza y Paz de Tumaco</strong></p>
-      <p>LThe group of women singers Esperanza y Paz del Pacífico Nariñense was created in Tumaco, Nariño. Through music and singing, the women search for their disappeared sons, husbands, and relatives. This ancestral practice allows them to express the pain caused by the daily absence of those who are no longer with them.</p>
+      <p>The group of women singers Esperanza y Paz del Pacífico Nariñense was created in Tumaco, Nariño. Through music and singing, the women search for their disappeared sons, husbands, and relatives. This ancestral practice allows them to express the pain caused by the daily absence of those who are no longer with them.</p>
      <p><a href="https://www.comisiondelaverdad.co/cantar-la-ausencia" target="_blank" rel="noopener noreferrer">Comisión de la Verdad</a></p>`,
     },
   },
