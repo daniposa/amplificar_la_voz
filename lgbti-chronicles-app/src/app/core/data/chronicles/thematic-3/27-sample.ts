@@ -39,8 +39,8 @@ export const CHRONICLE_T3_27: LocalizedModalContent = {
     },
   },
   contextInfo: {
-    es: `<p>Lugar: Chiquinquirá - Bucaramanga</p><p>Año: 2000-2008</p><p>Hecho(s) victimizante(s): ejecuciones extrajudiciales</p><p>Actor armado: Estado</p>`,
-    fr: `<p>Lieu : Chiquinquirá - Bucaramanga</p><p>Date : 2000-2008</p><p>Fait(s) victimisant(s) : exécutions extrajudiciaires</p><p>Acteur armé : l’État</p>`,
-    en: `<p>Place: Chiquinquirá - Bucaramanga</p><p>Date: 2000-2008</p><p>Victimizing act(s): extrajudicial executions</p><p>Armed actor: State forces</p>`,
+    es: `<p>Lugar: Soacha y Bogotá</p><p>Año: 2000-2008</p><p>Hecho(s) victimizante(s): ejecuciones extrajudiciales</p><p>Actor armado: Estado</p>`,
+    fr: `<p>Lieu : Soacha et Bogotá - Bucaramanga</p><p>Date : 2000-2008</p><p>Fait(s) victimisant(s) : exécutions extrajudiciaires</p><p>Acteur armé : l’État</p>`,
+    en: `<p>Place: Soacha and Bogotá - Bucaramanga</p><p>Date: 2000-2008</p><p>Victimizing act(s): extrajudicial executions</p><p>Armed actor: State forces</p>`,
   },
 };
