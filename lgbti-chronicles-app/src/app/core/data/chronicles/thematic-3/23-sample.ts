@@ -32,16 +32,10 @@ export const CHRONICLE_T3_23: LocalizedModalContent = {
 		<p><small>A <i>finca</i> in Antioquia</small></p>
 		<p>In Colombia, “finca” is a term commonly used to refer to a house, regardless of its size, located in a rural area. A <i>finca</i> can range from a small country house to a large house with its own plantation. These agricultural plantations can be large expanses of land intended to produce a significant profit, or they can be small vegetable gardens. They may also be empty plots of land that serve no particular purpose, except to provide a place to spend time outside of any city or village.</p>`,
     },
-  },
+},
   contextInfo: {
     es: `<p>Lugar: Santander de Quilichao, Cauca</p><p>Año: 2007</p><p>Hecho(s) victimizante(s): asesinato, expropiación de tierras</p><p>Actor armado: Bloque Calima de las AUC</p>`,
     fr: `<p>Lieu : Santander de Quilichao, Cauca</p><p>Date : 2007</p><p>Fait(s) victimisant(s) : assassinat, dépossession de terres</p><p>Acteur armé : Bloque Calima des AUC</p>`,
-    en: `<p>Place: Santander de Quilichao, Cauca</p><p>Date: 2007</p><p>Victimizing act(s): sexual violence</p><p>Armed actor: 32nd Front of FARC-EP</p>`,
-  },
-};
-  contextInfo: {
-    es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): N/A</p><p>Actor armado: N/A</p>`,
-    fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : N/A</p><p>Acteur armé : N/A</p>`,
-    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): N/A</p><p>Armed actor: N/A</p>`,
+    en: `<p>Place: Santander de Quilichao, Cauca</p><p>Date: 2007</p><p>Victimizing act(s): sexual violence</p><p>Armed actor: Bloque Calima of the AUC</p>`,
   },
 };
