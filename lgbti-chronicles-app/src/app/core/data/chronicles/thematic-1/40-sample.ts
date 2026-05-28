@@ -2,24 +2,29 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_40: LocalizedModalContent = {
   title: {
-    es: 'Crónica T1-40 (muestra)',
-    fr: 'Chronique T1-40 (échantillon)',
-    en: 'Chronicle T1-40 (sample)',
+    es: 'Julieta',
+    fr: 'Julieta',
+    en: 'Julieta',
   },
   rawText: {
-    es: 'Texto de muestra para la crónica T1-40. {1}Frase destacada{/1} con una nota de ejemplo.',
-    fr: `Texte d’échantillon pour la chronique T1-40. {1}Phrase mise en évidence{/1} avec une note \
-d’exemple.`,
-    en: 'Sample text for chronicle T1-40. {1}Highlighted phrase{/1} with an example tooltip.',
+    es: `<p>«Cuando le preguntan a uno: “¿Por qué usted, usted, ¡mujer!, por qué...?”, ya ahí empezamos. Bueno, ¿por qué no le preguntan eso a los camaradas, por ejemplo? Por qué a los hombres no se les cuestiona o no se les pregunta por lo masculino y lo insurgente, o sea, qué significa ser hombre en la insurgencia, o por lo menos yo no lo he visto [...]».</p><p><i>Mujeres excombatientes del EPL</i></p>`,
+    fr: `<p>« Quand on nous demande : “mais pourquoi vous, vous, une femme ! Pourquoi ?” On se dit que c’est toujours la même question ; et pourquoi on ne pose pas cette même question aux camarades hommes ? Pourquoi on ne met pas en question leur masculinité et leur insurrection, c’est que, on ne leur demande pas sur leur rôle en tant qu’homme dans l'insurrection, je n’ai jamais vu ça. »</p><p><i>Femmes ex-combattantes du <b><u>{1}EPL{/1}</u></b></i></p>`,
+    en: `<p>“When you got asked: ‘Why are you here?!..  you, a woman!, why...?’. That’s when everything begins.  Well, so why aren’t the male comrades asked about that too, for example? Why are men never questioned or asked about what it means to be a man or to be insurgent... I mean, what does it mean to be a man in the insurgency, or at least I have never seen that happen.[...].”</p><p><i><b><u>{1}EPL{/1}</u></b> former female combatant</i></p>`,
   },
   tooltips: {
     1: {
-      es: '<p>Nota de ejemplo para la crónica T1-40.</p>',
-      fr: '<p>Note d’exemple pour la chronique T1-40.</p>',
-      en: '<p>Sample tooltip for chronicle T1-40.</p>',
+      es: `<p>Nota de ejemplo para la crónica.</p>`,
+      fr: `<p><strong>EPL</strong></p>
+      <p>L'EPL (Ejército Popular de Liberación) est un groupe armé colombien issu d'un mouvement de guérilla marxiste en 1967, mais qui survit aujourd'hui principalement comme une faction dissidente qui ne s'est pas démobilisée en 1991 et qui opère désormais comme une organisation criminelle impliquée dans des activités telles que le trafic de drogue et l'extorsion, en particulier dans la région du Catatumbo.</p>
+      <p><a href="https://insightcrime.org/colombia-organized-crime-news/epl/" target="_blank" rel="noopener noreferrer">InSight Crime</a></p>`,
+      en: `<p><strong>EPL</strong></p>
+      <p>The EPL (Ejército Popular de Liberación) is a Colombian armed group that originated as a Marxist guerrilla movement in 1967, but today survives mainly as a dissident faction that did not demobilize in 1991 and now operates as a criminal organization involved in activities such as drug trafficking and extortion, particularly in the Catatumbo region.</p>
+      <p><a href="https://insightcrime.org/colombia-organized-crime-news/epl/" target="_blank" rel="noopener noreferrer">InSight Crime</a></p>`,
     },
   },
   contextInfo: {
-    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+    es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): violencia de género</p><p>Actor armado: N/A</p>`,
+    fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : violence sexiste</p><p>Acteur armé : N/A</p>`,
+    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): gender-based violence</p><p>Armed actor: N/A</p>`,
   },
 };
