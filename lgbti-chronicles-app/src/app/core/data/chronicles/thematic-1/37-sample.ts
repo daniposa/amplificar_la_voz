@@ -1,27 +1,35 @@
 import type { LocalizedModalContent } from '../../../models/content.model';
 
-export const CHRONICLE_T1_37: LocalizedModalContent = {
+export const CHRONICLE_T3_22: LocalizedModalContent = {
   title: {
-    es: 'Crónica T1-37 (muestra)',
-    fr: 'Chronique T1-37 (échantillon)',
-    en: 'Chronicle T1-37 (sample)',
+    es: 'Amalia',
+    fr: 'Amalia',
+    en: 'Amalia',
   },
   rawText: {
-    es: 'Texto de muestra para la crónica T1-37. {1}Frase destacada{/1} con una nota de ejemplo.',
-    fr: `Texte d’échantillon pour la chronique T1-37. {1}Phrase mise en évidence{/1} avec une note \
-d’exemple.`,
-    en: 'Sample text for chronicle T1-37. {1}Highlighted phrase{/1} with an example tooltip.',
+    es: `<p>«Lo mío fue el 17, al amanecer del 18. A la mayoría de las mujeres nos cogieron porque ellos decían que nosotras éramos mujeres de milicianos, de guerrilleros, cuando no era así. Sí, fuimos varias mujeres violadas; mujeres que perdieron los niños de tres meses, cuatro meses de embarazo, por las golpizas de la violación perdieron los niños [...]. Ellos [los  paramilitares] aparecieron con el ejército allá. Aparecieron por el lado de aquí de la carretera. Entraron por dos vías: por agua y por la carretera principal que sale de Mapiripán a Villavicencio. Eran muchos tipos… Yo estaba en una residencia porque estaba enferma de paludismo y hepatitis.Y el cuento de ellos fue que yo era una guerrillera que estaba en recuperación por un aborto, cuando yo estaba era que me moría de un paludismo que tenía,  ¡horrible!, y entonces ellos me tildaban a mí así. Y yo estaba ahí en la residencia de Miguel Guaviare y ahí fue donde nos tumbaron la puerta, a mí me rompieron la piyama con una puñalada. Ahí fue cuando me cortaron todo esto de acá, vea todo esto, acá tengo un cuchillazo que me metieron en la cara, aquí, en el seno también, casi me quitan el pezón. Perdón le muestro. Estoy toda, toda acuchillada en las piernas; aquí, al pie de la columna, me mandaron un navajazo que casi me deja inválida, en la espalda. En la parte anal y la vagina a mí me unieron, a mí me... ¡La violación mía fue muy desastrosa! El pene me lo introdujeron en la boca, me restregaban esa vaina por acá, no, eso fue horrible. ¡Horrible! Es que yo no entiendo hasta dónde esos animales llegan, ¿cómo hacen las dos cosas a la  vez?, ¿cómo acuchillan y le hacen sexo a una mujer? ¿Qué es eso? Es lo que yo nunca en mi vida, yo creo que nunca, voy a entender. No sé, son unos animales, son... son cuerpos incorporados en el diablo, no sé yo.</p>   
+
+<p>»¡Una memoria histórica inolvidable! Pasaban las motosierras sobre las mujeres embarazadas, por la barriga, pa cortales los niños, pa matarlas a ellas. En la calle principal usté encontraba cabezas de gente, manos, pies, brazos, ahí descuartizadas; cabezas en la orilla del río, niños muertos, niños en la barriga, mujeres muertas y con los niños así floreados por fuera, cortados por la mitad. Y eso es lo que yo digo: ¡Dios mío!, ¿dónde está la justicia?»</p> 
+
+<p><i>Mujer, indígena, cocinera</i></p>`,
+    fr: `<p>« Ce qui m'est arrivé, c'était le 17, à l’aube du 18. Pour la plupart des femmes qu’ils ont emmenées ils les ont choisies parce qu’ils disaient que nous étions les petites amies des miliciens, des guérilleros, ce qui n'était pas vrai. Oui, plusieurs d'entre nous, des femmes, ont été violées ; des femmes qui ont perdu des enfants de trois mois, de quatre mois de grossesse, à cause des coups subis pendant le viol, elles ont perdu les enfants [...]. Ils [les paramilitaires] sont arrivés avec l’armée là-bas. Ils sont apparus de ce côté-là de la route. Ils sont entrés par deux voies : par l'eau et par la route principale qui va du village de Mapiripán à la ville de Villavicencio. Ils étaient nombreux… Moi, j’étais dans un hébergement parce que j’étais malade avec le paludisme et l’hépatite. Et le bobard qu’ils ont raconté, c’était que j’étais une guérillera en voie de guérison à cause d’un avortement. Alors qu'en vérité, je survivais à peine à ce terrible paludisme que j'avais ! Et c'est comme ça qu'ils m'ont étiquetée. Et moi, j’étais là, dans l'hébergement de Miguel Guaviare, à ce moment-là ils ont brisé la porte, ils ont déchiré mon pyjama d'un coup de couteau. C'est là qu'ils m'ont coupée partout ici, regardez tout ça, c'est ici qu'ils m'ont poignardée au visage, ici aussi, et dans le sein. Ils m'ont presque arraché le mamelon : regardez ! Je suis poignardée de partout aux jambes ; ici, au pied de la colonne, ils m’ont donné un coup de poignard qui a failli me rendre invalide, dans le dos.  Dans la partie anale et dans le vagin, j’ai été suturé… ils m’ont… Mon viol a été vraiment horrible ! Le pénis, ils me l’ont enfoncé dans la bouche, ils me frottaient ce truc-là par ici, non, c’était affreux. Horrible ! Moi, je ne comprends pas jusqu’où ces bêtes peuvent aller, comment ils font les deux choses à la fois ?  Comment ils peuvent poignarder une femme et coucher avec elle ? Qu’est-ce que c’est que ça ? Ça, jamais de ma vie, je crois que jamais je vais le comprendre. Je ne sais pas, ce sont des bêtes, ce sont… ils ont le diable au corps, je ne sais pas.</p>      
+
+<p>« Un souvenir traumatisant ! Ils passaient les tronçonneuses sur les femmes enceintes, sur le ventre, pour leur couper les enfants et pour les tuer, elles. Dans la rue principale, on trouvait des têtes de gens, des mains, des pieds, des bras, là, démembrés ; des têtes au bord du fleuve, des enfants morts, des enfants dans le ventre, des femmes mortes avec les enfants arrachés, coupés en deux. Et c'est ce que je dis : Mon Dieu, où est la justice ? »</p>
+
+<p><i>Femme, autochtone, cuisinière</i></p>`,
+    en: `<p>“What happened to me took place on the 17th, in the early morning of the 18th. Most of us women were taken because they said we were the guerilla members’ girlfriends, which wasn’t true. Yes, several of us were raped. Some women lost their babies when they were three months, four months pregnant—they lost them due to the beatings they endured during the rapes... They [the paramilitary forces] showed up there with the army. They showed up over that side of the road. They entered through two routes: via water and via the main road that goes from the town of Mapiripán to Villavicencio. There were a lot of them… I was staying at a shelter because I was sick with malaria and hepatitis. And the story they made up was that I was a guerrilla recovering from an abortion. When the truth is that I was barely surviving that awful malaria I had! That was horrible! But that’s how they labeled me. I was there at the Miguel Guaviare’s shelter house when they kicked down our door. They tore my pajamas off with a knife stab. That’s when they cut me all over here, look at all this. This is where they slashed my face, right here. And on my breasts too, they almost tore my nipple off. Sorry, let me show you. I have stab wounds all over my legs. Here, right at the base of my spine, they slashed me with a knife in the back, so hard that it nearly left me paralyzed. I had to get stitches between the anal and vaginal area. I was… The rape I went through was devastating. They forced their penis into my mouth, rubbed that thing all over me, it was horrible. Horrible! I just don’t understand how those animals could go that far. How can they do both things at once? How can they stab and have sex with a woman at the same time? What even is that? It’s something I don’t think I’ll ever, ever understand. I don’t know, they’re animals … they’re bodies possessed by the devil; I don’t even know.</p>
+    <p>“An unforgettable piece of history! They ran chainsaws over pregnant women, right across their bellies, so they’d cut their babies up, to kill the women. On main street, you would find people’s heads, hands, feet, arms all chopped up just lying there; heads by the riverbanks, dead children, children still inside the womb, dead women with their babies ripped out, cut in half. And that’s why I say: My God, where is the justice?”</p><p><i>Woman, Indigenous, cook</i></p>`,
   },
   tooltips: {
     1: {
-      es: '<p>Nota de ejemplo para la crónica T1-37.</p>',
-      fr: '<p>Note d’exemple pour la chronique T1-37.</p>',
-      en: '<p>Sample tooltip for chronicle T1-37.</p>',
+      es: `<p>Nota de ejemplo para la crónica T3-22.</p>`,
+      fr: `<p>Note d’exemple pour la chronique T3-22.</p>`,
+      en: `<p>Sample tooltip for chronicle T3-22.</p>`,
     },
   },
   contextInfo: {
-    es: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
-    fr: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
-    en: '<p>year: 2025</p><p>actor: FARC EP</p><p>location: Arauca - Arauquita</p>',
+    es: `<p>Lugar: Mapiripán</p><p>Año: 1997</p><p>Hecho(s) victimizante(s): violencia sexual, masacre</p><p>Actor armado: paramilitares</p>`,
+    fr: `<p>Lieu : Mapiripán</p><p>Date : 1997</p><p>Fait(s) victimisant(s) : violence sexuelle, massacre</p><p>Acteur armé : paramilitaires</p>`,
+    en: `<p>Place: Mapiripán</p><p>Date: 1997</p><p>Victimizing act(s): sexual violence, massacre</p><p>Armed actor: paramilitary group</p>`,
   },
 };
