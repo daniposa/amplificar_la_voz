@@ -13,9 +13,9 @@ export const CHRONICLE_T1_36: LocalizedModalContent = {
   },
   tooltips: {
     1: {
-      es: `<p>Nota de ejemplo para la crónica T3-21.</p>`,
-      fr: `<p>Note d’exemple pour la chronique T3-21.</p>`,
-      en: `<p>Sample tooltip for chronicle T3-21.</p>`,
+      es: `<p>Nota de ejemplo para la crónica </p>`,
+      fr: `<p>Note d’exemple pour la chronique </p>`,
+      en: `<p>Sample tooltip for chronicle </p>`,
     },
   },
   contextInfo: {
