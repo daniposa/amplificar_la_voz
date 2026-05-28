@@ -2,14 +2,52 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T3_25: LocalizedModalContent = {
   title: {
-    es: 'Julieta',
-    fr: 'Julieta',
-    en: 'Julieta',
+    es: 'Sa-ver-se',
+    fr: 'Se (sa)voir',
+    en: 'Sa-ver-se',
   },
   rawText: {
-    es: `<p>«Cuando le preguntan a uno: “¿Por qué usted, usted, ¡mujer!, por qué...?”, ya ahí empezamos. Bueno, ¿por qué no le preguntan eso a los camaradas, por ejemplo? Por qué a los hombres no se les cuestiona o no se les pregunta por lo masculino y lo insurgente, o sea, qué significa ser hombre en la insurgencia, o por lo menos yo no lo he visto [...]».</p><p><i>Mujeres excombatientes del EPL</i></p>`,
-    fr: `<p>« Quand on nous demande : “mais pourquoi vous, vous, une femme ! Pourquoi ?” On se dit que c’est toujours la même question ; et pourquoi on ne pose pas cette même question aux camarades hommes ? Pourquoi on ne met pas en question leur masculinité et leur insurrection, c’est que, on ne leur demande pas sur leur rôle en tant qu’homme dans l'insurrection, je n’ai jamais vu ça. »</p><p><i>Femmes ex-combattantes du <b><u>{1}EPL{/1}</u></b></i></p>`,
-    en: `<p>“When you got asked: ‘Why are you here?!..  you, a woman!, why...?’. That’s when everything begins.  Well, so why aren’t the male comrades asked about that too, for example? Why are men never questioned or asked about what it means to be a man or to be insurgent... I mean, what does it mean to be a man in the insurgency, or at least I have never seen that happen.[...].”</p><p><i><b><u>{1}EPL{/1}</u></b> former female combatant</i></p>`,
+    es: `<p><i>Madres errantes gritando bajo tierra,<br> 
+escarbando entre los huesos unos dientes<br> 
+que nombren su apellido,<br> 
+huesos max-hilares que hilen un olor ya conocido,<br> 
+un recuerdo añejado de dolor ausente,<br> 
+
+un entierro de ataúd vacío.</i></p> 
+
+  
+
+<p>Bustamante Morales</p>`,
+    fr: `<p><i>Mères errantes criant vers les entrailles de la terre,<br> 
+
+parmi les os remués, des dents trouvées,<br> 
+
+des dents qui portent leurs noms,<br> 
+
+des os filant l’odeur connue,<br> 
+
+une vieille mémoire de douleur absente,<br> 
+
+une sépulture avec un corps qui manque.</i></p> 
+
+  
+
+<p>Bustamante Morales</p>`,
+    en: `<p><i>Mothers who scream beneath the earth<br>  
+
+digging the bones for some teeth<br>  
+
+that call out their names,<br>  
+
+threads of jaws knitting a smell already known,<br>  
+
+a memory aged with absent pain,<br> 
+
+a funeral with an empty coffin.</i></p> 
+
+  
+
+<p>Bustamante Morales</p>`,
   },
   tooltips: {
     1: {
@@ -23,8 +61,8 @@ export const CHRONICLE_T3_25: LocalizedModalContent = {
     },
   },
   contextInfo: {
-    es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): violencia de género</p><p>Actor armado: N/A</p>`,
-    fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : violence sexiste</p><p>Acteur armé : N/A</p>`,
-    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): gender-based violence</p><p>Armed actor: N/A</p>`,
+    es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): ejecuciones extrajucidiales</p><p>Actor armado: N/A</p>`,
+    fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : exécutions extrajudiciaires</p><p>Acteur armé : N/A</p>`,
+    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): extrajudicial executions</p><p>Armed actor: N/A</p>`,
   },
 };
