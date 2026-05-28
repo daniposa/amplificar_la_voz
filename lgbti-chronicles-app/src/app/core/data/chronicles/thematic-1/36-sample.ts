@@ -1,6 +1,6 @@
 import type { LocalizedModalContent } from '../../../models/content.model';
 
-export const CHRONICLE_T3_21: LocalizedModalContent = {
+export const CHRONICLE_T1_36: LocalizedModalContent = {
   title: {
     es: 'Leidy',
     fr: 'Leidy',
