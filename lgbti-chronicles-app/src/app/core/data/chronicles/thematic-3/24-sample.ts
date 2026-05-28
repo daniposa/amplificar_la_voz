@@ -13,7 +13,7 @@ export const CHRONICLE_T3_24: LocalizedModalContent = {
   },
   tooltips: {
     1: {
-      es: `<p>Nota de ejemplo para la crónica T3-41.</p>`,
+      es: `<p>Nota de ejemplo para la crónica</p>`,
       fr: `a`,
       en: `a`,
     },
