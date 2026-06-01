@@ -63,7 +63,7 @@ en Wikipedia</a>.</p>
   },
   contextInfo: {
     es: '<p>Lugar: Arauquita, Arauca</p><p>Año: 2004-2005</p><p>Hecho(s) victimizante(s): abuso físico, tortura</p><p>Actor armado: FARC-EP</p>',
-    fr: '<p>Lieu : Arauquita, Arauca</p><p>Date : 2004-2005</p><p>Fait(s) victimisant(s) : violence physique, torture</p><p>Acteur armé : FARC-EP</p>',
-    en: '<p>Place: Arauquita, Arauca</p><p>Date: 2004-2005</p><p>Victimizing act(s): physical abuse, torture</p><p>Armed actor: FARC-EP</p>',
+    fr: '<p>Lieu : Arauquita, Arauca</p><p>Date : 2004-2005</p><p>Fait(s) victimisant(s) : violence physique, torture</p><p>Acteur armé : <b>{1}FARC-EP{/1}</b></p>',
+    en: '<p>Place: Arauquita, Arauca</p><p>Date: 2004-2005</p><p>Victimizing act(s): physical abuse, torture</p><p>Armed actor: <b>{1}FARC-EP{/1}</b></p>',
   },
 };
