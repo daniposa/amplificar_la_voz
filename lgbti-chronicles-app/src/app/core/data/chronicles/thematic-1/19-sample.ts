@@ -16,29 +16,29 @@ Se les arrebató la felicidad y los condenaron al olvido.<br>
 ¿Dónde están? ¿Quiénes son esos hombres<br> 
 que se los llevaron?<br> 
 ¿O acaso ya olvidaron que también<br> 
-eran seres humanos?</i></p><p><i>Mujer, mestiza, urbana</i></p>
+eran seres humanos?</i></p><p>Mujer, mestiza, urbana</p>
 `,
     fr: `<p><i>Quel deuil je ressens en sachant<br>   
 Que tous ces êtres ont disparus,<br>  
-Sans rien savoir d’eux, ensevelis sous les </i><b><u>{1}escombreras{/1}</u></b><br>
+Sans rien savoir d’eux, ensevelis sous les </i><b>{1}escombreras{/1}</b><br>
 <i>Quelle tristesse je ressens,<br>   
 En me demandant s'ils ont faim ou froid.<br>  
 Leur bonheur leur a été arraché, et on les a condamnés à être oubliés.<br>   
 Où sont-ils ? Qui sont ces hommes<br>    
 qui les ont enlevés ?<br>  
 Ou ont-ils déjà oublié<br>   
-Qu'ils étaient, eux aussi, des êtres humains ?</i></p><p><i>Femme, métisse, citadine</i></p>
+Qu'ils étaient, eux aussi, des êtres humains ?</i></p><p>Femme, métisse, citadine</p>
 `,
     en: `<p><i>How much pain I feel to know<br>
 of so many disappeared ones<br> 
-knowing nothing from them, buried in the </i><b><u>{1}escombreras{/1}</u></b>.<br> 
+knowing nothing from them, buried in the </i><b>{1}escombreras{/1}</b>.<br> 
 <i>How much sorrow I feel to think,<br> 
 if they are hungry or if they are cold.<br> 
 Their happiness was ripped out of them, and they were sentenced to be forgotten.<br> 
 Where are they? Who are those men who<br>  
 took them away?<br> 
 Or have they already forgotten that they<br> 
-were human beings too?</i></p><p><i>Woman, mestiza, urbanite</i></p>
+were human beings too?</i></p><p>Woman, mestiza, urbanite</p>
 `,
   },
   tooltips: {
