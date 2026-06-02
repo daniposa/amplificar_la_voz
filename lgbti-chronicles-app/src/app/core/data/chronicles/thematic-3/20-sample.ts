@@ -7,7 +7,7 @@ export const CHRONICLE_T3_20: LocalizedModalContent = {
     en: 'Cantaoras Esperanza y Paz',
   },
   rawText: {
-    es: `<p>Levanten las voces mujeres, música para resistir y no olvidar</p> 
+    es: `<p><b>{1}Levanten las voces mujeres, música para resistir y no olvidar{/1}</b></p> 
 
 <p><i>Sabios son, porque enseñan todos sus conocimientos<br>  
 
@@ -57,7 +57,7 @@ Blancas son las cuatro velas, Blancas son las cuatro velas.<br>
 
 (Avemaría purísima).</i></p>
 <p>Agrupación musical Plu con Pla y las Cantaoras Esperanza y Paz de Tumaco</p>`,
-    fr: `<p><b><u>{1}Levanten las voces mujeres, música para resistir y no olvidar{/1}</b></u> [Femmes, faites entendre vos voix, musique pour résister et ne pas oublier]</p>   
+    fr: `<p><b>{1}Levanten las voces mujeres, música para resistir y no olvidar{/1}</b> [Femmes, faites entendre vos voix, musique pour résister et ne pas oublier]</p>   
 
 <p><i>Ils sont sages, ils partagent tout leur savoir<br>   
 
@@ -111,8 +111,8 @@ Blanches sont les quatre bougies, blanches sont les quatre bougies.<br>
 
 (Avemaría purísima).</i></p> 
 
- <p>Groupe musical Plu con Pla et les <b><u>{2}Cantaoras Esperanza y Paz de Tumaco{/2}</b></u></p>`,
-    en: `<p><b><u>{1}Levanten las voces mujeres, música para resistir y no olvidar{/1}</b></u> [Raise your voices, women, music to resist and not forget]</p>   
+ <p>Groupe musical Plu con Pla et les <b>{2}Cantaoras Esperanza y Paz de Tumaco{/2}</b></p>`,
+    en: `<p><b>{1}Levanten las voces mujeres, música para resistir y no olvidar{/1}</b> [Raise your voices, women, music to resist and not forget]</p>   
 
 <p><i>They are wise, for they teach all their knowledge,<br>  
 
@@ -166,24 +166,25 @@ White are the four candles, white are the four candles.<br>
 
 (Avemaría purísima).</i></p> 
 
-<p>Musical group Plu con Pla and <b><u>{2}Cantaoras Esperanza y Paz de Tumaco{/2}</b></u></p>`,
+<p>Musical group Plu con Pla and <b>{2}Cantaoras Esperanza y Paz de Tumaco{/2}</b></p>`,
   },
   tooltips: {
     1: {
-      es: `<p>Nota de ejemplo para la crónica T3-20.</p>`,
+      es: `<p><strong>Canción</strong></p>
+      <p><a href="https://web.archive.org/web/20260602135311/https://www.youtube.com/watch?si=t7OV0anAhzFZ0ubl&v=u1tC3gmhjio&feature=youtu.be" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
       fr: `<p><strong>Chanson</strong></p>
-      <p><a href="https://youtu.be/u1tC3gmhjio?si=t7OV0anAhzFZ0ubl" target="_blank" rel="noopener noreferrer">YouTube</a></p>`,
+      <p><a href="https://web.archive.org/web/20260602135311/https://www.youtube.com/watch?si=t7OV0anAhzFZ0ubl&v=u1tC3gmhjio&feature=youtu.be" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
       en: `<p><strong>Song</strong></p>
-      <p><a href="https://youtu.be/u1tC3gmhjio?si=t7OV0anAhzFZ0ubl" target="_blank" rel="noopener noreferrer">YouTube</a></p>`,
+      <p><a href="https://web.archive.org/web/20260602135311/https://www.youtube.com/watch?si=t7OV0anAhzFZ0ubl&v=u1tC3gmhjio&feature=youtu.be" target="_blank" rel="noopener noreferrer">YouTube video</a></p>`,
     },
     2: {
       es: `<p>Nota de ejemplo para la crónica T3-20.</p>`,
       fr: `<p><strong>Cantaoras Esperanza y Paz de Tumaco</strong></p>
       <p>Le groupe de chanteuses Esperanza y Paz del Pacífico Nariñense a été créé à Tumaco, Nariño. À travers la musique et le chant, les femmes recherchent leurs fils, leurs maris et leurs proches disparus. Cette pratique ancestrale leur permet d’exprimer leur douleur provoquée par l’absence constante de ceux qui ne sont plus parmi nous aujourd’hui.</p>
-     <p><a href="https://www.comisiondelaverdad.co/cantar-la-ausencia" target="_blank" rel="noopener noreferrer">Comisión de la Verdad</a></p>`,
+     <p><a href="https://web.archive.org/web/20260314170349/https://www.comisiondelaverdad.co/cantar-la-ausencia" target="_blank" rel="noopener noreferrer">Comisión de la Verdad</a></p>`,
       en: `<p><strong>Cantaoras Esperanza y Paz de Tumaco</strong></p>
       <p>The group of women singers Esperanza y Paz del Pacífico Nariñense was created in Tumaco, Nariño. Through music and singing, the women search for their disappeared sons, husbands, and relatives. This ancestral practice allows them to express the pain caused by the daily absence of those who are no longer with them.</p>
-     <p><a href="https://www.comisiondelaverdad.co/cantar-la-ausencia" target="_blank" rel="noopener noreferrer">Comisión de la Verdad</a></p>`,
+     <p><a href="https://web.archive.org/web/20260314170349/https://www.comisiondelaverdad.co/cantar-la-ausencia" target="_blank" rel="noopener noreferrer">Comisión de la Verdad</a></p>`,
     },
   },
   contextInfo: {
