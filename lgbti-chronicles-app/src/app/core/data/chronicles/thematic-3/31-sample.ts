@@ -16,10 +16,10 @@ export const CHRONICLE_T3_31: LocalizedModalContent = {
       es: `<p>Nota de ejemplo para la crónica T3-31.</p>`,
       fr: `<p><strong>El Costurero de Muejeres de Medellín</strong></p>
       <p>La construction de la mémoire implique la mise en jeu de scénarios, d'acteurs, de dispositifs et de paris qui, tout au long du processus, conduisent à de nouvelles relations sociales, à des transformations subjectives et à la reconstruction d'expériences dans des contextes de souffrance. Le Costurero Tejedoras por la Memoria (une sorte d'atelier de couture dédié à la mémoire) est un lieu où sont abordés les multiples dimensions de la mémoire, les droits des victimes et, plus généralement, les processus de justice transitionnelle.</p>
-      <p><a href="https://revistas.udea.edu.co/index.php/revistraso/article/view/338231" target="_blank" rel="noopener noreferrer">Source</a></p>`,
+      <p><a href="https://web.archive.org/web/20260127215239/https://revistas.udea.edu.co/index.php/revistraso/article/view/338231" target="_blank" rel="noopener noreferrer">Trabajo Social</a></p>`,
       en: `<p><strong>El Costurero de Muejeres de Medellín</strong></p>
       <p>The construction of memory implies bringing into play scenarios, actors, devices, and bets that along the process lead to new social relationships, subjective transformations, and the reconstruction of experiences in contexts of suffering. The Costurero Tejedoras por la Memoria (sort of a weavers’ sewing club for memory) is one of those places where multiple senses of memory, victims’ rights, and in general processes of transitional justice are managed.</p>
-      <p><a href="https://revistas.udea.edu.co/index.php/revistraso/article/view/338231" target="_blank" rel="noopener noreferrer">Source</a></p>`,
+      <p><a href="https://web.archive.org/web/20260127215239/https://revistas.udea.edu.co/index.php/revistraso/article/view/338231" target="_blank" rel="noopener noreferrer">Trabajo Social</a></p>`,
     },
   },
   contextInfo: {
