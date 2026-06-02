@@ -16,19 +16,19 @@ export const CHRONICLE_T3_28: LocalizedModalContent = {
       es: `<p>Nota de ejemplo para la crónica T3-26.</p>`,
       fr: `<p><strong>Mafapo</strong></p>
       <p>Les mères des faux positifs de Soacha et Bogotá (Mafapo) ont vu le jour en 2008, lorsqu'un petit groupe de femmes confrontées à l'indifférence de la police et à la stigmatisation des médias a commencé à se rendre compte que la mort de leurs fils suivait un schéma étrangement similaire : offres de travail temporaire, disparition soudaine et découverte ultérieure de leurs corps loin de chez eux, officiellement enregistrés comme guérilleros tués au combat. Leur douleur initiale s'est heurtée à un obstacle épistémique : chaque cas semblait isolé, masquant l'ampleur et le caractère systématique du crime. Ces femmes ont courageusement défié l'oppression d'État, non seulement en déposant des plaintes malgré les menaces, les représailles et la stigmatisation sociale généralisée, mais aussi en développant et en soutenant des formes de résistance épistémique.</p>
-<p><a href="https://erlacs.org/articles/11238/files/6876845e6d017.pdf" target="_blank" rel="noopener noreferrer">ERLACS</a></p>`,
+<p><a href="https://web.archive.org/web/20250810052057/https://erlacs.org/articles/11238/files/6876845e6d017.pdf" target="_blank" rel="noopener noreferrer">ERLACS</a></p>`,
       en: `<p><strong>Mafapo</strong></p>
       <p>The Mothers of False Positives of Soacha and Bogotá (Mafapo) emerged in 2008, when a small group of women – faced with police indifference and media stigma –began to realise that their sons’ deaths followed a disturbingly similar pattern: offers of temporary work, sudden disappearance, and the subsequent discovery of their bodies far from home, officially registered as guerrillas killed in combat. Their initial grief encountered an epistemic obstacle: each case appeared isolated, masking the magnitude and systematic nature of the crime. These women bravely challenged state-sponsored oppression – not only by filing complaints despite threats, reprisals, and widespread social stigma, but also by developing and sustaining forms of epistemic resistance.</p>
-<p><a href="https://erlacs.org/articles/11238/files/6876845e6d017.pdf" target="_blank" rel="noopener noreferrer">ERLACS</a></p>`,
+<p><a href="https://web.archive.org/web/20250810052057/https://erlacs.org/articles/11238/files/6876845e6d017.pdf" target="_blank" rel="noopener noreferrer">ERLACS</a></p>`,
     },
     2: {
       es: `<p>Nota de ejemplo para la crónica T3-26.</p>`,
       fr: `<p><strong>Unidas por la memoria</strong></p>
       <p>Rapport d’Unidas por la memoria présenté par l’Association des mères des « faux positifs » (Mafapo) à la Commission de vérité sur le processus qu’elles ont suivi au fil des ans dans leur lutte pour découvrir la vérité sur leurs parents.</p>
-      <p><a href="https://web.comisiondelaverdad.co/actualidad/historico-eventos/entrega-del-informe-unidas-por-la-memoria-y-la-verdad" target="_blank" rel="noopener noreferrer">Comisión de la verdad</a></p>`,
+      <p><a href="https://web.archive.org/web/20251208043927/https://web.comisiondelaverdad.co/actualidad/historico-eventos/entrega-del-informe-unidas-por-la-memoria-y-la-verdad" target="_blank" rel="noopener noreferrer">Comisión de la verdad</a></p>`,
       en: `<p><strong>Unidas por la memoria</strong></p>
       <p>Report submitted by the Association of Mothers of the "False Positives" (Mafapo) to the Truth Commission on the process they have carried out over the years in their struggle to uncover the truth about their relatives.</p>
-      <p><a href="https://web.comisiondelaverdad.co/actualidad/historico-eventos/entrega-del-informe-unidas-por-la-memoria-y-la-verdad" target="_blank" rel="noopener noreferrer">Comisión de la verdad</a></p>`,
+      <p><a href="https://web.archive.org/web/20251208043927/https://web.comisiondelaverdad.co/actualidad/historico-eventos/entrega-del-informe-unidas-por-la-memoria-y-la-verdad" target="_blank" rel="noopener noreferrer">Comisión de la verdad</a></p>`,
     },
   },
   contextInfo: {
