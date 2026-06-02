@@ -17,11 +17,11 @@ export const CHRONICLE_T3_33: LocalizedModalContent = {
       fr: `<p><strong><i>Páramo</i></strong></p>
       <p><img src="images/flotantes/paramo.avif" alt="Páramo" width="220"></p>
 <p><small>Une <i>páramo</i> en Colombie</small></p>
-<p><a href="https://colombia-travels.com/blog/tourism/paramo" target="_blank" rel="noopener noreferrer">Informations supplémentaires</a></p>`,
+<p><a href="https://web.archive.org/web/20260307152238/https://colombia-travels.com/blog/tourism/paramo" target="_blank" rel="noopener noreferrer">TERRA PANAMERICA</a></p>`,
       en: `<p><strong><i>Páramo</i></strong></p>
       <p><img src="images/flotantes/paramo.avif" alt="Páramo" width="220"></p>
 <p><small>A <i>páramo</i> in Colombia</small></p>
-<p><a href="https://colombia-travels.com/blog/tourism/paramo" target="_blank" rel="noopener noreferrer">More information</a></p>`,
+<p><a href="https://web.archive.org/web/20260307152238/https://colombia-travels.com/blog/tourism/paramo" target="_blank" rel="noopener noreferrer">TERRA PANAMERICA</a></p>`,
     },
     2: {
       es: `<p>Nota de ejemplo para la crónica T3-33.</p>`,
