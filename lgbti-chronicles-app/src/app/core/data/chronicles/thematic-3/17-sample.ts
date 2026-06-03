@@ -41,7 +41,7 @@ Ya no más repetición, ¡ay, llora!, sana, corazón.<br>
 
 Ya yo me despido. Soy la Vigorosa, señores.<br> 
 
-Ya hemos resistido, ¡llora!, sigue tu camino</p> 
+Ya hemos resistido, ¡llora!, sigue tu camino</p></i> 
 
 <p><b>{1}Canción{/1}</b> compuesta por víctimas LGBTIQ+ del conflicto de Colombia e interpretada por la Vigorosa en el espacio de escucha con personas LGBTIQ+. Comisión de la Verdad, «Espacio de escucha: Desarmando el prejuicio», 22 de octubre de 2020, 1h 42min 10s</p>`,
     fr: `<p><i>La Colombie pleure pour moi, il y a de gens qui tuent.<br>  
@@ -113,7 +113,7 @@ No more repetition, oh we cry! Heart, please heal!<br>
 
 Now I say goodbye. I’m Vigorosa, ladies and gentlemen.<br>  
 
-We have resisted for a very long time, we cry! Go on your own way!</p> 
+We have resisted for a very long time, we cry! Go on your own way!</p></i> 
 
 <p><b>{1}Song{/1}</b> composed by LGBTIQ+ victims from Colombian conflict and performed by La Vigorosa at the listening space with LGBTIQ+ people: Truth Commission, «Espacio de escucha: Desarmando el prejuicio», October 22, 2020, 1h 42min 10s</p>`,
   },
