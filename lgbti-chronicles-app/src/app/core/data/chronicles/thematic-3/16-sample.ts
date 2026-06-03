@@ -28,8 +28,8 @@ export const CHRONICLE_T3_16: LocalizedModalContent = {
     },
   },
   contextInfo: {
-    es: `<p>Lugar: Bogotá</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): Amenaza, extorsión</p><p>Actor armado: AUC, guerrillas</p>`,
+    es: `<p>Lugar: Bogotá</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): amenazas, extorsión</p><p>Actor armado: AUC, guerrillas</p>`,
     fr: `<p>Lieu : Bogotá</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : menaces, extorsion</p><p>Acteur armé : paramilitaires (AUC) et guérilla</p>`,
-    en: `<p>Place: Bogotá</p><p>Date: N/A</p><p>Victimizing act(s): threat, extorsion</p><p>Armed actor: AUC, guerrilla </p>`,
+    en: `<p>Place: Bogotá</p><p>Date: N/A</p><p>Victimizing act(s): threats, extorsion</p><p>Armed actor: AUC, guerrilla </p>`,
   },
 };
