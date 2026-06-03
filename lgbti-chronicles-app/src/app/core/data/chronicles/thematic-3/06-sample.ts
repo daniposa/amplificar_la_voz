@@ -15,7 +15,6 @@ export const CHRONICLE_T3_06: LocalizedModalContent = {
     1: {
       es: `<p>Nota de ejemplo para la crónica T3-06.</p>`,
       fr: `<p><strong>Montería Diversa</strong></p>
-      <p>Fondation qui promeut l’inclusion, le respect, la reconnaissance et la manifestation des personnes LGBT.</p>
       <p><a href="https://web.archive.org/web/20260602132858/https://monteriadiversa.webnode.com.co/" target="_blank" rel="noopener noreferrer">Site officiel</a></p>`,
       en: `<p><strong>Montería Diversa</strong></p>
       <p><a href="https://web.archive.org/web/20260602132858/https://monteriadiversa.webnode.com.co/" target="_blank" rel="noopener noreferrer">Official website</a></p>`,
