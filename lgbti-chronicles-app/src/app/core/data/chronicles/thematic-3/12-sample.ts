@@ -89,7 +89,8 @@ Te garder près est comme parler,<br>  
 <p>Poème, auteur : Fabio, survivant et personnalité publique du mouvement LGBTIQ+</p>`,
     en: `<p><strong>Otherness is at the core of fears</strong></p>
 
-<p><i>An unknown and hoarse voice invades my ears: “We are going to kill you, motherfucker.”<br> 
+<p><i>An unknown and hoarse voice invades my ears:<br> 
+“We are going to kill you, motherfucker.”<br> 
 
 My response is reduced to zero.<br>  
 
@@ -97,15 +98,22 @@ Hours pass as if they were days,<br>
 
 Days pass as if they were months.<br>   
 
-Fear makes time pass by more slowly, a long and thick silence, the voice echoes in my head.<br>  
+Fear makes time pass by more slowly,<br>
+A long and thick silence,<br> 
+The voice echoes in my head.<br>  
 
 The phone rings again and again.<br>  
 
-I’m afraid to pick it up, it thunders four times.<br>   
+I’m afraid to pick it up,<br> 
+It thunders four times.<br>   
 
-I pick it up...The same voice, the same sentence: “We are going to kill you, motherfucker.”<br>  
+I pick it up...<br>
+The same voice, the same sentence:<br> 
+“We are going to kill you, motherfucker.”<br>  
 
-Quietly, I wait for you. When you are close, words are there, it makes me feel I’m still alive.</i></p> 
+Quietly, I wait for you.<br> 
+When you are close, words are there,<br> 
+It makes me feel I’m still alive.</i></p> 
 
 <p>Poem author: Fabio, survivor and public leading figure of LGBTIQ+ movement</p>`,
   },
