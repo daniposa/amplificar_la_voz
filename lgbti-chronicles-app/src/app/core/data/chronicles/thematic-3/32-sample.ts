@@ -14,15 +14,15 @@ export const CHRONICLE_T3_32: LocalizedModalContent = {
   tooltips: {
     1: {
       es: `<p><strong>Tamboreras del Cauca</strong></p>
-      <p><a href="https://web.archive.org/web/20260602141704/https://www.youtube.com/watch?v=FSIOYdpczQw" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=FSIOYdpczQw" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
       fr: `<p><strong>Tamboreras del Cauca</strong></p>
-      <p>Il s’agit d’une initiative collective qui partage leur chemin vers la guérison à travers l’usage de percussions et de pièces de théâtre, créée dans le contexte d’un programme psychologique, ce qui peut être un cas d’étude. Ce parcours prend en compte les dispositifs personnels, communautaires et culturels. Elle recourt à des rituels et à des métaphores qui pourraient servir de scénario pour comprendre le parcours des victimes et contribuer à un changement de cadre qui aborde les expériences traumatiques à partir des récits des victimes, en vue d'une guérison collective et, à terme, d'une réconciliation de la communauté.</p>
+      <p>Il s’agit d’une initiative collective de femmes qui partage leur chemin vers la guérison à travers l’usage de percussions et de pièces de théâtre, créée dans le contexte d’un programme psychologique. Ce parcours prend en compte les dispositifs personnels, communautaires et culturels.</p>
       <p><a href="https://web.archive.org/web/20260602141802/https://scispace.com/pdf/mapping-a-journey-of-healing-towards-reconciliation-the-4nhb8vj7o8.pdf" target="_blank" rel="noopener noreferrer">International Institue of Social Studies</a></p>
-      <p><a href="https://web.archive.org/web/20260602141704/https://www.youtube.com/watch?v=FSIOYdpczQw" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=FSIOYdpczQw" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
       en: `<p><strong>Tamboreras del Cauca</strong></p>
-      <p>It is a collective initiative that shares their healing journey through the use of drums and the performance of a theatre play, created in the context of a psychosocial program, can work as a case to explore. This journey takes into account personal, communal, and cultural devices. It makes use of rituals, and metaphors that could be the scenario to understand victims´ journey and the input to a framework shift that addresses trauma experiences from victims´ narratives towards collective healing and, eventually, community reconciliation.</p>
+      <p>It is a collective initiative of women that shares their healing journey through the use of drums and the performance of a theatre play, created in the context of a psychosocial program. This journey takes into account personal, communal, and cultural devices.</p>
       <p><a href="https://web.archive.org/web/20260602141802/https://scispace.com/pdf/mapping-a-journey-of-healing-towards-reconciliation-the-4nhb8vj7o8.pdf" target="_blank" rel="noopener noreferrer">International Institue of Social Studies</a></p>
-      <p><a href="https://web.archive.org/web/20260602141704/https://www.youtube.com/watch?v=FSIOYdpczQw" target="_blank" rel="noopener noreferrer">YouTube video</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=FSIOYdpczQw" target="_blank" rel="noopener noreferrer">YouTube video</a></p>`,
     },
     2: {
       es: `<p>Nota de ejemplo para la crónica T3-32.</p>`,
