@@ -35,7 +35,7 @@ export const CHRONICLE_T1_41: LocalizedModalContent = {
     },
   },
   contextInfo: {
-    es: `<p>Lugar: N/A</p><p>Año: 2021/A</p><p>Hecho(s) victimizante(s): machismo</p><p>Actor armado: N/A</p>`,
+    es: `<p>Lugar: N/A</p><p>Año: 2021</p><p>Hecho(s) victimizante(s): machismo</p><p>Actor armado: N/A</p>`,
     fr: `<p>Lieu : N/A</p><p>Date : 2021</p><p>Fait(s) victimisant(s) : machisme</p><p>Acteur armé : N/A</p>`,
     en: `<p>Place: N/A</p><p>Date: 2021</p><p>Victimizing act(s): <i>machismo</i></p><p>Armed actor: N/A</p>`,
   },
