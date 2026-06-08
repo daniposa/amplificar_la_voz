@@ -14,11 +14,11 @@ export const CHRONICLE_T3_09: LocalizedModalContent = {
   tooltips: {
     1: {
       es: `<p><strong>Bullerengue</strong></p>
-      <p><a href="https://web.archive.org/web/20260602133415/https://www.youtube.com/watch?v=bfnVouWZxTk&list=RDEM_sAQNLeN08KC0uRTiWSeUg&index=3" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=bfnVouWZxTk&list=RDEM_sAQNLeN08KC0uRTiWSeUg&index=3" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
       fr: `<p><strong><i>Bullerengue</i></strong></p>
-      <p><a href="https://web.archive.org/web/20260602133415/https://www.youtube.com/watch?v=bfnVouWZxTk&list=RDEM_sAQNLeN08KC0uRTiWSeUg&index=3" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=bfnVouWZxTk&list=RDEM_sAQNLeN08KC0uRTiWSeUg&index=3" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
       en: `<p><strong><i>Bullerengue</i></strong></p>
-      <p><a href="https://web.archive.org/web/20260602133415/https://www.youtube.com/watch?v=bfnVouWZxTk&list=RDEM_sAQNLeN08KC0uRTiWSeUg&index=3" target="_blank" rel="noopener noreferrer">YouTube Video</a></p>`,
+      <p><a href="https://www.youtube.com/watch?v=bfnVouWZxTk&list=RDEM_sAQNLeN08KC0uRTiWSeUg&index=3" target="_blank" rel="noopener noreferrer">YouTube Video</a></p>`,
     },
   },
   contextInfo: {
