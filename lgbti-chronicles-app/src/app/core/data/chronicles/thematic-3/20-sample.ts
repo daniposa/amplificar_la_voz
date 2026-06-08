@@ -63,11 +63,11 @@ Blancas son las cuatro velas, Blancas son las cuatro velas.<br>
 
 et nous refusons qu’ils doivent mourir pour ça...<br>  
 
-Nés avec cette passion et cette grande sa gesse ;<br>  
+Nés avec cette passion et cette grande sa gesse&nbsp;;<br>  
 
 ils protègent leur territoire, sacrifient la vie avec honneur.<br>  
 
-Femmes, faites entendre vos voix ! nous, les femmes vivantes ;<br>  
+Femmes, faites entendre vos voix ! nous, les femmes vivantes&nbsp;;<br>  
 
 faisons trembler la terre avec force et courage.<br>  
 
@@ -79,11 +79,11 @@ Si nous nous soutenons entre toutes, nous pouvons tant accomplir,<br>
 
 nous redonnons l’espoir, nous n’allons pas faiblir.<br>  
 
-Femmes, faites entendre vos voix ! nous, les femmes vivantes ;<br>  
+Femmes, faites entendre vos voix ! nous, les femmes vivantes&nbsp;;<br>  
 
 faisons trembler la terre avec force et courage.<br>  
 
-Face aux épreuves, pour transformer la réalité ;<br>  
+Face aux épreuves, pour transformer la réalité&nbsp;;<br>  
 
 je ne me tairai jamais, je dirai toujours la vérité.<br>  
 
