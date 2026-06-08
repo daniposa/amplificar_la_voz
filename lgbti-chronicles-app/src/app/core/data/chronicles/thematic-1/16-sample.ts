@@ -23,7 +23,7 @@ export const CHRONICLE_T1_16: LocalizedModalContent = {
   },
   contextInfo: {
     es: `<p>Lugar: Buenaventura, Valle del Cauca</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): secuestro, abuso verbal, humillación, amenazas, violencia sexual</p><p>Actor armado: paramilitares</p>`,
-    fr: `<p>Lieu : Buenaventura, Valle del Cauca</p><p>Date: N/A</p><p>Fait(s) victimisant(s) : enlèvement, violence verbale, humiliation, menaces, violence sexuelle</p><p>Acteur armé : les paramilitaires`,
+    fr: `<p>Lieu : Buenaventura, Valle del Cauca</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : enlèvement, violence verbale, humiliation, menaces, violence sexuelle</p><p>Acteur armé : les paramilitaires`,
     en: `<p>Place: Buenaventura, Valle del Cauca</p><p>Date: N/A</p><p>Victimizing act(s): kidnapping, verbal abuse, humiliation, threats, sexual violence</p><p>Armed actor: paramilitary members`,
   },
 };
