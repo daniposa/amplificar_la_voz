@@ -19,8 +19,8 @@ export const CHRONICLE_T1_32: LocalizedModalContent = {
     },
   },
   contextInfo: {
-    es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): desplazamiento forzado</p><p>Actor armado:N/A</p>`,
-    fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : déplacement forcé</p><p>Acteur armé :N/A</p>`,
-    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): forced displacement </p><p>Armed actor:N/A</p>`,
+    es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): desplazamiento forzado</p><p>Actor armado: N/A</p>`,
+    fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : déplacement forcé</p><p>Acteur armé : N/A</p>`,
+    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): forced displacement </p><p>Armed actor: N/A</p>`,
   },
 };
