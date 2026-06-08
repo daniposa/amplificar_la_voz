@@ -37,10 +37,10 @@ export const CHRONICLE_T1_09: LocalizedModalContent = {
       es: `<p>Nota de ejemplo para la crónica T1-09.</p>`,
       fr: `<p><strong>Indumil</strong></p>
 <p>Abréviation qui désigne l'Institut national de l'industrie militaire. Il supervise la production et le commerce d'armes, de munitions, d'engins explosifs et d'accessoires de dynamitage, en vertu d'un mandat constitutionnel.</p>
-<p><a href="https://web.archive.org/web/20251006085322/https://www.indumil.gov.co/" target="_blank" rel="noopener noreferrer">Indumil</a></p>`,
+<p><a href="https://web.archive.org/web/20251006085322/https://www.indumil.gov.co/" target="_blank" rel="noopener noreferrer">Site officiel</a></p>`,
       en: `<p><strong>Indumil</strong></p>
 <p>Abbreviation for the National Institute of Military Industry. It oversees the production and trading of weapons, ammunition, explosive devices, and blasting accessories, by constitutional mandate.</p>
-<p><a href="https://web.archive.org/web/20251006085322/https://www.indumil.gov.co/" target="_blank" rel="noopener noreferrer">Indumil</a></p>`,
+<p><a href="https://web.archive.org/web/20251006085322/https://www.indumil.gov.co/" target="_blank" rel="noopener noreferrer">Official website</a></p>`,
     },
   },
   contextInfo: {
