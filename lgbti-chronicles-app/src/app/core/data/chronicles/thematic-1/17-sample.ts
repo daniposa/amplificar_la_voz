@@ -31,8 +31,8 @@ export const CHRONICLE_T1_17: LocalizedModalContent = {
     },
   },
   contextInfo: {
-    es: `<p>Lugar: Puerto Boyacá</p><p>Año: 2001-2002</p><p>Hecho(s) victimizante(s): desaparición, homicidio</p><p>Actor armado: paramilitares</p>`,
-    fr: `<p>Lieu : Puerto Boyacá</p><p>Date : 2001-2002</p><p>Fait(s) victimisant(s) : disparition, homicide</p><p>Acteur armé : les paramilitaires</p>`,
-    en: `<p>Place: Puerto Boyacá</p><p>Date: 2001-2002</p><p>Victimizing act(s): abduction, murder</p><p>Armed actor: paramilitary members</p>`,
+    es: `<p>Lugar: Puerto Boyacá, Boyacá</p><p>Año: 2001-2002</p><p>Hecho(s) victimizante(s): desaparición, homicidio</p><p>Actor armado: paramilitares</p>`,
+    fr: `<p>Lieu : Puerto Boyacá, Boyacá</p><p>Date : 2001-2002</p><p>Fait(s) victimisant(s) : disparition, homicide</p><p>Acteur armé : les paramilitaires</p>`,
+    en: `<p>Place: Puerto Boyacá, Boyacá</p><p>Date: 2001-2002</p><p>Victimizing act(s): abduction, murder</p><p>Armed actor: paramilitary members</p>`,
   },
 };
