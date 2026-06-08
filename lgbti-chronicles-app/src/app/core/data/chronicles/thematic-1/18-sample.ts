@@ -15,7 +15,7 @@ export const CHRONICLE_T1_18: LocalizedModalContent = {
     1: {
       es: `<p>Nota de ejemplo para la crónica T1-18.</p>`,
       fr: `<p><strong>Massacre de Bahía Portete</strong></p>
-      <p></p>`,
+      <p>« Le massacre de Bahía Portete (dans la haute Guajira), effectué par un groupe de 40 à 50 paramilitaires, accompagné par des informateurs locaux et des individus avec des tenues militaires de l’armée colombienne, a laissé derrière lui au moins six victimes, dont 4 femmes, de nombreuses maisons et installations incendiées et une communauté terrorisée. Il s’est agi là d’une action préméditée de terreur et de subordination violente qui illustre de la manière la plus crue les intérêts, la lutte pour l’appropriation des ressources, les stratégies et les répertoires de violence utilisés par les paramilitaires pour peser sur la communauté Wayuu de cette région. »</p>`,
       en: `<p><strong>Bahía Portete massacre</strong></p>
       <p>On April 18, 2004, paramilitary forces of the Autodefensas Unidas de Colombia (AUC) attacked the Wayuu indigenous community of Bahía Portete, northern Guajira, killing at least eight people, forcing the entire population into displacement. Wayuu community is the largest indigenous group in Colombia in which women serve as spiritual authorities and, critically, as the sole individuals permitted to handle and prepare the bodies of the dead.  Colombian courts would later recognize the massacre as a crime against humanity and an act of ethnocide.</p>`,
     },
@@ -39,8 +39,8 @@ noreferrer">Wayuu Taya Foundation</a>.</p>`,
     },
   },
   contextInfo: {
-    es: `<p>Lugar: Bahía Portete</p><p>Año: 2004</p><p>Hecho(s) victimizante(s): Humillar las creencias ancestrales</p><p>Actor armado: paramilitares</p>`,
-    fr: `<p>Lieu : Bahía Portete</p><p>Date : 2004</p><p>Fait(s) victimisant(s): bafouer les croyances ancestrales des Wayuu</p><p>Acteur armé : les paramilitares</p>`,
-    en: `<p>Place: Bahía Portete</p><p>Date: 2004</p><p>Victimizing act(s): humiliate Wayuu ancestral beliefs</p><p>Armed actor: paramilitary members</p>`,
+    es: `<p>Lugar: Bahía Portete</p><p>Año: 2004</p><p>Hecho(s) victimizante(s): violencia de género, violencia sexual</p><p>Actor armado: paramilitares</p>`,
+    fr: `<p>Lieu : Bahía Portete</p><p>Date : 2004</p><p>Fait(s) victimisant(s) : violence sexiste, violence sexuelle</p><p>Acteur armé : les paramilitares</p>`,
+    en: `<p>Place: Bahía Portete</p><p>Date: 2004</p><p>Victimizing act(s): gender-based violence, sexual violence</p><p>Armed actor: paramilitary members</p>`,
   },
 };
