@@ -47,7 +47,7 @@ were human beings too?</i></p><p>Woman, mestiza, urbanite</p>
       fr: `<p><strong>Escombreras</strong></p>
       <p>La colline de la Comuna 13 est devenue le symbole de la tragédie des disparitions forcées, où les groupes armés se débarrassaient des corps de leurs victimes. Les familles des victimes de disparition se sont battues pour obtenir le droit de rechercher leurs proches sur ce site.</p>`,
       en: `<p><strong>Escombreras</strong></p>
-      <p>A hillside in Comuna 13 that became a symbol of the tragedy of forced disappearance, where armed groups disposed of the bodies of their victims. The families of the families of the disappearance victims fought for the right to search this site for their loved ones.</p>`,
+      <p>A hillside in Comuna 13 that became a symbol of the tragedy of forced disappearance, where armed groups disposed of the bodies of their victims. The families of the disappearance victims fought for the right to search this site for their loved ones.</p>`,
     },
   },
   contextInfo: {
