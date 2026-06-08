@@ -16,7 +16,7 @@ export const CHRONICLE_T3_33: LocalizedModalContent = {
       es: `<p>Nota de ejemplo para la crónica T3-33.</p>`,
       fr: `<p><strong><i>Páramo</i></strong></p>
       <p><img src="images/flotantes/paramo.avif" alt="Páramo" width="220"></p>
-<p><small>Une <i>páramo</i> en Colombie</small></p>
+<p><small>Un <i>páramo</i> en Colombie</small></p>
 <p><a href="https://web.archive.org/web/20260307152238/https://colombia-travels.com/blog/tourism/paramo" target="_blank" rel="noopener noreferrer">TERRA PANAMERICA</a></p>`,
       en: `<p><strong><i>Páramo</i></strong></p>
       <p><img src="images/flotantes/paramo.avif" alt="Páramo" width="220"></p>
@@ -38,6 +38,6 @@ export const CHRONICLE_T3_33: LocalizedModalContent = {
   contextInfo: {
     es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): estigmatización, tortura, libertad de residir y circular</p><p>Actor armado: Estado</p>`,
     fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : stimagtisation, torture, liberté de résider et de circuler</p><p>Acteur armé : l’État</p>`,
-    en: `<p>Place: N/A</p><p>Date: N/A</p><p>VVictimizing act(s): stigmatization, torture, freedom of movement and residence</p><p>Armed actor: State forces</p>`,
+    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): stigmatization, torture, freedom of movement and residence</p><p>Armed actor: State forces</p>`,
   },
 };
