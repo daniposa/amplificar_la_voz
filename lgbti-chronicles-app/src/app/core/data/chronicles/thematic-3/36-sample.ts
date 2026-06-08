@@ -8,7 +8,7 @@ export const CHRONICLE_T3_36: LocalizedModalContent = {
   },
   rawText: {
     es: `<p>Cuando el entrevistador le preguntó: «¿Usted le contó esto a la Unidad para las Víctimas?, ¿usted está en el registro?», esto respondió: «No, por eso le dije, yo por miedo no pude, doctora. No he contado. Primera vez que le estoy contando a alguien, a mí me da... Usted sabe que estamos en el monte... Yo pienso mucho, ¿no? Si usted cuenta todo lo que sucedió, viene la guerrilla, en cualquier momento le dispara a su familia y lo mata todo, ¿y después qué hace uno?».</p><p><i>Mujer, indígena wanano, urbana</i></p>`,
-    fr: `<p>Quand l’intervieweuse lui a demandé : « Est-ce que vous avez raconté cet événement à l’<b>{1}Unité de Victimes{/1}</b>? Figurez-vous sur les registres ? », elle a répondu : « Non, comme je vous l’ai déjà dit, j’avais trop peur pour parler, madame. Je n’ai rien raconté. C’est la première fois que j’en parle. J’ai… Nous sommes dans le <b><i>{2}monte{/2}</b>... Je pense souvent aux conséquences, vous voyez ? Si vous racontez ce qui s’est passé, à tout moment la guérilla peut venir, tirer sur votre famille et tuer tout le monde, et après, qu’est-ce qu’on peut faire ? »</p><p><i>Femme autochtone wanano, citadine</i></p>`,
+    fr: `<p>Quand l’intervieweuse lui a demandé : « Est-ce que vous avez raconté cet événement à l’<b>{1}Unité de Victimes{/1}</b>? Figurez-vous sur les registres ? », elle a répondu : « Non, comme je vous l’ai déjà dit, j’avais trop peur pour parler, madame. Je n’ai rien raconté. C’est la première fois que j’en parle. J’ai… Nous sommes dans le <b><i>{2}monte{/2}</i></b>... Je pense souvent aux conséquences, vous voyez ? Si vous racontez ce qui s’est passé, à tout moment la guérilla peut venir, tirer sur votre famille et tuer tout le monde, et après, qu’est-ce qu’on peut faire ? »</p><p><i>Femme autochtone wanano, citadine</i></p>`,
     en: `<p>When the interviewer asked her: “Did you tell this to the <b>{1}Victims Unit{/1}</b>? Are you registered?” She replied: “No, as I told you, I couldn’t because I was too afraid, ma’am. I’ve never told anyone. This is the first time I am ever telling somebody. I feel... You know that we are here in the <b><i>{2}monte{/2}</i></b>... I think a lot about this, right? If you tell someone about what happened, guerrillas may come anytime, shoot down your family and kill everything. What do you do then?”</p><p><i>Woman, Indigineous Wanano, urbanite</i></p>`,
   },
   tooltips: {
@@ -30,7 +30,7 @@ export const CHRONICLE_T3_36: LocalizedModalContent = {
     },
   },
   contextInfo: {
-    es: `<p>Lugar: Vaupés</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): déplacement forcé</p><p>Actor armado: FARC-EP</p>`,
+    es: `<p>Lugar: Vaupés</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): desplazamiento forzado</p><p>Actor armado: FARC-EP</p>`,
     fr: `<p>Lieu : Vaupés</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : déplacement forcé</p><p>Acteur armé : FARC-EP</p>`,
     en: `<p>Place: Vaupés</p><p>Date: N/A</p><p>Victimizing act(s): forced displacement</p><p>Armed actor: FARC-EP</p>`,
   },
