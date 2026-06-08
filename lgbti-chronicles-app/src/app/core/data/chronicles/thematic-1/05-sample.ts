@@ -28,14 +28,14 @@ export const CHRONICLE_T1_05: LocalizedModalContent = {
       es: `a`,
       fr: `<p><strong><i>Vereda</i></strong></p>
 <p><img src="images/flotantes/vereda.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
-<p><small><i>Vereda</i> de Punta Larga à Popayán, dans le Cauca. On peut y accéder directement depuis l'autoroute panaméricaine.</small></p>
+<p><small><i>Vereda</i> de Punta Larga à Popayán, dans le Cauca</small></p>
 <p>Selon le DANE (Département administratif national des statistiques), une <i>vereda</i> est une « division territoriale administrative dans les zones rurales des municipalités, établie par un accord municipal ».</p>
 <p>Au-delà de sa définition administrative, une <i>vereda</i> représente également un espace de vie communautaire rural très soudé. Comme les maisons et les <i>fincas</i> sont relativement proches les unes des autres, les habitants ont tendance à développer de bonnes relations avec le voisinage par le biais d'interactions quotidiennes.
 </p>
 <p><a href="https://web.archive.org/web/20260601215302/https://conceptos.dane.gov.co/conceptos/conceptos/6002/ficha/" target="_blank" rel="noopener noreferrer">DANE</a></p>`,
       en: `<p><strong><i>Vereda</i></strong></p>
 <p><img src="images/flotantes/vereda.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
-<p><small><i>Vereda</i> of Punta Larga in Popayán, Cauca. It can be reached directly from Pan-American Highway.</small></p>
+<p><small><i>Vereda</i> of Punta Larga in Popayán, Cauca</small></p>
 <p>According to the DANE (National Administrative Department of Statistics), a <i>vereda</i> is an “Administrative territorial division in rural areas of municipalities, established by municipal agreement.”</p>
 <p>Beyond its administrative definition, a <i>vereda</i> also represents a space of close-knit rural community life. Because homes and <i>fincas</i> are located in relative proximity, residents tend to develop strong neighborly relationships through daily interactions.
 </p>
