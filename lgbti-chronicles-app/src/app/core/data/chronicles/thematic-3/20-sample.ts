@@ -171,11 +171,11 @@ White are the four candles, white are the four candles.<br>
   tooltips: {
     1: {
       es: `<p><strong>Canción</strong></p>
-      <p><a href="https://web.archive.org/web/20260602135311/https://www.youtube.com/watch?si=t7OV0anAhzFZ0ubl&v=u1tC3gmhjio&feature=youtu.be" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
+      <p><a href="https://www.youtube.com/watch?si=t7OV0anAhzFZ0ubl&v=u1tC3gmhjio&feature=youtu.be" target="_blank" rel="noopener noreferrer">Video en YouTube</a></p>`,
       fr: `<p><strong>Chanson</strong></p>
-      <p><a href="https://web.archive.org/web/20260602135311/https://www.youtube.com/watch?si=t7OV0anAhzFZ0ubl&v=u1tC3gmhjio&feature=youtu.be" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
+      <p><a href="https://www.youtube.com/watch?si=t7OV0anAhzFZ0ubl&v=u1tC3gmhjio&feature=youtu.be" target="_blank" rel="noopener noreferrer">Vidéo sur YouTube</a></p>`,
       en: `<p><strong>Song</strong></p>
-      <p><a href="https://web.archive.org/web/20260602135311/https://www.youtube.com/watch?si=t7OV0anAhzFZ0ubl&v=u1tC3gmhjio&feature=youtu.be" target="_blank" rel="noopener noreferrer">YouTube video</a></p>`,
+      <p><a href="https://www.youtube.com/watch?si=t7OV0anAhzFZ0ubl&v=u1tC3gmhjio&feature=youtu.be" target="_blank" rel="noopener noreferrer">YouTube video</a></p>`,
     },
     2: {
       es: `<p>Nota de ejemplo para la crónica T3-20.</p>`,
