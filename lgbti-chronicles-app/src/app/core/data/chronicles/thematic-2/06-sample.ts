@@ -18,13 +18,13 @@ export const CHRONICLE_T2_06: LocalizedModalContent = {
       <p>Le Red Mariposas de Alas Nuevas Construyendo Futuro est un groupe de femmes qui défendent les droits et la vie à Buenaventura. Elles apportent leur soutien à d'autres femmes ayant subi des violences.</p>
       <p><a href="https://web.archive.org/web/20260519094617/https://redmariposasakina.org/" target="_blank" rel="noopener noreferrer">Site officiel</a></p>`,
       en: `<p><strong>Red  Mariposas de Alas Nuevas</strong></p>
-      <p>Red Mariposas de Alas Nuevas: The Red Mariposas de Alas Nuevas Construyendo Futuro is a group of women who defend rights and life in Buenaventura. They support other women who have experienced situations of violence.</p>
+      <p>The Red Mariposas de Alas Nuevas Construyendo Futuro is a group of women who defend rights and life in Buenaventura. They support other women who have experienced situations of violence.</p>
       <p><a href="https://web.archive.org/web/20260519094617/https://redmariposasakina.org/" target="_blank" rel="noopener noreferrer">Official website</a></p>`,
     },
   },
   contextInfo: {
     es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): desaparición forzosa, racismo</p><p>Actor armado: N/A</p>`,
     fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : disparition forcée, racisme</p><p>Acteur armé : N/A</p>`,
-    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): forced dissapairing, racism</p><p>Armed actor: N/A</p>`,
+    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): forced dissapearing, racism</p><p>Armed actor: N/A</p>`,
   },
 };
