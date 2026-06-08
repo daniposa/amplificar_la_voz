@@ -15,10 +15,10 @@ export const CHRONICLE_T3_23: LocalizedModalContent = {
     1: {
       es: `<p>Nota de ejemplo para la crónica T3-41.</p>`,
       fr: `<p><strong>Bloque Calima des AUC</strong></p>
-      <p>Il s'agit d'un groupe paramilitaire affilié aux Forces d'autodéfense unies de Colombie (AUC) qui a opéré dans les départements du Valle del Cauca et du Cauca, ainsi que dans certaines municipalités du Quindío et du Huila entre 1999 et 2004, année de sa démobilisation collective. À partir du milieu de l'année 1999, le groupe paramilitaire a concentré ses actions dans la partie centrale de Valle del Cauca et a commis des actes de violence isolés dans d'autres zones du département, ainsi que dans les municipalités de Génova et Pijao dans le Quindío.</p>
+      <p>Il s'agit d'un groupe paramilitaire affilié aux Forces d'autodéfense unies de Colombie (AUC) qui a opéré dans les départements du Valle del Cauca et du Cauca, ainsi que dans certaines municipalités du Quindío et du Huila entre 1999 et 2004, année de sa démobilisation collective.</p>
       <p><a href="https://web.archive.org/web/20260527164306/https://centrodememoriahistorica.gov.co/wp-content/uploads/2020/02/bloque-calima-auc.pdf" target="_blank" rel="noopener noreferrer">Centro de Memoria Histórica</a></p>`,
       en: `<p><strong>Bloque Calima of the AUC</strong></p>
-      <p>It was a paramilitary group affiliated with the United Self-Defense Forces of Colombia (AUC) that operated in the departments of Valle del Cauca and Cauca, as well as in some municipalities of Quindío and Huila between 1999 and 2004, the year of its collective demobilization. From mid-1999, the paramilitary group focused its actions in the central part of Valle del Cauca and committed isolated acts of violence in other areas of the department, as well as in the municipalities of Génova and Pijao in Quindío.</p>
+      <p>It was a paramilitary group affiliated with the United Self-Defense Forces of Colombia (AUC) that operated in the departments of Valle del Cauca and Cauca, as well as in some municipalities of Quindío and Huila between 1999 and 2004, the year of its collective demobilization.</p>
       <p><a href="https://web.archive.org/web/20260527164306/https://centrodememoriahistorica.gov.co/wp-content/uploads/2020/02/bloque-calima-auc.pdf" target="_blank" rel="noopener noreferrer">Centro de Memoria Histórica</a></p>`,
     },
 	2: {
