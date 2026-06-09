@@ -2,7 +2,7 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_03: LocalizedModalContent = {
   // Hotspot button position over the image (x, y as % of the image, to its center).
-  hotspot: { x: 37.43, y: 14 },
+  hotspot: { x: 28.177, y: 26.48 },
   title: { es: 'Edith', fr: 'Edith', en: 'Edith' },
   rawText: {
     es: `<p>«“Marica sidosa, sabemos cuántos has contagiado, sabemos que tienes gonorrea, te damos tantas horas, no hables con la Policía, porque no logras salir”. Venía huyendo, ya había recorrido varios municipios, y dije: “No, si me matan aquí en este territorio...”. Mi familia me recogió los pasajes para que me fuera para Medellín o para Bogotá y dije: “No, ya no corro más”. Me quedé en el territorio, fui al comandante de la Policía, coloqué la denuncia y resulta que era de los grupos armados; tenía nexos con esa gente. Cuando voy y le llevo el panfleto, se echó a reír con una risa irónica y me dijo: “Pero es que lo que dice el panfleto es verdad”».</p>
