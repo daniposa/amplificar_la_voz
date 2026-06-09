@@ -52,10 +52,46 @@ export interface Hotspot {
   modalContent: LocalizedModalContent;
 }
 
+/**
+ * Where a card sits on the chronicles image and how big it is.
+ * `x` / `y` are percentages of the rendered image (0–100), measured to the
+ * card's center, so a card can be placed anywhere inside the image.
+ */
+export interface CardPlacement {
+  /** Horizontal center position, as a % of the image width (0 = left, 100 = right). */
+  x: number;
+  /** Vertical center position, as a % of the image height (0 = top, 100 = bottom). */
+  y: number;
+  /** Card width in pixels. */
+  width: number;
+  /**
+   * Minimum card height in pixels. The card grows taller if the text needs more
+   * room, so the actual height is `max(height, content height)`. Optional.
+   */
+  height?: number;
+}
+
+/**
+ * Optional typography overrides for a card's title. Any field left undefined
+ * falls back to the default card styling. Values are raw CSS strings.
+ */
+export interface CardTextStyle {
+  /** CSS font-family, e.g. `'Georgia, serif'`. */
+  fontFamily?: string;
+  /** CSS font-size, e.g. `'1.25rem'` or `'20px'`. */
+  fontSize?: string;
+  /** CSS color, e.g. `'#2c2420'` or `'var(--color-accent)'`. */
+  color?: string;
+}
+
 export interface CardData {
   id: number;
   title: LocalizedContent;
   imagePath: string;
+  /** Position and size of the card over the chronicles image. */
+  placement: CardPlacement;
+  /** Optional typography overrides for the card title. */
+  textStyle?: CardTextStyle;
   hotspots: Hotspot[];
 }
 

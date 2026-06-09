@@ -6,23 +6,35 @@ import type { Language } from '../../../../core/services/language.service';
   selector: 'app-card',
   standalone: true,
   template: `
-    <div class="card" [class.selected]="selected" (click)="select.emit()">
-      <h3>{{ card?.title?.[lang] ?? '' }}</h3>
+    <div
+      class="card"
+      [class.selected]="selected"
+      [style.min-height.px]="card?.placement?.height"
+      (click)="select.emit()"
+    >
+      <h3
+        [style.font-family]="card?.textStyle?.fontFamily"
+        [style.font-size]="card?.textStyle?.fontSize"
+        [style.color]="card?.textStyle?.color"
+      >
+        {{ card?.title?.[lang] ?? '' }}
+      </h3>
     </div>
   `,
   styles: [
     `
       .card {
-        padding: var(--space-md) var(--space-lg);
+        padding: 0.25rem 2.5%;
         border: 1px solid var(--color-border);
         border-radius: 4px;
         cursor: pointer;
         transition: all 0.25s ease;
-        height: 140px;
         min-height: 140px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        text-align: center;
         background: var(--color-paper);
         box-shadow: var(--shadow-card);
       }
@@ -37,7 +49,9 @@ import type { Language } from '../../../../core/services/language.service';
         box-shadow: var(--shadow-soft);
       }
       .card h3 {
-        margin: 0 0 var(--space-xs) 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
         font-family: var(--font-display);
         font-size: 1.25rem;
         font-weight: 500;

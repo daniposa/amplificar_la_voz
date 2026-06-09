@@ -8,9 +8,6 @@ import { InteractiveImageComponent } from '../home/components/interactive-image/
 
 type Tab = 'intro' | 'chronicles';
 
-/** Horizontal anchor (%) of each card within the panorama track */
-const CARD_ANCHORS = [12, 46, 78];
-
 @Component({
   selector: 'app-chronicles',
   standalone: true,
@@ -44,29 +41,31 @@ const CARD_ANCHORS = [12, 46, 78];
 
         @if (activeTab() === 'chronicles') {
           <div class="panorama-wrapper">
-            <img
-              class="panorama-img"
-              [src]="panoramaImage"
-              alt="Panoramic view"
-              draggable="false"
-            />
+            <div class="image-frame">
+              <img
+                class="panorama-img"
+                [src]="panoramaImage"
+                alt="Panoramic view"
+                draggable="false"
+              />
 
-            @for (card of cards; track card.id; let i = $index) {
-              <div
-                class="card-pin"
-                [style.left.%]="CARD_ANCHORS[i]"
-                [class.selected]="selectedCardId() === card.id"
-              >
-                <app-card
-                  [card]="card"
-                  [lang]="lang"
-                  [selected]="selectedCardId() === card.id"
-                  (select)="selectCard(card.id)"
-                />
-                <div class="pin-stem"></div>
-                <div class="pin-dot"></div>
-              </div>
-            }
+              @for (card of cards; track card.id) {
+                <div
+                  class="card-pin"
+                  [class.selected]="selectedCardId() === card.id"
+                  [style.left.%]="card.placement.x"
+                  [style.top.%]="card.placement.y"
+                  [style.width.px]="card.placement.width"
+                >
+                  <app-card
+                    [card]="card"
+                    [lang]="lang"
+                    [selected]="selectedCardId() === card.id"
+                    (select)="selectCard(card.id)"
+                  />
+                </div>
+              }
+            </div>
           </div>
         }
       </main>
@@ -208,48 +207,36 @@ const CARD_ANCHORS = [12, 46, 78];
         justify-content: center;
         overflow: hidden;
       }
+      /* Shrinks to the rendered image so card placement % maps to the image. */
+      .image-frame {
+        position: relative;
+        display: inline-block;
+        max-width: 100%;
+        max-height: 100%;
+      }
       .panorama-img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
         display: block;
+        max-width: 100%;
+        max-height: 85vh;
+        width: auto;
+        height: auto;
         pointer-events: none;
       }
 
-      /* ── card pins ── */
+      /* ── cards (freely placed over the image) ── */
       .card-pin {
         position: absolute;
-        top: 12%;
-        transform: translateX(-50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 240px;
+        transform: translate(-50%, -50%);
       }
       .card-pin app-card {
+        display: block;
         width: 100%;
       }
-      /* Override card styles inside panorama for glass effect */
+      /* Override card styles over the image for a glass effect */
       .card-pin :global(.card) {
         background: rgba(248, 244, 239, 0.82) !important;
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
-      }
-      .pin-stem {
-        width: 2px;
-        height: 48px;
-        background: linear-gradient(to bottom, rgba(139, 105, 20, 0.7), rgba(139, 105, 20, 0.15));
-      }
-      .pin-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--color-accent);
-        box-shadow: 0 0 8px rgba(139, 105, 20, 0.6);
-      }
-      .card-pin.selected .pin-dot {
-        background: var(--color-ink);
-        box-shadow: 0 0 12px rgba(44, 36, 32, 0.5);
       }
 
       /* ── fullscreen image ── */
@@ -292,8 +279,6 @@ export class ChroniclesComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private langService = inject(LanguageService);
   private titleService = inject(Title);
-
-  readonly CARD_ANCHORS = CARD_ANCHORS;
 
   lang: Language = 'en';
   cards = CARDS_DATA;
