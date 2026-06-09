@@ -1,6 +1,13 @@
 import {
-  Component, computed, inject, signal, OnInit,
-  ViewChild, ElementRef, HostListener, NgZone
+  Component,
+  computed,
+  inject,
+  signal,
+  OnInit,
+  ViewChild,
+  ElementRef,
+  HostListener,
+  NgZone,
 } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Title } from '@angular/platform-browser';
@@ -31,27 +38,31 @@ const CARD_ANCHORS = [12, 46, 78];
         <button class="tab-btn" [class.active]="activeTab() === 'intro'" (click)="setTab('intro')">
           {{ introTabLabel }}
         </button>
-        <button class="tab-btn" [class.active]="activeTab() === 'chronicles'" (click)="setTab('chronicles')">
+        <button
+          class="tab-btn"
+          [class.active]="activeTab() === 'chronicles'"
+          (click)="setTab('chronicles')"
+        >
           {{ chroniclesTabLabel }}
         </button>
       </nav>
 
       <main class="page-main">
-
         @if (activeTab() === 'intro') {
           <p class="intro-text">{{ introText }}</p>
         }
 
         @if (activeTab() === 'chronicles') {
           <div class="panorama-wrapper">
-
             <!-- Left arrow -->
             <button
               class="pan-arrow pan-left"
               [class.hidden]="panOffset() <= 0"
               (click)="panTo('left')"
               aria-label="Pan left"
-            >&#8249;</button>
+            >
+              &#8249;
+            </button>
 
             <!-- Panorama viewport -->
             <div
@@ -64,7 +75,7 @@ const CARD_ANCHORS = [12, 46, 78];
                 class="panorama-track"
                 #track
                 [class.snapping]="isSnapping()"
-                [style.transform]="'translateX(' + (-panOffset()) + 'px)'"
+                [style.transform]="'translateX(' + -panOffset() + 'px)'"
               >
                 <img
                   #panoramaImg
@@ -100,7 +111,9 @@ const CARD_ANCHORS = [12, 46, 78];
               [class.hidden]="panOffset() >= maxOffset"
               (click)="panTo('right')"
               aria-label="Pan right"
-            >&#8250;</button>
+            >
+              &#8250;
+            </button>
 
             <!-- Scroll indicator dots -->
             <div class="scroll-dots">
@@ -113,10 +126,8 @@ const CARD_ANCHORS = [12, 46, 78];
                 ></button>
               }
             </div>
-
           </div>
         }
-
       </main>
 
       @if (selectedCard()) {
@@ -127,265 +138,303 @@ const CARD_ANCHORS = [12, 46, 78];
       }
     </div>
   `,
-  styles: [`
-    .chronicles {
-      min-height: 100vh;
-      background-color: var(--color-paper);
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      position: relative;
-    }
-    .page-overlay {
-      position: fixed;
-      inset: 0;
-      background: linear-gradient(to bottom, rgba(248,244,239,0.75) 0%, rgba(248,244,239,0.9) 100%);
-      pointer-events: none;
-      z-index: 0;
-    }
-    .page-header {
-      position: relative;
-      z-index: 1;
-      padding: var(--space-lg) var(--space-xl);
-      border-bottom: 1px solid var(--color-border);
-      background: rgba(245, 240, 232, 0.9);
-      display: flex;
-      align-items: center;
-      gap: var(--space-md);
-    }
-    .back-btn {
-      font-family: var(--font-body);
-      font-size: 1.25rem;
-      color: var(--color-ink-muted);
-      text-decoration: none;
-      padding: var(--space-xs) var(--space-sm);
-      border: 1px solid var(--color-border);
-      border-radius: 4px;
-      line-height: 1;
-      transition: all 0.2s;
-      background: var(--color-paper);
-    }
-    .back-btn:hover { color: var(--color-ink); border-color: var(--color-ink-light); }
-    .page-title {
-      margin: 0;
-      font-family: var(--font-display);
-      font-size: 1.75rem;
-      font-weight: 500;
-      color: var(--color-ink);
-      letter-spacing: 0.02em;
-    }
-    .tab-nav {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      background: rgba(245, 240, 232, 0.85);
-      border-bottom: 1px solid var(--color-border);
-      padding: 0 var(--space-xl);
-    }
-    .tab-btn {
-      font-family: var(--font-display);
-      font-size: 1rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      color: var(--color-ink-muted);
-      background: none;
-      border: none;
-      border-bottom: 2px solid transparent;
-      padding: var(--space-md) var(--space-lg);
-      cursor: pointer;
-      transition: color 0.2s, border-color 0.2s;
-      margin-bottom: -1px;
-    }
-    .tab-btn:hover { color: var(--color-ink); }
-    .tab-btn.active { color: var(--color-ink); border-bottom-color: var(--color-accent); }
+  styles: [
+    `
+      .chronicles {
+        min-height: 100vh;
+        background-color: var(--color-paper);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+      .page-overlay {
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(248, 244, 239, 0.75) 0%,
+          rgba(248, 244, 239, 0.9) 100%
+        );
+        pointer-events: none;
+        z-index: 0;
+      }
+      .page-header {
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        max-height: 8vh;
+        padding: var(--space-sm) var(--space-xl);
+        border-bottom: 1px solid var(--color-border);
+        background: rgba(245, 240, 232, 0.9);
+        display: flex;
+        align-items: center;
+        gap: var(--space-md);
+      }
+      .back-btn {
+        font-family: var(--font-body);
+        font-size: 1.25rem;
+        color: var(--color-ink-muted);
+        text-decoration: none;
+        padding: var(--space-xs) var(--space-sm);
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        line-height: 1;
+        transition: all 0.2s;
+        background: var(--color-paper);
+      }
+      .back-btn:hover {
+        color: var(--color-ink);
+        border-color: var(--color-ink-light);
+      }
+      .page-title {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--color-ink);
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .tab-nav {
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        max-height: 7vh;
+        display: flex;
+        background: rgba(245, 240, 232, 0.85);
+        border-bottom: 1px solid var(--color-border);
+        padding: 0 var(--space-xl);
+      }
+      .tab-btn {
+        font-family: var(--font-display);
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        color: var(--color-ink-muted);
+        background: none;
+        border: none;
+        border-bottom: 2px solid transparent;
+        padding: var(--space-xs) var(--space-lg);
+        cursor: pointer;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
+        margin-bottom: -1px;
+      }
+      .tab-btn:hover {
+        color: var(--color-ink);
+      }
+      .tab-btn.active {
+        color: var(--color-ink);
+        border-bottom-color: var(--color-accent);
+      }
 
-    /* ── intro tab ── */
-    .page-main {
-      position: relative;
-      z-index: 1;
-    }
-    .intro-text {
-      max-width: var(--content-max);
-      margin: 0 auto;
-      padding: var(--space-xl) var(--space-xl) var(--space-2xl);
-      font-size: 1.05rem;
-      line-height: 1.85;
-      max-width: var(--reading-width);
-      color: var(--color-ink);
-    }
-    .intro-text::first-letter {
-      font-family: var(--font-display);
-      font-size: 3rem;
-      float: left;
-      line-height: 1;
-      margin-right: 0.35rem;
-      margin-top: 0.05rem;
-      color: var(--color-ink);
-    }
+      /* ── intro tab ── */
+      .page-main {
+        position: relative;
+        z-index: 1;
+      }
+      .intro-text {
+        max-width: var(--content-max);
+        margin: 0 auto;
+        padding: var(--space-xl) var(--space-xl) var(--space-2xl);
+        font-size: 1.05rem;
+        line-height: 1.85;
+        max-width: var(--reading-width);
+        color: var(--color-ink);
+      }
+      .intro-text::first-letter {
+        font-family: var(--font-display);
+        font-size: 3rem;
+        float: left;
+        line-height: 1;
+        margin-right: 0.35rem;
+        margin-top: 0.05rem;
+        color: var(--color-ink);
+      }
 
-    /* ── panorama wrapper ── */
-    .panorama-wrapper {
-      position: relative;
-      width: 100%;
-    }
-    .panorama-viewport {
-      overflow: hidden;
-      height: 72vh;
-      cursor: grab;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-    .panorama-viewport:active { cursor: grabbing; }
+      /* ── panorama wrapper ── */
+      .panorama-wrapper {
+        position: relative;
+        width: 100%;
+      }
+      .panorama-viewport {
+        overflow: hidden;
+        height: 72vh;
+        cursor: grab;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      .panorama-viewport:active {
+        cursor: grabbing;
+      }
 
-    /* ── panorama track ── */
-    .panorama-track {
-      position: relative;
-      height: 100%;
-      width: max-content;
-      will-change: transform;
-    }
-    .panorama-track.snapping {
-      transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-    .panorama-img {
-      height: 100%;
-      width: auto;
-      display: block;
-      pointer-events: none;
-    }
+      /* ── panorama track ── */
+      .panorama-track {
+        position: relative;
+        height: 100%;
+        width: max-content;
+        will-change: transform;
+      }
+      .panorama-track.snapping {
+        transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .panorama-img {
+        height: 100%;
+        width: auto;
+        display: block;
+        pointer-events: none;
+      }
 
-    /* ── card pins ── */
-    .card-pin {
-      position: absolute;
-      top: 12%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 240px;
-    }
-    .card-pin app-card {
-      width: 100%;
-    }
-    /* Override card styles inside panorama for glass effect */
-    .card-pin :global(.card) {
-      background: rgba(248, 244, 239, 0.82) !important;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-    }
-    .pin-stem {
-      width: 2px;
-      height: 48px;
-      background: linear-gradient(to bottom, rgba(139,105,20,0.7), rgba(139,105,20,0.15));
-    }
-    .pin-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--color-accent);
-      box-shadow: 0 0 8px rgba(139,105,20,0.6);
-    }
-    .card-pin.selected .pin-dot {
-      background: var(--color-ink);
-      box-shadow: 0 0 12px rgba(44,36,32,0.5);
-    }
+      /* ── card pins ── */
+      .card-pin {
+        position: absolute;
+        top: 12%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 240px;
+      }
+      .card-pin app-card {
+        width: 100%;
+      }
+      /* Override card styles inside panorama for glass effect */
+      .card-pin :global(.card) {
+        background: rgba(248, 244, 239, 0.82) !important;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+      .pin-stem {
+        width: 2px;
+        height: 48px;
+        background: linear-gradient(to bottom, rgba(139, 105, 20, 0.7), rgba(139, 105, 20, 0.15));
+      }
+      .pin-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--color-accent);
+        box-shadow: 0 0 8px rgba(139, 105, 20, 0.6);
+      }
+      .card-pin.selected .pin-dot {
+        background: var(--color-ink);
+        box-shadow: 0 0 12px rgba(44, 36, 32, 0.5);
+      }
 
-    /* ── pan arrows ── */
-    .pan-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 5;
-      background: rgba(245, 240, 232, 0.88);
-      border: 1px solid var(--color-border);
-      border-radius: 50%;
-      width: 48px;
-      height: 48px;
-      font-size: 2rem;
-      line-height: 1;
-      cursor: pointer;
-      color: var(--color-ink);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s;
-      box-shadow: var(--shadow-soft);
-    }
-    .pan-arrow:hover {
-      background: var(--color-paper-warm);
-      border-color: var(--color-accent);
-    }
-    .pan-arrow.hidden { opacity: 0; pointer-events: none; }
-    .pan-left  { left: var(--space-md); }
-    .pan-right { right: var(--space-md); }
+      /* ── pan arrows ── */
+      .pan-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        background: rgba(245, 240, 232, 0.88);
+        border: 1px solid var(--color-border);
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        font-size: 2rem;
+        line-height: 1;
+        cursor: pointer;
+        color: var(--color-ink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        box-shadow: var(--shadow-soft);
+      }
+      .pan-arrow:hover {
+        background: var(--color-paper-warm);
+        border-color: var(--color-accent);
+      }
+      .pan-arrow.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .pan-left {
+        left: var(--space-md);
+      }
+      .pan-right {
+        right: var(--space-md);
+      }
 
-    /* ── scroll dots ── */
-    .scroll-dots {
-      position: absolute;
-      bottom: var(--space-md);
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: var(--space-sm);
-      z-index: 5;
-    }
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: rgba(44, 36, 32, 0.25);
-      border: none;
-      cursor: pointer;
-      padding: 0;
-      transition: background 0.2s, transform 0.2s;
-    }
-    .dot.active {
-      background: var(--color-accent);
-      transform: scale(1.3);
-    }
-    .dot:hover { background: rgba(44, 36, 32, 0.5); }
+      /* ── scroll dots ── */
+      .scroll-dots {
+        position: absolute;
+        bottom: var(--space-md);
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: var(--space-sm);
+        z-index: 5;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(44, 36, 32, 0.25);
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        transition:
+          background 0.2s,
+          transform 0.2s;
+      }
+      .dot.active {
+        background: var(--color-accent);
+        transform: scale(1.3);
+      }
+      .dot:hover {
+        background: rgba(44, 36, 32, 0.5);
+      }
 
-    /* ── fullscreen image ── */
-    .image-fullscreen {
-      position: fixed;
-      inset: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--color-paper-warm);
-    }
-    .close-btn {
-      position: absolute;
-      top: var(--space-md);
-      right: var(--space-md);
-      z-index: 11;
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      font-size: 26px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background 0.2s;
-    }
-    .close-btn:hover { background: rgba(0, 0, 0, 0.7); }
-  `]
+      /* ── fullscreen image ── */
+      .image-fullscreen {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-paper-warm);
+      }
+      .close-btn {
+        position: absolute;
+        top: var(--space-md);
+        right: var(--space-md);
+        z-index: 11;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        font-size: 26px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s;
+      }
+      .close-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+      }
+    `,
+  ],
 })
 export class ChroniclesComponent implements OnInit {
-  private route    = inject(ActivatedRoute);
+  private route = inject(ActivatedRoute);
   private langService = inject(LanguageService);
   private titleService = inject(Title);
-  private ngZone   = inject(NgZone);
+  private ngZone = inject(NgZone);
 
-  @ViewChild('viewport')    viewportRef!: ElementRef<HTMLDivElement>;
+  @ViewChild('viewport') viewportRef!: ElementRef<HTMLDivElement>;
   @ViewChild('panoramaImg') imgRef!: ElementRef<HTMLImageElement>;
 
   readonly CARD_ANCHORS = CARD_ANCHORS;
@@ -398,29 +447,29 @@ export class ChroniclesComponent implements OnInit {
   introTabLabel = '';
   chroniclesTabLabel = '';
 
-  activeTab      = signal<Tab>('intro');
+  activeTab = signal<Tab>('intro');
   selectedCardId = signal<number | null>(null);
-  panOffset      = signal(0);
-  isSnapping     = signal(false);
+  panOffset = signal(0);
+  isSnapping = signal(false);
 
   maxOffset = 0;
 
   /* drag state (not signals – no need for reactivity) */
   private dragging = false;
   private dragStartClientX = 0;
-  private dragStartOffset  = 0;
+  private dragStartOffset = 0;
 
   // ── computed ──────────────────────────────────────────────
 
   selectedCard = computed(() => {
     const id = this.selectedCardId();
-    return id ? CARDS_DATA.find(c => c.id === id) ?? null : null;
+    return id ? (CARDS_DATA.find((c) => c.id === id) ?? null) : null;
   });
 
   background = computed(() =>
     this.selectedCardId() !== null
       ? `url(images/background_3.jpg)`
-      : `url(images/background_1.jpg)`
+      : `url(images/background_1.jpg)`,
   );
 
   /** Which dot is nearest to the current scroll position */
@@ -435,10 +484,13 @@ export class ChroniclesComponent implements OnInit {
     CARD_ANCHORS.forEach((anchor, i) => {
       const targetOffset = Math.min(
         Math.max((anchor / 100) * trackWidth - viewW / 2, 0),
-        this.maxOffset
+        this.maxOffset,
       );
       const dist = Math.abs(this.panOffset() - targetOffset);
-      if (dist < minDist) { minDist = dist; nearest = i; }
+      if (dist < minDist) {
+        minDist = dist;
+        nearest = i;
+      }
     });
     return nearest;
   });
@@ -460,7 +512,7 @@ export class ChroniclesComponent implements OnInit {
     // Use setTimeout to ensure layout is fully settled after image renders
     this.ngZone.run(() => {
       setTimeout(() => {
-        const img      = this.imgRef?.nativeElement;
+        const img = this.imgRef?.nativeElement;
         const viewport = this.viewportRef?.nativeElement;
         if (!img || !viewport) return;
         this.maxOffset = Math.max(0, img.offsetWidth - viewport.clientWidth);
@@ -472,10 +524,10 @@ export class ChroniclesComponent implements OnInit {
   // ── drag (mouse) ──────────────────────────────────────────
 
   startDrag(e: MouseEvent): void {
-    this.dragging        = true;
+    this.dragging = true;
     this.isSnapping.set(false);
     this.dragStartClientX = e.clientX;
-    this.dragStartOffset  = this.panOffset();
+    this.dragStartOffset = this.panOffset();
   }
 
   @HostListener('document:mousemove', ['$event'])
@@ -495,10 +547,10 @@ export class ChroniclesComponent implements OnInit {
   // ── drag (touch) ─────────────────────────────────────────
 
   startTouch(e: TouchEvent): void {
-    this.dragging         = true;
+    this.dragging = true;
     this.isSnapping.set(false);
     this.dragStartClientX = e.touches[0].clientX;
-    this.dragStartOffset  = this.panOffset();
+    this.dragStartOffset = this.panOffset();
   }
 
   @HostListener('document:touchmove', ['$event'])
@@ -559,7 +611,10 @@ export class ChroniclesComponent implements OnInit {
     CARD_ANCHORS.forEach((anchor, i) => {
       const targetOffset = this.clamp((anchor / 100) * trackWidth - viewW / 2);
       const dist = Math.abs(this.panOffset() - targetOffset);
-      if (dist < minDist) { minDist = dist; nearest = i; }
+      if (dist < minDist) {
+        minDist = dist;
+        nearest = i;
+      }
     });
     this.snapToCard(nearest);
   }
@@ -568,7 +623,9 @@ export class ChroniclesComponent implements OnInit {
     this.isSnapping.set(true);
     this.panOffset.set(target);
     this.ngZone.run(() => {
-      setTimeout(() => { this.isSnapping.set(false); }, 600);
+      setTimeout(() => {
+        this.isSnapping.set(false);
+      }, 600);
     });
   }
 
