@@ -66,6 +66,18 @@ export interface CreditLine {
   names: string;
 }
 
+/** A button on the landing page (label, subtext, and target route). */
+export interface LandingButton {
+  /** Main button text, e.g. "English". */
+  label: string;
+  /** Smaller text under the label, e.g. "Read the chronicles". */
+  sub: string;
+  /** Router path the button navigates to, e.g. "/en". */
+  routerLink: string;
+  /** When true, applies the muted "comments" styling variant. */
+  isComments?: boolean;
+}
+
 /** Credits shown on the home (landing) page below the main buttons. */
 export interface LandingCredits {
   sectionTitle: string;

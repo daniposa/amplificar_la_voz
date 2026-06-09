@@ -1,4 +1,9 @@
-import type { LocalizedContent, CardData, LandingCredits } from '../models/content.model';
+import type {
+  LocalizedContent,
+  CardData,
+  LandingCredits,
+  LandingButton,
+} from '../models/content.model';
 import { CHRONICLES_T1 } from './chronicles/thematic-1';
 import { CHRONICLES_T2 } from './chronicles/thematic-2';
 import { CHRONICLES_T3 } from './chronicles/thematic-3';
@@ -46,6 +51,29 @@ export const PAGE_CONFIG = {
     } satisfies LocalizedContent,
   },
 };
+
+/**
+ * Buttons on the landing page. Edit `label` and `sub` to customize each
+ * button's text, and `routerLink` to change where it navigates.
+ */
+export const LANDING_BUTTONS: LandingButton[] = [
+  {
+    label: 'English English English English English English English',
+    sub: 'Read the chronicles',
+    routerLink: '/en',
+  },
+  {
+    label: 'Français',
+    sub: 'Lire les chroniques',
+    routerLink: '/fr',
+  },
+  {
+    label: 'Comentarios',
+    sub: 'Notas de traducción',
+    routerLink: '/comments',
+    isComments: true,
+  },
+];
 
 /**
  * Credits on the landing page (below the three buttons).

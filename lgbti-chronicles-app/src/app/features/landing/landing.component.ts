@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { PAGE_CONFIG, LANDING_CREDITS } from '../../core/data/content.data';
+import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/content.data';
 
 @Component({
   selector: 'app-landing',
@@ -12,18 +12,16 @@ import { PAGE_CONFIG, LANDING_CREDITS } from '../../core/data/content.data';
       <div class="landing-content">
         <h1 class="landing-title">{{ title }}</h1>
         <div class="landing-buttons">
-          <a class="lang-btn" routerLink="/en">
-            <span class="btn-label">English</span>
-            <span class="btn-sub">Read the chronicles</span>
-          </a>
-          <a class="lang-btn" routerLink="/fr">
-            <span class="btn-label">Français</span>
-            <span class="btn-sub">Lire les chroniques</span>
-          </a>
-          <a class="lang-btn comments-btn" routerLink="/comments">
-            <span class="btn-label">Comentarios</span>
-            <span class="btn-sub">Notas de traducción</span>
-          </a>
+          @for (button of buttons; track button.routerLink) {
+            <a
+              class="lang-btn"
+              [class.comments-btn]="button.isComments"
+              [routerLink]="button.routerLink"
+            >
+              <span class="btn-label">{{ button.label }}</span>
+              <span class="btn-sub">{{ button.sub }}</span>
+            </a>
+          }
         </div>
 
         <footer class="credits" aria-label="Créditos">
@@ -175,5 +173,6 @@ import { PAGE_CONFIG, LANDING_CREDITS } from '../../core/data/content.data';
 })
 export class LandingComponent {
   title = PAGE_CONFIG.title.es;
+  buttons = LANDING_BUTTONS;
   credits = LANDING_CREDITS;
 }
