@@ -85,14 +85,14 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
       .page-main {
         position: relative;
         z-index: 1;
-        max-width: var(--content-max);
+        width: 70%;
+        max-width: 1200px;
         margin: 0 auto;
         padding: var(--space-xl) var(--space-xl) var(--space-2xl);
       }
       .comments-text {
         font-size: 1.05rem;
         line-height: 1.85;
-        max-width: var(--reading-width);
         color: var(--color-ink);
       }
       .comments-text::first-letter {
