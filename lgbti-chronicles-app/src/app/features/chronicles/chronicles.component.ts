@@ -1,8 +1,9 @@
-import { Component, computed, inject, signal, OnInit } from '@angular/core';
+import { Component, computed, inject, signal, OnInit, SecurityContext } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { Title } from '@angular/platform-browser';
+import { Title, DomSanitizer, type SafeHtml } from '@angular/platform-browser';
 import { LanguageService, type Language } from '../../core/services/language.service';
-import { INTRO_TEXT, CARDS_DATA, PAGE_CONFIG, PANORAMA_IMAGE } from '../../core/data/content.data';
+import { CARDS_DATA, PAGE_CONFIG, PANORAMA_IMAGE } from '../../core/data/content.data';
+import { INTRO_CONTENT } from '../../core/data/intro/intro.content';
 import { CardComponent } from '../home/components/card/card.component';
 import { InteractiveImageComponent } from '../home/components/interactive-image/interactive-image.component';
 
@@ -36,7 +37,7 @@ type Tab = 'intro' | 'chronicles';
 
       <main class="page-main">
         @if (activeTab() === 'intro') {
-          <p class="intro-text">{{ introText }}</p>
+          <div class="intro-text" [innerHTML]="introHtml"></div>
         }
 
         @if (activeTab() === 'chronicles') {
@@ -179,12 +180,12 @@ type Tab = 'intro' | 'chronicles';
         z-index: 1;
       }
       .intro-text {
-        max-width: var(--content-max);
+        width: 70%;
+        max-width: 1200px;
         margin: 0 auto;
         padding: var(--space-xl) var(--space-xl) var(--space-2xl);
         font-size: 1.05rem;
         line-height: 1.85;
-        max-width: var(--reading-width);
         color: var(--color-ink);
       }
       .intro-text::first-letter {
@@ -272,11 +273,12 @@ export class ChroniclesComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private langService = inject(LanguageService);
   private titleService = inject(Title);
+  private sanitizer = inject(DomSanitizer);
 
   lang: Language = 'en';
   cards = CARDS_DATA;
   panoramaImage = PANORAMA_IMAGE;
-  introText = '';
+  introHtml: SafeHtml = '';
   pageTitle = '';
   introTabLabel = '';
   chroniclesTabLabel = '';
@@ -303,11 +305,16 @@ export class ChroniclesComponent implements OnInit {
     const path = this.route.snapshot.url[0]?.path;
     this.lang = path === 'fr' ? 'fr' : 'en';
     this.langService.setLanguage(this.lang);
-    this.introText = INTRO_TEXT[this.lang];
+    this.introHtml = this.toSafeHtml(INTRO_CONTENT[this.lang]);
     this.pageTitle = PAGE_CONFIG.title[this.lang];
     this.introTabLabel = PAGE_CONFIG.tabs.intro[this.lang];
     this.chroniclesTabLabel = PAGE_CONFIG.tabs.chronicles[this.lang];
     this.titleService.setTitle(this.pageTitle);
+  }
+
+  private toSafeHtml(html: string): SafeHtml {
+    const clean = this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '';
+    return this.sanitizer.bypassSecurityTrustHtml(clean);
   }
 
   // ── tabs / cards ──────────────────────────────────────────
