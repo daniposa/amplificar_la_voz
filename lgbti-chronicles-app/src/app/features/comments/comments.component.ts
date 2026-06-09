@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject, SecurityContext } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TAB2_TEXT } from '../../core/data/content.data';
+import { DomSanitizer, type SafeHtml } from '@angular/platform-browser';
+import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
 
 @Component({
   selector: 'app-comments',
@@ -16,7 +17,7 @@ import { TAB2_TEXT } from '../../core/data/content.data';
       </header>
 
       <main class="page-main">
-        <p class="comments-text">{{ text }}</p>
+        <div class="comments-text" [innerHTML]="contentHtml"></div>
       </main>
     </div>
   `,
@@ -107,5 +108,12 @@ import { TAB2_TEXT } from '../../core/data/content.data';
   ],
 })
 export class CommentsComponent {
-  text = TAB2_TEXT;
+  private sanitizer = inject(DomSanitizer);
+
+  readonly contentHtml: SafeHtml = this.toSafeHtml(COMMENTS_CONTENT);
+
+  private toSafeHtml(html: string): SafeHtml {
+    const clean = this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '';
+    return this.sanitizer.bypassSecurityTrustHtml(clean);
+  }
 }
