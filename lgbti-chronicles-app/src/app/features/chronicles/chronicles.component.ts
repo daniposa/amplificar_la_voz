@@ -1,5 +1,14 @@
-import { Component, computed, inject, signal, OnInit, SecurityContext } from '@angular/core';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import {
+  Component,
+  computed,
+  inject,
+  signal,
+  OnInit,
+  OnDestroy,
+  SecurityContext,
+} from '@angular/core';
+import { ActivatedRoute, RouterLink, type ParamMap } from '@angular/router';
+import type { Subscription } from 'rxjs';
 import { Title, DomSanitizer, type SafeHtml } from '@angular/platform-browser';
 import { LanguageService, type Language } from '../../core/services/language.service';
 import { CARDS_DATA, PAGE_CONFIG, PANORAMA_IMAGE } from '../../core/data/content.data';
@@ -106,7 +115,9 @@ type Tab = 'intro' | 'chronicles';
         z-index: 1;
         box-sizing: border-box;
         max-height: 8vh;
-        padding: var(--space-sm) var(--space-xl);
+        /* Leave room on the left for the fixed sitemap hamburger button. */
+        padding: var(--space-sm) var(--space-xl) var(--space-sm)
+          calc(var(--space-sm) + 44px + var(--space-md));
         border-bottom: 1px solid var(--color-border);
         background: rgba(245, 240, 232, 0.9);
         display: flex;
@@ -269,11 +280,12 @@ type Tab = 'intro' | 'chronicles';
     `,
   ],
 })
-export class ChroniclesComponent implements OnInit {
+export class ChroniclesComponent implements OnInit, OnDestroy {
   private route = inject(ActivatedRoute);
   private langService = inject(LanguageService);
   private titleService = inject(Title);
   private sanitizer = inject(DomSanitizer);
+  private routeSubs: Subscription[] = [];
 
   lang: Language = 'en';
   cards = CARDS_DATA;
@@ -302,6 +314,20 @@ export class ChroniclesComponent implements OnInit {
   // ── lifecycle ─────────────────────────────────────────────
 
   ngOnInit(): void {
+    this.syncLanguageFromRoute();
+    this.applyDeepLink(this.route.snapshot.queryParamMap);
+
+    this.routeSubs.push(
+      this.route.url.subscribe(() => this.syncLanguageFromRoute()),
+      this.route.queryParamMap.subscribe((params) => this.applyDeepLink(params)),
+    );
+  }
+
+  ngOnDestroy(): void {
+    this.routeSubs.forEach((s) => s.unsubscribe());
+  }
+
+  private syncLanguageFromRoute(): void {
     const path = this.route.snapshot.url[0]?.path;
     this.lang = path === 'fr' ? 'fr' : 'en';
     this.langService.setLanguage(this.lang);
@@ -310,6 +336,29 @@ export class ChroniclesComponent implements OnInit {
     this.introTabLabel = PAGE_CONFIG.tabs.intro[this.lang];
     this.chroniclesTabLabel = PAGE_CONFIG.tabs.chronicles[this.lang];
     this.titleService.setTitle(this.pageTitle);
+  }
+
+  private applyDeepLink(params: ParamMap): void {
+    const tab = params.get('tab');
+    if (tab === 'intro' || tab === 'chronicles') {
+      this.activeTab.set(tab);
+    }
+
+    const cardParam = params.get('card');
+    if (cardParam) {
+      const id = Number(cardParam);
+      if (!Number.isNaN(id) && CARDS_DATA.some((c) => c.id === id)) {
+        this.activeTab.set('chronicles');
+        this.selectedCardId.set(id);
+        return;
+      }
+    }
+
+    if (tab === 'intro') {
+      this.selectedCardId.set(null);
+    } else if (tab === 'chronicles' && !cardParam) {
+      this.selectedCardId.set(null);
+    }
   }
 
   private toSafeHtml(html: string): SafeHtml {

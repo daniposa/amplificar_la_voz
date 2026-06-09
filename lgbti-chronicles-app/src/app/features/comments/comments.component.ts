@@ -48,7 +48,9 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
         z-index: 1;
         box-sizing: border-box;
         max-height: 15vh;
-        padding: var(--space-sm) var(--space-xl);
+        /* Leave room on the left for the fixed sitemap hamburger button. */
+        padding: var(--space-sm) var(--space-xl) var(--space-sm)
+          calc(var(--space-sm) + 44px + var(--space-md));
         border-bottom: 1px solid var(--color-border);
         background: rgba(245, 240, 232, 0.9);
         display: flex;
