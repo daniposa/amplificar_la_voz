@@ -71,7 +71,7 @@ Línea de tiempo del conflicto armado colombiano a partir de la periodización d
   
 <h3>Estructura</h3>
   <p>
-  Lo que van a encontrar aquí es una selección de los testimonios recogidos por la Comisión en su capítulo «Mi Cuerpo es la Verdad» del IF. Para este libro retomamos la división propuesta por la Comisión en tres secciones: 1)&nbsp;¿Qué pasó?: centrada en los diferentes tipos de violencias que sufrieron tanto mujeres como población LGBTIQ+; 2)&nbsp;¿Por qué pasó?: sobre las causas de esas violencias; y 3)&nbsp;¿Qué pasó con lo que pasó?: sobre los afrontamientos y resistencias que desarrollaron mujeres y población LGBTIQ+ para sobrevivir, superar o hacer vida después de la violencia. Estas tres secciones las tradujimos al inglés y al francés con palabras que grosso modo sintetizan sus sentidos: «¿Qué pasó?» Fue traducida como <i>wounds</i> y <i>blessures</i>, «¿Por qué pasó?» <i>Roots</i> y <i>racines</i>; y «¿Qué pasó con lo que pasó?» <i>Healings</i> y <i>guérisons</i>. En ese sentido, podrán encontrar los testimonios distribuidos en estas tres secciones sin jerarquía alguna. Son libres de curiosear y dejarse atrapar por los testimonios sin orden alguno. 
+  Lo que van a encontrar aquí es una selección de los testimonios recogidos por la Comisión en su capítulo «Mi Cuerpo es la Verdad» del IF. Para este libro retomamos la división propuesta por la Comisión en tres secciones: 1)&nbsp;¿Qué pasó?: centrada en los diferentes tipos de violencias que sufrieron tanto mujeres como población LGBTIQ+; 2)&nbsp;¿Por qué pasó?: sobre las causas de esas violencias; y 3)&nbsp;¿Qué pasó con lo que pasó?: sobre los afrontamientos y resistencias que desarrollaron mujeres y población LGBTIQ+ para sobrevivir, superar o hacer vida después de la violencia. Estas tres secciones las tradujimos al inglés y al francés con palabras que grosso modo sintetizan sus sentidos: «¿Qué pasó?» fue traducida como <i>Wounds</i> y <i>Blessures</i>, «¿Por qué pasó?» <i>Roots</i> y <i>Racines</i>; y «¿Qué pasó con lo que pasó?» <i>Healings</i> y <i>Guérisons</i>. En ese sentido, podrán encontrar los testimonios distribuidos en estas tres secciones sin jerarquía alguna. Son libres de curiosear y dejarse atrapar por los testimonios sin orden alguno. 
   </p>
 <hr>
 <h3>La traducción como acto político </h3>
@@ -87,6 +87,16 @@ Línea de tiempo del conflicto armado colombiano a partir de la periodización d
  <p>Somos conscientes de que este es solo un peldaño de un movimiento más grande, un medio textualizado específico que hace parte del mosaico de la(s) pregunta(s) y la(s) defensa(s) insistente(s) por la paz, la justicia, la reparación y la no repetición. Sabemos que, como Tymoczko (2000) observa, la efectividad de los propósitos políticos a través de medios textualizados resulta incierta: este ejercicio puede terminar en un conjunto de palabras pegadas con buenas intenciones o en <i>algo más</i>. Sin embargo, entre el inmutismo y un posible <i>algo más</i>, nuestra opción es clara.</p>
  <p>Este proyecto empezó con la obsesión por la singularidad: defendíamos —y defendemos—, que hay particularidades del caso colombiano que no se presentan en otras latitudes. Sin embargo, aun marcando la particularidad del conflicto armado colombiano, no queremos que esta memoria que creamos como traductoras sea una memoria literal en la que lo extremo de un dolor único se convierta en ceguera de futuro. Nuestro norte es una memoria ejemplar: una memoria que permita reconocer nuestras diferencias y encontrarnos en lo común. Como traductoras estamos constantemente virando entre lo intraducible y la equivalencia, entre la extrañeza y la comprensión. Acá intentamos ofrecerles la versión más honesta posible de cómo reconciliamos estas duplas. Entonces, les invitamos a leer estos testimonios con la analogía justa y con la otredad necesaria.</p>
  <hr>
+
+<h3>Nuestro proceso</h3>
+<p>
+  <img 
+    src="images/comentarios/comentarios_metodologia.avif" 
+    alt="Metodología" 
+    style="float: right; margin-left: 15px; margin-bottom: 10px; width: 250px;"
+  >
+  Recorrimos un camino poco usual en el quehacer académico de las estudiantes de traducción en nuestra Escuela. Primero, decidimos hacer una <i>traducción comentada</i> en el marco de unas prácticas investigativas, con ella pudimos plasmar una reflexión crítica y argumentada donde se da cuenta tanto del proceso de traducción como del producto final (Williams y Chesterman, 2002; Johnson, 2023). Segundo, nos encontramos con el reto, y la fortuna, de realizar un proceso de <i>traducción colectiva</i> (O’Brien, 2011) y <i>comunizante</i> (Rosas <i>et al</i>., 2025) que nos permitió juntar, enfrentar y hacer coincidir nuestras manos, nuestras voces, nuestros rasgos más distintivos y nuestras trayectorias como personas y como traductoras en formación. Por último, nos empecinamos y arriesgamos a hacer una traducción inversa que nos enfrentó, no solo a nuestros miedos con la lengua extranjera, sino, también, como pasa con la traducción en general, a la otredad. 
+</p>
 
  
 `;
