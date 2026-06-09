@@ -132,22 +132,12 @@ export const CARDS_DATA: CardData[] = [
   {
     id: 1,
     title: { es: '¿Qué pasó?', fr: 'Qu’est-ce qu’il a passé ?', en: 'What happened?' },
-    description: {
-      es: 'Español: Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      fr: 'Français: Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      en: 'English: Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
     imagePath: 'images/paisajes/paisaje_que_paso.avif',
     hotspots: buildGridHotspots(CHRONICLES_T1, { prefix: 't1' }),
   },
   {
     id: 2,
     title: { es: '¿Por qué pasó?', fr: 'Pourquoi il a passé ?', en: 'Why did it happen?' },
-    description: {
-      es: 'Español: Sed do eiusmod tempor incididunt ut labore et dolore.',
-      fr: 'Français: Sed do eiusmod tempor incididunt ut labore et dolore.',
-      en: 'English: Sed do eiusmod tempor incididunt ut labore et dolore.',
-    },
     imagePath: 'images/paisajes/paisaje_por_que_paso.avif',
     hotspots: buildGridHotspots(CHRONICLES_T2, { prefix: 't2' }),
   },
@@ -157,11 +147,6 @@ export const CARDS_DATA: CardData[] = [
       es: '¿Qué pasó con lo que pasó?',
       fr: 'Qu’est-ce qu’il a passé avec ce qu’il a passé ?',
       en: 'What happened with what happened?',
-    },
-    description: {
-      es: 'Español: Ut enim ad minim veniam, quis nostrud exercitation.',
-      fr: 'Français: Ut enim ad minim veniam, quis nostrud exercitation.',
-      en: 'English: Ut enim ad minim veniam, quis nostrud exercitation.',
     },
     imagePath: 'images/paisajes/paisaje_que paso_con_lo_que_paso.avif',
     hotspots: buildGridHotspots(CHRONICLES_T3, { prefix: 't3' }),

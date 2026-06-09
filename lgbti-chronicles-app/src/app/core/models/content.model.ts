@@ -55,7 +55,6 @@ export interface Hotspot {
 export interface CardData {
   id: number;
   title: LocalizedContent;
-  description: LocalizedContent;
   imagePath: string;
   hotspots: Hotspot[];
 }
