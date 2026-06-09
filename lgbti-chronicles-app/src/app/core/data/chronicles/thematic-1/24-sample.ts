@@ -1,6 +1,8 @@
 import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_24: LocalizedModalContent = {
+  // Hotspot button position over the image (x, y as % of the image, to its center).
+  hotspot: { x: 37.43, y: 50 },
   title: {
     es: 'Lina',
     fr: 'Lina',
@@ -31,7 +33,7 @@ export const CHRONICLE_T1_24: LocalizedModalContent = {
   },
   contextInfo: {
     es: `<p>Lugar: Santa Rosa, Cauca</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): reclutamiento forzado, amenazas, secuestro, violencia sexual, trabajo forzado, violencia de género</p><p>Actor armado: ELN (Columna Camilo Cienfuegos)</p>`,
-     fr: `<p>Lieu : Santa Rosa, Cauca</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : recrutement forcé, menaces, enlèvements, violence sexuelle, travail forcé, violences sexistes</p><p>Acteur armé : ELN (Columna Camilo Cienfuegos)</p>`,
-     en: `<p>Place: Santa Rosa, Cauca</p><p>Date: N/A</p><p>Victimizing act(s): forced recruitment, threats, kidnapping, sexual violence, forced labor, gender-based violence</p><p>Armed actor: ELN (Columna Camilo Cienfuegos)</p>`,
+    fr: `<p>Lieu : Santa Rosa, Cauca</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : recrutement forcé, menaces, enlèvements, violence sexuelle, travail forcé, violences sexistes</p><p>Acteur armé : ELN (Columna Camilo Cienfuegos)</p>`,
+    en: `<p>Place: Santa Rosa, Cauca</p><p>Date: N/A</p><p>Victimizing act(s): forced recruitment, threats, kidnapping, sexual violence, forced labor, gender-based violence</p><p>Armed actor: ELN (Columna Camilo Cienfuegos)</p>`,
   },
 };

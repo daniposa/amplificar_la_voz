@@ -1,6 +1,8 @@
 import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_02: LocalizedModalContent = {
+  // Hotspot button position over the image (x, y as % of the image, to its center).
+  hotspot: { x: 24.86, y: 14 },
   title: { es: 'Mariana', fr: 'Mariana', en: 'Mariana' },
   rawText: {
     es: `<p>«Yo tenía 12 años. Uno de ellos se enamoró de mí. No sé el nombre, porque nunca lo dijo; siempre lo conocí como “el Mono”. Me llevaron pa una finca en donde me tuvieron una semana, me estrujaron, me violaron por ambos lados. Tuve un embarazo, pero me hicieron abortar. Me violaron varios, no fue nada más él. Me tenían encerrada en una habitación. A donde íbamos, me sacaban en camionetas blindadas. Nadie me veía cuando paseaba por el pueblo».</p> 

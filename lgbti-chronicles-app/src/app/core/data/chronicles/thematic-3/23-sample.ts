@@ -1,6 +1,8 @@
 import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T3_23: LocalizedModalContent = {
+  // Hotspot button position over the image (x, y as % of the image, to its center).
+  hotspot: { x: 24.86, y: 57 },
   title: {
     es: 'Dioselina',
     fr: 'Dioselina',
@@ -21,18 +23,18 @@ export const CHRONICLE_T3_23: LocalizedModalContent = {
       <p>It was a paramilitary group affiliated with the United Self-Defense Forces of Colombia (AUC) that operated in the departments of Valle del Cauca and Cauca, as well as in some municipalities of Quindío and Huila between 1999 and 2004, the year of its collective demobilization.</p>
       <p><a href="https://web.archive.org/web/20260527164306/https://centrodememoriahistorica.gov.co/wp-content/uploads/2020/02/bloque-calima-auc.pdf" target="_blank" rel="noopener noreferrer">Centro de Memoria Histórica</a></p>`,
     },
-	2: {
+    2: {
       es: `<p>Nota de ejemplo para la crónica T3-41.</p>`,
       fr: `<p><strong><i>Finca</i></strong></p>
 		<p><img src="images/flotantes/finca.avif" alt="Une <i>finca</i> en Antioquia" width="220"></p>
 		<p><small>Une <i>finca</i> en Antioquia</small></p>
 		<p>En Colombie, le terme « finca » est habituellement utilisé pour désigner une maison, quel qu’en soit la taille, située dans une zone rurale. Une <i>finca</i> peut désigner aussi bien une petite maison de campagne comme une grande maison avec ses propres terres agricoles. Ces terres agricoles peuvent être des grandes étendues utilisées générer des bénéfices importants, ou elles peuvent être des petits potagers. Cela peut aussi être des terrains vagues, n’ayant pas d’utilité particulière mise à part d’être un lieu où l’on peut passer le temps hors de la ville.</p>`,
-	  en: `<p><strong><i>Finca</i></strong></p>
+      en: `<p><strong><i>Finca</i></strong></p>
 		<p><img src="images/flotantes/finca.avif" alt="A <i>finca</i> in Antioquia" width="220"></p>
 		<p><small>A <i>finca</i> in Antioquia</small></p>
 		<p>In Colombia, “finca” is a term commonly used to refer to a house, regardless of its size, located in a rural area. A <i>finca</i> can range from a small country house to a large house with its own plantation. These agricultural plantations can be large expanses of land intended to produce a significant profit, or they can be small vegetable gardens. They may also be empty plots of land that serve no particular purpose, except to provide a place to spend time outside of any city or village.</p>`,
     },
-},
+  },
   contextInfo: {
     es: `<p>Lugar: Santander de Quilichao, Cauca</p><p>Año: 2007</p><p>Hecho(s) victimizante(s): asesinato, expropiación de tierras</p><p>Actor armado: Bloque Calima de las AUC</p>`,
     fr: `<p>Lieu : Santander de Quilichao, Cauca</p><p>Date : 2007</p><p>Fait(s) victimisant(s) : assassinat, dépossession de terres</p><p>Acteur armé : Bloque Calima des AUC</p>`,

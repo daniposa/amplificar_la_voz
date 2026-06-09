@@ -18,6 +18,9 @@ export interface GridHotspotOptions {
 /**
  * Places chronicles on a padded grid so each has a clickable hotspot.
  * x/y are the center of the cell; width/height size the clickable area.
+ *
+ * A chronicle can override its position/size by setting `hotspot` in its content
+ * file (see `HotspotPlacement`); when present, that overrides the grid layout.
  */
 export function buildGridHotspots(
   chronicles: LocalizedModalContent[],
@@ -41,16 +44,21 @@ export function buildGridHotspots(
   return chronicles.map((modalContent, index) => {
     const col = index % cols;
     const row = Math.floor(index / cols);
-    const x = paddingX + cellW * (col + 0.5);
-    const y = paddingY + cellH * (row + 0.5);
+    const gridX = paddingX + cellW * (col + 0.5);
+    const gridY = paddingY + cellH * (row + 0.5);
     const num = String(index + 1).padStart(2, '0');
+
+    // Per-chronicle override from the content file, if provided.
+    const override = modalContent.hotspot;
+    const x = override ? override.x : gridX;
+    const y = override ? override.y : gridY;
 
     return {
       id: `${opts.prefix}-h${num}`,
       x: Math.round(x * 100) / 100,
       y: Math.round(y * 100) / 100,
-      width: hotspotWidth,
-      height: hotspotHeight,
+      width: override?.width ?? hotspotWidth,
+      height: override?.height ?? hotspotHeight,
       modalContent,
     };
   });

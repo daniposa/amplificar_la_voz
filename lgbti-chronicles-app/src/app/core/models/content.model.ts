@@ -41,6 +41,26 @@ export interface LocalizedModalContent {
    * Resolved at render time: current lang → es → fr → en. Same safe tags as tooltips.
    */
   contextInfo?: PartialLocalizedContent;
+  /**
+   * Optional position of this chronicle's hotspot button on the image. When set,
+   * it overrides the automatic grid layout. Configure it in the chronicle file.
+   */
+  hotspot?: HotspotPlacement;
+}
+
+/**
+ * Position (and optional size) of a hotspot button over the chronicle image.
+ * `x` / `y` are percentages (0–100) measured to the button's center.
+ */
+export interface HotspotPlacement {
+  /** Horizontal center, as a % of the image width (0 = left, 100 = right). */
+  x: number;
+  /** Vertical center, as a % of the image height (0 = top, 100 = bottom). */
+  y: number;
+  /** Clickable width as a % of the image width. Optional. */
+  width?: number;
+  /** Clickable height as a % of the image height. Optional. */
+  height?: number;
 }
 
 export interface Hotspot {

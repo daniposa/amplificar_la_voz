@@ -2,6 +2,9 @@ import type { LocalizedModalContent } from '../../../models/content.model';
 
 export const CHRONICLE_T1_01: LocalizedModalContent = {
   title: { es: 'Soraida', fr: 'Soraida', en: 'Soraida' },
+  // Hotspot button position over the image (x, y as % of the image, to its
+  // center). Optional — remove it to fall back to the automatic grid layout.
+  hotspot: { x: 30, y: 45 },
   rawText: {
     es: `<p>La Comisión conoció que, en los Montes de María, muchos hombres gais y mujeres trans \
 fueron víctimas de tratos crueles, inhumanos y degradantes por parte de los paramilitares y de la \
