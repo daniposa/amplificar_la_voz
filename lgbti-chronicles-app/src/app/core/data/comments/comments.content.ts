@@ -7,79 +7,13 @@
  * `<img src="images/…" alt="…" width="…">`, etc. Edit this freely as HTML.
  */
 export const COMMENTS_CONTENT = `
-  <h2>Introducción</h2>
-  <img 
-      src="images/comentarios/comentarios_conflicto.avif"
-      alt="Conflicto"
-      style="width: 100%; max-width: 800px;"
-    >
-  <p>
-    El conflicto armado interno colombiano se enmarca en una lucha insurgente y contrainsurgente que ha durado más de 50 años e involucrado diversos actores: grupos guerrilleros (FARC-EP, ELN, EPL, M-19, etc.), grupos paramilitares (AUC, ACMM, etc.), la participación por acción y por omisión del Estado y sus aparatos represivos (fuerzas policiales, militares, judiciales, etc.) y otros actores políticos y económicos. Con más de nueve millones de víctimas, los distintos hechos victimizantes incluyen homicidios, desapariciones forzadas, violencias sexuales, desplazamientos forzados, amenazas, ataques indiscriminados, secuestros, torturas, reclutamientos forzados, despojos de tierras, entre otros. Según los datos recolectados por la Comisión de la Verdad [CEV] (2022a), el 80&nbsp;% de las víctimas fueron civiles y el hecho victimizante de mayor dimensión fue el desplazamiento forzado con 7&nbsp;752&nbsp;964 víctimas.</p> 
-
-<p>A pesar de contar con antecedentes de violencia política estrechamente conectados con la violencia posterior, la Comisión toma el año 1958, con la creación del Frente Nacional, como hito inicial del conflicto armado y el 2016, con la firma del Acuerdo de Paz, como hito final. La década de 1995 al 2004 fue el periodo con más víctimas, aproximadamente el 45&nbsp;% de las víctimas totales.</p>
-<p> <b>Figura 1.</b><br>
-Línea de tiempo del conflicto armado colombiano a partir de la periodización de la Comisión de la Verdad<br>
-<img 
-      src="images/comentarios/linea_tiempo.avif"
-      alt="Linea"
-      style="width: 100%; max-width: 800px;"
-    ><br>
-    <small><i>Nota</i>. Fuente https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites (CEV, 2022b).</small></p>
-    <p>Diferenciada pero latente, la violencia del conflicto se presentó en todo el territorio nacional colombiano, rural y urbano, e incluso cuenta con una dimensión internacional. Pueblos, montañas, ciudades, ríos, cañones, selvas, páramos, desiertos, barrios y veredas han sido escenarios del horror, pero también de la esperanza. La Comisión distingue entre 11 regiones: Amazonía; Antioquia, sur de Córdoba y Bajo Atrato Chocoano; Caribe; Centro; Eje Cafetero; Frontera Nororiental; Magdalena Medio; Nariño y Sur del Cauca; Orinoquía; Pacífico; y Valle y Norte del Cauca. Antioquia es el departamento con mayor número total de víctimas con un 18,64&nbsp;% para 2025 (Unidad para las Víctimas, 2025).</p>
-    <p><b>Figura 2.</b><br>
-    Mapa de Colombia a partir de la regionalización de la CEV<br>
-    <img 
-      src="images/comentarios/mapa.avif"
-      alt="Mapa"
-      width="400"
-    ><br>
-    <small><i>Nota</i>. Fuente https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones (CEV, 2022c).</small></p>
-    <p>No solo se vivieron dinámicas territoriales diversas, sino que también los impactos fueron diferenciados según poblaciones específicas: campesinos, mujeres, poblaciones étnicas, población LGBTIQ+, sectores políticos, estudiantes, funcionarios públicos, empresarios, personas con discapacidades y un largo etcétera. En relación con todos estos enfoques diferenciales, se tiene que la población víctima del conflicto armado es la población más empobrecida del país: para el 2024 el 44,6&nbsp;%, el 18,1&nbsp;% y el 18,4&nbsp;% de las víctimas se encontraban en situación de pobreza monetaria, extrema y multidimensional, respectivamente (DANE, 2026).
-  </p>
-  <h3>Sobre el texto original</h3>
-  <p>
-    El <i>Informe Final</i> (IF) es el producto legado a la sociedad por la CEV tras el proceso de esclarecimiento de verdad y diálogo social realizado entre noviembre del 2018 y junio del 2022. Está conformado por 11 capítulos:</p>
-  <blockquote>
-  <p>Capítulo introductorio;<br> 
-
-«Hallazgos y recomendaciones»;<br>  
-
-«No matarás» (relato histórico);<br> 
-
-«Colombia adentro» (relatos territoriales, dividido en trece tomos);<br> 
-
-«Hasta la guerra tiene límites» (sobre violaciones a los Derechos Humanos y el DIH);<br> 
-
-«Cuando los pájaros no cantaban» (capítulo testimonial),<br>  
-
-«Sufrir la guerra y rehacer la vida» (sobre impactos, resistencias y afrontamientos),<br>  
-
-«La Colombia fuera de Colombia» (sobre exilios);<br> 
-
-«Resistir no es aguantar» (sobre comunidades étnicas);<br>  
-
-«No es un mal menor» (sobre niños, niñas y adolescentes); y<br>  
-
-«Mi cuerpo es la verdad» (sobre mujeres y población LGBTIQ+).</p>
-</blockquote>
-<p>El capítulo «Mi Cuerpo es la Verdad» (CEV, 2022f) aborda las violencias, impactos, afrontamientos y resistencias de mujeres y población LGBTIQ+ durante el conflicto armado. Este capítulo, así como todo el IF, está dirigido principalmente a la sociedad colombiana, incluyendo las víctimas del conflicto y las instituciones del Estado. A la primera para que conozca y asuma su pasado en aras de construir su presente y su futuro, a las segundas para su reconocimiento, a las terceras para recomendarles hacia donde guiar sus políticas. La construcción del IF estuvo liderada por 11 comisionados y un equipo investigativo conformado por 290 personas en Bogotá, 200 personas en territorios y 120 transcriptores (El Espectador, 2022). La Comisión escuchó 27&nbsp;508 relatos entre los cuales se encuentran los testimonios de las víctimas consignados en el capítulo «Mi Cuerpo es la Verdad». Estos testimonios fueron transcritos y después seleccionados y fragmentados para incluirse en el texto final. Cada capítulo del IF tuvo un equipo investigativo a cargo de escribir el texto, pero también un equipo editorial general que se encargó de unificar los criterios de escritura de los diferentes capítulos. La estrategia editorial consistió en un trabajo colaborativo entre el equipo investigativo de cada capítulo y el equipo editorial en tres fases: edición macro, edición micro y corrección ortotipográfica y de estilo; posteriormente se realizó una lectura de pares internos y externos (CEV, 2022d).</p>  
-<p>Quien se acerque a leer el IF encontrará un texto de características políticas, pero también académicas e investigativas. Está diseñado para la comunicación masiva que mezcla distintos géneros: informes, testimonios, cuentos, poemas, canciones. Es un texto público, abierto a toda la ciudadanía, nacional e internacional. Cuenta no solo con los textos de los diferentes capítulos sino también con una multimedia alojada en una página web que complementa los textos con recursos audiovisuales. En su totalidad está escrito en español, aunque hay algunas secciones y capítulos traducidos al inglés, francés, lenguas indígenas y lengua de señas colombiana. El capítulo «Mi Cuerpo es la Verdad» no está traducido por completo ni al inglés ni al francés. Aquí la razón de traducir sus testimonios (ver comentario sobre <i>Testimonios</i>) y llevarlos a otros contextos.</p>
   
-  <h3>Prólogo</h3>
-<p>Nosotras tampoco queremos desprendernos de la naturaleza del testimonio. Sabemos que es un testimonio mediato que ha pasado por diferentes intermediarios. Sabemos que, por más que lo intentemos, no es la voz directa de las víctimas, tampoco es la experiencia misma. Aun así, nos proponemos <i>amplificar</i> esa voz mediata en la cual reposa algo de esa voz vivida.</p>
-<p>Elegir traducir sobre conflicto armado no es una decisión neutra. El IF de la CEV cuenta qué pasó, por qué pasó, quiénes se involucraron en lo que pasó y cómo las víctimas afrontaron lo que pasó durante el conflicto armado colombiano. Decidir llevar este texto a otros contextos es un acto político, pensar cómo transmitirlo también. Este proyecto empezó con la obsesión por la singularidad: defendíamos —y defendemos—, que hay particularidades del caso colombiano que no se presentan en otras latitudes. Sin embargo, aun marcando la particularidad del conflicto armado colombiano, no queremos que esta memoria que creamos como traductoras sea una memoria literal en la cual lo extremo de un dolor único se convierta en ceguera de futuro. Nuestro horizonte es una memoria ejemplar: una memoria que permita reconocer nuestras diferencias y encontrarnos en lo común. Como traductoras estamos constantemente virando entre lo intraducible y la equivalencia, entre la extrañeza y la comprensión. Acá intentamos ofrecerles la versión más honesta posible de cómo reconciliamos estas duplas. Entonces, les invitamos a leer estos testimonios con la analogía justa y con la otredad necesaria.</p>
-
-  <h3>Quiénes somos</h3>
-  <p>
-  Somos un grupo de ocho estudiantes y una profesora del programa de Traducción de la Universidad de Antioquia empecinadas por relacionar los textos que traducimos con la realidad social, política y cultural de nuestro país y con nuestra propia formación como traductoras. Hacemos parte del Semillero Traducción, Género y Feminismo que nos ha servido de laboratorio para aprender, conversar, cultivar y hacer en colectivo. Este proyecto se enmarca en la convocatoria FUA-001-2024 de la Fundación Universidad de Antioquia con la cual se apoya financieramente a proyectos de investigación de estudiantes de pregrado. 
-  </p>
-  
-<h3>Estructura</h3>
-  <p>
-  Lo que van a encontrar aquí es una selección de los testimonios recogidos por la Comisión en su capítulo «Mi Cuerpo es la Verdad» del IF. Para este libro retomamos la división propuesta por la Comisión en tres secciones: 1)&nbsp;¿Qué pasó?: centrada en los diferentes tipos de violencias que sufrieron tanto mujeres como población LGBTIQ+; 2)&nbsp;¿Por qué pasó?: sobre las causas de esas violencias; y 3)&nbsp;¿Qué pasó con lo que pasó?: sobre los afrontamientos y resistencias que desarrollaron mujeres y población LGBTIQ+ para sobrevivir, superar o hacer vida después de la violencia. Estas tres secciones las tradujimos al inglés y al francés con palabras que grosso modo sintetizan sus sentidos: «¿Qué pasó?» fue traducida como <i>Wounds</i> y <i>Blessures</i>, «¿Por qué pasó?» <i>Roots</i> y <i>Racines</i>; y «¿Qué pasó con lo que pasó?» <i>Healings</i> y <i>Guérisons</i>. En ese sentido, podrán encontrar los testimonios distribuidos en estas tres secciones sin jerarquía alguna. Son libres de curiosear y dejarse atrapar por los testimonios sin orden alguno. 
-  </p>
-<hr>
-<h3>La traducción como acto político </h3>
+<h2>La traducción como acto político </h2>
+ <img 
+    src="images/comentarios/comentarios_conflicto.avif" 
+    alt="Conflicto" 
+    width="300"
+  >
   <p>
   Elegir traducir sobre conflicto armado no es una decisión neutra. Incluso aterrizar sobre un texto de este tema sin intención previa implica tomar decisiones políticas sobre lo que se resalta y lo que no. El IF de la CEV cuenta qué pasó, por qué pasó, quiénes se involucraron en lo que pasó y cómo las víctimas afrontaron lo que pasó durante el conflicto armado colombiano. Decidir llevar este texto a otros contextos es un acto político, pensar cómo transmitirlo también. Baker (2007) ubica el ejercicio de traducción en medio de conflictos como una herramienta de legitimación de narrativas que ponderan o acentúan los poderes en conflicto. Para ella, las traductoras —y el solo hablar en femenino como genérico ya es un uso político del lenguaje— tienen un rol preponderante en la <i>mediación</i> de los conflictos, ya sea para iniciarlos, continuarlos o superarlos, porque todo acto de guerra o de paz está mediado por un acto lingüístico. Este rol es tal por la capacidad de la traducción de «circular y resistir las narrativas que crean el escenario intelectual y moral para los conflictos violentos» (Baker, 2007, p. 2, traducción propia). 
   </p>
