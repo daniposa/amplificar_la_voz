@@ -11,7 +11,7 @@ import type { LocalizedContent } from '../../models/content.model';
 export const INTRO_CONTENT: LocalizedContent = {
   es: `<p>Español: texto de prueba 2 jsuiashfuashfw Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>`,
   fr: `<p>Français: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>`,
-  en: `<h2>Introduction<h2>
+  en: `<h2>Introduction</h2>
   
   <p>The Colombian internal armed conflict unfolded as an insurgent and counterinsurgent struggle spanning more than 50 years, involving a diverse array of actors: guerrilla groups (FARC-EP, ELN, EPL, M-19, etc.), paramilitary organizations (AUC, ACMM, etc.), and state, police, military, and political forces,  the latter through both action and inaction. With more than nine million victims, the conflict gave rise to a wide range of abuses, including homicides, enforced disappearances, sexual violence, forced displacement, threats, indiscriminate attacks, kidnappings, torture, forced recruitment, land dispossession, and more. According to the Truth Commission, 80&nbsp;% of the victims were civilians, and the most widespread form of victimization was forced displacement, with 7,752,964 recorded cases.</p> 
 
