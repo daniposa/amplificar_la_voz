@@ -22,7 +22,8 @@ export const INTRO_CONTENT: LocalizedContent = {
       src="images/comentarios/Linea_2.avif"
       alt="Linea Inglés"
       style="width: 100%; max-width: 800px;"
-    >
+    ><br>
+    <small><i>Note</i>. Source https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites (CEV, 2022b).</small>
   </p>
   <p>The violence was both differentiated and pervasive, reaching across Colombia's entire national territory, rural and urban alike,  and even extending beyond its borders. Towns, mountains, cities, rivers, canyons, jungles, Andean moorlands, deserts, neighborhoods, and rural settlements all became sites of atrocity, but also of resilience. The Commission identifies 11 regions: Amazonia; Antioquia, southern Córdoba, and Lower Atrato River region of Choco; Caribbean; Central; Coffee Region; Northeastern Border; Middle Magdalena; Nariño and southern Cauca; Orinoquía; Pacific; and Valle and northern Cauca. Antioquia stands out as the department with the highest number of victims, representing 18.74&nbsp;% of the national total as of 2025 (Victims Unit, 2025).</p>
   <p><b><i>Map of Colombia based on the Truth Commission's regionalization (CEV, 2022)</i></b><br>
@@ -30,7 +31,8 @@ export const INTRO_CONTENT: LocalizedContent = {
       src="images/comentarios/mapa.avif"
       alt="Mapa"
       width="400"
-    >
+    ><br>
+    <small><i>Note</i>. Source https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones (CEV, 2022c).</small>
     </p>
     Beyond regional variation, the conflict's impacts differed significantly across population groups, including peasants, women, ethnic communities, LGBTIQ+ people, political sectors, students, public officials, businesspeople, people with disabilities, and many others , often affecting those at the intersection of multiple identities. Compounding this, the populations most affected by the armed conflict are also among the country's most economically marginalized: by 2022, 51.6&nbsp;% of victims were living in poverty, whether measured by monetary, extreme, or multidimensional indicators (DANE & Victims Unit, 2024).</p>
     <h3>About the original text</h3>
