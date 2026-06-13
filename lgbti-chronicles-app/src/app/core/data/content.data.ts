@@ -133,7 +133,7 @@ export const CARDS_DATA: CardData[] = [
     title: { es: '', fr: '', en: '' },
     imagePath: 'images/paisajes/paisaje_que_paso.avif',
     // Position (x, y in % of the image) and size (width in px) of this card.
-    placement: { x: 8.3, y: 85, width: 72, height: 100 },
+    placement: { x: 20.351, y: 67.859, width: 240, height: 71 },
     // Title typography (any field is optional and falls back to the default).
     textStyle: {
       fontFamily: 'var(--font-hand)',
@@ -146,7 +146,7 @@ export const CARDS_DATA: CardData[] = [
   },
   {
     id: 2,
-    title: { es: '¿Por qué pasó?', fr: 'Pourquoi il a passé ?', en: 'Why did it happen?' },
+    title: { es: '', fr: '', en: '' },
     imagePath: 'images/paisajes/paisaje_por_que_paso.avif',
     // Position (x, y in % of the image) and size (width in px) of this card.
     placement: { x: 48.2, y: 81.5, width: 120, height: 120 },
@@ -157,15 +157,15 @@ export const CARDS_DATA: CardData[] = [
       color: 'var(--color-ink)',
     },
     // Background opacity (0 = transparent, 1 = opaque).
-    backgroundAlpha: 0.5,
+    backgroundAlpha: 0.1,
     hotspots: buildGridHotspots(CHRONICLES_T2, { prefix: 't2' }),
   },
   {
     id: 3,
     title: {
-      es: '¿Qué pasó con lo que pasó?',
-      fr: 'Qu’est-ce qu’il a passé avec ce qu’il a passé ?',
-      en: 'What happened with what happened?',
+      es: '¿',
+      fr: '',
+      en: '',
     },
     imagePath: 'images/paisajes/paisaje_que paso_con_lo_que_paso.avif',
     // Position (x, y in % of the image) and size (width in px) of this card.
@@ -177,7 +177,7 @@ export const CARDS_DATA: CardData[] = [
       color: 'var(--color-ink)',
     },
     // Background opacity (0 = transparent, 1 = opaque).
-    backgroundAlpha: 0.5,
+    backgroundAlpha: 0.1,
     hotspots: buildGridHotspots(CHRONICLES_T3, { prefix: 't3' }),
   },
 ];
