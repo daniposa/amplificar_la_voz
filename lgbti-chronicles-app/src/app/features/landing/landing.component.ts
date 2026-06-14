@@ -97,14 +97,14 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         padding: var(--space-lg) var(--space-md);
         border: 1px solid var(--color-border);
         border-radius: 4px;
-        background: rgba(248, 244, 239, 0.85);
+        background: rgba(248, 244, 239, 0.6);
         text-decoration: none;
         cursor: pointer;
         transition: all 0.25s ease;
         box-shadow: var(--shadow-card);
       }
       .lang-btn:hover {
-        background: rgba(245, 240, 232, 0.95);
+        background: rgba(245, 240, 232, 0.75);
         border-color: var(--color-accent);
         box-shadow: var(--shadow-soft);
         transform: translateY(-2px);
@@ -128,7 +128,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       }
       .comments-btn .btn-label {
         font-size: 1.4rem;
-        color: var(--color-ink-muted);
+        color: var(--color-ink);
       }
       .credits {
         margin-top: var(--space-2xl);
