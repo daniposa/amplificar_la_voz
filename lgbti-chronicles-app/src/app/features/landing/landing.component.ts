@@ -57,8 +57,8 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         inset: 0;
         background: linear-gradient(
           to bottom,
-          rgba(248, 244, 239, 0.7) 0%,
-          rgba(248, 244, 239, 0.88) 100%
+          rgba(248, 244, 239, 0.1) 0%,
+          rgba(248, 244, 239, 0.1) 100%
         );
         pointer-events: none;
         z-index: 0;
