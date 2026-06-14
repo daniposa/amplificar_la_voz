@@ -104,8 +104,8 @@ type Tab = 'intro' | 'chronicles';
         inset: 0;
         background: linear-gradient(
           to bottom,
-          rgba(248, 244, 239, 0.75) 0%,
-          rgba(248, 244, 239, 0.9) 100%
+          rgba(248, 244, 239, 0.1) 0%,
+          rgba(248, 244, 239, 0.1) 100%
         );
         pointer-events: none;
         z-index: 0;
