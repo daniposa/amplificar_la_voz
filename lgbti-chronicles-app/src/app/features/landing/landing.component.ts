@@ -132,9 +132,12 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       }
       .credits {
         margin-top: var(--space-2xl);
-        padding-top: var(--space-xl);
-        border-top: 1px solid var(--color-border-soft);
+        padding: var(--space-md) var(--space-lg); 
+        border: 1px solid var(--color-border);
+        border-radius: 8px;                         
         text-align: left;
+        background: rgba(248, 244, 239, 0.85);      
+        backdrop-filter: blur(4px);                 
       }
       .credits-title {
         font-family: var(--font-display);
@@ -153,8 +156,8 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       }
       .credits-line {
         font-family: var(--font-body);
-        font-size: 0.9rem;
-        line-height: 1.65;
+        font-size: 0.95rem;
+        line-height: 1.8;
         color: var(--color-ink-muted);
         margin-bottom: var(--space-sm);
       }
@@ -163,10 +166,22 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       }
       .credits-label {
         color: var(--color-ink);
-        font-weight: 500;
+        font-weight: 600;
+        display: block;                             
+        margin-bottom: var(--space-xs);
       }
       .credits-names {
         font-style: italic;
+        display: block;                             
+      }
+      
+      .credits-names::after {
+        content: "";
+        display: block;
+      }
+      
+      .credits-names {
+        white-space: pre-line;
       }
     `,
   ],
