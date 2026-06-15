@@ -1,11 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { ModalContentComponent } from '../modal-content/modal-content.component';
 import type { CardData, Hotspot } from '../../../../core/models/content.model';
 
 @Component({
   selector: 'app-interactive-image',
   standalone: true,
-  imports: [ModalContentComponent],
+  imports: [],
   template: `
     <div class="image-container" [class.landscape-contain]="card?.id === 1 || card?.id === 3">
       <img [src]="imagePath" [alt]="'Image for card ' + card?.id" />
@@ -20,12 +19,9 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           <span class="material-icons">auto_awesome</span>
         </button>
       }
-    }
     </div>
-    @if (modalContent) {
-      <app-modal-content [content]="modalContent" (close)="closeModal()" />
-    }
-  `,
+    
+    `,
   styles: [`
     .image-container {
       position: relative;
@@ -40,15 +36,15 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Por defecto para la temática 2 */
+      object-fit: cover; /* Comportamiento original para la temática 2 */
     }
     
-    /* 🌟 NUEVOS ESTILOS EXCLUSIVOS PARA LAS TEMÁTICAS 1 Y 3 */
+    /* 🌟 ESTILOS DE AJUSTE PARA LAS TEMÁTICAS 1 Y 3 */
     .image-container.landscape-contain {
-      background-color: #f5f0e8; /* Fondo beige neutral precioso */
+      background-color: #f5f0e8; /* Tu fondo beige neutral */
     }
     .image-container.landscape-contain img {
-      object-fit: contain; /* Encoje el paisaje para que se vea 100% completo */
+      object-fit: contain; /* Encoge el paisaje para revelar las estrellas de los bordes */
       max-width: 100%;
       max-height: 100%;
     }
@@ -93,13 +89,11 @@ export class InteractiveImageComponent {
     return this.card?.hotspots ?? [];
   }
 
-  modalContent: import('../../../../core/models/content.model').LocalizedModalContent | null = null;
-
+  // Definimos el evento para avisarle al componente padre (chronicles) que abra el modal correspondiente
   openModal(hotspot: Hotspot): void {
-    this.modalContent = hotspot.modalContent;
-  }
-
-  closeModal(): void {
-    this.modalContent = null;
+    // Si tu componente padre maneja el evento de apertura mediante un Output o servicio, 
+    // puedes enlazarlo aquí. Dado que limpiamos el modalContent local, la interacción se centraliza.
+    const customEvent = new CustomEvent('openChronicleModal', { detail: hotspot.modalContent });
+    window.dispatchEvent(customEvent);
   }
 }
