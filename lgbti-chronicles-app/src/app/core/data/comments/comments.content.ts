@@ -247,134 +247,132 @@ text: `
   <hr style="border: none; height: 3px; background-color: #2c2420;">
 
   <h2>Referencias</h2>
-  <ul>
-<li>Academia Colombiana de la Lengua. (2012). <i>Breve Diccionario de Colombianismos</i> (4a ed. Revisada). Bogotá, Colombia: Academia Colombiana de la Lengua.</li>
+<p class="referencia">Academia Colombiana de la Lengua. (2012). <i>Breve Diccionario de Colombianismos</i> (4a ed. Revisada). Bogotá, Colombia: Academia Colombiana de la Lengua.</p>
 
-<li>Acedo, N. (2017). El género testimonio en Latinoamérica: aproximaciones críticas en busca de su definición, genealogía y taxonomía. <i>Latinoamérica</i>, (64), 39-69. https://doi.org/10.22201/cialc.24486914e.2017.64.56863</li>
+<p class="referencia">Acedo, N. (2017). El género testimonio en Latinoamérica: aproximaciones críticas en busca de su definición, genealogía y taxonomía. <i>Latinoamérica</i>, (64), 39-69. https://doi.org/10.22201/cialc.24486914e.2017.64.56863</p>
 
-<li>Alzate, M. (2022). El acervo del conocimiento acerca de las víctimas de conflictos armados (2005-2018). En M. Alzate (Ed.), <i>Etnografía política e histórica de las víctimas del conflicto armado en Colombia</i> (pp. 27-72). Centro Editorial, Facultad de Ciencias Humanas y Económicas.</li>  
+<p class="referencia">Alzate, M. (2022). El acervo del conocimiento acerca de las víctimas de conflictos armados (2005-2018). En M. Alzate (Ed.), <i>Etnografía política e histórica de las víctimas del conflicto armado en Colombia</i> (pp. 27-72). Centro Editorial, Facultad de Ciencias Humanas y Económicas.</p>  
 
-<li>Alisedo, G., Melgar, S. y Chiocci, C. (1994). <i>Didáctica de las ciencias del lenguaje: aportes y reflexiones</i>. Editorial Paidós. https://archive.org/details/melgar-s.-didactica-de-las-ciencias-del-lenguaje.-aportes-y-reflexiones/page/n1/mode/2up</li>  
+<p class="referencia">Alisedo, G., Melgar, S. y Chiocci, C. (1994). <i>Didáctica de las ciencias del lenguaje: aportes y reflexiones</i>. Editorial Paidós. https://archive.org/details/melgar-s.-didactica-de-las-ciencias-del-lenguaje.-aportes-y-reflexiones/page/n1/mode/2up</p>  
 
-<li>Assis Rosa, A. (2015). Translating orality, recreating otherness. <i>Translation Studies</i>, <i>8</i>(2), 209-225. https://doi.org/10.1080/14781700.2015.1017833</li>  
+<p class="referencia">Assis Rosa, A. (2015). Translating orality, recreating otherness. <i>Translation Studies</i>, <i>8</i>(2), 209-225. https://doi.org/10.1080/14781700.2015.1017833</p>  
 
-<li>Baker, M. (2007). Reframing Conflict in Translation. <i>Social semiotics</i>, <i>17</i>(2), 151-169.  10.1080/10350330701311454</li> 
+<p class="referencia">Baker, M. (2007). Reframing Conflict in Translation. <i>Social semiotics</i>, <i>17</i>(2), 151-169.  10.1080/10350330701311454</p> 
 
-<li>Baker, M. (2018). <i>In Other Words: a Coursebook on Translation</i>. Routledge.</li>  
+<p class="referencia">Baker, M. (2018). <i>In Other Words: a Coursebook on Translation</i>. Routledge.</p>  
 
-<li>Baker, M. y Saldanha, G. (Eds.). (2020). <i>Routledge encyclopedia of translation studies</i> (3rd ed.). Routledge.</li> 
+<p class="referencia">Baker, M. y Saldanha, G. (Eds.). (2020). <i>Routledge encyclopedia of translation studies</i> (3rd ed.). Routledge.</p> 
 
-<li>Bandia, P. F. (2015). Introduction: Orality and translation. <i>Translation Studies</i>, <i>8</i>(2), 125-127. https://doi.org/10.1080/14781700.2015.1023217</li>  
+<p class="referencia">Bandia, P. F. (2015). Introduction: Orality and translation. <i>Translation Studies</i>, <i>8</i>(2), 125-127. https://doi.org/10.1080/14781700.2015.1023217</p>  
 
-<li>Bassi, S. (1998). Gender. En: M. Baker y K. Malmkjaer (Eds). <i>Routledge encyclopedia of translation studies</i> (pp. 204-208). Routledge.</li> 
+<p class="referencia">Bassi, S. (1998). Gender. En: M. Baker y K. Malmkjaer (Eds). <i>Routledge encyclopedia of translation studies</i> (pp. 204-208). Routledge.</p> 
 
-<li>Bastin, G. L. y Pomerleau, M. (2017). La traducción especializada en la historia de la traducción y de la revista Meta. <i>Sendebar</i>, <i>28</i>, 9-30. https://doi.org/10.30827/sendebar.v28i0.5461</li> 
+<p class="referencia">Bastin, G. L. y Pomerleau, M. (2017). La traducción especializada en la historia de la traducción y de la revista Meta. <i>Sendebar</i>, <i>28</i>, 9-30. https://doi.org/10.30827/sendebar.v28i0.5461</p> 
 
-<li>Bassnett, S. (2020). Crossing textual boundaries: Why translation matters. En G. Nelson (Ed.), <i>The MHRA Centenary Lectures</i>. Modern Humanities Research Association. doi:10.59860/cl.c7c505c</li>  
+<p class="referencia">Bassnett, S. (2020). Crossing textual boundaries: Why translation matters. En G. Nelson (Ed.), <i>The MHRA Centenary Lectures</i>. Modern Humanities Research Association. doi:10.59860/cl.c7c505c</p>  
 
-<li>Beeby, A. (2009). Directionality. En M. Baker y G. Saldanha (Eds.), <i>Routledge Encyclopedia of Translation Studies</i>. Routledge.</li> 
+<p class="referencia">Beeby, A. (2009). Directionality. En M. Baker y G. Saldanha (Eds.), <i>Routledge Encyclopedia of Translation Studies</i>. Routledge.</p> 
 
-<li>Butler, J. (1997). <i>Lenguaje, poder e identidad</i>. Síntesis.</li> 
+<p class="referencia">Butler, J. (1997). <i>Lenguaje, poder e identidad</i>. Síntesis.</p> 
 
-<li>Calvache Dulce, Ó. A., Suárez Salazar, A., Giraldo, B. S. y Suárez de la Torre, M. (2011). El conflicto político armado colombiano como factor determinante para la creación de neologismos en el español de Colombia. <i>Lenguaje</i>, <i>39</i>(1), 15-39. https://doi.org/10.25100/lenguaje.v39i1.4925</li> 
+<p class="referencia">Calvache Dulce, Ó. A., Suárez Salazar, A., Giraldo, B. S. y Suárez de la Torre, M. (2011). El conflicto político armado colombiano como factor determinante para la creación de neologismos en el español de Colombia. <i>Lenguaje</i>, <i>39</i>(1), 15-39. https://doi.org/10.25100/lenguaje.v39i1.4925</p> 
 
-<li>Castro, O. (2009). <i>(Re-)examining horizons in feminist translation studies: towards a third wave</i>. MonTI. Monografías de Traducción e Interpretación. http://hdl.handle.net/10045/13037</li> 
+<p class="referencia">Castro, O. (2009). <i>(Re-)examining horizons in feminist translation studies: towards a third wave</i>. MonTI. Monografías de Traducción e Interpretación. http://hdl.handle.net/10045/13037</p> 
 
-<li>Comisión de la Verdad [CEV]. (2022a). Hasta la guerra tiene límites. Violaciones de los derechos humanos, infracciones al derecho internacional humanitario y responsabilidades colectivas. En <i>Hay futuro si hay verdad. Informe final</i> (pp. 1144). Comisión de la Verdad. https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites</li> 
+<p class="referencia">Comisión de la Verdad [CEV]. (2022a). Hasta la guerra tiene límites. Violaciones de los derechos humanos, infracciones al derecho internacional humanitario y responsabilidades colectivas. En <i>Hay futuro si hay verdad. Informe final</i> (pp. 1144). Comisión de la Verdad. https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites</p> 
 
-<li>Comisión de la Verdad [CEV]. (2022b). <i>Lineamientos técnico-políticos</i>. https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</li> 
+<p class="referencia">Comisión de la Verdad [CEV]. (2022b). <i>Lineamientos técnico-políticos</i>. https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</p> 
 
-<li>Comisión de la Verdad [CEV]. (2022c). <i>Comisión inicia el despliegue exploratorio en macroregiones</i>. https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones</li>  
+<p class="referencia">Comisión de la Verdad [CEV]. (2022c). <i>Comisión inicia el despliegue exploratorio en macroregiones</i>. https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones</p>  
 
-<li>Comisión de la Verdad [CEV]. (2022d). <i>Proceso editorial</i>. https://www.comisiondelaverdad.co/proceso-editorial</li> 
+<p class="referencia">Comisión de la Verdad [CEV]. (2022d). <i>Proceso editorial</i>. https://www.comisiondelaverdad.co/proceso-editorial</p> 
 
-<li>Comisión de la Verdad [CEV]. (2022e). <i>Manual de estilo editorial</i>. https://www.comisiondelaverdad.co/manual-de-estilo-editorial</li>  
+<p class="referencia">Comisión de la Verdad [CEV]. (2022e). <i>Manual de estilo editorial</i>. https://www.comisiondelaverdad.co/manual-de-estilo-editorial</p>  
 
-<li>Comisión de la Verdad [CEV]. (2022f). Mi cuerpo es la verdad. Experiencias de mujeres y personas LGBTIQ+ en el conflicto armado. En <i>Hay futuro si hay verdad. Informe final</i> (pp. 644). https://www.comisiondelaverdad.co/mi-cuerpo-es-la-verdad</li> 
+<p class="referencia">Comisión de la Verdad [CEV]. (2022f). Mi cuerpo es la verdad. Experiencias de mujeres y personas LGBTIQ+ en el conflicto armado. En <i>Hay futuro si hay verdad. Informe final</i> (pp. 644). https://www.comisiondelaverdad.co/mi-cuerpo-es-la-verdad</p> 
 
-<li>Constantino Reyes, J. (2019). When Body, Emotion, and Translation Meet: A Proposal for a Reader- and Translator-Oriented Approach to Translation. <i>TTR</i>, <i>32</i>(2), 185-215. https://doi.org/10.7202/1068908ar</li> 
+<p class="referencia">Constantino Reyes, J. (2019). When Body, Emotion, and Translation Meet: A Proposal for a Reader- and Translator-Oriented Approach to Translation. <i>TTR</i>, <i>32</i>(2), 185-215. https://doi.org/10.7202/1068908ar</p> 
 
-<li>DANE. (2026, enero 23). <i>Boletín técnico. Principales indicadores de pobreza de la población víctima 2021-2024</i>. https://www.dane.gov.co/files/operaciones/PM/bol-PM-PoblacionVictima-2024.pdf</li>  
+<p class="referencia">DANE. (2026, enero 23). <i>Boletín técnico. Principales indicadores de pobreza de la población víctima 2021-2024</i>. https://www.dane.gov.co/files/operaciones/PM/bol-PM-PoblacionVictima-2024.pdf</p>  
 
-<li>Deane-Cox, S. (2013). The translator as secondary witness: Mediating memory in Antelme's L'espèce humaine. <i>Translation Studies</i>, <i>6</i>(3), 309-323. 
-https://doi.org/10.1080/14781700.2013.795267</li> 
+<p class="referencia">Deane-Cox, S. (2013). The translator as secondary witness: Mediating memory in Antelme's L'espèce humaine. <i>Translation Studies</i>, <i>6</i>(3), 309-323. 
+https://doi.org/10.1080/14781700.2013.795267</p> 
 
-<li>Derrida, J. (2008). <i>Fuerza de ley: el “fundamento místico de la autoridad”</i> (Barberá, A. y Peñalver Gómez, P., Trads.; 2da ed.). Editorial Tecnos.</li> 
+<p class="referencia">Derrida, J. (2008). <i>Fuerza de ley: el “fundamento místico de la autoridad”</i> (Barberá, A. y Peñalver Gómez, P., Trads.; 2da ed.). Editorial Tecnos.</p> 
 
-<li>Elias-Bursać, E. (2015). <i>Translating evidence and interpreting testimony at a war crimes tribunal: Working in a tug-of-war</i>. Palgrave MacMillan. https://doi.org/10.1057/9781137332677</li> 
+<p class="referencia">Elias-Bursać, E. (2015). <i>Translating evidence and interpreting testimony at a war crimes tribunal: Working in a tug-of-war</i>. Palgrave MacMillan. https://doi.org/10.1057/9781137332677</p> 
 
-<li>El Espectador. (2022, junio 28). Este martes se presenta el histórico Informe Final de la Comisión de la Verdad. En <i>El Espectador</i>. https://www.elespectador.com/colombia-20/informe-final-comision-de-la-verdad/comision-de-la-verdad-entregara-informe-final-sobre-el-conflicto-armado-de-colombia/</li> 
+<p class="referencia">El Espectador. (2022, junio 28). Este martes se presenta el histórico Informe Final de la Comisión de la Verdad. En <i>El Espectador</i>. https://www.elespectador.com/colombia-20/informe-final-comision-de-la-verdad/comision-de-la-verdad-entregara-informe-final-sobre-el-conflicto-armado-de-colombia/</p> 
 
-<li>Farías, G. (2017, septiembre 27-29). <i>El apego a la letra en la ética del traductor para el respeto a la diferencia y la transmisión de la verdad</i> [ponencia]. V Coloquio Internacional. Traducción profesional y construcción de sociedad. La contribución práctica del traductor profesional al diálogo, el desarrollo y la paz, Bogotá, Colombia. https://www.actti.org/wp-content/uploads/2018/09/Libro-V-Coloquio-ACTTI.pdf</li>  
+<p class="referencia">Farías, G. (2017, septiembre 27-29). <i>El apego a la letra en la ética del traductor para el respeto a la diferencia y la transmisión de la verdad</i> [ponencia]. V Coloquio Internacional. Traducción profesional y construcción de sociedad. La contribución práctica del traductor profesional al diálogo, el desarrollo y la paz, Bogotá, Colombia. https://www.actti.org/wp-content/uploads/2018/09/Libro-V-Coloquio-ACTTI.pdf</p>  
 
-<li>Godard, B. (1989). Theorizing Feminist Discourse / Translation. <i>Tessera</i>, <i>6</i>, 43-53. https://doi.org/10.25071/1923-9408.23583</li>  
+<p class="referencia">Godard, B. (1989). Theorizing Feminist Discourse / Translation. <i>Tessera</i>, <i>6</i>, 43-53. https://doi.org/10.25071/1923-9408.23583</p>  
 
-<li>Grice, H. P. (1975). Logic and Conversation. En P. Cole y J. L. Morgan. (Eds.), <i>Syntax and Semantics, Vol. 3, Speech Acts</i> (pp. 41-58). Academic Press. https://thegricean.github.io/xprag-ling247/readings/grice1975.pdf</li>  
+<p class="referencia">Grice, H. P. (1975). Logic and Conversation. En P. Cole y J. L. Morgan. (Eds.), <i>Syntax and Semantics, Vol. 3, Speech Acts</i> (pp. 41-58). Academic Press. https://thegricean.github.io/xprag-ling247/readings/grice1975.pdf</p>  
 
-<li>Halliday, M. (1986). <i>El lenguaje como semiótica social: la interpretación social del lenguaje y del significado</i>. Fondo De Cultura Económica.</li> 
+<p class="referencia">Halliday, M. (1986). <i>El lenguaje como semiótica social: la interpretación social del lenguaje y del significado</i>. Fondo De Cultura Económica.</p> 
 
-<li>Hubscher-Davidson, S. (2017). <i>Translation and Emotion: A Psychological Perspective</i>. Routledge. https://doi.org/10.4324/9781315720388</li> 
+<p class="referencia">Hubscher-Davidson, S. (2017). <i>Translation and Emotion: A Psychological Perspective</i>. Routledge. https://doi.org/10.4324/9781315720388</p> 
 
-<li>Igareda González, P. (2011). Categorización temática del análisis cultural: Una propuesta para la traducción. <i>Íkala, Revista de Lenguaje y Cultura</i>, <i>16</i>(27), 11-32. https://doi.org/10.17533/udea.ikala.8654</li> 
+<p class="referencia">Igareda González, P. (2011). Categorización temática del análisis cultural: Una propuesta para la traducción. <i>Íkala, Revista de Lenguaje y Cultura</i>, <i>16</i>(27), 11-32. https://doi.org/10.17533/udea.ikala.8654</p> 
 
-<li>ISO. (2019). <i>ISO 1087:2019</i>. International Organization for Standardization. https://www.iso.org/standard/62330.html</li> 
+<p class="referencia">ISO. (2019). <i>ISO 1087:2019</i>. International Organization for Standardization. https://www.iso.org/standard/62330.html</p> 
 
-<li>Jaramillo Giraldo, D. (2025). La lectura del traductor en tiempos de inteligencia artificial. En. P. Porto López, S. Gastaldi, M. E. Bitonte, F. Fernández y G. Simón (Eds.), <i>Intervenciones semióticas: focalizar: transformar: expandir: actas 11° Congreso Argentino de Semiótica 2023</i> (pp. 969-978). Libros de Crítica. Área Transdepartamental de Crítica de Artes. https://assets.una.edu.ar/files/file/critica-de-arte/2025/2025-ca-actas-xi-cas-2023.pdf</li> 
+<p class="referencia">Jaramillo Giraldo, D. (2025). La lectura del traductor en tiempos de inteligencia artificial. En. P. Porto López, S. Gastaldi, M. E. Bitonte, F. Fernández y G. Simón (Eds.), <i>Intervenciones semióticas: focalizar: transformar: expandir: actas 11° Congreso Argentino de Semiótica 2023</i> (pp. 969-978). Libros de Crítica. Área Transdepartamental de Crítica de Artes. https://assets.una.edu.ar/files/file/critica-de-arte/2025/2025-ca-actas-xi-cas-2023.pdf</p> 
 
-<li>Jelin, E. (2001). Historia, memoria social y testimonio o la legitimidad de la palabra. <i>Iberoamericana</i>, <i>1</i>(1), 87-97. https://doi.org/10.18441/ibam.1.2001.1.87-98</li> 
+<p class="referencia">Jelin, E. (2001). Historia, memoria social y testimonio o la legitimidad de la palabra. <i>Iberoamericana</i>, <i>1</i>(1), 87-97. https://doi.org/10.18441/ibam.1.2001.1.87-98</p> 
 
-<li>Johnson, P. (2023). <i>Writing a Translation Commentary</i>. Routledge</li> 
+<p class="referencia">Johnson, P. (2023). <i>Writing a Translation Commentary</i>. Routledge</p> 
 
-<li>Katan, D. (2008). Cultural approaches to translation. En A. Pym, M. Shlesinger y D. Simeoni (Eds.), <i>Beyond Descriptive Translation Studies: Investigations in Homage to Gideon Toury</i> (Benjamins Translation Library, Vol. 75). John Benjamins Publishing Company. https://doi.org/10.1075/btl.75</li> 
+<p class="referencia">Katan, D. (2008). Cultural approaches to translation. En A. Pym, M. Shlesinger y D. Simeoni (Eds.), <i>Beyond Descriptive Translation Studies: Investigations in Homage to Gideon Toury</i> (Benjamins Translation Library, Vol. 75). John Benjamins Publishing Company. https://doi.org/10.1075/btl.75</p> 
 
-<li>Lakoff, G., y Johnson, M. (1980). <i>Metaphors we live by</i>. University of Chicago Press.</li> 
+<p class="referencia">Lakoff, G., y Johnson, M. (1980). <i>Metaphors we live by</i>. University of Chicago Press.</p> 
 
-<li>Laub, D. (1992). An event without a witness: truth, testimony and survival. En S. Felman y D. Laub, <i>Testimony. Crises of Witnessing in Literature, Psychoanalysis, and History</i> (pp. 75-92). Routledge.</li>  
+<p class="referencia">Laub, D. (1992). An event without a witness: truth, testimony and survival. En S. Felman y D. Laub, <i>Testimony. Crises of Witnessing in Literature, Psychoanalysis, and History</i> (pp. 75-92). Routledge.</p>  
 
-<li>Matteucci, N. (2017). Leer con perspectiva de género: lectura y resistencia a las relaciones asimétricas de poder. <i>Novedades educativas</i>, (321). https://www.noveduc.com/nota-leer-perspectiva-de-genero/</li>  
+<p class="referencia">Matteucci, N. (2017). Leer con perspectiva de género: lectura y resistencia a las relaciones asimétricas de poder. <i>Novedades educativas</i>, (321). https://www.noveduc.com/nota-leer-perspectiva-de-genero/</p>  
 
-<li>Mayaleh, A., y Hamamra, B. (2024). The translator’s (in)visibility in Julio Cortázar’s “letter to a young lady in Paris”. <i>Janus Unbound: Journal of Critical Studies</i>, <i>3</i>(2), 84-90. https://journals.library.mun.ca/index.php/JU/article/view/2681</li> 
+<p class="referencia">Mayaleh, A., y Hamamra, B. (2024). The translator’s (in)visibility in Julio Cortázar’s “letter to a young lady in Paris”. <i>Janus Unbound: Journal of Critical Studies</i>, <i>3</i>(2), 84-90. https://journals.library.mun.ca/index.php/JU/article/view/2681</p> 
 
-<li>Mejía Quijano, C. (2017). Los ecos de la ausencia. Sobre la traducción de Agamenón de Esquilo por Ferdinand de Saussure. <i>Literatura: Teoría, Historia, Crítica</i>, <i>19</i>(2), 117-146. https://doi.org/10.15446/lthc.v19n2.63682</li> 
+<p class="referencia">Mejía Quijano, C. (2017). Los ecos de la ausencia. Sobre la traducción de Agamenón de Esquilo por Ferdinand de Saussure. <i>Literatura: Teoría, Historia, Crítica</i>, <i>19</i>(2), 117-146. https://doi.org/10.15446/lthc.v19n2.63682</p> 
 
-<li>Mejía Quijano, C. L., Jaramillo Giraldo, D. y Betancur, J. L. (2020). Transferencia y Contraste. Una metodología semiológica para el aprendizaje del francés por hispanohablantes. <i>Lenguaje</i>, <i>48</i>(1), 84-123. https://doi.org/10.25100/lenguaje.v48i1.8575</li>  
+<p class="referencia">Mejía Quijano, C. L., Jaramillo Giraldo, D. y Betancur, J. L. (2020). Transferencia y Contraste. Una metodología semiológica para el aprendizaje del francés por hispanohablantes. <i>Lenguaje</i>, <i>48</i>(1), 84-123. https://doi.org/10.25100/lenguaje.v48i1.8575</p>  
 
-<li>Nida, E. A. (1964). <i>Toward a science of translating with special reference to principles and procedures involved in Bible translating</i>. Leiden.</li> 
+<p class="referencia">Nida, E. A. (1964). <i>Toward a science of translating with special reference to principles and procedures involved in Bible translating</i>. Leiden.</p> 
 
-<li>Nord, C. (1997). <i>Translating as a purposeful activity: Functionalist approaches explained</i>. Routledge.</li> 
+<p class="referencia">Nord, C. (1997). <i>Translating as a purposeful activity: Functionalist approaches explained</i>. Routledge.</p> 
 
-<li>O’Brien, S. (2011). Collaborative translation. En: Y. Gambier and L. van Doorslaer (Eds.) <i>Handbook of Translation Studies: Volume 2</i>. John Benjamins Publishing Company.</li> 
+<p class="referencia">O’Brien, S. (2011). Collaborative translation. En: Y. Gambier and L. van Doorslaer (Eds.) <i>Handbook of Translation Studies: Volume 2</i>. John Benjamins Publishing Company.</p> 
 
-<li>Prieto, L. J. (1993). L’acte de communication traductif. <i>Cahiers Ferdinand de Saussure</i>, (47), 107-141. http://www.jstor.org/stable/27758484</li>  
+<p class="referencia">Prieto, L. J. (1993). L’acte de communication traductif. <i>Cahiers Ferdinand de Saussure</i>, (47), 107-141. http://www.jstor.org/stable/27758484</p>  
 
-<li>Real Academia Española [RAE]. (s.f.). Monte. En <i>Diccionario de la lengua española</i>. https://dle.rae.es/monte</li> 
+<p class="referencia">Real Academia Española [RAE]. (s.f.). Monte. En <i>Diccionario de la lengua española</i>. https://dle.rae.es/monte</p> 
 
-<li>Revollo Pardo, C. (2023). Testimonios y traducciones en el trabajo con mujeres víctimas del desplazamiento forzado en Colombia. <i>Tramas y Redes</i>, (5), 101-117. https://doi.org/10.54871/cl4c500m https://doi.org/10.54871/cl4c500m</li> 
+<p class="referencia">Revollo Pardo, C. (2023). Testimonios y traducciones en el trabajo con mujeres víctimas del desplazamiento forzado en Colombia. <i>Tramas y Redes</i>, (5), 101-117. https://doi.org/10.54871/cl4c500m https://doi.org/10.54871/cl4c500m</p> 
 
-<li>Rosas, C., Pinhata Battistam, L., Carvalho Fonseca , L., Teresa Mhereb, M. y Parrine, R. (2025). Commoning Translation: Feminism and the Politics of the Commons. <i>Mutatis Mutandis. Revista Latinoamericana de Traducción</i>, <i>18</i>(2), 504–520. https://doi.org/10.17533/udea.mut.v18n2a11</li> 
+<p class="referencia">Rosas, C., Pinhata Battistam, L., Carvalho Fonseca , L., Teresa Mhereb, M. y Parrine, R. (2025). Commoning Translation: Feminism and the Politics of the Commons. <i>Mutatis Mutandis. Revista Latinoamericana de Traducción</i>, <i>18</i>(2), 504–520. https://doi.org/10.17533/udea.mut.v18n2a11</p> 
 
-<li>Sabra, Z. (2025). Deciphering implicatures: On NLP and oral testimonies. En <i>Proceedings of the 1st International Workshop on Nakba Narratives as Language Resources</i> (pp. 1–8). Association for Computational Linguistics.</li> 
+<p class="referencia">Sabra, Z. (2025). Deciphering implicatures: On NLP and oral testimonies. En <i>Proceedings of the 1st International Workshop on Nakba Narratives as Language Resources</i> (pp. 1–8). Association for Computational Linguistics.</p> 
 
-<li>Simon, S. (1996). <i>Gender in Translation</i> (Ed. 1). Routledge. https://doi.org/10.4324/9780203202890</li>  
+<p class="referencia">Simon, S. (1996). <i>Gender in Translation</i> (Ed. 1). Routledge. https://doi.org/10.4324/9780203202890</p>  
 
-<li>Spivak, G. (2021). The politics of translation. En L. Venuti (Ed.), <i>The Translation Studies Reader</i>. Routledge.</li>  
+<p class="referencia">Spivak, G. (2021). The politics of translation. En L. Venuti (Ed.), <i>The Translation Studies Reader</i>. Routledge.</p>  
 
-<li>Tracy, J. y Robins, R. (2008). The automaticity of emotion recognition. <i>Emotion</i>, <i>8</i>(1), 81-95. https://doi.org/10.1037/1528-3542.8.1.81</li> 
+<p class="referencia">Tracy, J. y Robins, R. (2008). The automaticity of emotion recognition. <i>Emotion</i>, <i>8</i>(1), 81-95. https://doi.org/10.1037/1528-3542.8.1.81</p> 
 
-<li>Tymoczko, M. (2000). Translation and Political Engagement. Activism, Social Change and the Role of Translation in Geopolitical Shifts. <i>The Translator</i>, <i>6</i>(1), 23-47. https://www.tandfonline.com/doi/abs/10.1080/13556509.2000.10799054</li>  
+<p class="referencia">Tymoczko, M. (2000). Translation and Political Engagement. Activism, Social Change and the Role of Translation in Geopolitical Shifts. <i>The Translator</i>, <i>6</i>(1), 23-47. https://www.tandfonline.com/doi/abs/10.1080/13556509.2000.10799054</p>  
 
-<li>Unidad para las Víctimas. (2025). <i>Boletín Datos para la paz</i>. Unidad para las Víctimas. https://datospaz.unidadvictimas.gov.co/wp-content/uploads/2026/02/Boletin_4_OCT_NOV_2025.pdf</li> 
+<p class="referencia">Unidad para las Víctimas. (2025). <i>Boletín Datos para la paz</i>. Unidad para las Víctimas. https://datospaz.unidadvictimas.gov.co/wp-content/uploads/2026/02/Boletin_4_OCT_NOV_2025.pdf</p> 
 
-<li>Vélez, J. C. (2003). Violencia, memoria y literatura testimonial en Colombia. Entre las memorias literales y las memorias ejemplares. <i>Estudios políticos</i>, (22), 31-57. https://doi.org/10.17533/udea.espo.17569</li> 
+<p class="referencia">Vélez, J. C. (2003). Violencia, memoria y literatura testimonial en Colombia. Entre las memorias literales y las memorias ejemplares. <i>Estudios políticos</i>, (22), 31-57. https://doi.org/10.17533/udea.espo.17569</p> 
 
-<li>Vernet, J. (1978). <i>La cultura hispanoárabe en oriente y occidente</i>. Ariel.</li> 
+<p class="referencia">Vernet, J. (1978). <i>La cultura hispanoárabe en oriente y occidente</i>. Ariel.</p> 
 
-<li>Verón, E. (2004). <i>Fragmentos de un tejido</i>. Editorial Gesida. https://es.scribd.com/document/345652900/VERON-Fragmentos-de-Un-Tejido#page=40</li> 
+<p class="referencia">Verón, E. (2004). <i>Fragmentos de un tejido</i>. Editorial Gesida. https://es.scribd.com/document/345652900/VERON-Fragmentos-de-Un-Tejido#page=40</p> 
 
-<li>Von Flotow, L. (1991). Feminist Translation: Contexts, Practices and Theories. <i>TTR</i>, <i>4</i>(2), 69-84. https://doi.org/10.7202/037094ar</li>  
+<p class="referencia">Von Flotow, L. (1991). Feminist Translation: Contexts, Practices and Theories. <i>TTR</i>, <i>4</i>(2), 69-84. https://doi.org/10.7202/037094ar</p>  
 
-<li>Williams, J. y Chesterman, A. (2002). <i>The Map: A beginner's guide to doing research in translation studies</i>. St. Jerome Publishing.</li>
-</ul>
+<p class="referencia">Williams, J. y Chesterman, A. (2002). <i>The Map: A beginner's guide to doing research in translation studies</i>. St. Jerome Publishing.</p>
 `,
 tooltips: {
     '1': '<p><strong>Bertha</strong></p><p>«Cuando llegaban desplazadas a la ciudad, las acogíamos en nuestras casas. Nos terminamos convirtiendo en madres de esas otras, a tal punto que, si no tenían con qué comer o trabajar, me acuerdo de todo el tema de los <b>sancochos<b>, de las comidas y almuerzos que hacíamos».</p><p class="identificador"><i>Mujer trans</i></p>',
