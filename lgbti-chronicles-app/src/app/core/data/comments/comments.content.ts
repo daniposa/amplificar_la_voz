@@ -36,13 +36,7 @@ export const COMMENTS_CONTENT = `
 
 <h2>Nuestro proceso</h2>
 <div class="seccion-lectura invertida">
-<div class="columna-imagen"> 
- <img 
-    src="images/comentarios/comentarios_metodologia.avif" 
-    alt="Metodología" 
-    width="300"
-  >
-  </div>
+
 <div class="columna-texto">
 <p>
  
@@ -68,6 +62,13 @@ export const COMMENTS_CONTENT = `
 <p>Durante el proceso, las dificultades se enmarcaron sobre todo alrededor de la pregunta por la naturalidad de la lengua: ¿cómo mantener el registro oral de los testimonios?, ¿qué recursos utilizar de manera que nuestra reproducción de la oralidad no resulte caricaturesca? Algunas de las principales estrategias que utilizamos contemplaron la búsqueda de textos paralelos con transcripciones de testimonios de víctimas (textos de ONU Mujeres, Amnistía Internacional, traducciones previas de la CEV o textos de la Commission de vérité et réconciliation du Canada) y videos con testimonios en las lenguas de llegada. Además, con el fin de garantizar la naturalidad de las colocaciones, estas siempre se buscaron en los textos paralelos mencionados, con buscadores booleanos en internet y fueron confirmada a partir de la revisión de profesoras, correctoras de estilo y hablantes nativas que colaboraron para llevar adelante el proyecto y estuvieron presentes tanto durante el proceso de traducción como en la revisión final.</p>
 <p>Este proyecto fue posible gracias a todas las personas que a lo largo de los últimos dos años decidieron acompañarnos, ya fuera por periodos cortos o durante la totalidad del proceso. La cantidad de manos que se aseguraron de que la traducción inversa tuviera un resultado satisfactorio son la razón misma por la cual este texto resulta tan importante en un panorama político como el actual, en donde hacer en colectivo es la mejor y única estrategia que nos queda para ser conscientes del otro, del dolor infligido, en ocasiones cotidiano y asumido como inevitable. La traducción inversa fue una estrategia que nos permitió dimensionar por completo el potencial político de la traducción como herramienta para desestabilizar relatos, arquetipos y prejuicios sobre las víctimas, los victimarios y la guerra misma al desmitificarla como «necesaria». En un país en constante guerra, y en un escenario internacional donde esta es cada vez más frecuente y lucrativa, las voces de las víctimas y su difusión a través de otras lenguas es indispensable para que, como traductoras, logremos generar discusiones alrededor de lo que consideramos importante: la vida y la comunidad.</p>
 </div>
+<div class="columna-imagen"> 
+ <img 
+    src="images/comentarios/comentarios_metodologia.avif" 
+    alt="Metodología" 
+    width="300"
+  >
+  </div>
 </div>
 
 <hr style="border: none; height: 3px; background-color: #2c2420;">
