@@ -14,8 +14,11 @@ import { buildGridHotspots } from './chronicles/hotspot-layout';
  * All titles support Spanish (es), French (fr), and English (en).
  */
 /** Path to the panoramic image shown behind the cards in the Chronicles tab. */
-export const PANORAMA_IMAGE = 'images/fondos/fondo_ingles.avif';
-
+export const PANORAMA_IMAGE = {
+  es: 'images/fondos/fondo_ingles.avif', // O la ruta en español si existiera
+  fr: 'images/fondos/fondo_frances.avif', // 👈 ¡Aquí pones tu nueva ruta!
+  en: 'images/fondos/fondo_ingles.avif'
+};
 /** Labels for chronicle modal UI (contextual info button). */
 export const CHRONICLE_UI = {
   contextInfoButton: {
