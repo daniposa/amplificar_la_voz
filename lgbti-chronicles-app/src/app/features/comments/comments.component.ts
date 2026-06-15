@@ -126,22 +126,15 @@ import { TextParserService } from '../../core/services/text-parser.service';
         color: inherit;
       }
       
+      /* Contenedor general de la sección */
       .comments-text ::ng-deep .seccion-lectura {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        gap: 40px;
-        align-items: start;
+        display: block; /* Cambia a bloque para permitir la fila del título libre */
         margin-bottom: var(--space-3xl);
       }
 
-      .comments-text ::ng-deep .seccion-lectura.invertida {
-        grid-template-columns: 1.5fr 1fr;
-      }
-
-      /* 🌟 NUEVA CLASE: Formato, centrado y comportamiento congelado para el título */
+      /* ✨ CLASE ACTUALIZADA: Formato y fijación estática limpia para el título */
       .comments-text ::ng-deep .titulo-seccion {
-        grid-column: 1 / -1;                /* Ocupa todo el ancho de la grilla (vence las columnas) */
-        text-align: center;                 /* Centra el texto perfectamente */
+        text-align: center;
         font-family: var(--font-display);
         color: #2e4a3b;
         font-size: 1.75rem;
@@ -152,28 +145,37 @@ import { TextParserService } from '../../core/services/text-parser.service';
         /* Comportamiento Sticky */
         position: -webkit-sticky;
         position: sticky;
-        top: 10vh;                          /* Se congela justo abajo del header de la página */
+        top: 0; /* Se congela en el borde superior de la pantalla */
         z-index: 10;
-        background-color: rgba(248, 244, 239, 0.9); /* Fondo translúcido tipo pergamino para que el texto al pasar por detrás no empañe la lectura */
-        backdrop-filter: blur(4px);         /* Efecto difuminado moderno en el fondo */
-        border-bottom: 1px dashed rgba(46, 74, 59, 0.2); /* Línea divisoria sutil */
+        background: rgba(248, 244, 239, 0.65);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-bottom: 1px dashed rgba(46, 74, 59, 0.2);
       }
 
-      /* Evita que al invertir la sección el título intente reubicarse mal */
-      .comments-text ::ng-deep .seccion-lectura.invertida .titulo-seccion {
-        grid-column: 1 / -1;
+      /* ✨ NUEVA CLASE: El contenedor de las dos columnas abajo del título */
+      .comments-text ::ng-deep .seccion-contenido {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 40px;
+        align-items: start;
+      }
+
+      /* Soporte para la inversión de columnas */
+      .comments-text ::ng-deep .seccion-lectura.invertiva .seccion-contenido {
+        grid-template-columns: 1.5fr 1fr;
       }
 
       .comments-text ::ng-deep .columna-imagen {
         position: -webkit-sticky;
         position: sticky;
-        top: 22vh;                          /* Bajamos un poco el tope para dejarle espacio al título fijado */
+        top: 10vh; /* Se congela un poco más abajo del título fijado para no solaparse */
       }
 
       .comments-text ::ng-deep .columna-imagen img {
         width: auto;
         max-width: 100%;
-        max-height: 70vh;                   /* Ajustamos el alto máximo para que conviva bien con el título */
+        max-height: 75vh;
         object-fit: contain;
         border-radius: 8px;
         display: block;
