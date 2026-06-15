@@ -6,58 +6,74 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
   standalone: true,
   imports: [],
   template: `
-    <div #fullscreenContainer class="image-container fullscreen-target">
-      <img [src]="imagePath" [alt]="'Image for card ' + card?.id" />
+    <div class="canvas-outer-wrapper">
       
-      @for (h of hotspots; track h.id) {
-        <button
-          class="hotspot-btn"
-          [style.left.%]="h.x"
-          [style.top.%]="h.y"
-          (click)="openModal(h)"
-          aria-label="Open story"
-        >
-          <span class="material-icons">auto_awesome</span>
-        </button>
-      }
+      <div #fullscreenContainer class="image-container">
+        <img [src]="imagePath" [alt]="'Image for card ' + card?.id" />
+        
+        @for (h of hotspots; track h.id) {
+          <button
+            class="hotspot-btn"
+            [style.left.%]="h.x"
+            [style.top.%]="h.y"
+            (click)="openModal(h)"
+            aria-label="Open story"
+          >
+            <span class="material-icons">auto_awesome</span>
+          </button>
+        }
 
-      <button class="fullscreen-toggle-btn" (click)="toggleFullscreen()" title="Pantalla completa">
-        <span class="material-icons">{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</span>
-      </button>
+        <button class="fullscreen-toggle-btn" (click)="toggleFullscreen()" title="Pantalla completa">
+          <span class="material-icons">{{ isFullscreen ? 'fullscreen_exit' : 'fullscreen' }}</span>
+        </button>
+      </div>
+
     </div>
   `,
   styles: [`
-    .image-container {
-      position: relative;
+    /* Contenedor externo que llena la pantalla y genera las barras beige */
+    .canvas-outer-wrapper {
       width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: #f5f0e8; /* Tu fondo beige neutral */
       overflow: hidden;
-      background-color: #f5f0e8; /* Tu fondo beige neutral para las barras laterales si quedan espacios */
     }
 
-    /* 🌟 Solución definitiva: Forzamos a que la imagen mantenga su proporción nativa (Aspect Ratio) */
+    /* El contenedor de la imagen ahora respeta la proporción nativa del paisaje */
+    .image-container {
+      position: relative;
+      /* Ajusta automáticamente al tamaño de la pantalla sin deformar el formato 16:9 */
+      aspect-ratio: 16 / 9; 
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra sutil para separar el paisaje del fondo beige */
+    }
+
     .image-container img {
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: contain; /* Garantiza que el 100% de la ilustración y las estrellas de los bordes estén visibles */
-      max-width: 100%;
-      max-height: 100%;
+      object-fit: fill; /* Llena el contenedor contenedor que ya está perfectamente dimensionado */
     }
 
-    /* 🖥️ Estilos del nuevo botón de pantalla completa */
+    /* El botón plus ahora siempre se quedará visible dentro del paisaje */
     .fullscreen-toggle-btn {
       position: absolute;
-      bottom: 20px;
-      right: 20px;
+      bottom: 15px;
+      right: 15px;
       background: rgba(245, 240, 232, 0.85);
       border: 1px solid #c2bba8;
       border-radius: 50%;
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -71,11 +87,11 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
       transform: scale(1.1);
     }
     .fullscreen-toggle-btn .material-icons {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       color: #4a4333;
     }
 
-    /* Estilos de las estrellas/hotspots */
+    /* Estrellitas/Hotspots */
     .hotspot-btn {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -104,11 +120,14 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
       50%       { opacity: 0.82; transform: translate(-50%, -50%) scale(0.9); }
     }
 
-    /* Ajuste especial cuando el contenedor entra en modo Pantalla Completa del navegador */
-    .fullscreen-target:fullscreen {
+    /* Cuando el usuario decide usar el botón "Plus" */
+    .image-container:fullscreen {
       width: 100vw;
       height: 100vh;
       background-color: #f5f0e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   `]
 })
@@ -131,9 +150,6 @@ export class InteractiveImageComponent {
     window.dispatchEvent(customEvent);
   }
 
-  /**
-   * 🛠️ Manejador nativo del Fullscreen API de HTML5
-   */
   toggleFullscreen(): void {
     const element = this.fullscreenContainer.nativeElement;
 
@@ -143,14 +159,13 @@ export class InteractiveImageComponent {
           this.isFullscreen = true;
         })
         .catch((err: any) => {
-          console.error(`Error intentando activar pantalla completa: ${err.message}`);
+          console.error(`Error: ${err.message}`);
         });
     } else {
       document.exitFullscreen();
       this.isFullscreen = false;
     }
 
-    // Escuchar si el usuario sale usando la tecla ESC
     const escHandler = () => {
       this.isFullscreen = !!document.fullscreenElement;
       document.removeEventListener('fullscreenchange', escHandler);
