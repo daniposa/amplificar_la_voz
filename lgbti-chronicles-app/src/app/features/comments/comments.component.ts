@@ -168,16 +168,17 @@ import { TextParserService } from '../../core/services/text-parser.service';
         /* Reducimos el tamaño de la letra exactamente 2 puntos (de 1.05rem a 0.85rem) */
         font-size: 0.95rem; 
         
-        .comments-text ::ng-deep .referencia {
-        /* 1. Justificado del texto */
+        .comments-text ::ng-deep p.referencia {
         text-align: justify;
         text-justify: inter-word;
         
-        /* 2. Truco tipográfico para lograr la Sangría Francesa */
-        padding-left: 2rem;      /* Empuja todo el párrafo hacia la derecha */
-        text-indent: -2rem !important; /* Jala SOLO la primera línea hacia la izquierda */
+        /* 1. Aplicamos el colchón a la izquierda */
+        padding-left: 2.5rem; 
         
-        /* 3. Margen inferior para que las referencias no se peguen entre sí */
+        /* 2. Forzamos el negativo rompiendo la regla general heredada */
+        text-indent: -2.5rem !important; 
+        
+        /* Separación entre cada bloque de referencia */
         margin: 0 0 var(--space-md) 0;
         color: inherit;
       }
