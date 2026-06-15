@@ -9,11 +9,11 @@ export const CHRONICLE_T1_14: LocalizedModalContent = {
     en: 'Lucellys',
   },
   rawText: {
-    es: `<p>«Cuando me reclutó la guerrilla solo me hicieron trabajar. Cuando se me notaba lo femenino me ponían a cocinar. Raspar coca daña las manos. No puedo decir nada de la guerrilla, solo me hicieron trabajar. Pero tenía que ser hombre, porque la regla de las FARC-EP era “LGBT no”».</p><p><i>Mujer trans</p></i>
+    es: `<p>«Cuando me reclutó la guerrilla solo me hicieron trabajar. Cuando se me notaba lo femenino me ponían a cocinar. Raspar coca daña las manos. No puedo decir nada de la guerrilla, solo me hicieron trabajar. Pero tenía que ser hombre, porque la regla de las FARC-EP era “LGBT no”».</p><p class="identificador"><i>Mujer trans</p></i>
 `,
-    fr: `<p>« Quand les guérilleros m’ont recruté, on m’a seulement fait travailler. Dès qu’on a remarqué que j’étais efféminée, on m’a mis à la cuisine. Gratter les feuilles de coca abîme les mains. Je ne peux pas dire grand-chose sur la guérilla ; on m’a juste fait travailler. Mais je devais me comporter comme un vrai homme, parce que la règle des <b>{1}FARC-EP{/1}</b> était “interdit aux LGBT”. »</p><p><i>Femme trans</i></p>
+    fr: `<p>« Quand les guérilleros m’ont recruté, on m’a seulement fait travailler. Dès qu’on a remarqué que j’étais efféminée, on m’a mis à la cuisine. Gratter les feuilles de coca abîme les mains. Je ne peux pas dire grand-chose sur la guérilla ; on m’a juste fait travailler. Mais je devais me comporter comme un vrai homme, parce que la règle des <b>{1}FARC-EP{/1}</b> était “interdit aux LGBT”. »</p><p class="identificador"><i>Femme trans</i></p>
 `,
-    en: `<p>“When the guerrillas recruited me, they only made me work. Whenever they noticed I was effeminate, they made me cook for them. Scraping coca leaves damages the hands. I can’t say much about the guerrillas; they just made me work. But I had to act like a true man, because the <b>{1}FARC-EP{/1}</b>'s rule was ‘No LGBT.’”</p><p><i>Trans woman</i></p>
+    en: `<p>“When the guerrillas recruited me, they only made me work. Whenever they noticed I was effeminate, they made me cook for them. Scraping coca leaves damages the hands. I can’t say much about the guerrillas; they just made me work. But I had to act like a true man, because the <b>{1}FARC-EP{/1}</b>'s rule was ‘No LGBT.’”</p><p class="identificador"><i>Trans woman</i></p>
 `,
   },
   tooltips: {
