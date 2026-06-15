@@ -40,6 +40,7 @@ text: `
 
 <div class="seccion-lectura invertida">
 <h2 class="titulo-seccion">Nuestro proceso</h2>
+<div class="seccion-contenido">
 <div class="columna-texto">
 <p>
  
@@ -72,11 +73,14 @@ text: `
     width="300"
   >
   </div>
+  </div>
 </div>
 
 <hr style="border: none; height: 3px; background-color: #2c2420;">
-<h2>¿Qué es un testimonio?</h2>
+
 <div class="seccion-lectura">
+<h2 class="titulo-seccion">¿Qué es un testimonio?</h2>
+<div class="seccion-contenido">
 <div class="columna-imagen">
 <img 
     src="images/comentarios/comentarios_testimonio.avif" 
@@ -97,9 +101,10 @@ text: `
 </div>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<h2>La reconstrucción del «yo» oral y su traducción</h2>
 <div class="seccion-lectura invertida">
+<h2 class="titulo-seccion">La reconstrucción del «yo» oral y su traducción</h2>
 
+<div class="seccion-contenido">
   <div class="columna-texto">
   <p>Cuando enmarcamos nuestro proyecto como una traducción de testimonios orales, contábamos con unas ideas previas sobre la tipología textual de nuestro texto fuente y sus posibles desafíos al momento de traducirlo. Aún reconocemos que traducir palabras como «{1}sancocho{/1}», «{2}tirar pluma{/2}» o «{3}quebrarle el pescuezo al ciclo de la violencia{/3}» implican un esfuerzo traductivo en el cual debemos reconocer la identidad de las víctimas y sus discursos. Durante y después del proceso de traducción, estas ideas adoptaron otras formas, pues, a medida que convivíamos con los textos y conversábamos sobre ellos, confirmamos que las palabras son huellas de lo dicho y de lo no dicho, que construyen la identidad de la víctima y que, por lo tanto, no estábamos traduciendo palabras, sino actos de comunicación (Prieto, 1993).</p>
 <p>Aunque nuestras conversaciones abordaron varios temas —esta sección de comentarios es muestra de ello—, en este apartado queremos presentar aquellas que giraron en torno al carácter oral de los testimonios. Primero, consideramos que nuestra traducción debía estar encaminada, no a la reconstrucción completa de ese acto inicial donde las víctimas contaron sus vivencias —dado que es imposible—, sino a la de una representación de la oralidad. Segundo, fuimos conscientes de que, como traductoras en formación, estábamos adquiriendo experiencia lingüística en las lenguas de llegada, lo cual nos permitió darnos cuenta de que un proceso traductivo sin reflexiones podría habernos conducido a una caricaturización de las formas de la palabra hablada. A partir de estos dos puntos, vimos la necesidad de acercarnos a este problema de traducción desde el respeto por la otredad oralizada.</p>
@@ -120,11 +125,12 @@ text: `
     width="400"
   >
   </div>
+  </div>
 </div>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
-
-<h2>Lo que dice el silencio: develando lo no dicho</h2>
 <div class="seccion-lectura">
+<h2 class="titulo-seccion">Lo que dice el silencio: develando lo no dicho</h2>
+<div class="seccion-contenido">
   <div class="columna-imagen">
 <img 
     src="images/comentarios/comentarios_ausencias.avif" 
@@ -143,11 +149,12 @@ text: `
 <p>En conclusión, ya sea a través de la expansión explicativa (Gimena), la modulación (Edith) o la fuerza ilocutiva de la autorreflexión (Brenda), estas decisiones demuestran que la fidelidad en la traducción de testimonios no reside necesariamente en la literalidad, sino en la lealtad al dolor de las hablantes, a sus historias personales. Nuestra tarea fue hacer visible esa dignidad en las traducciones, buscando reorganizar la sintaxis y el vocabulario para que el lector extranjero pueda escuchar, detrás de las palabras, la voz de quien narra la pérdida de su hogar y de su identidad, y la dignidad de quienes narran su historia.</p>
 </div>
 </div>
+</div>
 
 <hr style="border: none; height: 3px; background-color: #2c2420;">
-
-<h2>Coexistir en el texto: confluencia de registros y metáforas en testimonios sobre el conflicto armado</h2>
 <div class="seccion-lectura invertida">
+<h2 class="titulo-seccion">Coexistir en el texto: confluencia de registros y metáforas en testimonios sobre el conflicto armado</h2>
+<div class="seccion-contenido">
   
   <div class="columna-texto">
   <p>Una vez reflexionamos sobre el lugar de la oralidad en los testimonios y su forma única de pasar a la lengua escrita, es posible enfocarnos en otros elementos que nos ayudan a entender el texto que resulta a partir de la convergencia de estas dos modalidades. Recordemos que, antes de llegar al público colombiano, las palabras de quienes vivieron la guerra pasaron por diversas manos que se encargaron de diversas tareas: transcribir los testimonios, redactar el cuerpo del texto para ofrecer un contexto suficiente para su interpretación, segmentar los testimonios para rescatar lo que consideraron más importante para transmitir la complejidad de la guerra, corregir el estilo del texto general, entre otros trabajos que no alcanzaríamos a enumerar.</p>
@@ -166,10 +173,11 @@ text: `
   >
   </div>
   </div>
+  </div>
   <hr style="border: none; height: 3px; background-color: #2c2420;">
-
-<h2>«Cuando traducimos, también hablamos de nosotras mismas»: traducción comunizante y con perspectiva de género</h2>
 <div class="seccion-lectura">
+<h2 class="titulo-seccion">«Cuando traducimos, también hablamos de nosotras mismas»: traducción comunizante y con perspectiva de género</h2>
+<div class="seccion-contenido">
   <div class="columna-imagen">
 <img 
     src="images/comentarios/comentarios_genero.avif" 
@@ -192,10 +200,12 @@ text: `
 <p>Con estos ejemplos evidenciamos la importancia de traducir de forma consciente. Como ya hemos mencionado, la traducción en sí misma, pero especialmente la traducción con perspectiva de género supone un acto político, ya sea porque se toma partido o porque se es indiferente. Nos traducimos a nosotras mismas, a nuestra forma de ver e interpretar al mundo y es la lectura crítica la que permite crear un punto de resistencia a la opresión genérica, al racismo, la homofobia, la transfobia, etc., y abordar el lenguaje como la base que explica pero que también construye realidades. A través de las traducciones de sus testimonios, <i>amplificamos</i> las voces de las mujeres y la población LGBTIQ+ víctimas del conflicto armado, reconstruimos en inglés y en francés sus experiencias a partir de diferentes técnicas como la equivalencia dinámica, la modulación, el préstamo o la literalidad según la necesidad del relato; identificamos las formas violentas en el lenguaje usado contra ellas para exponer la violencia sistemática y estructural, y reivindicamos esas otras formas que insisten en la necesidad de resistir desde el territorio, desde la identidad y desde la lengua.</p>
 </div>
 </div>
+</div>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<h2>La cultura que habita fuera de lo propio</h2>
 <div class="seccion-lectura invertida">
+<h2 class="titulo-seccion">La cultura que habita fuera de lo propio</h2>
+<div class="seccion-contenido">
   
 
   <div class="columna-texto">
@@ -218,11 +228,12 @@ text: `
     width="300"
   >
   </div>
+  </div>
 </div>
   <hr style="border: none; height: 3px; background-color: #2c2420;">
-
-  <h2>Me acostumbré a ser invisible</h2>
   <div class="seccion-lectura">
+  <h2 class="titulo-seccion">Me acostumbré a ser invisible</h2>
+<div class="seccion-contenido">
   <div class="columna-imagen">
   <img 
     src="images/comentarios/comentarios_afectaciones.avif" 
@@ -240,6 +251,7 @@ text: `
   <p>Sin embargo, no siempre fue posible distanciarse. De forma inevitable surgieron sentimientos —como la rabia ante las injusticias narradas— que nos acompañaron en el momento de traducir. A veces, no éramos capaces de nombrar las emociones que nos atravesaban, pero teníamos intuiciones, había elementos que nos hacían ruido, indicios de que había algo importante que queríamos resaltar: una voz herida, una injusticia, una resistencia. Nos vimos afectadas en la medida en que permitimos que esos elementos llegaran a nosotras como una forma de saber qué queríamos visibilizar.</p>
   <p>Esos sentimientos reprimidos, las emociones reescritas en los testimonios y el efecto que dejaba la lectura de esas experiencias pudieron haber tenido un impacto mayor en nosotras de no ser por un factor que, aunque no fue una estrategia consciente, fue posiblemente lo que evitó que todo el proceso fuera demasiado pesado: la <i>traducción colectiva</i> y <i>comunizante</i> (ver comentarios <i>Nuestro proceso</i> y <i>P«Cuando traducimos, también hablamos de nosotras mismas»: traducción comunizante y con perspectiva de género</i>). Como da a entender Elias-Bursać (2015), la posibilidad de ser escuchadas y compartir la carga ayuda a reducir la presión de la tarea; saber que no estábamos solas nos ofreció un alivio que hizo el proceso de traducción más llevadero. Irónicamente, las reuniones se convirtieron en espacios de liberación emocional, allí no solo discutíamos las decisiones de traducción, también construimos una red de apoyo. A pesar de la naturaleza de los testimonios, los encuentros solían tener un efecto contrario donde a partir del estar y la comprensión mutua logramos crear un ambiente que nos aportó la tranquilidad y la compañía necesarias para hacer del proceso una experiencia agradable para todas.</p>
   <p>Como planteamos anteriormente, es imposible ignorar el hecho de que la traducción no es un agente ajeno a quien traduce, el texto nos atraviesa y se lleva algo de nosotras en el proceso; los estudios de género han aportado indudablemente a esta discusión sobre la corporalidad de quien traduce y cómo esta se ve afectada y modificada por lo que traduce (Constantino Reyes, 2019). Vale la pena entonces profundizar más en los aspectos emocionales que influyen en la traducción, no solo en el análisis del contenido sino también en la comprensión de los procesos internos de quienes traducen, cómo se apropian del texto y lo (re)viven, y cómo debilitan también la idea de una invisibilidad completa: «Me apropié de la obra [...] estoy ahí todo el tiempo, pero no me notarás» (Rose, 2013, como se citó en Hubscher-Davidson, 2017, p. 166, traducción propia).</p>
+</div>
 </div>
 </div>
   <hr style="border: none; height: 3px; background-color: #2c2420;">
