@@ -40,7 +40,7 @@ export const COMMENTS_CONTENT = `
  <img 
     src="images/comentarios/comentarios_metodologia.avif" 
     alt="Metodología" 
-    width="400"
+    width="300"
   >
   </div>
 <div class="columna-texto">
@@ -98,7 +98,7 @@ export const COMMENTS_CONTENT = `
 <div class="columna-imagen">
 <img 
     src="images/comentarios/comentarios_oralidad.avif" 
-    alt="Metodología" 
+    alt="Oralidad" 
     width="400"
   >
   </div>
@@ -147,7 +147,7 @@ export const COMMENTS_CONTENT = `
 <img 
     src="images/comentarios/comentarios_metafora.avif" 
     alt="Metáforas" 
-    width="400"
+    width="300"
   >
   </div>
   <div class="columna-texto">
@@ -167,8 +167,8 @@ export const COMMENTS_CONTENT = `
   <div class="columna-imagen">
 <img 
     src="images/comentarios/comentarios_genero.avif" 
-    alt="Metáforas" 
-    width="400"
+    alt="Género" 
+    width="300"
   >
   </div>
 
@@ -194,7 +194,7 @@ export const COMMENTS_CONTENT = `
 <img 
     src="images/comentarios/comentarios_referencias_culturales.avif" 
     alt="Referente culturales" 
-    width="400"
+    width="300"
   >
   </div>
 
