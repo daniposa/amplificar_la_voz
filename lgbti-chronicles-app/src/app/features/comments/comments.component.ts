@@ -15,7 +15,7 @@ import { TextParserService } from '../../core/services/text-parser.service';
 
       <header class="page-header">
         <a class="back-btn" routerLink="/">&#8592;</a>
-        <h1 class="page-title">Comentarios de la traducción</h1>
+        <h1 class="page-title">Comentarios: sobre el proceso de traducción</h1>
       </header>
 
       <main class="page-main">
