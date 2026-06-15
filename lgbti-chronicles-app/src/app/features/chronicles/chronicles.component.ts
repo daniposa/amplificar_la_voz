@@ -199,6 +199,18 @@ type Tab = 'intro' | 'chronicles';
         line-height: 1.85;
         color: var(--color-ink);
       }
+      
+      /* Aplica el justificado a todos los párrafos de la introducción */
+      .intro-text ::ng-deep p {
+        text-align: justify;
+        text-justify: inter-word;
+        margin-bottom: var(--space-md);
+      }
+
+      /* Aplica la sangría mayor únicamente en la primera línea de cada párrafo */
+      .intro-text ::ng-deep p {
+        text-indent: 2rem;
+      }
      
 
       /* ── panorama wrapper ── */
