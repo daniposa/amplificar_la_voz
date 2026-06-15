@@ -51,7 +51,7 @@ interface ResolvedModalContent {
                 @if (langService.language() !== 'es') {
                   <button class="flip-btn" (click)="showSpanish.set(true)">
                     <span class="material-icons">translate</span>
-                    Ver en español
+                    Original
                     <span class="material-icons arrow-right">chevron_right</span>
                   </button>
                 }
@@ -77,7 +77,7 @@ interface ResolvedModalContent {
           <div class="page-face page-back">
             <div class="lang-badge">
               <span class="material-icons">translate</span>
-              Traducción al español
+              Original
             </div>
             @if (spanishContent(); as es) {
               @if (es.title) {
@@ -319,7 +319,7 @@ export class ModalContentComponent {
   spanishContent = computed<ResolvedModalContent | null>(() => this.resolve('es'));
 
   backLabel = computed(() =>
-    this.langService.language() === 'fr' ? 'Volver al francés' : 'Volver al inglés',
+    this.langService.language() === 'fr' ? 'Français' : 'English',
   );
 
   contextInfoBtnLabel = computed(() => CHRONICLE_UI.contextInfoButton[this.langService.language()]);
