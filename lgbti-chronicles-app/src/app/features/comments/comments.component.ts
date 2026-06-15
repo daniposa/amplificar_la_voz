@@ -54,7 +54,6 @@ import { TextParserService } from '../../core/services/text-parser.service';
         z-index: 1;
         box-sizing: border-box;
         max-height: 15vh;
-        /* Leave room on the left for the fixed sitemap hamburger button. */
         padding: var(--space-sm) var(--space-xl) var(--space-sm)
           calc(var(--space-sm) + 44px + var(--space-md));
         border-bottom: 1px solid var(--color-border);
@@ -90,11 +89,11 @@ import { TextParserService } from '../../core/services/text-parser.service';
         overflow: hidden;
         text-overflow: ellipsis;
       }
-     .page-main {
+      .page-main {
         position: relative;
         z-index: 1;
-        width: 90%;           /* <-- Subimos de 70% a 90% para reducir el espacio muerto a los lados */
-        max-width: 1400px;    /* <-- Permitimos que se expanda más en pantallas grandes */
+        width: 90%;
+        max-width: 1400px;
         margin: 0 auto;
         padding: var(--space-xl) var(--space-md) var(--space-2xl);
       }
@@ -105,7 +104,6 @@ import { TextParserService } from '../../core/services/text-parser.service';
         color: #2e4a3b;
       }
       
-      /* Formato general de los párrafos */
       .comments-text ::ng-deep p {
         text-align: justify;
         text-justify: inter-word;
@@ -114,58 +112,52 @@ import { TextParserService } from '../../core/services/text-parser.service';
         margin: 0 0 var(--space-md) 0;
       }
 
-     .comments-text ::ng-deep .highlight {
+      .comments-text ::ng-deep .highlight {
         font-weight: bold;
         color: #2e4a3b; 
         cursor: help;
-        border-bottom: 1px dotted #3779a9; /* Opcional: una leve línea abajo para indicar que es interactivo */
+        border-bottom: 1px dotted #3779a9;
       }
       .comments-text ::ng-deep .identificador {
         display: block;
-        text-align: right;    /* Mueve el texto a la derecha */
-        text-indent: 0;       /* Quita la sangría para que quede perfecto */
+        text-align: right;
+        text-indent: 0;
         margin-top: var(--space-lg);
         color: inherit;
       }
-      ::ng-deep .tippy-box, 
-      ::ng-deep .tooltip-box,
-      ::ng-deep [data-template] { 
-        max-width: 450px !important; /* Aumenta el ancho máximo (antes seguro estaba en 250px o 300px) */
-        width: 400px !important;     /* Define un ancho base cómodo */
-      }
 
-      /* Opcional: Si el texto sigue siendo muy largo, esto le añade una barra de desplazamiento interna para que NUNCA se corte abajo */
-      ::ng-deep .tippy-content {
-        max-height: 400px;
-        overflow-y: auto;
-      }
+      /* (Nota: Los ::ng-deep viejos de tippy-box ya los controlamos de raíz en el controller, los dejo aquí limpios) */
+
       .comments-text ::ng-deep .seccion-lectura {
         display: grid;
-        grid-template-columns: 1fr 1.5fr; /* Divide el espacio: la imagen y el texto */
-        gap: 40px;                        /* Espacio de separación entre las dos columnas */
-        align-items: start;
-        margin-bottom: var(--space-3xl);  /* Espacio libre antes de la siguiente sección */
+        grid-template-columns: 1.1fr 1.4fr; /* ✨ Ajustamos ligeramente las proporciones para dar más espacio a la imagen */
+        gap: 50px;                          /* ✨ Aumentamos un poco el espacio entre columnas */
+        align-items: center;                /* 🌟 ¡CENTRA VERTICALMENTE LA IMAGEN CON EL TEXTO! */
+        margin-bottom: var(--space-3xl);
       }
 
-      /* Si quieres intercalar: esta clase hace que el texto vaya primero y la imagen a la derecha */
       .comments-text ::ng-deep .seccion-lectura.invertida {
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1.4fr 1.1fr;
       }
 
-      /* Contenedor interno para que el sticky funcione perfecto */
       .comments-text ::ng-deep .columna-imagen {
         position: -webkit-sticky;
         position: sticky;
-        top: 15vh;                        /* Altura en la que se congela la imagen al bajar */
+        top: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
-      /* Ajuste de las imágenes dentro de su columna */
+      /* Ajuste de las imágenes ampliadas */
       .comments-text ::ng-deep .columna-imagen img {
-        width: auto;
-        max-width: 100%;              /* No permite que se desborde de la columna */
-        max-height: 80vh;             /* <-- ¡LA MAGIA! Limita el alto al 70% de la pantalla */
-        object-fit: contain;          /* Fuerza a la imagen a mostrarse completa sin recortes */
-        border-radius: 8px;
+        width: 100%;                  /* 🌟 Obliga a la imagen a expandirse al ancho de su columna */
+        max-width: 500px;             /* ✨ Le damos un tope máximo más grande (puedes subirlo a 550px si quieres más gigante aún) */
+        height: auto;
+        max-height: 85vh;             /* ✨ Le permitimos usar hasta el 85% de la altura de la ventana */
+        object-fit: contain;
+        border-radius: 12px;          /* ✨ Bordes un pelín más suaves como en los modales */
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Mantiene la estética premium de la app */
         display: block;
         margin: 0 auto;
       }
@@ -175,17 +167,13 @@ import { TextParserService } from '../../core/services/text-parser.service';
 })
 export class CommentsComponent {
   private sanitizer = inject(DomSanitizer);
-  // INYECTAMOS EL PARSER
   private parser = inject(TextParserService);
 
-  // PROCESAMOS EL TEXTO PRIMERO CON EL PARSER ANTES DE ENVIARLO A LA PÁGINA
   readonly contentHtml: SafeHtml = this.getProcessedHtml(COMMENTS_CONTENT?.text ?? '');
   readonly tooltips: Record<string, string> = COMMENTS_CONTENT?.tooltips ?? {};
 
   private getProcessedHtml(rawText: string): SafeHtml {
-    // 1. El parser convierte los {1}Texto{/1} en el HTML interactivo que espera la directiva
     const parsedHtml = this.parser.markedTextToHtml(rawText);
-    // 2. Sanitizamos y damos los permisos de confianza
     const clean = this.sanitizer.sanitize(SecurityContext.HTML, parsedHtml) ?? '';
     return this.sanitizer.bypassSecurityTrustHtml(clean);
   }
