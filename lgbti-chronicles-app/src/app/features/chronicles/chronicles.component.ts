@@ -309,11 +309,7 @@ export class ChroniclesComponent implements OnInit, OnDestroy {
     return id ? (CARDS_DATA.find((c) => c.id === id) ?? null) : null;
   });
 
-  background = computed(() =>
-    this.selectedCardId() !== null
-      ? `url(images/background_3.jpg)`
-      : `url(images/background_1.jpg)`,
-  );
+  background = computed(() => `url(images/background_3.jpg)`);
 
   // ── lifecycle ─────────────────────────────────────────────
 
