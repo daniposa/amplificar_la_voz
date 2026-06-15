@@ -132,7 +132,7 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
       .comments-text ::ng-deep .columna-imagen img {
         width: auto;
         max-width: 100%;              /* No permite que se desborde de la columna */
-        max-height: 70vh;             /* <-- ¡LA MAGIA! Limita el alto al 70% de la pantalla */
+        max-height: 80vh;             /* <-- ¡LA MAGIA! Limita el alto al 70% de la pantalla */
         object-fit: contain;          /* Fuerza a la imagen a mostrarse completa sin recortes */
         border-radius: 8px;
         display: block;
