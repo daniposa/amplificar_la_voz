@@ -10,12 +10,15 @@ export const COMMENTS_CONTENT = `
   
 <h2>La traducción como acto político </h2>
 <div class="seccion-lectura">
+<div class="columna-imagen">
  <img 
     src="images/comentarios/comentarios_conflicto.avif" 
     class="img-izquierda"
     alt="Conflicto" 
     width="300"
   >
+  </div>
+  <div class="columna-texto">
   <p>
   Elegir traducir sobre conflicto armado no es una decisión neutra. Incluso aterrizar sobre un texto de este tema sin intención previa implica tomar decisiones políticas sobre lo que se resalta y lo que no. El IF de la CEV cuenta qué pasó, por qué pasó, quiénes se involucraron en lo que pasó y cómo las víctimas afrontaron lo que pasó durante el conflicto armado colombiano. Decidir llevar este texto a otros contextos es un acto político, pensar cómo transmitirlo también. Baker (2007) ubica el ejercicio de traducción en medio de conflictos como una herramienta de legitimación de narrativas que ponderan o acentúan los poderes en conflicto. Para ella, las traductoras —y el solo hablar en femenino como genérico ya es un uso político del lenguaje— tienen un rol preponderante en la <i>mediación</i> de los conflictos, ya sea para iniciarlos, continuarlos o superarlos, porque todo acto de guerra o de paz está mediado por un acto lingüístico. Este rol es tal por la capacidad de la traducción de «circular y resistir las narrativas que crean el escenario intelectual y moral para los conflictos violentos» (Baker, 2007, p. 2, traducción propia). 
   </p>
@@ -27,6 +30,7 @@ export const COMMENTS_CONTENT = `
  <p>En este sentido, reiteramos: somos un grupo de estudiantes de traducción que tienen la no repetición como horizonte político; que hicieron colectivamente este libro que une texto, imagen y video para interpelar a la audiencia no hispanohablante del norte global —que no ha sufrido un conflicto armado semejante en su territorio— para que entienda las dimensiones de la guerra; que seleccionaron estos testimonios en específico para mostrar la crueldad —no secundaria, no colateral, sino estructural— de la violencia sobre los cuerpos de mujeres y población LGBTIQ+, pero también la capacidad de movimiento, de acción, de juntanza, de insistencia por la vida de estos mismos cuerpos; y que oscilaron entre mantener lo extraño y procurar la comprensión. Por esto entendemos y explicitamos este ejercicio de traducción como un ejercicio parcial, no como un defecto o falta sino como algo que nos vuelve partidarias (Tymoczko, 2000) y como un ejercicio de encuadre con el que estamos activando una narrativa específica (Baker, 2007): una narrativa contra la guerra, una narrativa por las víctimas, por la vida, por la dignidad y por la convivencia pacífica.</p>
  <p>Somos conscientes de que este es solo un peldaño de un movimiento más grande, un medio textualizado específico que hace parte del mosaico de la(s) pregunta(s) y la(s) defensa(s) insistente(s) por la paz, la justicia, la reparación y la no repetición. Sabemos que, como Tymoczko (2000) observa, la efectividad de los propósitos políticos a través de medios textualizados resulta incierta: este ejercicio puede terminar en un conjunto de palabras pegadas con buenas intenciones o en <i>algo más</i>. Sin embargo, entre el inmutismo y un posible <i>algo más</i>, nuestra opción es clara.</p>
  <p>Este proyecto empezó con la obsesión por la singularidad: defendíamos —y defendemos—, que hay particularidades del caso colombiano que no se presentan en otras latitudes. Sin embargo, aun marcando la particularidad del conflicto armado colombiano, no queremos que esta memoria que creamos como traductoras sea una memoria literal en la que lo extremo de un dolor único se convierta en ceguera de futuro. Nuestro norte es una memoria ejemplar: una memoria que permita reconocer nuestras diferencias y encontrarnos en lo común. Como traductoras estamos constantemente virando entre lo intraducible y la equivalencia, entre la extrañeza y la comprensión. Acá intentamos ofrecerles la versión más honesta posible de cómo reconciliamos estas duplas. Entonces, les invitamos a leer estos testimonios con la analogía justa y con la otredad necesaria.</p>
+ </div>
  </div>
  <hr style="border: none; height: 5px; background-color: #2c2420;">
 
