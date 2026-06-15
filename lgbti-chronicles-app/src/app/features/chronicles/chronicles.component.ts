@@ -94,7 +94,7 @@ type Tab = 'intro' | 'chronicles';
         min-height: 100vh;
         background-color: var(--color-paper);
         background-size: cover;
-        background-position: center;
+        background-position: bottom right;
         background-attachment: fixed;
         background-repeat: no-repeat;
         position: relative;
