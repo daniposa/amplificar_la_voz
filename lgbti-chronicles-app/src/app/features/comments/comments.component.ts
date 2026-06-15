@@ -173,11 +173,13 @@ import { TextParserService } from '../../core/services/text-parser.service';
         text-align: justify;
         text-justify: inter-word;
         
-        /* Aplicamos la sangría francesa de forma limpia */
+        /* 1. Desplazamos TODO el bloque completo hacia la derecha */
         padding-left: 2.5rem; 
-        text-indent: -2.5rem !important; 
         
-        /* Le damos el mismo espacio inferior y tamaño del cuerpo */
+        /* 2. Forzamos a la primera línea a regresar usando un margen negativo */
+        margin-left: -2.5rem;
+        
+        /* Mantenemos tu diseño limpio */
         margin-bottom: var(--space-md);
         font-size: 1.05rem;
         line-height: 1.85;
