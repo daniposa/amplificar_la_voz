@@ -373,6 +373,7 @@ export class ChroniclesComponent implements OnInit, OnDestroy {
     this.pageTitle = PAGE_CONFIG.title[this.lang];
     this.introTabLabel = PAGE_CONFIG.tabs.intro[this.lang];
     this.chroniclesTabLabel = PAGE_CONFIG.tabs.chronicles[this.lang];
+    this.panoramaImage = PANORAMA_IMAGE[this.lang];
     this.titleService.setTitle(this.pageTitle);
   }
 
