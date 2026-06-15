@@ -11,6 +11,7 @@ text: `
 
 <div class="seccion-lectura">
 <h2 class="titulo-seccion">La traducción como acto político </h2>
+<div class="seccion-contenido">
 <div class="columna-imagen">
  <img 
     src="images/comentarios/comentarios_conflicto.avif" 
@@ -31,6 +32,7 @@ text: `
  <p>En este sentido, reiteramos: somos un grupo de estudiantes de traducción que tienen la no repetición como horizonte político; que hicieron colectivamente este libro que une texto, imagen y video para interpelar a la audiencia no hispanohablante del norte global —que no ha sufrido un conflicto armado semejante en su territorio— para que entienda las dimensiones de la guerra; que seleccionaron estos testimonios en específico para mostrar la crueldad —no secundaria, no colateral, sino estructural— de la violencia sobre los cuerpos de mujeres y población LGBTIQ+, pero también la capacidad de movimiento, de acción, de juntanza, de insistencia por la vida de estos mismos cuerpos; y que oscilaron entre mantener lo extraño y procurar la comprensión. Por esto entendemos y explicitamos este ejercicio de traducción como un ejercicio parcial, no como un defecto o falta sino como algo que nos vuelve partidarias (Tymoczko, 2000) y como un ejercicio de encuadre con el que estamos activando una narrativa específica (Baker, 2007): una narrativa contra la guerra, una narrativa por las víctimas, por la vida, por la dignidad y por la convivencia pacífica.</p>
  <p>Somos conscientes de que este es solo un peldaño de un movimiento más grande, un medio textualizado específico que hace parte del mosaico de la(s) pregunta(s) y la(s) defensa(s) insistente(s) por la paz, la justicia, la reparación y la no repetición. Sabemos que, como Tymoczko (2000) observa, la efectividad de los propósitos políticos a través de medios textualizados resulta incierta: este ejercicio puede terminar en un conjunto de palabras pegadas con buenas intenciones o en <i>algo más</i>. Sin embargo, entre el inmutismo y un posible <i>algo más</i>, nuestra opción es clara.</p>
  <p>Este proyecto empezó con la obsesión por la singularidad: defendíamos —y defendemos—, que hay particularidades del caso colombiano que no se presentan en otras latitudes. Sin embargo, aun marcando la particularidad del conflicto armado colombiano, no queremos que esta memoria que creamos como traductoras sea una memoria literal en la que lo extremo de un dolor único se convierta en ceguera de futuro. Nuestro norte es una memoria ejemplar: una memoria que permita reconocer nuestras diferencias y encontrarnos en lo común. Como traductoras estamos constantemente virando entre lo intraducible y la equivalencia, entre la extrañeza y la comprensión. Acá intentamos ofrecerles la versión más honesta posible de cómo reconciliamos estas duplas. Entonces, les invitamos a leer estos testimonios con la analogía justa y con la otredad necesaria.</p>
+ </div>
  </div>
  </div>
  <hr style="border: none; height: 5px; background-color: #2c2420;">
