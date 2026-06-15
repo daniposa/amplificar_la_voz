@@ -147,10 +147,17 @@ import { TextParserService } from '../../core/services/text-parser.service';
         position: sticky;
         top: 0; /* Se congela en el borde superior de la pantalla */
         z-index: 10;
-        background: rgba(248, 244, 239, 0.65);
+        background: rgba(248, 244, 239, 0.50);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         border-bottom: 1px dashed rgba(46, 74, 59, 0.2);
+      }
+      .comments-text ::ng-deep .columna-imagen {
+        position: -webkit-sticky;
+        position: sticky;
+        /* 🌟 Subimos a 12vh o 14vh para darle "aire" y que no se pegue al título al bajar */
+        top: 14vh; 
+        z-index: 5; /* Por debajo del z-index del título para que el texto fluya bien */
       }
 
       /* ✨ NUEVA CLASE: El contenedor de las dos columnas abajo del título */
