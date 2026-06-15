@@ -2,11 +2,12 @@ import { Component, inject, SecurityContext } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { DomSanitizer, type SafeHtml } from '@angular/platform-browser';
 import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
+import { HighlightTooltipsDirective } from '../../shared/directives/highlight-tooltips.directive';
 
 @Component({
   selector: 'app-comments',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, HighlightTooltipsDirective],
   template: `
     <div class="comments-page" style="background-image: url('images/background_2.jpg')">
       <div class="page-overlay"></div>
@@ -17,7 +18,11 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
       </header>
 
       <main class="page-main">
-        <div class="comments-text" [innerHTML]="contentHtml"></div>
+        <div 
+          class="comments-text" 
+          [innerHTML]="contentHtml"
+          [appHighlightTooltips]="tooltips"
+        ></div>
       </main>
     </div>
   `,
@@ -108,7 +113,12 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
         margin: 0 0 var(--space-md) 0;
       }
 
-      /* ── CONTENEDOR EN DOS COLUMNAS (La magia anti-licuadora) ── */
+     .comments-text ::ng-deep .highlight {
+        font-weight: bold;
+        color: #2e4a3b; 
+        cursor: help;   /* Hace que el mouse cambie para avisar que se puede pasar por encima */
+      }
+      
       .comments-text ::ng-deep .seccion-lectura {
         display: grid;
         grid-template-columns: 1fr 1.5fr; /* Divide el espacio: la imagen y el texto */
@@ -146,7 +156,10 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
 export class CommentsComponent {
   private sanitizer = inject(DomSanitizer);
 
-  readonly contentHtml: SafeHtml = this.toSafeHtml(COMMENTS_CONTENT);
+  readonly contentHtml: SafeHtml = this.toSafeHtml(COMMENTS_CONTENT.text);
+  
+  // 5. AQUÍ SE GUARDARÁN LAS DEFINICIONES DE LOS TEXTOS FLOJOS (SOLO EN ESPAÑOL)
+  readonly tooltips: Record<string, string> = COMMENTS_CONTENT.tooltips;
 
   private toSafeHtml(html: string): SafeHtml {
     const clean = this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '';
