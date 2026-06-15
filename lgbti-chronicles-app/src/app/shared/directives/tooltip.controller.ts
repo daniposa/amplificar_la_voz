@@ -85,11 +85,19 @@ export class TooltipController {
     this.tooltipEl = document.createElement('div');
     this.tooltipEl.className = 'app-tooltip app-tooltip--ephemeral';
     this.setTooltipInnerHtml(this.tooltipEl, this.tooltipHtml);
+    
+    // ✨ ACTUALIZADO: Forzamos ancho de 450px, texto justificado e inyectamos estilos para el identificador
     this.tooltipEl.style.cssText = `
       position: fixed;
       z-index: 10000;
       pointer-events: none;
+      width: 450px;
+      max-width: 90vw;
+      text-align: justify;
+      text-justify: inter-word;
     `;
+    
+    this.injectInternalStyles(this.tooltipEl);
     document.body.appendChild(this.tooltipEl);
     this.positionTooltip();
     this.attachRepositionListeners();
@@ -100,9 +108,15 @@ export class TooltipController {
 
     const root = document.createElement('div');
     root.className = 'app-tooltip app-tooltip--pinned';
+    
+    // ✨ ACTUALIZADO: Forzamos el mismo ancho y alineación justificada para el cuadro fijo
     root.style.cssText = `
       position: fixed;
       z-index: 10001;
+      width: 450px;
+      max-width: 90vw;
+      text-align: justify;
+      text-justify: inter-word;
     `;
 
     const closeBtn = document.createElement('button');
@@ -125,9 +139,37 @@ export class TooltipController {
     root.appendChild(body);
 
     this.tooltipEl = root;
+    this.injectInternalStyles(this.tooltipEl);
     document.body.appendChild(this.tooltipEl);
     this.positionTooltip();
     this.attachRepositionListeners();
+  }
+
+  /**
+   * ✨ NUEVO MÉTODO: Inyecta dinámicamente las reglas para firmas/identificadores
+   * y párrafos internos que vivan dentro del tooltip.
+   */
+  private injectInternalStyles(container: HTMLElement): void {
+    const styleId = 'app-tooltip-dynamic-styles';
+    if (!document.getElementById(styleId)) {
+      const styleNode = document.createElement('style');
+      styleNode.id = styleId;
+      styleNode.innerHTML = `
+        .app-tooltip .identificador {
+          display: block !important;
+          text-align: right !important;
+          text-indent: 0 !important;
+          margin-top: 12px !important;
+          width: 100% !important;
+        }
+        .app-tooltip p {
+          text-align: justify !important;
+          text-justify: inter-word !important;
+          margin-bottom: 8px;
+        }
+      `;
+      document.head.appendChild(styleNode);
+    }
   }
 
   private attachRepositionListeners(): void {
