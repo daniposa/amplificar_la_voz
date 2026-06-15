@@ -52,7 +52,7 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
         padding: var(--space-sm) var(--space-xl) var(--space-sm)
           calc(var(--space-sm) + 44px + var(--space-md));
         border-bottom: 1px solid var(--color-border);
-        background: rgba(245, 240, 232, 0.9);
+        background: rgba(219, 175, 90, 0.9);
         display: flex;
         align-items: center;
         gap: var(--space-md);
@@ -78,7 +78,7 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
         font-family: var(--font-display);
         font-size: 1.25rem;
         font-weight: 500;
-        color: var(--color-ink);
+        color: #2e4a3b;
         letter-spacing: 0.02em;
         white-space: nowrap;
         overflow: hidden;
@@ -96,14 +96,15 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
       .comments-text {
         font-size: 1.05rem;
         line-height: 1.85;
-        color: var(--color-ink);
+        color: #2e4a3b;
       }
       
       /* Formato general de los párrafos */
       .comments-text ::ng-deep p {
         text-align: justify;
         text-justify: inter-word;
-        text-indent: 2rem;     /* Tu sangría en la primera línea */
+        text-indent: 2rem;
+        color: #3779a9;
         margin: 0 0 var(--space-md) 0;
       }
 
