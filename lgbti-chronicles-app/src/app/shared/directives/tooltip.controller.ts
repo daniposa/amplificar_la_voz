@@ -145,27 +145,29 @@ export class TooltipController {
     this.attachRepositionListeners();
   }
 
-  /**
-   * ✨ NUEVO MÉTODO: Inyecta dinámicamente las reglas para firmas/identificadores
-   * y párrafos internos que vivan dentro del tooltip.
-   */
-  private injectInternalStyles(container: HTMLElement): void {
+ private injectInternalStyles(container: HTMLElement): void {
     const styleId = 'app-tooltip-dynamic-styles';
     if (!document.getElementById(styleId)) {
       const styleNode = document.createElement('style');
       styleNode.id = styleId;
       styleNode.innerHTML = `
+        /* Reducimos la letra un toque en todo el contenedor del tooltip */
+        .app-tooltip {
+          font-size: 0.92rem !important; 
+          line-height: 1.5 !important;
+        }
         .app-tooltip .identificador {
           display: block !important;
           text-align: right !important;
           text-indent: 0 !important;
           margin-top: 12px !important;
           width: 100% !important;
+          font-size: 0.85rem !important; /* La firma un pelín más pequeña para que contraste */
         }
         .app-tooltip p {
           text-align: justify !important;
           text-justify: inter-word !important;
-          margin-bottom: 8px;
+          margin-bottom: 8px !important;
         }
       `;
       document.head.appendChild(styleNode);
