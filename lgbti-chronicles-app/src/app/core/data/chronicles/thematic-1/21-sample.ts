@@ -13,19 +13,19 @@ export const CHRONICLE_T1_21: LocalizedModalContent = {
 ¿Dónde está mi femenino?<br>
 ¿A dónde se ha ido mi lengua y yo con ella?<br>
 Y en este silencio de la lengua,<br>
-¿qué tonada silbaré?</i></p><p>Mujer</p>
+¿qué tonada silbaré?</i></p><p class="identificador">Mujer</p>
 `,
     fr: `<p><i>La douleur d’une langue déchirée<br>   
 Où est ma féminité ?<br>  
 Où est partie ma langue et moi avec elle ?<br>  
 Et dans ce silence de la langue<br>  
-quel air pourrais-je siffler ?</i></p><p>Femme</p>
+quel air pourrais-je siffler ?</i></p><p class="identificador">Femme</p>
 `,
     en: `<p><i>The torn-up tongue throbs.<br>
 Where is my feminine now?<br>
 Where have they gone? Myself and my tongue.<br>
 And what tune am I supposed to whistle<br> 
-in this silence of something I no longer own?</i></p><p>Woman></p>
+in this silence of something I no longer own?</i></p><p class="identificador">Woman></p>
 `,
   },
   tooltips: {
