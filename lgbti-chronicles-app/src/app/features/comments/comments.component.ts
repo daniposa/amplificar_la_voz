@@ -138,16 +138,42 @@ import { TextParserService } from '../../core/services/text-parser.service';
         grid-template-columns: 1.5fr 1fr;
       }
 
+      /* 🌟 NUEVA CLASE: Formato, centrado y comportamiento congelado para el título */
+      .comments-text ::ng-deep .titulo-seccion {
+        grid-column: 1 / -1;                /* Ocupa todo el ancho de la grilla (vence las columnas) */
+        text-align: center;                 /* Centra el texto perfectamente */
+        font-family: var(--font-display);
+        color: #2e4a3b;
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin: 0 0 var(--space-xl) 0;
+        padding: var(--space-sm) 0;
+        
+        /* Comportamiento Sticky */
+        position: -webkit-sticky;
+        position: sticky;
+        top: 10vh;                          /* Se congela justo abajo del header de la página */
+        z-index: 10;
+        background-color: rgba(248, 244, 239, 0.9); /* Fondo translúcido tipo pergamino para que el texto al pasar por detrás no empañe la lectura */
+        backdrop-filter: blur(4px);         /* Efecto difuminado moderno en el fondo */
+        border-bottom: 1px dashed rgba(46, 74, 59, 0.2); /* Línea divisoria sutil */
+      }
+
+      /* Evita que al invertir la sección el título intente reubicarse mal */
+      .comments-text ::ng-deep .seccion-lectura.invertida .titulo-seccion {
+        grid-column: 1 / -1;
+      }
+
       .comments-text ::ng-deep .columna-imagen {
         position: -webkit-sticky;
         position: sticky;
-        top: 15vh;
+        top: 22vh;                          /* Bajamos un poco el tope para dejarle espacio al título fijado */
       }
 
       .comments-text ::ng-deep .columna-imagen img {
         width: auto;
         max-width: 100%;
-        max-height: 80vh;
+        max-height: 70vh;                   /* Ajustamos el alto máximo para que conviva bien con el título */
         object-fit: contain;
         border-radius: 8px;
         display: block;
