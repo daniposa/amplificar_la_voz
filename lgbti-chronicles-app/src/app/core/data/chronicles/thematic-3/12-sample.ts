@@ -49,7 +49,7 @@ Tenerte cerca es como hablar,<br>   
 
 es sentir que sigo vivo.</i></p>
 
-<p>Poema, autor: Fabio, sobreviviente y figura pública del movimiento LGBTIQ+</p>`,
+<p class="identificador">Poema, autor: Fabio, sobreviviente y figura pública del movimiento LGBTIQ+</p>`,
     fr: `<p><strong>La peur cache la différence</strong></p>
 
 <p><i>Une voix rauque et inconnue envahit mes oreilles<br> 
@@ -88,7 +88,7 @@ Te garder près est comme parler,<br>  
 
 Ça me fait sentir que je suis encore vivant.</i></p> 
 
-<p>Poème, auteur : Fabio, survivant et personnalité publique du mouvement LGBTIQ+</p>`,
+<p class="identificador">Poème, auteur : Fabio, survivant et personnalité publique du mouvement LGBTIQ+</p>`,
     en: `<p><strong>Otherness is at the core of fears</strong></p>
 
 <p><i>An unknown and hoarse voice invades my ears:<br> 
@@ -117,7 +117,7 @@ Quietly, I wait for you.<br>
 When you are close, words are there,<br> 
 It makes me feel I’m still alive.</i></p> 
 
-<p>Poem author: Fabio, survivor and public leading figure of LGBTIQ+ movement</p>`,
+<p class="identificador">Poem author: Fabio, survivor and public leading figure of LGBTIQ+ movement</p>`,
   },
   tooltips: {
     1: {
