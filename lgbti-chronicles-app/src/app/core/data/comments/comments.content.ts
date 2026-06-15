@@ -247,6 +247,7 @@ text: `
   <hr style="border: none; height: 3px; background-color: #2c2420;">
 
   <h2>Referencias</h2>
+<div style="padding-left: 2.5rem;">
 <div class="referencia-francesa">Academia Colombiana de la Lengua. (2012). <i>Breve Diccionario de Colombianismos</i> (4a ed. Revisada). Bogotá, Colombia: Academia Colombiana de la Lengua.</div>
 
 <div class="referencia-francesa">Acedo, N. (2017). El género testimonio en Latinoamérica: aproximaciones críticas en busca de su definición, genealogía y taxonomía. <i>Latinoamérica</i>, (64), 39-69. https://doi.org/10.22201/cialc.24486914e.2017.64.56863</div>
@@ -373,6 +374,7 @@ https://doi.org/10.1080/14781700.2013.795267</div>
 <div class="referencia-francesa">Von Flotow, L. (1991). Feminist Translation: Contexts, Practices and Theories. <i>TTR</i>, <i>4</i>(2), 69-84. https://doi.org/10.7202/037094ar</div>  
 
 <div class="referencia-francesa">Williams, J. y Chesterman, A. (2002). <i>The Map: A beginner's guide to doing research in translation studies</i>. St. Jerome Publishing.</div>
+</div>
 `,
 tooltips: {
     '1': '<p><strong>Bertha</strong></p><p>«Cuando llegaban desplazadas a la ciudad, las acogíamos en nuestras casas. Nos terminamos convirtiendo en madres de esas otras, a tal punto que, si no tenían con qué comer o trabajar, me acuerdo de todo el tema de los <b>sancochos<b>, de las comidas y almuerzos que hacíamos».</p><p class="identificador"><i>Mujer trans</i></p>',
