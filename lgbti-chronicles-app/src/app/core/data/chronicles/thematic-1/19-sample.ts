@@ -18,7 +18,7 @@ Se les arrebató la felicidad y los condenaron al olvido.<br>
 ¿Dónde están? ¿Quiénes son esos hombres<br> 
 que se los llevaron?<br> 
 ¿O acaso ya olvidaron que también<br> 
-eran seres humanos?</i></p><p>Mujer, mestiza, urbana</p>
+eran seres humanos?</i></p><p class="identificador">Mujer, mestiza, urbana</p>
 `,
     fr: `<p><i>Quel deuil je ressens en sachant<br>   
 Que tous ces êtres ont disparus,<br>  
@@ -29,7 +29,7 @@ Leur bonheur leur a été arraché, et on les a condamnés à être oubliés.<br
 Où sont-ils ? Qui sont ces hommes<br>    
 qui les ont enlevés ?<br>  
 Ou ont-ils déjà oublié<br>   
-Qu'ils étaient, eux aussi, des êtres humains ?</i></p><p>Femme, métisse, citadine</p>
+Qu'ils étaient, eux aussi, des êtres humains ?</i></p><p class="identificador">Femme, métisse, citadine</p>
 `,
     en: `<p><i>How much pain I feel to know<br>
 of so many disappeared ones<br> 
@@ -40,7 +40,7 @@ Their happiness was ripped out of them, and they were sentenced to be forgotten.
 Where are they? Who are those men who<br>  
 took them away?<br> 
 Or have they already forgotten that they<br> 
-were human beings too?</i></p><p>Woman, mestiza, urbanite</p>
+were human beings too?</i></p><p class="identificador">Woman, mestiza, urbanite</p>
 `,
   },
   tooltips: {
