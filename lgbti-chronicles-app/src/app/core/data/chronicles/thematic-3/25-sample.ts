@@ -19,7 +19,7 @@ un entierro de ataúd vacío.</i></p>
 
   
 
-<p>Bustamante Morales</p>`,
+<p class="identificador">Bustamante Morales</p>`,
     fr: `<p><i>Mères errantes criant vers les entrailles de la terre,<br> 
 
 parmi les os remués, des dents trouvées,<br> 
@@ -34,7 +34,7 @@ une sépulture avec un corps qui manque.</i></p>
 
   
 
-<p>Bustamante Morales</p>`,
+<p class="identificador">Bustamante Morales</p>`,
     en: `<p><i>Mothers who scream beneath the earth<br>  
 
 digging the bones for some teeth<br>  
@@ -49,7 +49,7 @@ a funeral with an empty coffin.</i></p>
 
   
 
-<p>Bustamante Morales</p>`,
+<p class="identificador">Bustamante Morales</p>`,
   },
   tooltips: {
     1: {
