@@ -92,10 +92,10 @@ type Tab = 'intro' | 'chronicles';
     `
       .chronicles {
         min-height: 100vh;
-        background-color: var(--color-paper);
+        background-color: #f7ce65;
         background-size: cover;
         background-position: bottom right;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-repeat: no-repeat;
         position: relative;
       }
@@ -197,7 +197,7 @@ type Tab = 'intro' | 'chronicles';
         max-width: 1200px;
         margin: var(--space-xl) auto;
         
-        background-color: rgba(248, 244, 239, 0.15); /* Capa translúcida color papel/crema */
+        background-color: rgba(248, 244, 239, 0.30); /* Capa translúcida color papel/crema */
         padding: var(--space-xl) var(--space-2xl);    /* Espaciado interno para que no pegue a los bordes */
         border-radius: 6px;                           /* Esquinas sutilmente suavizadas */
         
