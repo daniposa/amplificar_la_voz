@@ -92,7 +92,7 @@ type Tab = 'intro' | 'chronicles';
     `
       .chronicles {
         min-height: 100vh;
-        background-color: #f7ce65;
+        background-color: #f5f0e8;
         background-size: cover;
         background-position: bottom right;
         background-attachment: fixed;
@@ -334,7 +334,20 @@ export class ChroniclesComponent implements OnInit, OnDestroy {
     return id ? (CARDS_DATA.find((c) => c.id === id) ?? null) : null;
   });
 
-  background = computed(() => `url(images/background_3.jpg)`);
+ background = computed(() => {
+    // 1. Si hay una tarjeta abierta en pantalla completa
+    if (this.selectedCardId() !== null) {
+      return `url(images/background_3.jpg)`;
+    }
+    
+    // 2. Si el usuario hace clic en la pestaña de 'Testimonios' (chronicles)
+    if (this.activeTab() === 'chronicles') {
+      return 'none'; /* ❌ Elimina la imagen para que no se asome a los lados */
+    }
+    
+    // 3. Fondo por defecto para la pestaña de Introducción
+    return `url(images/background_3.jpg)`;
+  });
 
   // ── lifecycle ─────────────────────────────────────────────
 
