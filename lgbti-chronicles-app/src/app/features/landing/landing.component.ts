@@ -74,11 +74,20 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       .landing-title {
         font-family: var(--font-display);
         font-size: clamp(2.5rem, 6vw, 4rem);
-        font-weight: 500;
+        font-weight: 600;
         color: #ffffff;
         line-height: 1.2;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.03em;
         margin: 0 0 var(--space-2xl) 0;
+        
+        /* 🎨 Efecto de relieve cinematográfico y sombra sutil para despegarlo del fondo */
+        text-shadow: 
+          0 2px 4px rgba(0, 0, 0, 0.25), 
+          0 4px 12px rgba(74, 67, 51, 0.2),
+          0 10px 20px rgba(0, 0, 0, 0.15);
+          
+        /* Suave contraste extra en navegadores modernos */
+        -webkit-font-smoothing: antialiased;
       }
       .landing-buttons {
         display: flex;
