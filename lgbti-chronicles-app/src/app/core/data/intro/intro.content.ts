@@ -26,7 +26,7 @@ export const INTRO_CONTENT: LocalizedContent = {
    <p><small><i>Note</i>. Source <a href="https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites" target="_blank" rel="noopener noreferrer">https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites</a> (CEV, 2022b).</small></p>
   </div>
   <p>Différente mais latente, la violence du conflit est présente dans tous les territoires nationaux colombiens, ruraux comme urbains, elle a aussi une dimension internationale. Villages, montagnes, villes, rivières, canyons, jungles, páramos, déserts, quartiers et versants de montagnes ont été témoins des scènes d’horreurs, mais aussi de celles d’espérance. La Commission distingue 11 régions&nbsp;: Amazonie, Antioquia, sud de Cordoba, Bas Atrato Chocano, Caraïbes, Centre, Axe Caféier, Frontière Nord-orientale, Magdalena moyen, Nariño et sud du Cauca, Orinoquia, Pacifique, Vallée et nord du Cauca. Antioquia est le département qui enregistre le plus grand nombre total de victimes, représentant 18,74&nbsp;% des victimes en 2025 (Unité pour les Victimes, 2025).</p>
-  <h3><i>Carte de Colombie à partir de la régionalisation de la Commission de la Vérité (CEV, 2022)</i></h3>>
+  <h3><i>Carte de Colombie à partir de la régionalisation de la Commission de la Vérité (CEV, 2022)</i></h3>
   <div class="bloque-imagen">
   <img 
       src="images/comentarios/mapa.avif"
