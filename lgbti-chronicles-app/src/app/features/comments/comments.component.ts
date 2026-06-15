@@ -156,10 +156,9 @@ import { HighlightTooltipsDirective } from '../../shared/directives/highlight-to
 export class CommentsComponent {
   private sanitizer = inject(DomSanitizer);
 
-  readonly contentHtml: SafeHtml = this.toSafeHtml(COMMENTS_CONTENT.text);
-  
-  // 5. AQUÍ SE GUARDARÁN LAS DEFINICIONES DE LOS TEXTOS FLOJOS (SOLO EN ESPAÑOL)
-  readonly tooltips: Record<string, string> = COMMENTS_CONTENT.tooltips;
+  // Extraemos las propiedades de forma segura mapeando el objeto
+  readonly contentHtml: SafeHtml = this.toSafeHtml(COMMENTS_CONTENT?.text ?? '');
+  readonly tooltips: Record<string, string> = COMMENTS_CONTENT?.tooltips ?? {};
 
   private toSafeHtml(html: string): SafeHtml {
     const clean = this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '';
