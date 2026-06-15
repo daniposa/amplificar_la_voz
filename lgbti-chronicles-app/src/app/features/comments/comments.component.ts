@@ -168,19 +168,20 @@ import { TextParserService } from '../../core/services/text-parser.service';
         /* Reducimos el tamaño de la letra exactamente 2 puntos (de 1.05rem a 0.85rem) */
         font-size: 0.95rem; 
         
-        .comments-text ::ng-deep p.referencia {
+        .comments-text ::ng-deep .referencia-francesa {
+        display: block;
         text-align: justify;
         text-justify: inter-word;
         
-        /* 1. Aplicamos el colchón a la izquierda */
+        /* Aplicamos la sangría francesa de forma limpia */
         padding-left: 2.5rem; 
-        
-        /* 2. Forzamos el negativo rompiendo la regla general heredada */
         text-indent: -2.5rem !important; 
         
-        /* Separación entre cada bloque de referencia */
-        margin: 0 0 var(--space-md) 0;
-        color: inherit;
+        /* Le damos el mismo espacio inferior y tamaño del cuerpo */
+        margin-bottom: var(--space-md);
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: #2e4a3b;
       }
       }
     `,
