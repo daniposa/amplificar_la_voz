@@ -30,7 +30,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
             @for (line of credits.lines; track $index) {
               <li class="credits-line">
                 <span class="credits-label">{{ line.label }}:</span>
-                <span class="credits-names">{{ line.names }}</span>
+                <span class="credits-names" [innerHTML]="line.names"></span>
               </li>
             }
           </ul>
