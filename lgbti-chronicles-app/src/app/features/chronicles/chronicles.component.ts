@@ -95,7 +95,7 @@ type Tab = 'intro' | 'chronicles';
         background-color: #f7ce65;
         background-size: cover;
         background-position: bottom right;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-repeat: no-repeat;
         position: relative;
       }
