@@ -26,7 +26,7 @@ Miedo y oscuridad serán vencidos con mi sonrisa y corazón.<br>
   
 
 Soy fuego, agua, aire y tierra. Soy parte de la creación.</i></p>
-<p>Las Tamboreras del Cauca</p>`,
+<p class="identificador">Las Tamboreras del Cauca</p>`,
     fr: `  
 <p><i>Je me souviens de mon enfance à l’odeur de sureau et de jasmin ;<br>   
 
@@ -45,7 +45,7 @@ Mon sourire et mon cœur vaincront les ténèbres et la peur.<br>
   
 
 Je suis feu, eau, air et terre. Je fais partie de la création.</i></p> 
-<p><b>{1}Las Tamboreras del Cauca{/1}</b></p>
+<p class="identificador"><b>{1}Las Tamboreras del Cauca{/1}</b></p>
 
  `,
     en: `
@@ -58,7 +58,7 @@ Emotions that fill with strength and cheer, I feel peaceful, in harmony, with no
 With my heart and a smile, I’ll defeat darkness and despair.<br> 
 
 I am part of the creation, I am fire, water, earth and air.</i></p>
-<p><b>{1}Las Tamboreras del Cauca{/1}</b></p>
+<p class="identificador"><b>{1}Las Tamboreras del Cauca{/1}</b></p>
 `,
   },
   tooltips: {
