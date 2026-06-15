@@ -8,9 +8,8 @@
  */
 export const COMMENTS_CONTENT = {
 text: `
-
-<div class="seccion-lectura">
 <h2>La traducción como acto político </h2>
+<div class="seccion-lectura">
 <div class="columna-imagen">
  <img 
     src="images/comentarios/comentarios_conflicto.avif" 
@@ -35,9 +34,8 @@ text: `
  </div>
  <hr style="border: none; height: 5px; background-color: #2c2420;">
 
-
-<div class="seccion-lectura invertida">
 <h2>Nuestro proceso</h2>
+<div class="seccion-lectura invertida">
 <div class="columna-texto">
 <p>
  
@@ -74,8 +72,8 @@ text: `
 
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<div class="seccion-lectura">
 <h2>¿Qué es un testimonio?</h2>
+<div class="seccion-lectura">
 <div class="columna-imagen">
 <img 
     src="images/comentarios/comentarios_testimonio.avif" 
@@ -96,8 +94,9 @@ text: `
 </div>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<div class="seccion-lectura invertida">
 <h2>La reconstrucción del «yo» oral y su traducción</h2>
+<div class="seccion-lectura invertida">
+
 
   <div class="columna-texto">
   <p>Cuando enmarcamos nuestro proyecto como una traducción de testimonios orales, contábamos con unas ideas previas sobre la tipología textual de nuestro texto fuente y sus posibles desafíos al momento de traducirlo. Aún reconocemos que traducir palabras como «{1}sancocho{/1}», «{2}tirar pluma{/2}» o «{3}quebrarle el pescuezo al ciclo de la violencia{/3}» implican un esfuerzo traductivo en el cual debemos reconocer la identidad de las víctimas y sus discursos. Durante y después del proceso de traducción, estas ideas adoptaron otras formas, pues, a medida que convivíamos con los textos y conversábamos sobre ellos, confirmamos que las palabras son huellas de lo dicho y de lo no dicho, que construyen la identidad de la víctima y que, por lo tanto, no estábamos traduciendo palabras, sino actos de comunicación (Prieto, 1993).</p>
@@ -122,8 +121,10 @@ text: `
 </div>
 
 <hr style="border: none; height: 3px; background-color: #2c2420;">
-<div class="seccion-lectura">
+
 <h2>Lo que dice el silencio: develando lo no dicho</h2>
+<div class="seccion-lectura">
+
   <div class="columna-imagen">
 <img 
     src="images/comentarios/comentarios_ausencias.avif" 
@@ -143,10 +144,9 @@ text: `
 </div>
 </div>
 
+<h2>Coexistir en el texto: confluencia de registros y metáforas en testimonios sobre el conflicto armado</h2>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 <div class="seccion-lectura invertida">
-<h2>Coexistir en el texto: confluencia de registros y metáforas en testimonios sobre el conflicto armado</h2>
-  
   <div class="columna-texto">
   <p>Una vez reflexionamos sobre el lugar de la oralidad en los testimonios y su forma única de pasar a la lengua escrita, es posible enfocarnos en otros elementos que nos ayudan a entender el texto que resulta a partir de la convergencia de estas dos modalidades. Recordemos que, antes de llegar al público colombiano, las palabras de quienes vivieron la guerra pasaron por diversas manos que se encargaron de diversas tareas: transcribir los testimonios, redactar el cuerpo del texto para ofrecer un contexto suficiente para su interpretación, segmentar los testimonios para rescatar lo que consideraron más importante para transmitir la complejidad de la guerra, corregir el estilo del texto general, entre otros trabajos que no alcanzaríamos a enumerar.</p>
   <p>Durante el cambio del contexto en el cual se enmarca el acto comunicativo, en las variables de campo, modo y tenor que considera Halliday (1986), debemos aceptar que, de forma inevitable, surge una variedad de registros que comienzan a confluir dentro del mismo texto. La suma de situaciones bajo las cuales se emitió y modificó el contenido del capítulo de la Comisión, así como el tipo de rasgos que se esperan de él según cada nuevo campo en el que se mueve, producen una combinación de elementos predecibles que comparten espacio con otros que pueden llegar a resultar inesperados dentro del mismo contexto. Por ejemplo, si al pensar en un testimonio tendemos a asociarlo con un mensaje que se da con un tono familiar por medio de un canal oral, es posible que nos sorprenda encontrar testimonios redactados con una puntuación que ya no obedece a las pausas del habla sino a la lógica de lo escrito, o bien con palabras técnicas que de forma aparente no hacen parte del vocabulario de uso cotidiano. Estos factores hacen que, al ser el producto de un contexto diferente, cada testimonio sea distinto, incluso con variaciones de registro dentro de él mismo. Sumadas a estos factores estamos nosotras, traductoras, que llevamos estas palabras a dos nuevas lenguas y, por lo tanto, a dos nuevos contextos culturales.</p>
@@ -166,9 +166,10 @@ text: `
   </div>
   
   <hr style="border: none; height: 3px; background-color: #2c2420;">
-  
+
+<h2>«Cuando traducimos, también hablamos de nosotras mismas»: traducción comunizante y con perspectiva de género</h2>  
 <div class="seccion-lectura">
-<h2>«Cuando traducimos, también hablamos de nosotras mismas»: traducción comunizante y con perspectiva de género</h2>
+
   <div class="columna-imagen">
 <img 
     src="images/comentarios/comentarios_genero.avif" 
@@ -193,10 +194,10 @@ text: `
 </div>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<div class="seccion-lectura invertida">
 <h2>La cultura que habita fuera de lo propio</h2>
-  
+<div class="seccion-lectura invertida">
 
+  
   <div class="columna-texto">
   <p>Los testimonios recolectados por la CEV no solo contienen la experiencia de las víctimas, también son un reflejo de la cultura colombiana y los matices que recorren su territorio; fue al traducirlos cuando evidenciamos los retos que implica transferir referentes culturales del español colombiano a las lenguas de llegada. Antes de explicitar las estrategias que optamos para traducir algunos de los referentes culturales de los testimonios traducidos, retomamos la definición sobre cultura de Vermeer quien la define como las convenciones que un individuo que hace parte de una sociedad debe conocer, ya sea para ser como todos o para ser diferente (1987, como se citó en Nord, 1997). Dentro de estas convenciones reconocemos la lengua como una de las tantas formas en las cuales la cultura se materializa en una sociedad, especialmente porque también es la materia prima de la traducción.</p>
   <p>De esta manera, como traductoras, nos embarcamos en un proceso llamado <i>traducción cultural</i>, un concepto extensamente abordado que sitúa a la cultura en el centro de la toma de decisiones relacionadas con la traducción: entendemos que no se puede separar el texto de su cultura, como tampoco se puede operar un corazón sin tener en cuenta el resto del cuerpo (Bassnett, 2014, como se citó en Katan, 2008). Nos interesa que el lector meta pueda experimentar las diferencias del texto original —en este caso las del testimonio— para que se acerque, en la medida de lo posible, a la fuerza ilocutoria de las víctimas (Katan, 2008).</p>
@@ -220,8 +221,10 @@ text: `
 </div>
 
   <hr style="border: none; height: 3px; background-color: #2c2420;">
-  <div class="seccion-lectura">
+
   <h2>Me acostumbré a ser invisible</h2>
+  <div class="seccion-lectura">
+
   <div class="columna-imagen">
   <img 
     src="images/comentarios/comentarios_afectaciones.avif" 
