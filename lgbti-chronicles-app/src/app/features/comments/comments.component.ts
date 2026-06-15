@@ -97,15 +97,7 @@ import { COMMENTS_CONTENT } from '../../core/data/comments/comments.content';
         line-height: 1.85;
         color: var(--color-ink);
       }
-      .comments-text::first-letter {
-        font-family: var(--font-display);
-        font-size: 3rem;
-        float: left;
-        line-height: 1;
-        margin-right: 0.35rem;
-        margin-top: 0.05rem;
-        color: var(--color-ink);
-      }
+      
     `,
   ],
 })
