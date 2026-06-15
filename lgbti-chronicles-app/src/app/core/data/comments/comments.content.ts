@@ -372,7 +372,7 @@ https://doi.org/10.1080/14781700.2013.795267</li>
 </ul>
 `,
 tooltips: {
-    '1': '<p><strong>FARC-EP</strong> – Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo.</p><p>Organización político-militar...</p>',
-    '2': '<p><strong>Otro término</strong> – Esta es la descripción en español para el segundo cuadro de texto.</p>'
+    1: '<p><strong>FARC-EP</strong> – Fuerzas Armadas Revolucionarias de Colombia – Ejército del Pueblo.</p><p>Organización político-militar...</p>',
+    2: '<p><strong>Otro término</strong> – Esta es la descripción en español para el segundo cuadro de texto.</p>'
   }  
 };
