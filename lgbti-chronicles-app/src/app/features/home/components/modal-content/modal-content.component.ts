@@ -187,17 +187,33 @@ interface ResolvedModalContent {
         margin: 0 0 var(--space-lg) 0;
         letter-spacing: 0.02em;
       }
-      .modal-body.chapter-text {
+     .modal-body.chapter-text {
         padding-right: var(--space-xl);
         font-size: 1.05rem;
         line-height: 1.85;
         color: var(--color-ink);
       }
-      .modal-body.chapter-text ::ng-deep > p {
+
+      /* 1. Justifica el texto del testimonio y da espacio entre párrafos */
+      .modal-body.chapter-text ::ng-deep p {
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 2rem; /* Tu sangría mayor en la primera línea */
         margin: 0 0 var(--space-md) 0;
       }
-      .modal-body.chapter-text ::ng-deep > p:last-child {
+
+      .modal-body.chapter-text ::ng-deep p:last-child {
         margin-bottom: 0;
+      }
+
+      /* 2. Clase Mágica para mandar el identificador de la víctima a la derecha */
+      .modal-body.chapter-text ::ng-deep .identificador {
+        display: block;
+        text-align: right;    /* Mueve el texto a la derecha */
+        text-indent: 0;       /* Quita la sangría para que no quede desfasado */
+        font-style: italic;   /* Mantiene el estilo en cursiva original */
+        margin-top: var(--space-lg);
+        color: var(--color-ink-muted);
       }
       
       .highlight {
