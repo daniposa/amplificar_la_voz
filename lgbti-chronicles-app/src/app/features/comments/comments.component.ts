@@ -120,7 +120,13 @@ import { TextParserService } from '../../core/services/text-parser.service';
         cursor: help;
         border-bottom: 1px dotted #3779a9; /* Opcional: una leve línea abajo para indicar que es interactivo */
       }
-      
+      .comments-text ::ng-deep .identificador {
+        display: block;
+        text-align: right;    /* Mueve el texto a la derecha */
+        text-indent: 0;       /* Quita la sangría para que quede perfecto */
+        margin-top: var(--space-lg);
+        color: inherit;
+      }
       .comments-text ::ng-deep .seccion-lectura {
         display: grid;
         grid-template-columns: 1fr 1.5fr; /* Divide el espacio: la imagen y el texto */
