@@ -372,6 +372,8 @@ https://doi.org/10.1080/14781700.2013.795267</li>
 </ul>
 `,
 tooltips: {
-    '1': '<p><strong>[MR17]</strong> – Aquí pones la nota explicativa o el comentario de traducción que deseas que aparezca en el cuadro emergente.</p>'
+    '1': '<p><strong>Bertha</strong></p><p>«Cuando llegaban desplazadas a la ciudad, las acogíamos en nuestras casas. Nos terminamos convirtiendo en madres de esas otras, a tal punto que, si no tenían con qué comer o trabajar, me acuerdo de todo el tema de los <b>sancochos<b>, de las comidas y almuerzos que hacíamos». </p>',
+   '2': '<p><strong>Alejandro</strong></p><p>«No me permitían ser, porque cada que yo <b>tiraba una plumita</b> por ahí... mi familia, mis hermanos... porque papá nunca hubo. De hecho, para pasar a la supuesta madurez, a los 12 años, tenía que ir a estrenarme como hombre; fui y llegué a la casa queriendo arrancarme la piel con un estropajo, porque me sentía sucio, indigno, totalmente devastado. Mis hermanos no me permitían que fuera pluma. En mi casa me decían: “Es que usted no puede ser mariquita”. Quería abusar de uno tanto esa gente como la familia. Paradójicamente, los primos lo obligan a uno a que se vuelva hombre, y lo cogen y lo llevan por los cafetales y eso es impresionante. Entonces, uno no entiende».</p>',
+   '3': '<p><strong>Bertha</strong></p><p>«Cuando llegaban desplazadas a la ciudad, las acogíamos en nuestras casas. Nos terminamos convirtiendo en madres de esas otras, a tal punto que, si no tenían con qué comer o trabajar, me acuerdo de todo el tema de los <b>sancochos<b>, de las comidas y almuerzos que hacíamos». </p>'
   }
 };
