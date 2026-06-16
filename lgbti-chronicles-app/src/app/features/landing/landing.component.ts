@@ -35,6 +35,38 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
             }
           </ul>
         </footer>
+
+        <section class="legal-footer" aria-label="Información legal y licencias">
+          <div class="legal-three-columns">
+            
+            <div class="legal-col col-patrocinadores">
+              <img src="images/logos/logo_escuela_verde.avif" alt="Logo Universidad de Antioquia" class="footer-img img-udea" />
+              <img src="images/logos/logo_fundacion.avif" alt="Logo Fundación Patrocinadora" class="footer-img img-fundacion" />
+            </div>
+            
+            <div class="legal-col col-nuestro-logo">
+              <img src="images/logos/logo_texto.png" alt="Logo LGBTI Chronicles" class="footer-img img-proyecto-redondo" />
+            </div>
+            
+            <div class="legal-col col-texto-derechos">
+              <p class="txt-patrimoniales">
+                Derechos patrimoniales, Universidad de Antioquia.
+              </p>
+              <p class="txt-licencia">
+                Este es un artículo en acceso abierto, distribuido según los términos de la licencia 
+                <strong>Creative Commons BY-NC-SA 4.0 Internacional</strong>.
+              </p>
+              
+              <div class="cc-logo-wrapper">
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer">
+                  <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licencia Creative Commons BY-NC-SA 4.0" class="img-cc" />
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
       </div>
     </div>
   `,
@@ -79,14 +111,10 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         line-height: 1.2;
         letter-spacing: 0.03em;
         margin: 0 0 var(--space-2xl) 0;
-        
-        /* 🎨 Efecto de relieve cinematográfico y sombra sutil para despegarlo del fondo */
         text-shadow: 
           0 2px 4px rgba(0, 0, 0, 0.25), 
           0 4px 12px rgba(74, 67, 51, 0.2),
           0 10px 20px rgba(0, 0, 0, 0.15);
-          
-        /* Suave contraste extra en navegadores modernos */
         -webkit-font-smoothing: antialiased;
       }
       .landing-buttons {
@@ -176,14 +204,117 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       .credits-label {
         color: var(--color-ink);
         font-weight: 600;
-        display: block;                             
+        display: block;                               
         margin-bottom: var(--space-xs);
       }
       .credits-names {
         font-style: italic;
-        display: block;                             
+        display: block;                               
+      }
+
+    
+      .legal-footer {
+        margin-top: var(--space-xl);
+        padding: var(--space-lg);
+        
+        /* Bordes y esquinas redondeadas en sintonía con los créditos */
+        border: 1px solid var(--color-border);
+        border-radius: 8px;                         
+        
+        /* 🎨 La capita: Fondo semi-transparente y desenfoque sutil del paisaje */
+        background: rgba(248, 244, 239, 0.65);      
+        backdrop-filter: blur(4px); 
+        -webkit-backdrop-filter: blur(4px); /* Compatibilidad con Safari */
+        
+        box-shadow: var(--shadow-card);
+        text-align: left;
+      }
+      .legal-three-columns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-xl);
+      }
+      .legal-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       
+      /* Ajustes Columna 1 (Izquierda) */
+      .col-patrocinadores {
+        flex: 0 0 200px;
+        align-items: center;
+        gap: var(--space-md);
+      }
+      .img-udea {
+        max-height: 45px;
+        width: auto;
+      }
+      .img-fundacion {
+        max-height: 40px;
+        width: auto;
+      }
+
+      /* Ajustes Columna 2 (Centro) */
+      .col-nuestro-logo {
+        flex: 0 0 120px;
+        align-items: center;
+      }
+      .img-proyecto-redondo {
+        max-height: 90px; /* Al ser redondo le damos protagonismo visual */
+        width: auto;
+        border-radius: 50%;
+      }
+
+      /* Ajustes Columna 3 (Derecha) */
+      .col-texto-derechos {
+        flex: 1 1 0;
+        text-align: left;
+        font-family: var(--font-body);
+      }
+      .txt-patrimoniales {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--color-ink);
+        margin: 0 0 var(--space-xs) 0;
+      }
+      .txt-licencia {
+        font-size: 0.82rem;
+        color: var(--color-ink-muted);
+        line-height: 1.5;
+        margin: 0 0 var(--space-sm) 0;
+      }
+      .cc-logo-wrapper {
+        display: block;
+      }
+      .img-cc {
+        height: 28px;
+        width: auto;
+        opacity: 0.85;
+        transition: opacity 0.2s ease;
+      }
+      .img-cc:hover {
+        opacity: 1;
+      }
+
+      /* 📱 RESPONSIVE: Si entran desde celular, se acomoda una debajo de otra en orden lógico */
+      @media (max-width: 850px) {
+        .legal-three-columns {
+          flex-direction: column;
+          gap: var(--space-lg);
+          text-align: center;
+        }
+        .col-patrocinadores {
+          flex: auto;
+          flex-direction: row; /* En móvil los ponemos de lado a lado */
+          gap: var(--space-xl);
+        }
+        .col-texto-derechos {
+          text-align: center;
+        }
+      }
     `,
   ],
 })
