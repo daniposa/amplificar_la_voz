@@ -212,19 +212,17 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         display: block;                               
       }
 
-    
+      /* 🌟 AJUSTE FINAL CON FILTROS Y LOGOS AMPLIADOS */
       .legal-footer {
         margin-top: var(--space-xl);
-        padding: var(--space-lg);
-        
-        /* Bordes y esquinas redondeadas en sintonía con los créditos */
+        padding: var(--space-xl); /* Mayor relleno interno */
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
         
-        /* 🎨 La capita: Fondo semi-transparente y desenfoque sutil del paisaje */
-        background: rgba(248, 244, 239, 0.65);      
-        backdrop-filter: blur(4px); 
-        -webkit-backdrop-filter: blur(4px); /* Compatibilidad con Safari */
+        /* Modificamos opacidad a 0.75 para aislar por completo el ruido del lienzo */
+        background: rgba(248, 244, 239, 0.75);      
+        backdrop-filter: blur(6px); 
+        -webkit-backdrop-filter: blur(6px);
         
         box-shadow: var(--shadow-card);
         text-align: left;
@@ -234,7 +232,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: var(--space-xl);
+        gap: var(--space-2xl); /* Más aire entre columnas */
       }
       .legal-col {
         display: flex;
@@ -244,28 +242,28 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       
       /* Ajustes Columna 1 (Izquierda) */
       .col-patrocinadores {
-        flex: 0 0 200px;
+        flex: 0 0 240px; /* Expandido para dar holgura a las dimensiones institucionales */
         align-items: center;
-        gap: var(--space-md);
+        gap: var(--space-lg);
       }
       .img-udea {
-        max-height: 45px;
+        max-height: 65px; /* Escalado desde 45px */
         width: auto;
       }
       .img-fundacion {
-        max-height: 40px;
+        max-height: 55px; /* Escalado desde 40px */
         width: auto;
       }
 
       /* Ajustes Columna 2 (Centro) */
       .col-nuestro-logo {
-        flex: 0 0 120px;
+        flex: 0 0 160px; /* Expandido desde 120px */
         align-items: center;
       }
       .img-proyecto-redondo {
-        max-height: 90px; /* Al ser redondo le damos protagonismo visual */
+        max-height: 125px; /* ¡Escalado de 90px a 125px! Presencia nítida y protagónica */
         width: auto;
-        border-radius: 50%;
+        /* Se remueve el border-radius por si el logo_texto.png incluye tipografía cuadrada */
       }
 
       /* Ajustes Columna 3 (Derecha) */
@@ -275,44 +273,49 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         font-family: var(--font-body);
       }
       .txt-patrimoniales {
-        font-size: 0.9rem;
+        font-size: 1.05rem; /* Un pelín más grande para balancear con el peso visual de los logos */
         font-weight: 600;
         color: var(--color-ink);
         margin: 0 0 var(--space-xs) 0;
       }
       .txt-licencia {
-        font-size: 0.82rem;
+        font-size: 0.88rem;
         color: var(--color-ink-muted);
-        line-height: 1.5;
+        line-height: 1.6;
         margin: 0 0 var(--space-sm) 0;
       }
       .cc-logo-wrapper {
         display: block;
       }
       .img-cc {
-        height: 28px;
+        height: 32px; /* Escalado desde 28px */
         width: auto;
-        opacity: 0.85;
-        transition: opacity 0.2s ease;
+        opacity: 0.9;
+        transition: opacity 0.2s ease, transform 0.2s ease;
       }
       .img-cc:hover {
         opacity: 1;
+        transform: scale(1.03);
       }
 
-      /* 📱 RESPONSIVE: Si entran desde celular, se acomoda una debajo de otra en orden lógico */
+      /* 📱 RESPONSIVE */
       @media (max-width: 850px) {
         .legal-three-columns {
           flex-direction: column;
-          gap: var(--space-lg);
+          gap: var(--space-xl);
           text-align: center;
         }
         .col-patrocinadores {
           flex: auto;
-          flex-direction: row; /* En móvil los ponemos de lado a lado */
-          gap: var(--space-xl);
+          flex-direction: row; 
+          gap: var(--space-2xl);
         }
         .col-texto-derechos {
           text-align: center;
+        }
+        .cc-logo-wrapper {
+          display: flex;
+          justify-content: center;
         }
       }
     `,
