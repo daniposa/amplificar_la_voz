@@ -212,18 +212,15 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         display: block;                               
       }
 
-      /* ⚖️ DISEÑO COMPACTO Y FINO PARA LA CAJA LEGAL */
+      /* ⚖️ REGRESAMOS AL DISEÑO FINO ORIGINAL */
       .legal-footer {
         margin-top: var(--space-xl);
-        padding: var(--space-lg); /* Padding original para mantener la finura */
+        padding: var(--space-lg); /* Conserva la finura de la caja previa */
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
-        
-        /* Capita protectora sutil original */
         background: rgba(248, 244, 239, 0.65);      
         backdrop-filter: blur(4px); 
         -webkit-backdrop-filter: blur(4px);
-        
         box-shadow: var(--shadow-card);
         text-align: left;
       }
@@ -240,32 +237,39 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         justify-content: center;
       }
       
-      /* Columna 1 (Izquierda): Proporción calibrada */
+      /* Ajustes Columna 1 (Izquierda) */
       .col-patrocinadores {
-        flex: 0 0 210px;
+        flex: 0 0 200px;
         align-items: center;
         gap: var(--space-md);
       }
+      
+      /* 🚀 AGRANDAMOS DIRECTAMENTE LAS IMÁGENES CON UN FACTOR DE ESCALA INTEGRADO */
       .img-udea {
-        max-height: 52px; /* Un punto medio perfecto: legible pero fino */
+        max-height: 45px;
         width: auto;
+        transform: scale(1.25); /* Crece un 25% dentro de su espacio sin forzar la caja */
+        margin-bottom: var(--space-xs);
       }
       .img-fundacion {
-        max-height: 44px; /* Proporcional a la UdeA */
+        max-height: 40px;
         width: auto;
+        transform: scale(1.25); /* Crece proporcionalmente */
+        margin-top: var(--space-xs);
       }
 
-      /* Columna 2 (Centro): Tu Logo */
+      /* Ajustes Columna 2 (Centro) */
       .col-nuestro-logo {
-        flex: 0 0 130px;
+        flex: 0 0 120px;
         align-items: center;
       }
       .img-proyecto-redondo {
-        max-height: 100px; /* Tamaño elegante que destaca sin romper la altura de la caja */
+        max-height: 90px;
         width: auto;
+        transform: scale(1.35); /* ¡Agrandamos significativamente tu logo central! */
       }
 
-      /* Columna 3 (Derecha): Bloque de texto original */
+      /* Ajustes Columna 3 (Derecha) */
       .col-texto-derechos {
         flex: 1 1 0;
         text-align: left;
@@ -307,6 +311,10 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           flex: auto;
           flex-direction: row; 
           gap: var(--space-xl);
+        }
+        .img-udea, .img-fundacion, .img-proyecto-redondo {
+          transform: scale(1); /* Desactivamos escalado en móviles para conservar orden */
+          margin: 0;
         }
         .col-texto-derechos {
           text-align: center;
