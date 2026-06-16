@@ -77,7 +77,7 @@ export const INTRO_CONTENT: LocalizedContent = {
     <p><small><i>Note</i>. Source <a href="https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites" target="_blank" rel="noopener noreferrer">https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites</a> (CEV, 2022b).</small></p>
   </div>
   <p>The violence was both differentiated and pervasive, reaching across Colombia's entire national territory, rural and urban alike,  and even extending beyond its borders. Towns, mountains, cities, rivers, canyons, jungles, Andean moorlands, deserts, neighborhoods, and rural settlements all became sites of atrocity, but also of resilience. The Commission identifies 11 regions: Amazonia; Antioquia, southern Córdoba, and Lower Atrato River region of Choco; Caribbean; Central; Coffee Region; Northeastern Border; Middle Magdalena; Nariño and southern Cauca; Orinoquía; Pacific; and Valle and northern Cauca. Antioquia stands out as the department with the highest number of victims, representing 18.74&nbsp;% of the national total as of 2025 (Victims Unit, 2025).</p>
-  <h3><i>Map of Colombia based on the Truth Commission's regionalization (CEV, 2022)</i></p>
+  <h3><i>Map of Colombia based on the Truth Commission's regionalization (CEV, 2022)</i></h3>
   <div class="bloque-imagen">
   <img 
       src="images/comentarios/mapa.avif"
