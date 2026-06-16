@@ -212,17 +212,17 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         display: block;                               
       }
 
-      /* 🌟 AJUSTE FINAL CON FILTROS Y LOGOS AMPLIADOS */
+      /* ⚖️ DISEÑO COMPACTO Y FINO PARA LA CAJA LEGAL */
       .legal-footer {
         margin-top: var(--space-xl);
-        padding: var(--space-xl); /* Mayor relleno interno */
+        padding: var(--space-lg); /* Padding original para mantener la finura */
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
         
-        /* Modificamos opacidad a 0.75 para aislar por completo el ruido del lienzo */
-        background: rgba(248, 244, 239, 0.75);      
-        backdrop-filter: blur(6px); 
-        -webkit-backdrop-filter: blur(6px);
+        /* Capita protectora sutil original */
+        background: rgba(248, 244, 239, 0.65);      
+        backdrop-filter: blur(4px); 
+        -webkit-backdrop-filter: blur(4px);
         
         box-shadow: var(--shadow-card);
         text-align: left;
@@ -232,7 +232,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: var(--space-2xl); /* Más aire entre columnas */
+        gap: var(--space-xl);
       }
       .legal-col {
         display: flex;
@@ -240,75 +240,73 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         justify-content: center;
       }
       
-      /* Ajustes Columna 1 (Izquierda) */
+      /* Columna 1 (Izquierda): Proporción calibrada */
       .col-patrocinadores {
-        flex: 0 0 240px; /* Expandido para dar holgura a las dimensiones institucionales */
+        flex: 0 0 210px;
         align-items: center;
-        gap: var(--space-lg);
+        gap: var(--space-md);
       }
       .img-udea {
-        max-height: 65px; /* Escalado desde 45px */
+        max-height: 52px; /* Un punto medio perfecto: legible pero fino */
         width: auto;
       }
       .img-fundacion {
-        max-height: 55px; /* Escalado desde 40px */
+        max-height: 44px; /* Proporcional a la UdeA */
         width: auto;
       }
 
-      /* Ajustes Columna 2 (Centro) */
+      /* Columna 2 (Centro): Tu Logo */
       .col-nuestro-logo {
-        flex: 0 0 160px; /* Expandido desde 120px */
+        flex: 0 0 130px;
         align-items: center;
       }
       .img-proyecto-redondo {
-        max-height: 125px; /* ¡Escalado de 90px a 125px! Presencia nítida y protagónica */
+        max-height: 100px; /* Tamaño elegante que destaca sin romper la altura de la caja */
         width: auto;
-        /* Se remueve el border-radius por si el logo_texto.png incluye tipografía cuadrada */
       }
 
-      /* Ajustes Columna 3 (Derecha) */
+      /* Columna 3 (Derecha): Bloque de texto original */
       .col-texto-derechos {
         flex: 1 1 0;
         text-align: left;
         font-family: var(--font-body);
       }
       .txt-patrimoniales {
-        font-size: 1.05rem; /* Un pelín más grande para balancear con el peso visual de los logos */
+        font-size: 0.9rem;
         font-weight: 600;
         color: var(--color-ink);
         margin: 0 0 var(--space-xs) 0;
       }
       .txt-licencia {
-        font-size: 0.88rem;
+        font-size: 0.82rem;
         color: var(--color-ink-muted);
-        line-height: 1.6;
+        line-height: 1.5;
         margin: 0 0 var(--space-sm) 0;
       }
       .cc-logo-wrapper {
         display: block;
       }
       .img-cc {
-        height: 32px; /* Escalado desde 28px */
+        height: 28px;
         width: auto;
-        opacity: 0.9;
-        transition: opacity 0.2s ease, transform 0.2s ease;
+        opacity: 0.85;
+        transition: opacity 0.2s ease;
       }
       .img-cc:hover {
         opacity: 1;
-        transform: scale(1.03);
       }
 
       /* 📱 RESPONSIVE */
       @media (max-width: 850px) {
         .legal-three-columns {
           flex-direction: column;
-          gap: var(--space-xl);
+          gap: var(--space-lg);
           text-align: center;
         }
         .col-patrocinadores {
           flex: auto;
           flex-direction: row; 
-          gap: var(--space-2xl);
+          gap: var(--space-xl);
         }
         .col-texto-derechos {
           text-align: center;
