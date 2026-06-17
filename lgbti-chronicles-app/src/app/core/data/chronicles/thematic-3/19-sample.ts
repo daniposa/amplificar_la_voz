@@ -71,8 +71,8 @@ I am part of the creation, I am fire, water, earth and air.</i></p>
     },
   },
   contextInfo: {
-    es: `<p>Lugar: N/A</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): N/A</p><p>Actor armado: N/A</p>`,
-    fr: `<p>Lieu : N/A</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : N/A</p><p>Acteur armé : N/A</p>`,
-    en: `<p>Place: N/A</p><p>Date: N/A</p><p>Victimizing act(s): N/A</p><p>Armed actor: N/A</p>`,
+    es: `<p>Lugar: Cauca</p><p>Año: N/A</p><p>Hecho(s) victimizante(s): N/A</p><p>Actor armado: N/A</p>`,
+    fr: `<p>Lieu : Cauca</p><p>Date : N/A</p><p>Fait(s) victimisant(s) : N/A</p><p>Acteur armé : N/A</p>`,
+    en: `<p>Place: Cauca</p><p>Date: N/A</p><p>Victimizing act(s): N/A</p><p>Armed actor: N/A</p>`,
   },
 };
