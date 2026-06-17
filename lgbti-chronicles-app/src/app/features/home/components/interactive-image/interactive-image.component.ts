@@ -36,7 +36,18 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           </button>
         }
       </div>
+
+      <button 
+        class="fullscreen-toggle-btn" 
+        (click)="toggleFullscreen()" 
+        [aria-label]="isFullscreen() ? 'Exit fullscreen' : 'Enter fullscreen'"
+      >
+        <span class="material-icons">
+          {{ isFullscreen() ? 'fullscreen_exit' : 'fullscreen' }}
+        </span>
+      </button>
     </div>
+
     @if (modalContent) {
       <app-modal-content [content]="modalContent" (close)="closeModal()" />
     }
@@ -50,16 +61,16 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
       }
       .image-container {
         position: absolute;
-        top: calc(44px + var(--space-md));
-        left: var(--space-md);
-        right: var(--space-md);
-        bottom: var(--space-md);
+        /* 🚀 SE MAXIMIZA EL ESPACIO: Expandido a los límites puros para agrandar la ilustración */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
       }
-      /* Shrinks to the rendered image so hotspots align with the visible image. */
       .image-frame {
         position: relative;
         line-height: 0;
@@ -70,6 +81,34 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
         height: auto;
         object-fit: contain;
       }
+      
+      /* 🖥️ ESTILOS DEL BOTÓN DE PANTALLA COMPLETA */
+      .fullscreen-toggle-btn {
+        position: absolute;
+        bottom: var(--space-md);
+        left: var(--space-md);
+        z-index: 5;
+        background: rgba(0, 0, 0, 0.45);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(4px);
+        transition: background-color 0.2s, transform 0.2s;
+      }
+      .fullscreen-toggle-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: scale(1.05);
+      }
+      .fullscreen-toggle-btn .material-icons {
+        font-size: 24px;
+      }
+
       .hotspot-btn {
         position: absolute;
         transform: translate(-50%, -50%);
@@ -117,6 +156,9 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
 
   readonly maxWidth = signal(0);
   readonly maxHeight = signal(0);
+  
+  // Señal para rastrear el icono dinámico del botón de fullscreen
+  readonly isFullscreen = signal(false);
 
   private resizeObserver?: ResizeObserver;
 
@@ -140,11 +182,34 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
     updateBounds();
     this.resizeObserver = new ResizeObserver(updateBounds);
     this.resizeObserver.observe(el);
+
+    // Escuchar el evento nativo del navegador por si el usuario presiona "ESC" para salir
+    document.addEventListener('fullscreenchange', this.onFullscreenChange);
   }
 
   ngOnDestroy(): void {
     this.resizeObserver?.disconnect();
+    document.removeEventListener('fullscreenchange', this.onFullscreenChange);
   }
+
+  /**
+   * Controla la API nativa de pantalla completa enfocada en el contenedor del lienzo
+   */
+  toggleFullscreen(): void {
+    const container = this.viewportRef.nativeElement;
+
+    if (!document.fullscreenElement) {
+      container.requestFullscreen().catch((err) => {
+        console.error(`Error attempting to enable fullscreen: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  }
+
+  private onFullscreenChange = (): void => {
+    this.isFullscreen.set(!!document.fullscreenElement);
+  };
 
   openModal(hotspot: Hotspot): void {
     this.modalContent = hotspot.modalContent;
