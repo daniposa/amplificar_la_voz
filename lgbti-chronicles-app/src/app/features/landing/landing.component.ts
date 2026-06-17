@@ -8,7 +8,6 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
   imports: [RouterLink],
   template: `
     <div class="landing" style="background-image: url('images/background_1.jpg')">
-      <div class="landing-overlay"></div>
       <div class="landing-content">
         <h1 class="landing-title">{{ displayedTitle }}</h1>
         
@@ -87,17 +86,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         justify-content: center;
         position: relative;
       }
-      .landing-overlay {
-        position: fixed;
-        inset: 0;
-        background: linear-gradient(
-          to bottom,
-          rgba(248, 244, 239, 0.1) 0%,
-          rgba(248, 244, 239, 0.1) 100%
-        );
-        pointer-events: none;
-        z-index: 0;
-      }
+      
       .landing-content {
         position: relative;
         z-index: 1;
