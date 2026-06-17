@@ -107,33 +107,25 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         max-width: 1200px;
       }
       .landing-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
-  font-weight: 600;
-  color: #ffffff;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  margin: 0 0 var(--space-2xl) 0;
-  text-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.25), 
-    0 4px 12px rgba(74, 67, 51, 0.2),
-    0 10px 20px rgba(0, 0, 0, 0.15);
-  -webkit-font-smoothing: antialiased;
+        font-family: var(--font-display);
+        font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        margin: 0 0 var(--space-2xl) 0;
+        text-shadow: 
+          0 2px 4px rgba(0, 0, 0, 0.25), 
+          0 4px 12px rgba(74, 67, 51, 0.2),
+          0 10px 20px rgba(0, 0, 0, 0.15);
+        -webkit-font-smoothing: antialiased;
 
-  /* 🛑 CONGELA LAS CAJAS: Reserva espacio para 3 líneas (1.2 line-height * 3 = 3.6em) */
-  min-height: 3.6em; 
-  display: flex;
-  align-items: center; /* Centra el texto verticalmente si tiene 2 líneas para que no salte */
-  justify-content: center;
-
-  /* ✨ TRANSICIÓN ULTRA SMOOTH */
-  transition: opacity 0.25s ease-in-out;
-}
-
-/* Clase auxiliar para el efecto de desvanecimiento */
-.title-fade {
-  opacity: 0;
-}
+        /* 🔒 ANCLAJE VISUAL PURO */
+        min-height: 3.6em; /* Reserva estricta para 3 líneas de texto */
+        display: flex;
+        align-items: flex-end; /* Alinea los textos a la base para evitar saltos de posición */
+        justify-content: center;
+      }
       .landing-buttons {
         display: flex;
         flex-direction: row;
@@ -190,7 +182,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
         text-align: left;
-        background: rgba(248, 244, 239, 0.45);      
+        background: rgba(248, 244, 239, 0.45); /* Opacidad igualada */     
         backdrop-filter: blur(2px);                 
       }
       .credits-title {
@@ -205,168 +197,3 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       }
       .credits-list {
         list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      .credits-line {
-        font-family: var(--font-body);
-        font-size: 0.95rem;
-        line-height: 1.8;
-        color: var(--color-ink-muted);
-        margin-bottom: var(--space-sm);
-      }
-      .credits-line:last-child {
-        margin-bottom: 0;
-      }
-      .credits-label {
-        color: var(--color-ink);
-        font-weight: 600;
-        display: block;                               
-        margin-bottom: var(--space-xs);
-      }
-      .credits-names {
-        font-style: italic;
-        display: block;                               
-      }
-
-      .legal-footer {
-        margin-top: var(--space-xl);
-        padding: var(--space-md) var(--space-lg);
-        border: 1px solid var(--color-border);
-        border-radius: 8px;                         
-        background: rgba(248, 244, 239, 0.45);      
-        backdrop-filter: blur(4px); 
-        -webkit-backdrop-filter: blur(2px);
-        box-shadow: var(--shadow-card);
-        text-align: left;
-      }
-      .legal-three-columns {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: var(--space-lg);
-      }
-      .legal-col {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      
-      .col-patrocinadores {
-        flex: 0 0 190px;
-        align-items: center;
-        gap: var(--space-sm);
-      }
-      
-      .img-udea {
-        max-height: 58px;
-        width: auto;
-      }
-      .img-fundacion {
-        max-height: 50px;
-        width: auto;
-      }
-
-      .col-nuestro-logo {
-        flex: 0 0 130px;
-        align-items: center;
-      }
-      .img-proyecto-redondo {
-        max-height: 120px;
-        width: auto;
-      }
-
-      .col-texto-derechos {
-        flex: 1 1 0;
-        text-align: left;
-        font-family: var(--font-body);
-      }
-      .txt-patrimoniales {
-        font-size: 0.95rem;
-        font-weight: 600;
-        color: var(--color-ink);
-        margin: 0 0 var(--space-xs) 0;
-      }
-      .txt-licencia {
-        font-size: 0.85rem;
-        color: var(--color-ink-muted);
-        line-height: 1.4;
-        margin: 0 0 var(--space-xs) 0;
-      }
-      .cc-logo-wrapper {
-        display: block;
-        margin-top: 4px;
-      }
-      .img-cc {
-        height: 28px;
-        width: auto;
-        opacity: 0.85;
-      }
-
-      @media (max-width: 850px) {
-        .legal-three-columns {
-          flex-direction: column;
-          gap: var(--space-lg);
-          text-align: center;
-        }
-        .col-patrocinadores {
-          flex: auto;
-          flex-direction: row; 
-          gap: var(--space-xl);
-        }
-        .col-texto-derechos {
-          text-align: center;
-        }
-        .cc-logo-wrapper {
-          display: flex;
-          justify-content: center;
-        }
-      }
-    `,
-  ],
-})
-export class LandingComponent {
-  defaultTitle = PAGE_CONFIG.title.es;
-  displayedTitle = this.defaultTitle;
-  buttons = LANDING_BUTTONS;
-  credits = LANDING_CREDITS;
-
-  // Estado para controlar la animación en el HTML si prefieres, 
-  // pero lo haremos directo y nativo con el DOM para no complicar el template:
-  
-  private changeTitleWithFade(newTitle: string): void {
-    const titleElement = document.querySelector('.landing-title');
-    if (titleElement) {
-      titleElement.classList.add('title-fade'); // Lo volvemos invisible
-      
-      setTimeout(() => {
-        this.displayedTitle = newTitle; // Cambiamos el texto a mitad de camino
-        titleElement.classList.remove('title-fade'); // Lo volvemos a mostrar
-      }, 200); // 200 milisegundos exactos de transición
-    } else {
-      this.displayedTitle = newTitle;
-    }
-  }
-
-  onHoverButton(routerLink: string): void {
-    let targetTitle = this.defaultTitle;
-
-    if (routerLink.includes('/en')) {
-      targetTitle = 'Amplifying the voices of victims to avoid repetition';
-    } else if (routerLink.includes('/fr')) {
-      targetTitle = 'Amplifier la voix des victimes pour éviter la répétition';
-    }
-
-    // Solo dispara la animación si el título realmente va a cambiar
-    if (this.displayedTitle !== targetTitle) {
-      this.changeTitleWithFade(targetTitle);
-    }
-  }
-
-  onLeaveButton(): void {
-    if (this.displayedTitle !== this.defaultTitle) {
-      this.changeTitleWithFade(this.defaultTitle);
-    }
-  }
-}
