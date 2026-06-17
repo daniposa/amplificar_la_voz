@@ -68,7 +68,7 @@ export const INTRO_CONTENT: LocalizedContent = {
 
 <p>Although the conflict had roots in earlier episodes of political violence, the Commission marks 1958 with the creation of the National Front. as its starting point, and 2016, with the signing of the Peace Agreement, as its end point. The decade between 1995 and 2004 was the most violent period, accounting for approximately 45&nbsp;% of all victims. 
   </p>
-  <h3><small><i>Figure 2. Timeline of the Colombian armed conflict based on the Truth Commission's periodization (CEV, 2022)</i></small></h3>
+  <h3><small><i>Figure 1. Timeline of the Colombian armed conflict based on the Truth Commission's periodization (CEV, 2022)</i></small></h3>
   <div class="bloque-imagen">
   <img 
       src="images/comentarios/linea en.jpeg"
@@ -78,15 +78,17 @@ export const INTRO_CONTENT: LocalizedContent = {
     <p><small><i>Note</i>. Source <a href="https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos" target="_blank" rel="noopener noreferrer">https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</a> (CEV, 2022b).</small></p>
     </div>
   <p>The violence was both differentiated and pervasive, reaching across Colombia's entire national territory, rural and urban alike,  and even extending beyond its borders. Towns, mountains, cities, rivers, canyons, jungles, Andean moorlands, deserts, neighborhoods, and rural settlements all became sites of atrocity, but also of resilience. The Commission identifies 11 regions: Amazonia; Antioquia, southern Córdoba, and Lower Atrato River region of Choco; Caribbean; Central; Coffee Region; Northeastern Border; Middle Magdalena; Nariño and southern Cauca; Orinoquía; Pacific; and Valle and northern Cauca. Antioquia stands out as the department with the highest number of victims, representing 18.74&nbsp;% of the national total as of 2025 (Victims Unit, 2025).</p>
-  <h3><i>Map of Colombia based on the Truth Commission's regionalization (CEV, 2022)</i></h3>
+  
+  <h3><small><i>Figure 2. Map of Colombia based on the Truth Commission's regionalization (CEV, 2022)</i></small></h3>
   <div class="bloque-imagen">
   <img 
-      src="images/comentarios/mapa.avif"
+      src="images/comentarios/mapa en.jpeg"
       alt="Mapa"
       width="400"
     >
     <p><small><i>Note</i>. Source <a href="https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones" target="_blank" rel="noopener noreferrer">https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones</a> (CEV, 2022c).</small></p>
     </div>
+    
     <p>Beyond regional variation, the conflict's impacts differed significantly across population groups, including peasants, women, ethnic communities, LGBTIQ+ people, political sectors, students, public officials, businesspeople, people with disabilities, and many others , often affecting those at the intersection of multiple identities. Compounding this, the populations most affected by the armed conflict are also among the country's most economically marginalized: by 2022, 51.6&nbsp;% of victims were living in poverty, whether measured by monetary, extreme, or multidimensional indicators (DANE & Victims Unit, 2024).</p>
     <h3>About the original text</h3>
     <p>The Final Report is the culminating product of the truth-seeking and social dialogue process carried out by the Truth Commission. It comprises 11 chapters: an introduction; findings and recommendations; a historical chapter; a territorial chapter divided into thirteen volumes; a chapter on violations of human rights and international humanitarian law; a testimonial chapter; a chapter on resistance and coping; one on exile; and three chapters focused on specific populations (ethnic communities, children, and women and LGBTIQ+ populations). Among these last three is <i>My Body is the Truth</i>, which addresses the violence, impacts, coping strategies, and resistance of women and LGBTIQ+ people throughout the armed conflict.</p>
