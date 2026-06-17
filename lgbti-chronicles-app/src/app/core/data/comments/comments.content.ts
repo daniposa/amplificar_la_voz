@@ -87,7 +87,7 @@ text: `
 <p>Al igual que nosotras, la Comisión también se enfrentó a la compleja discusión sobre editar o no los testimonios. Para Karim Ganem, editor general del IF, el testimonio se presenta de distintas formas: desde lo más literario, a modo de microcuentos con elementos poéticos, como ocurre en el volumen testimonial; pasando por lo que él denomina como perfilamiento del testimoniante, es decir, la presentación de personajes más desarrollados, con su nombre, su historia y los patrones de violencia que los afectaron, como ocurre en el volumen sobre niños, niñas y adolescentes; y, en otros casos, el testimonio se presenta como fuente primaria para explicar el fenómeno, como ocurre con el volumen sobre exilios (CEV, 2022d). Debido a esta diversidad de registros, en la guía de estilo del IF, la Comisión declara: «Recomendamos privilegiar el registro oral de los testimonios. En ese sentido, las correcciones hechas en las transcripciones deben procurar la claridad del texto sin que el mismo pierda su naturaleza» (CEV, 2022e, p.8). En nuestro ejercicio traductivo también procuramos privilegiar estos registros orales.</p>
 
 <h3>Una presencia que cuide la memoria: nuestro papel como testigos secundarios</h3>
-<blockquote><p>Nunca habrá palabras suficientes o correctas que den cuenta de aquella historia que no se puede aprehender por completo en el pensamiento, la memoria y el habla.</p><p>(Laub, 1992, p. 78)</p></blockquote>
+<blockquote><p>Nunca habrá palabras suficientes o correctas que den cuenta de aquella historia que no se puede aprehender por completo en el pensamiento, la memoria y el habla.</p><p>(Laub, 1992, p. 78, traducción propia)</p></blockquote>
 
 <p>Aunque en apartados anteriores abordamos la definición de Acedo (2017) sobre testimonio, tras la traducción de los testimonios de «Mi cuerpo es la verdad», nos preguntamos ¿qué implicaciones éticas conlleva traducir los testimonios de las víctimas del conflicto armado colombiano? ¿nos convertimos nosotras como traductoras también en testimoniantes? Sharon Dean-Cox (2013) propone la figura del traductor como testigo secundario retomando los postulados de Dori Laub y Shoshana Felman quienes, desde una perspectiva clínica y literaria, se preguntan sobre el testimoniar, los acontecimientos y la evidencia dentro de los estudios del Holocausto. Dori Laub presenta tres niveles del testimoniar «[1)]el de ser testigo de uno mismo en el suceso; [2)]el de ser testigo de los testimonios de otras personas; [3)] y el de ser testigo del proceso de testimoniar mismo» (1992, p. 75, traducción propia). De estas tres categorías, Sharon Dean-Cox encuentra un paralelismo con la traducción en el segundo nivel, puesto que, aunque las traductoras no comparten el tiempo ni el espacio en el cual la víctima da su testimonio, sí reciben los testimonios y los acompañan, «se convierten en una figura activa y necesaria en la restitución, mediación y transmisión de la memoria» y deben estar «presente[s] como oyente[s] y ayudar a la transmisión del testimonio» (Deane-Cox, 2013 p. 4, traducción propia). En cuanto a nuestro proceso traductivo, luego de reconocer que no podíamos reconstruir el acto inicial en el cual las víctimas contaron sus vivencias (ver comentario <i>La reconstrucción del «yo» oral y su traducción</i>), buscamos otras maneras de estar presentes: identificamos los indicios que le daban significado a los testimonios, sentimos las pausas, los diminutivos, las repeticiones. Sentimos cada palabra, tradujimos con el cuerpo. No buscamos apropiarnos de los acontecimientos vividos por las víctimas, sino que asumimos la responsabilidad ética de preservar, transmitir y <i>amplificar</i> sus historias.</p>
 </div>
@@ -143,9 +143,9 @@ text: `
 <p>En conclusión, ya sea a través de la expansión explicativa (Gimena), la modulación (Edith) o la fuerza ilocutiva de la autorreflexión (Brenda), estas decisiones demuestran que la fidelidad en la traducción de testimonios no reside necesariamente en la literalidad, sino en la lealtad al dolor de las hablantes, a sus historias personales. Nuestra tarea fue hacer visible esa dignidad en las traducciones, buscando reorganizar la sintaxis y el vocabulario para que el lector extranjero pueda escuchar, detrás de las palabras, la voz de quien narra la pérdida de su hogar y de su identidad, y la dignidad de quienes narran su historia.</p>
 </div>
 </div>
-
-<h2>Coexistir en el texto: confluencia de registros y metáforas en testimonios sobre el conflicto armado</h2>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
+<h2>Coexistir en el texto: confluencia de registros y metáforas en testimonios sobre el conflicto armado</h2>
+
 <div class="seccion-lectura invertida">
   <div class="columna-texto">
   <p>Una vez reflexionamos sobre el lugar de la oralidad en los testimonios y su forma única de pasar a la lengua escrita, es posible enfocarnos en otros elementos que nos ayudan a entender el texto que resulta a partir de la convergencia de estas dos modalidades. Recordemos que, antes de llegar al público colombiano, las palabras de quienes vivieron la guerra pasaron por diversas manos que se encargaron de diversas tareas: transcribir los testimonios, redactar el cuerpo del texto para ofrecer un contexto suficiente para su interpretación, segmentar los testimonios para rescatar lo que consideraron más importante para transmitir la complejidad de la guerra, corregir el estilo del texto general, entre otros trabajos que no alcanzaríamos a enumerar.</p>
@@ -252,9 +252,11 @@ text: `
 
 <li>Acedo, N. (2017). El género testimonio en Latinoamérica: aproximaciones críticas en busca de su definición, genealogía y taxonomía. <i>Latinoamérica</i>, (64), 39-69. https://doi.org/10.22201/cialc.24486914e.2017.64.56863</li>
 
+<li>Alisedo, G., Melgar, S. y Chiocci, C. (1994). <i>Didáctica de las ciencias del lenguaje: aportes y reflexiones</i>. Editorial Paidós. https://archive.org/details/melgar-s.-didactica-de-las-ciencias-del-lenguaje.-aportes-y-reflexiones/page/n1/mode/2up</li>  
+
 <li>Alzate, M. (2022). El acervo del conocimiento acerca de las víctimas de conflictos armados (2005-2018). En M. Alzate (Ed.), <i>Etnografía política e histórica de las víctimas del conflicto armado en Colombia</i> (pp. 27-72). Centro Editorial, Facultad de Ciencias Humanas y Económicas.</li>  
 
-<li>Alisedo, G., Melgar, S. y Chiocci, C. (1994). <i>Didáctica de las ciencias del lenguaje: aportes y reflexiones</i>. Editorial Paidós. https://archive.org/details/melgar-s.-didactica-de-las-ciencias-del-lenguaje.-aportes-y-reflexiones/page/n1/mode/2up</li>  
+
 
 <li>Assis Rosa, A. (2015). Translating orality, recreating otherness. <i>Translation Studies</i>, <i>8</i>(2), 209-225. https://doi.org/10.1080/14781700.2015.1017833</li>  
 
@@ -268,9 +270,10 @@ text: `
 
 <li>Bassi, S. (1998). Gender. En: M. Baker y K. Malmkjaer (Eds). <i>Routledge encyclopedia of translation studies</i> (pp. 204-208). Routledge.</li> 
 
+<li>Bassnett, S. (2020). Crossing textual boundaries: Why translation matters. En G. Nelson (Ed.), <i>The MHRA Centenary Lectures</i>. Modern Humanities Research Association. doi:10.59860/cl.c7c505c</li>  
+
 <li>Bastin, G. L. y Pomerleau, M. (2017). La traducción especializada en la historia de la traducción y de la revista Meta. <i>Sendebar</i>, <i>28</i>, 9-30. https://doi.org/10.30827/sendebar.v28i0.5461</li> 
 
-<li>Bassnett, S. (2020). Crossing textual boundaries: Why translation matters. En G. Nelson (Ed.), <i>The MHRA Centenary Lectures</i>. Modern Humanities Research Association. doi:10.59860/cl.c7c505c</li>  
 
 <li>Beeby, A. (2009). Directionality. En M. Baker y G. Saldanha (Eds.), <i>Routledge Encyclopedia of Translation Studies</i>. Routledge.</li> 
 
@@ -280,17 +283,9 @@ text: `
 
 <li>Castro, O. (2009). <i>(Re-)examining horizons in feminist translation studies: towards a third wave</i>. MonTI. Monografías de Traducción e Interpretación. http://hdl.handle.net/10045/13037</li> 
 
-<li>Comisión de la Verdad [CEV]. (2022a). Hasta la guerra tiene límites. Violaciones de los derechos humanos, infracciones al derecho internacional humanitario y responsabilidades colectivas. En <i>Hay futuro si hay verdad. Informe final</i> (pp. 1144). Comisión de la Verdad. https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites</li> 
+<li>Comisión de la Verdad [CEV]. (2022a). <i>Proceso editorial</i>. https://www.comisiondelaverdad.co/proceso-editorial</li>    
 
-<li>Comisión de la Verdad [CEV]. (2022b). <i>Lineamientos técnico-políticos</i>. https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</li> 
-
-<li>Comisión de la Verdad [CEV]. (2022c). <i>Comisión inicia el despliegue exploratorio en macroregiones</i>. https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones</li>  
-
-<li>Comisión de la Verdad [CEV]. (2022d). <i>Proceso editorial</i>. https://www.comisiondelaverdad.co/proceso-editorial</li> 
-
-<li>Comisión de la Verdad [CEV]. (2022e). <i>Manual de estilo editorial</i>. https://www.comisiondelaverdad.co/manual-de-estilo-editorial</li>  
-
-<li>Comisión de la Verdad [CEV]. (2022f). Mi cuerpo es la verdad. Experiencias de mujeres y personas LGBTIQ+ en el conflicto armado. En <i>Hay futuro si hay verdad. Informe final</i> (pp. 644). https://www.comisiondelaverdad.co/mi-cuerpo-es-la-verdad</li> 
+<li>Comisión de la Verdad [CEV]. (2022b). <i>Manual de estilo editorial</i>. https://www.comisiondelaverdad.co/manual-de-estilo-editorial</li>    
 
 <li>Constantino Reyes, J. (2019). When Body, Emotion, and Translation Meet: A Proposal for a Reader- and Translator-Oriented Approach to Translation. <i>TTR</i>, <i>32</i>(2), 185-215. https://doi.org/10.7202/1068908ar</li> 
 
