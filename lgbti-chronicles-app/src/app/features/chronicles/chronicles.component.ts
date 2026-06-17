@@ -218,7 +218,7 @@ type Tab = 'intro' | 'chronicles';
       .intro-text ::ng-deep .bloque-imagen {
         display: flex;
         flex-direction: column;
-        align-items: center;    /* Centra horizontalmente la imagen y la nota */
+        align-items: center;    /* Centra la imagen y restringe el contenedor de la nota */
         justify-content: center;
         width: 100%;
         margin: var(--space-xl) 0;
@@ -228,13 +228,18 @@ type Tab = 'intro' | 'chronicles';
         max-width: 100%;
         height: auto;
         display: block;
-        margin: 0 auto var(--space-xs) auto; /* Asegura el centrado de la pieza */
+        margin: 0 auto var(--space-xs) auto; /* Centrado perfecto de la foto */
       }
 
       .intro-text ::ng-deep .bloque-imagen p {
-        text-align: center;         /* Centra el texto de la nota */
-        text-indent: 0 !important;  /*  Quita la sangría de párrafo normal obligatoriamente */
+        text-align: left;           /* ⬅️ ¡La magia! Alinea la nota a la izquierda */
+        width: 100%;                /* Toma el ancho base de la imagen */
+        max-width: 100%;            /* Evita que se desborde del bloque */
+        text-indent: 0 !important;  /* Quita la sangría de los párrafos normales */
         margin-top: var(--space-xs);
+        font-size: 0.9rem;          /* Opcional: un toque más pequeña para diferenciarla */
+        font-style: italic;         /* Opcional: estilo editorial */
+        color: var(--color-ink-muted);
       }
      
 
