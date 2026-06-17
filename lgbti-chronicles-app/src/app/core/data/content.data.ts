@@ -136,7 +136,7 @@ export const CARDS_DATA: CardData[] = [
     title: { es: '', fr: '', en: '' },
     imagePath: 'images/paisajes/paisaje_que_paso.avif',
     // Position (x, y in % of the image) and size (width in px) of this card.
-    placement: { x: 20.351, y: 67.859, width: 116, height: 32 },
+    placement: { x: 20.351, y: 67.859, width: 142, height: 40 },
     // Title typography (any field is optional and falls back to the default).
     textStyle: {
       fontFamily: 'var(--font-hand)',
@@ -152,7 +152,7 @@ export const CARDS_DATA: CardData[] = [
     title: { es: '', fr: '', en: '' },
     imagePath: 'images/paisajes/paisaje_por_que_paso.avif',
     // Position (x, y in % of the image) and size (width in px) of this card.
-    placement: { x: 50.292, y: 66.42, width: 92, height: 31 },
+    placement: { x: 50.292, y: 66.42, width: 120, height: 40 },
     // Title typography (any field is optional and falls back to the default).
     textStyle: {
       fontFamily: 'var(--font-hand)',
@@ -172,7 +172,7 @@ export const CARDS_DATA: CardData[] = [
     },
     imagePath: 'images/paisajes/paisaje_que paso_con_lo_que_paso.avif',
     // Position (x, y in % of the image) and size (width in px) of this card.
-    placement: { x: 79.667, y: 63.653, width: 104, height: 24 },
+    placement: { x: 79.667, y: 63.653, width: 130, height: 35 },
     // Title typography (any field is optional and falls back to the default).
     textStyle: {
       fontFamily: 'var(--font-hand)',

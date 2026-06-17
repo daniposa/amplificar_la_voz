@@ -185,27 +185,27 @@ type Tab = 'intro' | 'chronicles';
         border-bottom-color: var(--color-accent);
       }
 
-     /* ── intro tab ── */
+      /* ── intro tab ── */
       .page-main {
         position: relative;
         z-index: 1;
       }
-      
+
       /* ✨ 1. CAPA LIGERA DETRÁS DEL TEXTO (Sin blur, muy sutil) */
       .intro-text {
         width: 70%;
         max-width: 1200px;
         margin: var(--space-xl) auto;
-        
-        background-color: rgba(248, 244, 239, 0.30); /* Capa translúcida color papel/crema */
-        padding: var(--space-xl) var(--space-2xl);    /* Espaciado interno para que no pegue a los bordes */
-        border-radius: 6px;                           /* Esquinas sutilmente suavizadas */
-        
+
+        background-color: rgba(248, 244, 239, 0.3); /* Capa translúcida color papel/crema */
+        padding: var(--space-xl) var(--space-2xl); /* Espaciado interno para que no pegue a los bordes */
+        border-radius: 6px; /* Esquinas sutilmente suavizadas */
+
         font-size: 1.05rem;
         line-height: 1.85;
         color: var(--color-ink);
       }
-      
+
       /* Párrafos normales de la introducción */
       .intro-text ::ng-deep p {
         text-align: justify;
@@ -213,12 +213,12 @@ type Tab = 'intro' | 'chronicles';
         margin-bottom: var(--space-md);
         text-indent: 2rem;
       }
-      
+
       /* ✨ 2. CENTRADO EXCLUSIVO DE IMAGEN Y NOTITA */
       .intro-text ::ng-deep .bloque-imagen {
         display: flex;
         flex-direction: column;
-        align-items: center;    /* Centra la imagen y restringe el contenedor de la nota */
+        align-items: center; /* Centra la imagen y restringe el contenedor de la nota */
         justify-content: center;
         width: 100%;
         margin: var(--space-xl) 0;
@@ -232,16 +232,15 @@ type Tab = 'intro' | 'chronicles';
       }
 
       .intro-text ::ng-deep .bloque-imagen p {
-        text-align: left;           /* ⬅️ ¡La magia! Alinea la nota a la izquierda */
-        width: 100%;                /* Toma el ancho base de la imagen */
-        max-width: 100%;            /* Evita que se desborde del bloque */
-        text-indent: 0 !important;  /* Quita la sangría de los párrafos normales */
+        text-align: left; /* ⬅️ ¡La magia! Alinea la nota a la izquierda */
+        width: 100%; /* Toma el ancho base de la imagen */
+        max-width: 100%; /* Evita que se desborde del bloque */
+        text-indent: 0 !important; /* Quita la sangría de los párrafos normales */
         margin-top: var(--space-xs);
-        font-size: 0.9rem;          /* Opcional: un toque más pequeña para diferenciarla */
-        font-style: italic;         /* Opcional: estilo editorial */
+        font-size: 0.9rem; /* Opcional: un toque más pequeña para diferenciarla */
+        font-style: italic; /* Opcional: estilo editorial */
         color: var(--color-ink-muted);
       }
-     
 
       /* ── panorama wrapper ── */
       .panorama-wrapper {
@@ -282,13 +281,13 @@ type Tab = 'intro' | 'chronicles';
       .image-fullscreen {
         position: fixed;
         inset: 0;
-        width: 100vw;
-        height: 100vh;
         z-index: 10;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
         background: var(--color-paper-warm);
+      }
+      .image-fullscreen app-interactive-image {
+        position: absolute;
+        inset: 0;
       }
       .close-btn {
         position: absolute;
@@ -339,17 +338,17 @@ export class ChroniclesComponent implements OnInit, OnDestroy {
     return id ? (CARDS_DATA.find((c) => c.id === id) ?? null) : null;
   });
 
- background = computed(() => {
+  background = computed(() => {
     // 1. Si hay una tarjeta abierta en pantalla completa
     if (this.selectedCardId() !== null) {
       return `url(images/background_3.jpg)`;
     }
-    
+
     // 2. Si el usuario hace clic en la pestaña de 'Testimonios' (chronicles)
     if (this.activeTab() === 'chronicles') {
       return 'none'; /* ❌ Elimina la imagen para que no se asome a los lados */
     }
-    
+
     // 3. Fondo por defecto para la pestaña de Introducción
     return `url(images/background_3.jpg)`;
   });
