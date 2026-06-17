@@ -107,20 +107,33 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         max-width: 1200px;
       }
       .landing-title {
-        font-family: var(--font-display);
-        font-size: clamp(2.2rem, 5.5vw, 3.8rem); /* Un pelín más responsivo por la longitud de los títulos exteriores */
-        font-weight: 600;
-        color: #ffffff;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        margin: 0 0 var(--space-2xl) 0;
-        text-shadow: 
-          0 2px 4px rgba(0, 0, 0, 0.25), 
-          0 4px 12px rgba(74, 67, 51, 0.2),
-          0 10px 20px rgba(0, 0, 0, 0.15);
-        -webkit-font-smoothing: antialiased;
-        transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para cambios estéticos */
-      }
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin: 0 0 var(--space-2xl) 0;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.25), 
+    0 4px 12px rgba(74, 67, 51, 0.2),
+    0 10px 20px rgba(0, 0, 0, 0.15);
+  -webkit-font-smoothing: antialiased;
+
+  /* 🛑 CONGELA LAS CAJAS: Reserva espacio para 3 líneas (1.2 line-height * 3 = 3.6em) */
+  min-height: 3.6em; 
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente si tiene 2 líneas para que no salte */
+  justify-content: center;
+
+  /* ✨ TRANSICIÓN ULTRA SMOOTH */
+  transition: opacity 0.25s ease-in-out;
+}
+
+/* Clase auxiliar para el efecto de desvanecimiento */
+.title-fade {
+  opacity: 0;
+}
       .landing-buttons {
         display: flex;
         flex-direction: row;
@@ -314,34 +327,46 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
   ],
 })
 export class LandingComponent {
-  // Guardamos el título por defecto en español
   defaultTitle = PAGE_CONFIG.title.es;
-  
-  // Esta es la variable dinámica que renderiza la vista
   displayedTitle = this.defaultTitle;
-
   buttons = LANDING_BUTTONS;
   credits = LANDING_CREDITS;
 
-  /**
-   * Al pasar el mouse sobre un botón, evalúa su ruta para cambiar el idioma
-   */
-  onHoverButton(routerLink: string): void {
-    // Si la ruta contiene o termina en el código del idioma, lo mapeamos
-    if (routerLink.includes('/en')) {
-      this.displayedTitle = 'Amplifying the voices of victims to avoid repetition';
-    } else if (routerLink.includes('/fr')) {
-      this.displayedTitle = 'Amplifier la voix des victimes pour éviter la répétition';
+  // Estado para controlar la animación en el HTML si prefieres, 
+  // pero lo haremos directo y nativo con el DOM para no complicar el template:
+  
+  private changeTitleWithFade(newTitle: string): void {
+    const titleElement = document.querySelector('.landing-title');
+    if (titleElement) {
+      titleElement.classList.add('title-fade'); // Lo volvemos invisible
+      
+      setTimeout(() => {
+        this.displayedTitle = newTitle; // Cambiamos el texto a mitad de camino
+        titleElement.classList.remove('title-fade'); // Lo volvemos a mostrar
+      }, 200); // 200 milisegundos exactos de transición
     } else {
-      // Si es comentarios o cualquier otra ruta, se queda en español
-      this.displayedTitle = this.defaultTitle;
+      this.displayedTitle = newTitle;
     }
   }
 
-  /**
-   * Al retirar el mouse de cualquier botón, vuelve al título por defecto
-   */
+  onHoverButton(routerLink: string): void {
+    let targetTitle = this.defaultTitle;
+
+    if (routerLink.includes('/en')) {
+      targetTitle = 'Amplifying the voices of victims to avoid repetition';
+    } else if (routerLink.includes('/fr')) {
+      targetTitle = 'Amplifier la voix des victimes pour éviter la répétition';
+    }
+
+    // Solo dispara la animación si el título realmente va a cambiar
+    if (this.displayedTitle !== targetTitle) {
+      this.changeTitleWithFade(targetTitle);
+    }
+  }
+
   onLeaveButton(): void {
-    this.displayedTitle = this.defaultTitle;
+    if (this.displayedTitle !== this.defaultTitle) {
+      this.changeTitleWithFade(this.defaultTitle);
+    }
   }
 }
