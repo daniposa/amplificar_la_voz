@@ -53,17 +53,17 @@ C’était les années quatre-vingt.</i></p>
 
 the songs of birds and the voices of children beautified it.<br>  
 
-When the ‘warlords’ were not around, the river would get crowded with people.<br>  
+When the "warlords" were not around, the river would get crowded with people.<br>  
 
 There were some men with tight shorts, polished nails, and even long hair.<br>   
 
 They competed to see who the best was at parading and, at the end, the winner would wear a sash across the chest.<br>   
 
-When the ‘warlords’ were not around, the river waters, once red as blood, would go back to being clear blue.<br>   
+When the "warlords" were not around, the river waters, once red as blood, would go back to being clear blue.<br>   
 
-When the ‘warlords’ were not around, those men would gather around the river giving themselves a new chance to live, to rebuild the togetherness that others had tried to break, to talk to each other and define what they would do when the ‘warlords’ came back.<br>  
+When the "warlords" were not around, those men would gather around the river giving themselves a new chance to live, to rebuild the togetherness that others had tried to break, to talk to each other and define what they would do when the "warlords" came back.<br>  
 
-At the river, they would gather, they would let themselves be what the ‘warlords’ did not want them to be. They would mock their rules, and looked for ways to go back to being and living in their own territories as they wished. Those men would plan the next cultural event in town. It was the eighties.</i></p> 
+At the river, they would gather, they would let themselves be what the "warlords" did not want them to be. They would mock their rules, and looked for ways to go back to being and living in their own territories as they wished. Those men would plan the next cultural event in town. It was the eighties.</i></p> 
 
 <p class="identificador">This fragment has been created from the voices of LGBTIQ+ people in individual interviews and reports given by civil society organizations to the Commission</p>`,
   },
