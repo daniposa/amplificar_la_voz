@@ -10,13 +10,16 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
     <div class="landing" style="background-image: url('images/background_1.jpg')">
       <div class="landing-overlay"></div>
       <div class="landing-content">
-        <h1 class="landing-title">{{ title }}</h1>
+        <h1 class="landing-title">{{ displayedTitle }}</h1>
+        
         <div class="landing-buttons">
           @for (button of buttons; track button.routerLink) {
             <a
               class="lang-btn"
               [class.comments-btn]="button.isComments"
               [routerLink]="button.routerLink"
+              (mouseenter)="onHoverButton(button.routerLink)"
+              (mouseleave)="onLeaveButton()"
             >
               <span class="btn-label">{{ button.label }}</span>
               <span class="btn-sub">{{ button.sub }}</span>
@@ -105,7 +108,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       }
       .landing-title {
         font-family: var(--font-display);
-        font-size: clamp(2.5rem, 6vw, 4rem);
+        font-size: clamp(2.2rem, 5.5vw, 3.8rem); /* Un pelín más responsivo por la longitud de los títulos exteriores */
         font-weight: 600;
         color: #ffffff;
         line-height: 1.2;
@@ -116,6 +119,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           0 4px 12px rgba(74, 67, 51, 0.2),
           0 10px 20px rgba(0, 0, 0, 0.15);
         -webkit-font-smoothing: antialiased;
+        transition: color 0.3s ease, transform 0.3s ease; /* Transición suave para cambios estéticos */
       }
       .landing-buttons {
         display: flex;
@@ -212,15 +216,14 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         display: block;                               
       }
 
-      /* ⚖️ OPTIMIZACIÓN DE ESPACIOS INTERNOS */
       .legal-footer {
         margin-top: var(--space-xl);
-        padding: var(--space-md) var(--space-lg); /* Reducido padding arriba/abajo para cortar espacio muerto */
+        padding: var(--space-md) var(--space-lg);
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
-        background: rgba(248, 244, 239, 0.65);      
+        background: rgba(248, 244, 239, 0.45);      
         backdrop-filter: blur(4px); 
-        -webkit-backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(2px);
         box-shadow: var(--shadow-card);
         text-align: left;
       }
@@ -229,7 +232,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: var(--space-lg); /* Ajustado para que las columnas se acerquen más */
+        gap: var(--space-lg);
       }
       .legal-col {
         display: flex;
@@ -237,41 +240,37 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         justify-content: center;
       }
       
-      /* Columna 1 (Izquierda): Más ajustada al ancho real de los logos */
       .col-patrocinadores {
         flex: 0 0 190px;
         align-items: center;
-        gap: var(--space-sm); /* Logos más juntos verticalmente */
+        gap: var(--space-sm);
       }
       
-      /* Crecimiento orgánico real (sin transform) */
       .img-udea {
-        max-height: 58px; /* ¡Más grande! Ocupa el espacio real */
+        max-height: 58px;
         width: auto;
       }
       .img-fundacion {
-        max-height: 50px; /* ¡Más grande! */
+        max-height: 50px;
         width: auto;
       }
 
-      /* Columna 2 (Centro): Espacio optimizado para el logo redondo */
       .col-nuestro-logo {
         flex: 0 0 130px;
         align-items: center;
       }
       .img-proyecto-redondo {
-        max-height: 120px; /* ¡Tamaño premium de verdad! Ocupa todo el alto de la caja */
+        max-height: 120px;
         width: auto;
       }
 
-      /* Columna 3 (Derecha) */
       .col-texto-derechos {
         flex: 1 1 0;
         text-align: left;
         font-family: var(--font-body);
       }
       .txt-patrimoniales {
-        font-size: 0.95rem; /* Un pelín más grande para emparejar la lectura */
+        font-size: 0.95rem;
         font-weight: 600;
         color: var(--color-ink);
         margin: 0 0 var(--space-xs) 0;
@@ -292,7 +291,6 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         opacity: 0.85;
       }
 
-      /* 📱 RESPONSIVE */
       @media (max-width: 850px) {
         .legal-three-columns {
           flex-direction: column;
@@ -316,7 +314,34 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
   ],
 })
 export class LandingComponent {
-  title = PAGE_CONFIG.title.es;
+  // Guardamos el título por defecto en español
+  defaultTitle = PAGE_CONFIG.title.es;
+  
+  // Esta es la variable dinámica que renderiza la vista
+  displayedTitle = this.defaultTitle;
+
   buttons = LANDING_BUTTONS;
   credits = LANDING_CREDITS;
+
+  /**
+   * Al pasar el mouse sobre un botón, evalúa su ruta para cambiar el idioma
+   */
+  onHoverButton(routerLink: string): void {
+    // Si la ruta contiene o termina en el código del idioma, lo mapeamos
+    if (routerLink.includes('/en')) {
+      this.displayedTitle = 'Amplifying the voices of victims to avoid repetition';
+    } else if (routerLink.includes('/fr')) {
+      this.displayedTitle = 'Amplifier la voix des victimes pour éviter la répétition';
+    } else {
+      // Si es comentarios o cualquier otra ruta, se queda en español
+      this.displayedTitle = this.defaultTitle;
+    }
+  }
+
+  /**
+   * Al retirar el mouse de cualquier botón, vuelve al título por defecto
+   */
+  onLeaveButton(): void {
+    this.displayedTitle = this.defaultTitle;
+  }
 }
