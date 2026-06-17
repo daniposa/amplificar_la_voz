@@ -64,7 +64,7 @@ Quand tu sors dans la rue [tu pleures !], il y a de la discrimination.<br>
 
 À Montes de María beaucoup de trans ont été tuées,<br>  
 
-elles ont fui à Medellín [elles pleurent !] se fut sa fin.<br>  
+elles ont fui à Medellín [elles pleurent !] ce fut sa fin.<br>  
 
 Elle a été obligée à travailler sans arrêt,<br>  
 
