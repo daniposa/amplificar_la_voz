@@ -17,11 +17,11 @@ export const CHRONICLE_T3_22: LocalizedModalContent = {
     1: {
       es: `<p>Nota de ejemplo para la crónica T3-41.</p>`,
       fr: `<p><strong>UP (Unión Patriótica)</strong></p>
-      <p>L'UP a participé aux élections à partir de 1986 et a remporté une grande partie des voix. Cependant, au cours des années suivantes, des milliers de membres de l'UP, dont trois des candidats à la présidence du parti, ont été victimes, entre autres, de disparitions forcées, de massacres, d'exécutions extrajudiciaires, d'assassinats, de menaces, d'attaques, de divers actes de stigmatisation, de poursuites judiciaires abusives, de tortures et de déplacements forcés.</p>
+      <p>L'UP a participé aux élections à partir de 1986 et a remporté une grande partie des voix. Cependant, au cours des années suivantes, des milliers de membres de l'UP, dont trois des candidats à la présidence du parti, ont été victimes, entre autres, de disparitions forcées, de massacres, d'exécutions extrajudiciaires, d'assassinats, de menaces, d'attaques.</p>
       <p><a href="https://web.archive.org/web/20260329105835/https://reliefweb.int/report/colombia/genocide-political-party-union-patriotica-over-6000-members-killed-1980s-and-1990s" target="_blank" rel="noopener noreferrer">ReliefWeb</a></p>
 	  <p><a href="https://web.archive.org/web/20251107135313/https://www.britannica.com/topic/Patriotic-Union-political-party-Colombia" target="_blank" rel="noopener noreferrer">Britannica</a></p>`,
       en: `<p><strong>UP (Unión Patriótica)</strong></p>
-      <p>The UP participated in elections beginning in 1986 and won a large portion of the votes. In subsequent years, however, thousands of UP members, including three of the party’s presidential candidates, were forcibly disappeared, massacred, extrajudicially executed, murdered and suffered, threats, attacks, various acts of stigmatization, improper prosecutions, torture, forced displacement, among other things.</p>
+      <p>The UP participated in elections beginning in 1986 and won a large portion of the votes. In subsequent years, however, thousands of UP members, including three of the party’s presidential candidates, were forcibly disappeared, massacred, extrajudicially executed, murdered and suffered, threats, attacks, among other things.</p>
       <p><a href="https://web.archive.org/web/20260329105835/https://reliefweb.int/report/colombia/genocide-political-party-union-patriotica-over-6000-members-killed-1980s-and-1990s" target="_blank" rel="noopener noreferrer">ReliefWeb</a></p>
 	  <p><a href="https://web.archive.org/web/20251107135313/https://www.britannica.com/topic/Patriotic-Union-political-party-Colombia" target="_blank" rel="noopener noreferrer">Britannica</a></p>`,
     },
