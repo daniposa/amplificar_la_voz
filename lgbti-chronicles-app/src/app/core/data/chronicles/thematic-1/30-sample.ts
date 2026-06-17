@@ -17,11 +17,11 @@ export const CHRONICLE_T1_30: LocalizedModalContent = {
     1: {
       es: `<p>Nota de ejemplo para la crónica T1-30.</p>`,
       fr: `<p><strong>Glyphosate</strong></p>
-      <p>Le glyphosate est l’herbicide systémique non sélectif le plus utilisé au monde en termes de volume et de superficie. En Colombie son utilisation à des fins militaires pendant la dénommée Guerre contre la drogue est un problème persistant dans les débats politiques et les mouvements sociaux depuis la fin des années 90, atteignant son paroxysme suite à la suspension des fumigations aériennes en 2015 et son interdiction en 2022. Malgré des années de preuves et dénonciations par les communautés, organisations et scientifiques à propos des effets nocifs pour la santé humaine et les systèmes écologiques, son utilisation rependue à petite comme grande échelle en agriculture a été grandement négliger pendant les débats publics et les politiques gouvernementales.</p>
+      <p>Le glyphosate est l’herbicide systémique non sélectif le plus utilisé au monde en termes de volume et de superficie. En Colombie son utilisation à des fins militaires pendant la dénommée Guerre contre la drogue est un problème persistant dans les débats politiques et les mouvements sociaux.</p>
       <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0962629825000204" target="_blank" rel="noopener \
 noreferrer">Political Geography</a></p>`,
       en: `<p><strong>Glyphosate</strong></p>
-      <p>Glyphosate is the most widely used non-selective herbicide globally in terms of volume and land area. In Colombia, its use for military purposes within the so-called War on Drugs has been a contentious issue in political debate and social mobilization since the late 1990s, culminating in the suspension of aerial spraying in 2015 and its ban in 2022. Despite decades of evidence and denunciations from communities, organizations, and scientists regarding glyphosate's harmful effects on human health and ecological systems, its widespread use in both small- and large-scale agriculture has been largely overlooked in public debates and government policies.</p>
+      <p>Glyphosate is the most widely used non-selective herbicide globally in terms of volume and land area. In Colombia, its use for military purposes within the so-called War on Drugs has been a contentious issue in political debate and social mobilization.</p>
       <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0962629825000204" target="_blank" rel="noopener \
 noreferrer">Political Geography</a></p>`,
     },
@@ -29,6 +29,6 @@ noreferrer">Political Geography</a></p>`,
   contextInfo: {
     es: `<p>Lugar: El Patía</p><p>Año: 2006</p><p>Hecho(s) victimizante(s): N/A</p><p>Actor armado: fuerzas del Estado</p>`,
     fr: `<p>Lieu : El Patía</p><p>Date : 2006</p><p>Fait(s) victimisant(s) : N/A</p><p>Acteur armé : l'État</p>`,
-    en: `<p>Place: El Patía</p><p>Date: 2006</p><p>Victimizing act(s): N/A</p><p>Armed actor: fuerzas del Estado</p>`,
+    en: `<p>Place: El Patía</p><p>Date: 2006</p><p>Victimizing act(s): N/A</p><p>Armed actor: State forces</p>`,
   },
 };
