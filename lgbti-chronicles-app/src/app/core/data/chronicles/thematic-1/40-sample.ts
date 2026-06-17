@@ -11,16 +11,16 @@ export const CHRONICLE_T1_40: LocalizedModalContent = {
   rawText: {
     es: `<p>«Cuando le preguntan a uno: “¿Por qué usted, usted, ¡mujer!, por qué...?”, ya ahí empezamos. Bueno, ¿por qué no le preguntan eso a los camaradas, por ejemplo? Por qué a los hombres no se les cuestiona o no se les pregunta por lo masculino y lo insurgente, o sea, qué significa ser hombre en la insurgencia, o por lo menos yo no lo he visto [...]».</p><p class="identificador"><i>Mujeres excombatientes del EPL</i></p>`,
     fr: `<p>« Quand on nous demande : “mais pourquoi vous, vous, une femme ! Pourquoi ?” On se dit que c’est toujours la même question ; et pourquoi on ne pose pas cette même question aux camarades hommes ? Pourquoi on ne met pas en question leur masculinité et leur insurrection, c’est que, on ne leur demande pas sur leur rôle en tant qu’homme dans l'insurrection, je n’ai jamais vu ça. »</p><p class="identificador"><i>Femmes ex-combattantes du <b>{1}EPL{/1}</b></i></p>`,
-    en: `<p>“When you got asked: ‘Why are you here?!..  you, a woman!, why...?’. That’s when everything begins.  Well, so why aren’t the male comrades asked about that too, for example? Why are men never questioned or asked about what it means to be a man or to be insurgent... I mean, what does it mean to be a man in the insurgency, or at least I have never seen that happen [...].”</p><p class="identificador"><i><b>{1}EPL{/1}</b> former female combatant</i></p>`,
+    en: `<p>“When you got asked: ‘Why are you here?!..  you, a woman!, why...?’. That’s when everything begins.  Well, so why aren’t the male comrades asked about that too, for example? Why are men never questioned or asked about what it means to be a man or to be insurgent... I mean, what does it mean to be a man in the insurgency, or at least I have never seen that happen&nbsp;[...].”</p><p class="identificador"><i><b>{1}EPL{/1}</b> former female combatant</i></p>`,
   },
   tooltips: {
     1: {
       es: `<p>Nota de ejemplo para la crónica.</p>`,
       fr: `<p><strong>EPL</strong></p>
-      <p>L'EPL (Ejército Popular de Liberación) est un groupe armé colombien issu d'un mouvement de guérilla marxiste en 1967, mais qui survit aujourd'hui principalement comme une faction dissidente qui ne s'est pas démobilisée en 1991 et qui opère désormais comme une organisation criminelle impliquée dans des activités telles que le trafic de drogue et l'extorsion, en particulier dans la région du Catatumbo.</p>
+      <p>L'EPL a été un groupe armé colombien issu d'un mouvement de guérilla marxiste-léniniste en 1967, mais qui survit aujourd'hui principalement comme un groupe armé ilegal.</p>
       <p><a href="https://web.archive.org/web/20260113213105/https://insightcrime.org/colombia-organized-crime-news/epl/" target="_blank" rel="noopener noreferrer">InSight Crime</a></p>`,
       en: `<p><strong>EPL</strong></p>
-      <p>The EPL (Ejército Popular de Liberación) is a Colombian armed group that originated as a Marxist guerrilla movement in 1967, but today survives mainly as a dissident faction that did not demobilize in 1991 and now operates as a criminal organization involved in activities such as drug trafficking and extortion, particularly in the Catatumbo region.</p>
+      <p>The EPL is a Colombian armed group that originated as a Marxist-Leninist guerrilla movement in 1967, but today survives mainly as a illegal armed group. </p>
       <p><a href="https://web.archive.org/web/20260113213105/https://insightcrime.org/colombia-organized-crime-news/epl/" target="_blank" rel="noopener noreferrer">InSight Crime</a></p>`,
     },
   },
