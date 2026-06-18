@@ -213,7 +213,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         padding: var(--space-md) var(--space-lg);
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
-        background: rgba(248, 244, 239, 0.45);
+        background: rgba(248, 244, 239, 0.65);
         backdrop-filter: blur(2px); 
         box-shadow: var(--shadow-card);
         text-align: left;
