@@ -47,6 +47,7 @@
               "outputHashing": "all"
             },
             "production": {
+              "baseHref": "/amplificar_la_voz/",
               "budgets": [
                 {
                   "type": "initial",
@@ -77,6 +78,9 @@
             },
             "development": {
               "buildTarget": "lgbti-chronicles-app:build:development"
+            },
+            "github-pages": {
+              "buildTarget": "lgbti-chronicles-app:build:github-pages"
             }
           },
           "defaultConfiguration": "development"
