@@ -19,7 +19,7 @@ Recommended: 1920×1080 px, under 300 KB each.
 2. Under **Build and deployment**, set **Source** to **GitHub Actions**
 3. Push to `main` – the workflow will build and deploy automatically
 
-The site will be available at: `https://daniposa.github.io/lgbti_chronicles_armed_conflict/`
+The site will be available at: `https://daniposa.github.io/amplificar_la_voz/`
 
 ### Option 2: Manual deploy
 
