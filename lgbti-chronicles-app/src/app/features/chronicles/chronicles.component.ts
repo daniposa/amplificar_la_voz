@@ -197,7 +197,7 @@ type Tab = 'intro' | 'chronicles';
         max-width: 1200px;
         margin: var(--space-xl) auto;
 
-        background-color: rgba(248, 244, 239, 0.3); /* Capa translúcida color papel/crema */
+        background-color: rgba(248, 244, 239, 0.5); /* Capa translúcida color papel/crema */
         padding: var(--space-xl) var(--space-2xl); /* Espaciado interno para que no pegue a los bordes */
         border-radius: 6px; /* Esquinas sutilmente suavizadas */
 
