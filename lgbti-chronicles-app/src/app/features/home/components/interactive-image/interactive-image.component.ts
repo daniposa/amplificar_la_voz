@@ -46,11 +46,11 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           {{ isFullscreen() ? 'fullscreen_exit' : 'fullscreen' }}
         </span>
       </button>
-    </div>
 
-    @if (modalContent) {
-      <app-modal-content [content]="modalContent" (close)="closeModal()" />
-    }
+      @if (modalContent) {
+        <app-modal-content [content]="modalContent" (close)="closeModal()" />
+      }
+    </div>
   `,
   styles: [
     `
@@ -61,7 +61,6 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
       }
       .image-container {
         position: absolute;
-        /* 🚀 SE MAXIMIZA EL ESPACIO: Expandido a los límites puros para agrandar la ilustración */
         top: 0;
         left: 0;
         right: 0;
@@ -82,7 +81,6 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
         object-fit: contain;
       }
       
-      /* 🖥️ ESTILOS DEL BOTÓN DE PANTALLA COMPLETA */
       .fullscreen-toggle-btn {
         position: absolute;
         bottom: var(--space-md);
@@ -136,6 +134,12 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           drop-shadow(0 0 6px rgba(255, 255, 100, 1));
         color: #fff176;
       }
+
+      /* ✨ Aseguramos que el componente interno del modal tenga prioridad visual en la pantalla completa */
+      app-modal-content {
+        z-index: 20; 
+      }
+
       @keyframes sparkle-pulse {
         0%,
         100% {
@@ -156,8 +160,6 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
 
   readonly maxWidth = signal(0);
   readonly maxHeight = signal(0);
-  
-  // Señal para rastrear el icono dinámico del botón de fullscreen
   readonly isFullscreen = signal(false);
 
   private resizeObserver?: ResizeObserver;
@@ -183,7 +185,6 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
     this.resizeObserver = new ResizeObserver(updateBounds);
     this.resizeObserver.observe(el);
 
-    // Escuchar el evento nativo del navegador por si el usuario presiona "ESC" para salir
     document.addEventListener('fullscreenchange', this.onFullscreenChange);
   }
 
@@ -192,9 +193,6 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
     document.removeEventListener('fullscreenchange', this.onFullscreenChange);
   }
 
-  /**
-   * Controla la API nativa de pantalla completa enfocada en el contenedor del lienzo
-   */
   toggleFullscreen(): void {
     const container = this.viewportRef.nativeElement;
 
