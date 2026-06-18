@@ -95,7 +95,7 @@ export const LANDING_CREDITS: LandingCredits = {
     },
     {
       label: 'Revisoras',
-      names: ' Camille Jeannel (practicante de traducción y traductora de inglés y español al francés)<br>Claudia Urrego (traductora)<br>Doris Correa (Centro de Multiliteracidades)<br>Galice Arias-Lesur (practicante de traducción y traductora de inglés y español al francés)<br>Lauryne Angot (practicante de traducción)',
+      names: ' Camille Jeannel (practicante de traducción y traductora de inglés y español al francés)<br>Claudia Urrego (traductora)<br>Doris Correa (coordinadora de Centro de Multiliteracidades)<br>Galice Arias-Lesur (practicante de traducción y traductora de inglés y español al francés)<br>Lauryne Angot (practicante de traducción)',
     },
     {
       label: 'Asesores de Prácticas',
@@ -106,8 +106,8 @@ export const LANDING_CREDITS: LandingCredits = {
       names: ' Daniela Posada (ingeniera)<br>Sergio Andrés Paz Gómez (Popayán, Cauca) (traductor, programador)',
     },
     {
-      label: 'Apoyo Institucional',
-      names: ' Andrea Tobón Marín (Comunicadora)<br>Catalina Tobón Sánchez (auxiliar de la Coordinación de Investigaciones)<br>Jaime Usma (director Escuela de Idiomas)<br>Jorge Mario Porras Garzón (Coordinación de Investigaciones Escuela de Idiomas)<br>Juan Camilo Monsalve García (Diseñador)<br>Luis Octavio Valle García (auxiliar de la Coordinación de Investigaciones)<br>Mario David Palacio (Agencia de Traducción, Escuela de Idiomas)',
+      label: 'Apoyo Institucional, Escuela de Idiomas',
+      names: ' Andrea Tobón Marín (comunicadora)<br>Catalina Tobón Sánchez (auxiliar de la Coordinación de Investigaciones)<br>Jaime Usma (director)<br>Jorge Mario Porras Garzón (coordinador de Investigaciones)<br>Juan Camilo Monsalve García (diseñador)<br>Luis Octavio Valle García (auxiliar de la Coordinación de Investigaciones)<br>Mario David Palacio (coordinador de la Agencia de Traducción)',
     },
   ],
 };
