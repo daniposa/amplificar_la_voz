@@ -43,7 +43,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
             
             <div class="legal-col col-texto-derechos">
               <p class="txt-patrimoniales">
-                Derechos patrimoniales, Universidad de Antioquia.
+                Derechos patrimoniales, Universidad de Antioquia
               </p>
               <p class="txt-licencia">
                 Este es un artículo en acceso abierto, distribuido según los términos de la licencia 
@@ -169,7 +169,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
         text-align: left;
-        background: rgba(248, 244, 239, 0.45);     
+        background: rgba(248, 244, 239, 0.65);     
         backdrop-filter: blur(2px);                 
       }
       .credits-title {
