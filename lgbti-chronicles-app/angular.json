@@ -35,32 +35,30 @@
                 "output": "/images"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           },
           "configurations": {
             "github-pages": {
-              "baseHref": "/lgbti_chronicles_armed_conflict/",
+              "baseHref": "/amplificar_la_voz/",
               "budgets": [
                 { "type": "initial", "maximumWarning": "500kB", "maximumError": "1MB" },
-              { "type": "anyComponentStyle", "maximumWarning": "8kB", "maximumError": "16kB" }
-            ],
-            "outputHashing": "all"
-          },
-          "production": {
-            "budgets": [
-              {
-                "type": "initial",
-                "maximumWarning": "500kB",
-                "maximumError": "1MB"
-              },
-              {
-                "type": "anyComponentStyle",
-                "maximumWarning": "8kB",
-                "maximumError": "16kB"
-              }
-            ],
+                { "type": "anyComponentStyle", "maximumWarning": "8kB", "maximumError": "16kB" }
+              ],
+              "outputHashing": "all"
+            },
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "8kB",
+                  "maximumError": "16kB"
+                }
+              ],
               "outputHashing": "all"
             },
             "development": {
