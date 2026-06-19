@@ -31,10 +31,12 @@ export const CHRONICLE_UI = {
 export const PAGE_CONFIG = {
   /** Main page title (header and browser tab) */
   title: {
-    es: 'Amplificar la voz de las víctimas para la no-repetición',
-    fr: 'Amplifier la voix des victimes pour éviter la répétition',
-    en: 'Amplifying the voices of victims to avoid repetition',
+    // ✍️ Usamos \n para indicar exactamente dónde quieres que se quiebre el texto
+    es: 'Amplificar la voz\nde las víctimas\npara la no-repetición',
+    fr: 'Amplifier la voix\ndes victimes\npour la non-répétition',
+    en: 'Amplifying the victims voice\nfor non-repetition',
   } satisfies LocalizedContent,
+  
   /** Tab labels */
   tabs: {
     intro: {
