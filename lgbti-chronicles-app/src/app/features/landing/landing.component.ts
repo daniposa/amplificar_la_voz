@@ -97,7 +97,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
       }
       .landing-title {
         font-family: var(--font-display);
-        font-size: clamp(1.8rem, 4.8vw, 3.6rem); /* Bajamos sutilmente el mínimo y el escalado para pantallas medianas */
+        font-size: clamp(1.8rem, 5vw, 3.6rem); 
         font-weight: 600;
         color: #ffffff;
         line-height: 1.3;
@@ -110,17 +110,18 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         -webkit-font-smoothing: antialiased;
         min-height: 4em;
         
-        /* 🛠️ CAMBIO DE JERARQUÍA ABSOLUTA */
-        display: block !important; /* Quitamos flexbox aquí para que el alineado interno no estrangule el texto */
-        white-space: pre-line !important; /* Fuerza el respeto a los \n exclusivamente */
+        /* 🔄 Regresamos al Flexbox original para garantizar centrado perfecto y empuje hacia abajo */
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        white-space: pre-line;
+
+        width: max-content !important; 
+        max-width: 90vw !important; /* Límite seguro para pantallas muy pequeñas */
         
-        /* 🗺️ ROMPER EL ANCHO DEL PADRE (Remueve restricciones del 70%) */
-        width: 90vw !important; /* Le da el 90% de la pantalla completa solo al título */
-        max-width: 1300px !important;
-        
-        /* 📍 CENTRADO MANUAL (Al usar display: block necesitamos centrar con márgenes) */
-        margin-left: calc(-45vw + 50%) !important; /* Truco matemático para centrar un elemento que mide 90vw */
-        margin-right: calc(-45vw + 50%) !important;
+        /* Centrado nativo perfecto dentro del flujo de la landing */
+        margin-left: auto !important;
+        margin-right: auto !important;
       }
       .landing-buttons {
         display: flex;
