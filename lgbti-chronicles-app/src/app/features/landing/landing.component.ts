@@ -100,7 +100,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         font-size: clamp(2.2rem, 5.5vw, 3.8rem);
         font-weight: 600;
         color: #ffffff;
-        line-height: 1.2;
+        line-height: 1.3; /* Aumentado sutilmente para dar aire a las líneas rotas */
         letter-spacing: 0.03em;
         margin: 0 0 var(--space-2xl) 0;
         text-shadow: 
@@ -108,10 +108,13 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           0 4px 12px rgba(74, 67, 51, 0.2),
           0 10px 20px rgba(0, 0, 0, 0.15);
         -webkit-font-smoothing: antialiased;
-        min-height: 3.6em;
+        min-height: 4em; /* Espacio mínimo ajustado para resguardar la consistencia de altura */
         display: flex;
         align-items: flex-end;
         justify-content: center;
+
+        /* ✨ SOLUCIÓN MULTILÍNEA: Interpreta los quiebres de línea nativos sin usar HTML */
+        white-space: pre-line;
       }
       .landing-buttons {
         display: flex;
@@ -292,7 +295,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           flex: auto;
           flex-direction: row; 
           gap: var(--space-xl);
-          justify-content: center; /* Asegura el centrado correcto en móviles */
+          justify-content: center;
         }
         .col-texto-derechos {
           text-align: center;
@@ -306,7 +309,11 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
   ],
 })
 export class LandingComponent {
-  defaultTitle = PAGE_CONFIG.title.es;
+  // ✍️ Definimos los títulos usando saltos de línea físicos literales mediante comillas invertidas
+  defaultTitle = `Amplificar la voz
+  de las víctimas
+  para la no-repetición`;
+  
   displayedTitle = this.defaultTitle;
 
   buttons = LANDING_BUTTONS;
@@ -314,9 +321,12 @@ export class LandingComponent {
 
   onHoverButton(routerLink: string): void {
     if (routerLink.includes('/en')) {
-      this.displayedTitle = 'Amplifying the voices of victims to avoid repetition';
+      this.displayedTitle = `Amplifying the victims voice
+      for non-repetition`;
     } else if (routerLink.includes('/fr')) {
-      this.displayedTitle = 'Amplifier la voix des victimes pour éviter la répétition';
+      this.displayedTitle = `Amplifier la voix 
+      des victimes 
+      pour la non-répétition`;
     } else {
       this.displayedTitle = this.defaultTitle;
     }
