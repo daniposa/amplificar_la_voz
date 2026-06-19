@@ -116,7 +116,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         justify-content: center;
         white-space: pre-line;
 
-        width: 85%;
+        width: 100%;
         max-width: 115%;
         margin-left: auto;
         margin-right: auto;
