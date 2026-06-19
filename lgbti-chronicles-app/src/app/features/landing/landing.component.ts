@@ -92,15 +92,16 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         z-index: 1;
         text-align: center;
         padding: var(--space-xl);
-        width: 70%;
-        max-width: 1200px;
+        /* 📐 Expandimos el ancho máximo para que quepan títulos largos en una sola línea en pantallas grandes */
+        width: 85%;
+        max-width: 1400px;
       }
       .landing-title {
         font-family: var(--font-display);
-        font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+        font-size: clamp(2rem, 5.2vw, 3.8rem); /* Reducido un poquito el tamaño base para evitar desbordes forzados */
         font-weight: 600;
         color: #ffffff;
-        line-height: 1.3; /* Aumentado sutilmente para dar aire a las líneas rotas */
+        line-height: 1.3;
         letter-spacing: 0.03em;
         margin: 0 0 var(--space-2xl) 0;
         text-shadow: 
@@ -108,12 +109,10 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           0 4px 12px rgba(74, 67, 51, 0.2),
           0 10px 20px rgba(0, 0, 0, 0.15);
         -webkit-font-smoothing: antialiased;
-        min-height: 4em; /* Espacio mínimo ajustado para resguardar la consistencia de altura */
+        min-height: 4em;
         display: flex;
         align-items: flex-end;
         justify-content: center;
-
-        /* ✨ SOLUCIÓN MULTILÍNEA: Interpreta los quiebres de línea nativos sin usar HTML */
         white-space: pre-line;
       }
       .landing-buttons {
@@ -309,11 +308,8 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
   ],
 })
 export class LandingComponent {
-  // ✍️ Definimos los títulos usando saltos de línea físicos literales mediante comillas invertidas
-  defaultTitle = `Amplificar la voz
-  de las víctimas
-  para la no-repetición`;
-  
+  // 📝 Jalamos los títulos multilinea limpios desde el PAGE_CONFIG original.
+  defaultTitle = PAGE_CONFIG.title.es;
   displayedTitle = this.defaultTitle;
 
   buttons = LANDING_BUTTONS;
@@ -321,12 +317,9 @@ export class LandingComponent {
 
   onHoverButton(routerLink: string): void {
     if (routerLink.includes('/en')) {
-      this.displayedTitle = `Amplifying the victims voice
-      for non-repetition`;
+      this.displayedTitle = PAGE_CONFIG.title.en;
     } else if (routerLink.includes('/fr')) {
-      this.displayedTitle = `Amplifier la voix 
-      des victimes 
-      pour la non-répétition`;
+      this.displayedTitle = PAGE_CONFIG.title.fr;
     } else {
       this.displayedTitle = this.defaultTitle;
     }
