@@ -58,7 +58,7 @@ import { TextParserService } from '../../core/services/text-parser.service';
         padding: var(--space-sm) var(--space-xl) var(--space-sm)
           calc(var(--space-sm) + 44px + var(--space-md));
         border-bottom: 1px solid var(--color-border);
-        background: rgba(219, 175, 90, 0.95); /* Leve toque extra de opacidad para que no trasluzca el texto de fondo */
+        background: rgba(178, 161, 230, 0.95); /* Leve toque extra de opacidad para que no trasluzca el texto de fondo */
         backdrop-filter: blur(4px); /* Suavizado elegante */
         display: flex;
         align-items: center;
