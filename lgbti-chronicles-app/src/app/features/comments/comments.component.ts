@@ -10,7 +10,7 @@ import { TextParserService } from '../../core/services/text-parser.service';
   standalone: true,
   imports: [RouterLink, HighlightTooltipsDirective],
   template: `
-    <div class="comments-page" style="background-image: url('images/background_2.jpg')">
+    <div class="comments-page">
       <div class="page-overlay"></div>
 
       <header class="page-header">
@@ -31,11 +31,8 @@ import { TextParserService } from '../../core/services/text-parser.service';
     `
       .comments-page {
         min-height: 100vh;
-        background-color: var(--color-paper);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
+        /* 🎨 COLOR SÓLIDO SELECCIONADO */
+        background-color: #e4dff5;
         position: relative;
       }
       .page-overlay {
@@ -43,21 +40,26 @@ import { TextParserService } from '../../core/services/text-parser.service';
         inset: 0;
         background: linear-gradient(
           to bottom,
-          rgba(248, 244, 239, 0.1) 0%,
-          rgba(248, 244, 239, 0.15) 100%
+          rgba(248, 244, 239, 0.05) 0%,
+          rgba(248, 244, 239, 0.1) 100%
         );
         pointer-events: none;
         z-index: 0;
       }
+      
+      /* 📌 CABECERA COMPLETA FLOTANTE (STICKY) */
       .page-header {
-        position: relative;
-        z-index: 1;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; /* Se ancla estrictamente al techo del navegador */
+        z-index: 10; /* Prioridad alta para que el texto pase por debajo al hacer scroll */
         box-sizing: border-box;
         max-height: 15vh;
         padding: var(--space-sm) var(--space-xl) var(--space-sm)
           calc(var(--space-sm) + 44px + var(--space-md));
         border-bottom: 1px solid var(--color-border);
-        background: rgba(219, 175, 90, 0.9);
+        background: rgba(219, 175, 90, 0.95); /* Leve toque extra de opacidad para que no trasluzca el texto de fondo */
+        backdrop-filter: blur(4px); /* Suavizado elegante */
         display: flex;
         align-items: center;
         gap: var(--space-md);
@@ -141,50 +143,41 @@ import { TextParserService } from '../../core/services/text-parser.service';
       .comments-text ::ng-deep .columna-imagen {
         position: -webkit-sticky;
         position: sticky;
-        top: 15vh;
+        top: 18vh; /* Ajustado levemente para que ruede bien con el nuevo header flotante */
       }
 
       .comments-text ::ng-deep .columna-imagen img {
         width: auto;
         max-width: 100%;
-        max-height: 80vh;
+        max-height: 75vh;
         object-fit: contain;
         border-radius: 8px;
         display: block;
         margin: 0 auto;
       }
       .comments-text ::ng-deep blockquote {
-        margin: var(--space-md) var(--space-xl); /* Varía el espacio horizontal para empujar todo el bloque hacia adentro */
-        color: inherit; /* Mantiene exactamente tu color original #2e4a3b */
+        margin: var(--space-md) var(--space-xl);
+        color: inherit;
       }
 
-      /* 2. Ajustes para los párrafos de la cita: sin sangría inicial y 2 puntos más pequeños */
       .comments-text ::ng-deep blockquote p {
-        text-indent: 0 !important; /* Elimina por completo la sangría de la primera línea */
+        text-indent: 0 !important;
         text-align: justify;
         margin-bottom: var(--space-sm);
         color: inherit;
-        
-        /* Reducimos el tamaño de la letra exactamente 2 puntos (de 1.05rem a 0.85rem) */
         font-size: 0.95rem; 
-        
-        .comments-text ::ng-deep .referencia-francesa {
+      }
+      
+      .comments-text ::ng-deep .referencia-francesa {
         display: block;
         text-align: justify;
         text-justify: inter-word;
-        
-        /* 1. Desplazamos TODO el bloque completo hacia la derecha */
         padding-left: 2.5rem; 
-        
-        /* 2. Forzamos a la primera línea a regresar usando un margen negativo */
         margin-left: -2.5rem;
-        
-        /* Mantenemos tu diseño limpio */
         margin-bottom: var(--space-md);
         font-size: 1.05rem;
         line-height: 1.85;
         color: #2e4a3b;
-      }
       }
     `,
   ],
