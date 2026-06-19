@@ -34,7 +34,7 @@ export const PAGE_CONFIG = {
     // ✍️ Usamos \n para indicar exactamente dónde quieres que se quiebre el texto
     es: 'Amplificar la voz\nde las víctimas\npara la no-repetición',
     fr: 'Amplifier la voix\ndes victimes\npour la non-répétition',
-    en: 'Amplifying the victims voice\nfor non-repetition',
+    en: 'Amplifying the victims\' voice\nfor non-repetition',
   } satisfies LocalizedContent,
   
   /** Tab labels */
