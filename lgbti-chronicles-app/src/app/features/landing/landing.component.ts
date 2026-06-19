@@ -92,14 +92,12 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         z-index: 1;
         text-align: center;
         padding: var(--space-xl);
-        /* 📐 Expandimos el ancho máximo para que quepan títulos largos en una sola línea en pantallas grandes */
         width: 70%;
-        max-width: 1400px;
+        max-width: 1000px;
       }
       .landing-title {
         font-family: var(--font-display);
-        /* 📐 Ajustamos ligeramente el tamaño fluido para que no fuerce el quiebre de "voice" */
-        font-size: clamp(2rem, 5vw, 3.6rem); 
+        font-size: clamp(1.8rem, 4.8vw, 3.6rem); /* Bajamos sutilmente el mínimo y el escalado para pantallas medianas */
         font-weight: 600;
         color: #ffffff;
         line-height: 1.3;
@@ -111,15 +109,18 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           0 10px 20px rgba(0, 0, 0, 0.15);
         -webkit-font-smoothing: antialiased;
         min-height: 4em;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        white-space: pre-line;
-
-        width: 100%;
-        max-width: 115%;
-        margin-left: auto;
-        margin-right: auto;
+        
+        /* 🛠️ CAMBIO DE JERARQUÍA ABSOLUTA */
+        display: block !important; /* Quitamos flexbox aquí para que el alineado interno no estrangule el texto */
+        white-space: pre-line !important; /* Fuerza el respeto a los \n exclusivamente */
+        
+        /* 🗺️ ROMPER EL ANCHO DEL PADRE (Remueve restricciones del 70%) */
+        width: 90vw !important; /* Le da el 90% de la pantalla completa solo al título */
+        max-width: 1300px !important;
+        
+        /* 📍 CENTRADO MANUAL (Al usar display: block necesitamos centrar con márgenes) */
+        margin-left: calc(-45vw + 50%) !important; /* Truco matemático para centrar un elemento que mide 90vw */
+        margin-right: calc(-45vw + 50%) !important;
       }
       .landing-buttons {
         display: flex;
