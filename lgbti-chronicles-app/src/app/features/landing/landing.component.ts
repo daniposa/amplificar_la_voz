@@ -31,7 +31,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
           <ul class="credits-list">
             @for (line of credits.lines; track $index) {
               <li class="credits-line">
-                <span class="credits-label">{{ line.label }}:</span>
+                <span class="credits-label">{{ line.label }}</span>
                 <span class="credits-names" [innerHTML]="line.names"></span>
               </li>
             }
@@ -110,16 +110,14 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         -webkit-font-smoothing: antialiased;
         min-height: 4em;
         
-        /* 🔄 Regresamos al Flexbox original para garantizar centrado perfecto y empuje hacia abajo */
         display: flex;
         align-items: flex-end;
         justify-content: center;
         white-space: pre-line;
 
         width: max-content !important; 
-        max-width: 90vw !important; /* Límite seguro para pantallas muy pequeñas */
+        max-width: 90vw !important; 
         
-        /* Centrado nativo perfecto dentro del flujo de la landing */
         margin-left: auto !important;
         margin-right: auto !important;
       }
@@ -173,12 +171,14 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         font-size: 1.4rem;
         color: var(--color-ink);
       }
+      
+      /* 🎯 SECCIÓN DE CRÉDITOS ACTUALIZADA CON CENTRADO */
       .credits {
         margin-top: var(--space-2xl);
         padding: var(--space-md) var(--space-lg); 
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
-        text-align: left;
+        text-align: center; /* ⬅️ Centra el contenedor general */
         background: rgba(248, 244, 239, 0.65);     
         backdrop-filter: blur(2px);                 
       }
@@ -203,6 +203,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         line-height: 1.8;
         color: var(--color-ink-muted);
         margin-bottom: var(--space-sm);
+        text-align: center; /* ⬅️ Centra las líneas de nombres */
       }
       .credits-line:last-child {
         margin-bottom: 0;
@@ -212,6 +213,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         font-weight: 600;
         display: block;                               
         margin-bottom: var(--space-xs);
+        text-align: center; /* ⬅️ Centra los subtítulos como "Integrantes del Semillero" */
       }
       .credits-names {
         font-style: italic;
@@ -316,7 +318,6 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
   ],
 })
 export class LandingComponent {
-  // 📝 Jalamos los títulos multilinea limpios desde el PAGE_CONFIG original.
   defaultTitle = PAGE_CONFIG.title.es;
   displayedTitle = this.defaultTitle;
 
