@@ -93,12 +93,13 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         text-align: center;
         padding: var(--space-xl);
         /* 📐 Expandimos el ancho máximo para que quepan títulos largos en una sola línea en pantallas grandes */
-        width: 85%;
+        width: 70%;
         max-width: 1400px;
       }
       .landing-title {
         font-family: var(--font-display);
-        font-size: clamp(2rem, 5.2vw, 3.8rem); /* Reducido un poquito el tamaño base para evitar desbordes forzados */
+        /* 📐 Ajustamos ligeramente el tamaño fluido para que no fuerce el quiebre de "voice" */
+        font-size: clamp(2rem, 5vw, 3.6rem); 
         font-weight: 600;
         color: #ffffff;
         line-height: 1.3;
@@ -114,6 +115,11 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         align-items: flex-end;
         justify-content: center;
         white-space: pre-line;
+
+        width: 85%;
+        max-width: 115%;
+        margin-left: auto;
+        margin-right: auto;
       }
       .landing-buttons {
         display: flex;
