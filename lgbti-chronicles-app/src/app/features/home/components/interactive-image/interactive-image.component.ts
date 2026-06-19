@@ -23,6 +23,7 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           draggable="false"
           [style.max-width.px]="maxWidth()"
           [style.max-height.px]="maxHeight()"
+          (load)="onImageLoad()"
         />
         @for (h of hotspots; track h.id) {
           <button
@@ -135,7 +136,6 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
         color: #fff176;
       }
 
-      /* ✨ Aseguramos que el componente interno del modal tenga prioridad visual en la pantalla completa */
       app-modal-content {
         z-index: 20; 
       }
@@ -175,14 +175,10 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
   modalContent: import('../../../../core/models/content.model').LocalizedModalContent | null = null;
 
   ngAfterViewInit(): void {
+    this.updateBounds();
+    
     const el = this.viewportRef.nativeElement;
-    const updateBounds = (): void => {
-      this.maxWidth.set(el.clientWidth);
-      this.maxHeight.set(el.clientHeight);
-    };
-
-    updateBounds();
-    this.resizeObserver = new ResizeObserver(updateBounds);
+    this.resizeObserver = new ResizeObserver(() => this.updateBounds());
     this.resizeObserver.observe(el);
 
     document.addEventListener('fullscreenchange', this.onFullscreenChange);
@@ -191,6 +187,24 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
   ngOnDestroy(): void {
     this.resizeObserver?.disconnect();
     document.removeEventListener('fullscreenchange', this.onFullscreenChange);
+  }
+
+  /**
+   * Encapsulamos la lógica de actualización para poder llamarla en múltiples momentos
+   */
+  private updateBounds(): void {
+    if (this.viewportRef?.nativeElement) {
+      const el = this.viewportRef.nativeElement;
+      this.maxWidth.set(el.clientWidth);
+      this.maxHeight.set(el.clientHeight);
+    }
+  }
+
+  /**
+   * 🌟 Se ejecuta de forma asíncrona exactamente cuando el archivo de imagen se pinta en pantalla
+   */
+  onImageLoad(): void {
+    this.updateBounds();
   }
 
   toggleFullscreen(): void {
@@ -207,6 +221,8 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
 
   private onFullscreenChange = (): void => {
     this.isFullscreen.set(!!document.fullscreenElement);
+    // Forzamos un ajuste extra al cambiar a pantalla completa para evitar saltos visuales
+    setTimeout(() => this.updateBounds(), 50);
   };
 
   openModal(hotspot: Hotspot): void {
