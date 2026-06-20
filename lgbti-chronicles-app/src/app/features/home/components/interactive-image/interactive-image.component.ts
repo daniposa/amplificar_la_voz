@@ -25,16 +25,19 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           [style.max-height.px]="maxHeight()"
           (load)="onImageLoad()"
         />
-        @for (h of hotspots; track h.id) {
-          <button
-            class="hotspot-btn"
-            [style.left.%]="h.x"
-            [style.top.%]="h.y"
-            (click)="openModal(h)"
-            aria-label="Open story"
-          >
-            <span class="material-icons">auto_awesome</span>
-          </button>
+        
+        @if (isImageLoaded()) {
+          @for (h of hotspots; track h.id) {
+            <button
+              class="hotspot-btn"
+              [style.left.%]="h.x"
+              [style.top.%]="h.y"
+              (click)="openModal(h)"
+              aria-label="Open story"
+            >
+              <span class="material-icons">auto_awesome</span>
+            </button>
+          }
         }
       </div>
 
@@ -80,6 +83,7 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
         width: auto;
         height: auto;
         object-fit: contain;
+        z-index: 1; /* Imagen en la base */
       }
       
       .fullscreen-toggle-btn {
@@ -110,6 +114,7 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
 
       .hotspot-btn {
         position: absolute;
+        z-index: 3; /* ⬆️ Forzamos a las estrellas a flotar por encima de la imagen siempre */
         transform: translate(-50%, -50%);
         background: none;
         border: none;
@@ -161,6 +166,9 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
   readonly maxWidth = signal(0);
   readonly maxHeight = signal(0);
   readonly isFullscreen = signal(false);
+  
+  // 🔒 Signal del candado de estado de carga
+  readonly isImageLoaded = signal(false);
 
   private resizeObserver?: ResizeObserver;
 
@@ -189,9 +197,6 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
     document.removeEventListener('fullscreenchange', this.onFullscreenChange);
   }
 
-  /**
-   * Encapsulamos la lógica de actualización para poder llamarla en múltiples momentos
-   */
   private updateBounds(): void {
     if (this.viewportRef?.nativeElement) {
       const el = this.viewportRef.nativeElement;
@@ -201,10 +206,12 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
   }
 
   /**
-   * 🌟 Se ejecuta de forma asíncrona exactamente cuando el archivo de imagen se pinta en pantalla
+   * Se ejecuta exactamente cuando la imagen ya está dibujada
    */
   onImageLoad(): void {
     this.updateBounds();
+    // 🔓 Abrimos el candado: la imagen ya tiene dimensiones reales, las estrellas pueden nacer seguras
+    this.isImageLoaded.set(true);
   }
 
   toggleFullscreen(): void {
@@ -221,7 +228,6 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
 
   private onFullscreenChange = (): void => {
     this.isFullscreen.set(!!document.fullscreenElement);
-    // Forzamos un ajuste extra al cambiar a pantalla completa para evitar saltos visuales
     setTimeout(() => this.updateBounds(), 50);
   };
 
