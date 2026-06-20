@@ -110,16 +110,20 @@ type Tab = 'intro' | 'chronicles';
         pointer-events: none;
         z-index: 0;
       }
+      
+      /* 📌 CABECERA FLOTANTE AJUSTADA (STICKY) */
       .page-header {
-        position: relative;
-        z-index: 1;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; /* Fijado al techo absoluto */
+        z-index: 10; /* Prioridad de superposición alta */
         box-sizing: border-box;
         max-height: 8vh;
-        /* Leave room on the left for the fixed sitemap hamburger button. */
         padding: var(--space-sm) var(--space-xl) var(--space-sm)
           calc(var(--space-sm) + 44px + var(--space-md));
         border-bottom: 1px solid var(--color-border);
-        background: rgba(245, 240, 232, 0.9);
+        background: rgba(245, 240, 232, 0.95);
+        backdrop-filter: blur(4px);
         display: flex;
         align-items: center;
         gap: var(--space-md);
@@ -151,13 +155,18 @@ type Tab = 'intro' | 'chronicles';
         overflow: hidden;
         text-overflow: ellipsis;
       }
+      
+      /* 📌 NAVEGACIÓN DE PESTAÑAS FLOTANTE AJUSTADA (STICKY) */
       .tab-nav {
-        position: relative;
-        z-index: 1;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 8vh; /* Se ancla justo debajo del page-header (que mide 8vh) */
+        z-index: 9; /* Ligeramente debajo del header principal */
         box-sizing: border-box;
         max-height: 7vh;
         display: flex;
-        background: rgba(245, 240, 232, 0.85);
+        background: rgba(245, 240, 232, 0.9);
+        backdrop-filter: blur(4px);
         border-bottom: 1px solid var(--color-border);
         padding: 0 var(--space-xl);
       }
@@ -189,24 +198,24 @@ type Tab = 'intro' | 'chronicles';
       .page-main {
         position: relative;
         z-index: 1;
+        /* ✨ Añadimos un pequeño colchón de aire superior para compensar las barras fijas */
+        padding-top: var(--space-md);
       }
 
-      /* ✨ 1. CAPA LIGERA DETRÁS DEL TEXTO (Sin blur, muy sutil) */
       .intro-text {
         width: 70%;
         max-width: 1200px;
         margin: var(--space-xl) auto;
 
-        background-color: rgba(248, 244, 239, 0.5); /* Capa translúcida color papel/crema */
-        padding: var(--space-xl) var(--space-2xl); /* Espaciado interno para que no pegue a los bordes */
-        border-radius: 6px; /* Esquinas sutilmente suavizadas */
+        background-color: rgba(248, 244, 239, 0.5); 
+        padding: var(--space-xl) var(--space-2xl); 
+        border-radius: 6px; 
 
         font-size: 1.05rem;
         line-height: 1.85;
         color: var(--color-ink);
       }
 
-      /* Párrafos normales de la introducción */
       .intro-text ::ng-deep p {
         text-align: justify;
         text-justify: inter-word;
@@ -214,11 +223,10 @@ type Tab = 'intro' | 'chronicles';
         text-indent: 2rem;
       }
 
-      /* ✨ 2. CENTRADO EXCLUSIVO DE IMAGEN Y NOTITA */
       .intro-text ::ng-deep .bloque-imagen {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centra la imagen y restringe el contenedor de la nota */
+        align-items: center; 
         justify-content: center;
         width: 100%;
         margin: var(--space-xl) 0;
@@ -228,17 +236,17 @@ type Tab = 'intro' | 'chronicles';
         max-width: 100%;
         height: auto;
         display: block;
-        margin: 0 auto var(--space-xs) auto; /* Centrado perfecto de la foto */
+        margin: 0 auto var(--space-xs) auto; 
       }
 
       .intro-text ::ng-deep .bloque-imagen p {
-        text-align: left; /* ⬅️ ¡La magia! Alinea la nota a la izquierda */
-        width: 100%; /* Toma el ancho base de la imagen */
-        max-width: 100%; /* Evita que se desborde del bloque */
-        text-indent: 0 !important; /* Quita la sangría de los párrafos normales */
+        text-align: left; 
+        width: 100%; 
+        max-width: 100%; 
+        text-indent: 0 !important; 
         margin-top: var(--space-xs);
-        font-size: 0.9rem; /* Opcional: un toque más pequeña para diferenciarla */
-        font-style: italic; /* Opcional: estilo editorial */
+        font-size: 0.9rem; 
+        font-style: italic; 
         color: var(--color-ink-muted);
       }
 
@@ -252,7 +260,6 @@ type Tab = 'intro' | 'chronicles';
         justify-content: center;
         overflow: hidden;
       }
-      /* Shrinks to the rendered image so card placement % maps to the image. */
       .image-frame {
         position: relative;
         display: inline-block;
@@ -268,7 +275,6 @@ type Tab = 'intro' | 'chronicles';
         pointer-events: none;
       }
 
-      /* ── cards (freely placed over the image) ── */
       .card-pin {
         position: absolute;
         transform: translate(-50%, -50%);
@@ -277,7 +283,7 @@ type Tab = 'intro' | 'chronicles';
         display: block;
         width: 100%;
       }
-      /* ── fullscreen image ── */
+      
       .image-fullscreen {
         position: fixed;
         inset: 0;
@@ -331,29 +337,20 @@ export class ChroniclesComponent implements OnInit, OnDestroy {
   activeTab = signal<Tab>('intro');
   selectedCardId = signal<number | null>(null);
 
-  // ── computed ──────────────────────────────────────────────
-
   selectedCard = computed(() => {
     const id = this.selectedCardId();
     return id ? (CARDS_DATA.find((c) => c.id === id) ?? null) : null;
   });
 
   background = computed(() => {
-    // 1. Si hay una tarjeta abierta en pantalla completa
     if (this.selectedCardId() !== null) {
       return `url(images/background_3.jpg)`;
     }
-
-    // 2. Si el usuario hace clic en la pestaña de 'Testimonios' (chronicles)
     if (this.activeTab() === 'chronicles') {
-      return 'none'; /* ❌ Elimina la imagen para que no se asome a los lados */
+      return 'none';
     }
-
-    // 3. Fondo por defecto para la pestaña de Introducción
     return `url(images/background_3.jpg)`;
   });
-
-  // ── lifecycle ─────────────────────────────────────────────
 
   ngOnInit(): void {
     this.syncLanguageFromRoute();
@@ -408,8 +405,6 @@ export class ChroniclesComponent implements OnInit, OnDestroy {
     const clean = this.sanitizer.sanitize(SecurityContext.HTML, html) ?? '';
     return this.sanitizer.bypassSecurityTrustHtml(clean);
   }
-
-  // ── tabs / cards ──────────────────────────────────────────
 
   setTab(tab: Tab): void {
     this.activeTab.set(tab);
