@@ -89,7 +89,7 @@ export const LANDING_CREDITS: LandingCredits = {
   lines: [
     {
       label: 'Integrantes del Semillero',
-      names: ' Andrea Carolina Figueroa Mendoza (Corozal, Sucre) (traductora )<br>Cristian Muñoz Sanchez (Yarumal, Antioquia) (traductor)<br>Luisa Fernanda Vélez Agudelo (Medellín, Antioquia) (correctora de estilo)<br>Mariana Collo Reyes (Popayán, Cauca) (traductora)<br>Mariana Macías García (San Antonio de Prado, Antioquia) (traductora)<br>Mariana Rojas Agudelo (Bello, Antioquia) (traductora, coordinadora)<br>Paula Andrea Montoya Arango (Medellín, Antioquia) (profesora, coordinadora)<br>Sergio Andrés Paz Gómez (Popayán, Cauca) (traductor, programador)<br>Valentina Castañeda Márquez (Bogotá, Bogotá D. C.) (traductora)',
+      names: ' Andrea Carolina Figueroa Mendoza (Corozal, Sucre) (traductora )<br>Cristian Muñoz Sánchez (Yarumal, Antioquia) (traductor)<br>Luisa Fernanda Vélez Agudelo (Medellín, Antioquia) (correctora de estilo)<br>Mariana Collo Reyes (Popayán, Cauca) (traductora)<br>Mariana Macías García (San Antonio de Prado, Antioquia) (traductora)<br>Mariana Rojas Agudelo (Bello, Antioquia) (traductora, coordinadora)<br>Paula Andrea Montoya Arango (Medellín, Antioquia) (profesora, coordinadora)<br>Sergio Andrés Paz Gómez (Popayán, Cauca) (traductor, programador)<br>Valentina Castañeda Márquez (Bogotá, Bogotá D. C.) (traductora)',
     },
     {
       label: 'Ilustradoras',
