@@ -8,27 +8,29 @@
  */
 export const COMMENTS_CONTENT = {
 text: `
+<div class="bloque-completo">
 <h2>Introducción</h2>
 <p>El conflicto armado interno colombiano se enmarca en una lucha insurgente y contrainsurgente que ha durado más de 50 años e involucrado diversos actores: grupos guerrilleros (FARC-EP, ELN, EPL, M-19, etc.), grupos paramilitares (AUC, ACMM, etc.), la participación por acción y por omisión del Estado y sus aparatos represivos (fuerzas policiales, militares, judiciales, etc.) y otros actores políticos y económicos. Con más de nueve millones de víctimas, los distintos hechos victimizantes incluyen homicidios, desapariciones forzadas, violencias sexuales, desplazamientos forzados, amenazas, ataques indiscriminados, secuestros, torturas, reclutamientos forzados, despojos de tierras, entre otros. Según los datos recolectados por la Comisión de la Verdad [CEV] (2022a), el 80&nbsp;% de las víctimas fueron civiles y el hecho victimizante de mayor dimensión fue el desplazamiento forzado con 7&nbsp;752&nbsp;964 víctimas.</p>
 <p>A pesar de contar con antecedentes de violencia política estrechamente conectados con la violencia posterior, la Comisión toma el año 1958, con la creación del Frente Nacional, como hito inicial del conflicto armado y el 2016, con la firma del Acuerdo de Paz, como hito final. La década de 1995 al 2004 fue el periodo con más víctimas, aproximadamente el 45&nbsp;% de las víctimas totales.</p>
-<h3>Figura 1.</h3>
-<p><i>Línea de tiempo del conflicto armado colombiano a partir de la periodización de la Comisión de la Verdad</i></p>
+
+<figure>
+<p class="titulo-imagen">Figura 1.<i>Línea de tiempo del conflicto armado colombiano a partir de la periodización de la Comisión de la Verdad</i></p>
 <img 
     src="images/comentarios/linea es.png" 
     alt="Linea ES" 
-    width="300"
   >
-  <small><p><i>Nota.</i> Fuente <a href="https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos" target="_blank">https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</a>(CEV, 2022).</p></small>
+  <figcaption><i>Nota.</i> Fuente <a href="https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos" target="_blank">https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</a>(CEV, 2022).</figcaption>
+  </figure>
 
   <p>Diferenciada pero latente, la violencia del conflicto se presentó en todo el territorio nacional colombiano, rural y urbano, e incluso cuenta con una dimensión internacional. Pueblos, montañas, ciudades, ríos, cañones, selvas, páramos, desiertos, barrios y veredas han sido escenarios del horror, pero también de la esperanza. La Comisión distingue entre 11 regiones: Amazonía; Antioquia, sur de Córdoba y Bajo Atrato Chocoano; Caribe; Centro; Eje Cafetero; Frontera Nororiental; Magdalena Medio; Nariño y Sur del Cauca; Orinoquía; Pacífico; y Valle y Norte del Cauca. Antioquia es el departamento con mayor número total de víctimas con un 18,64&nbsp;% para 2025 (Unidad para las Víctimas, 2025).</p>
-  <h3>Figura 2.</h3>
-<p><i>Mapa de Colombia a partir de la regionalización de la CEV</i></p>
+  
+  <figure>
+  <p class="titulo-imagen">Figura 2.<i>Mapa de Colombia a partir de la regionalización de la CEV</i></p>
 <img 
     src="images/comentarios/mapa es.png" 
     alt="Mapa ES" 
-    width="300"
   >
-  <small><p><i>Nota.</i> Fuente <a href="https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones" target="_blank">https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones</a>(CEV, 2022c).</p></small>
+  <figcaption><i>Nota.</i> Fuente <a href="https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones" target="_blank">https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones</a>(CEV, 2022c).</figcaption>
   
   <p>No solo se vivieron dinámicas territoriales diversas, sino que también los impactos fueron diferenciados según poblaciones específicas: campesinos, mujeres, poblaciones étnicas, población LGBTIQ+, sectores políticos, estudiantes, funcionarios públicos, empresarios, personas con discapacidades y un largo etcétera. En relación con todos estos enfoques diferenciales, se tiene que la población víctima del conflicto armado es la población más empobrecida del país: para el 2024 el 44,6&nbsp;%, el 18,1&nbsp;% y el 18,4&nbsp;% de las víctimas se encontraban en situación de pobreza monetaria, extrema y multidimensional, respectivamente (DANE, 2026).</p>
 
@@ -60,7 +62,8 @@ text: `
 <hr>
 <h2>Estructura</h2>
 <p>Lo que van a encontrar aquí es una selección de los testimonios recogidos por la Comisión en su capítulo «Mi Cuerpo es la Verdad» del IF. Para este libro retomamos la división propuesta por la Comisión en tres secciones: 1)&nbsp;<i>¿Qué pasó?</i>: centrada en los diferentes tipos de violencias que sufrieron tanto mujeres como población LGBTIQ+; 2)&nbsp;<i>¿Por qué pasó?</i>: sobre las causas de esas violencias; y 3)&nbsp;<i>¿Qué pasó con lo que pasó?</i>: sobre los afrontamientos y resistencias que desarrollaron mujeres y población LGBTIQ+ para sobrevivir, superar o hacer vida después de la violencia. Estas tres secciones las tradujimos al inglés y al francés con palabras que grosso modo sintetizan sus sentidos: «¿Qué pasó?» fue traducida como Wounds y Blessures, «¿Por qué pasó?» Roots y Racines; y «¿Qué pasó con lo que pasó?» Healings y Guérisons. En ese sentido, podrán encontrar los testimonios distribuidos en estas tres secciones sin jerarquía alguna. Son libres de curiosear y dejarse atrapar por los testimonios sin orden alguno.</p>  
-
+</div>
+<hr>
 
 <h2>La traducción como acto político </h2>
 <div class="seccion-lectura">
