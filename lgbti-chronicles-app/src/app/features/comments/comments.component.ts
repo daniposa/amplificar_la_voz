@@ -180,61 +180,60 @@ import { TextParserService } from '../../core/services/text-parser.service';
         color: #2e4a3b;
       }
 
-      /* ==========================================================================
-         ✨ NUEVO FORMATO: SECCIÓN COMPLETA TIPO INTRODUCCIÓN (TEXTO PLANO E IMÁGENES)
-         ========================================================================== */
-      
       .comments-text ::ng-deep .bloque-completo {
-        width: 75%;
-        max-width: 950px;
-        margin: var(--space-2xl) auto;
-      }
+  width: 75%;
+  max-width: 950px;
+  margin: var(--space-2xl) auto;
+}
 
-      /* 🖼️ Contenedor de la Imagen Centrada */
-      .comments-text ::ng-deep .bloque-completo figure {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: var(--space-2xl) 0;
-        padding: 0;
-      }
+/* 🖼️ Contenedor de la Imagen Centrada */
+.comments-text ::ng-deep .bloque-completo figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: var(--space-2xl) 0;
+  padding: 0;
+}
 
-      /* Elemento Imagen del bloque */
-      .comments-text ::ng-deep .bloque-completo figure img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 4px;
-        margin: var(--space-xs) auto; /* Forzar centrado del elemento img */
-      }
+/* Elemento Imagen del bloque */
+.comments-text ::ng-deep .bloque-completo figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  margin: var(--space-xs) auto;
+}
 
-      /* 🏷️ TÍTULO de la imagen: Sin sangría y totalmente alineado a la izquierda del bloque */
-      .comments-text ::ng-deep .bloque-completo figure .titulo-imagen,
-      .comments-text ::ng-deep .bloque-completo figure h3 {
-        text-align: left;
-        width: 100%;
-        text-indent: 0 !important; /* El candado: destruye la sangría heredada del "p" común */
-        margin: 0 0 var(--space-xs) 0;
-        font-family: var(--font-display);
-        font-size: 1.15rem;
-        font-weight: 500;
-        color: #2e4a3b;
-      }
+/* 🏷️ TÍTULO de la imagen: Con la tipografía del cuerpo (`--font-body`) */
+.comments-text ::ng-deep .bloque-completo figure .titulo-imagen,
+.comments-text ::ng-deep .bloque-completo figure h3 {
+  text-align: left;
+  width: 100%;
+  text-indent: 0 !important; /* Rompe la sangría del p común */
+  margin: 0 0 var(--space-xs) 0;
+  
+  /* 📝 Cambiado a la fuente del cuerpo para que se lea igual al resto del texto */
+  font-family: var(--font-body); 
+  
+  font-size: 1.1rem; /* Un pelín más grande o puedes dejarlo en 1.05rem como el texto */
+  font-weight: bold; /* O 600, para que resalte sutilmente pero con la misma fuente */
+  color: #2e4a3b;
+}
 
-      /* 📝 NOTA/FUENTE de la imagen: Sin sangría y totalmente alineada a la izquierda del bloque */
-      .comments-text ::ng-deep .bloque-completo figure figcaption,
-      .comments-text ::ng-deep .bloque-completo figure .nota-imagen {
-        text-align: left;
-        width: 100%;
-        text-indent: 0 !important; /* El candado: destruye la sangría heredada del "p" común */
-        margin: var(--space-xs) 0 0 0;
-        font-size: 0.9rem;
-        font-style: italic;
-        color: var(--color-ink-muted);
-        line-height: 1.4;
-      }
+/* 📝 NOTA/FUENTE de la imagen */
+.comments-text ::ng-deep .bloque-completo figure figcaption,
+.comments-text ::ng-deep .bloque-completo figure .nota-imagen {
+  text-align: left;
+  width: 100%;
+  text-indent: 0 !important;
+  margin: var(--space-xs) 0 0 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-ink-muted);
+  line-height: 1.4;
+}
     `,
   ],
 })
