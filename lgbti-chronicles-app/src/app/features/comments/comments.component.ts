@@ -51,15 +51,15 @@ import { TextParserService } from '../../core/services/text-parser.service';
       .page-header {
         position: -webkit-sticky;
         position: sticky;
-        top: 0; /* Se ancla estrictamente al techo del navegador */
-        z-index: 10; /* Prioridad alta para que el texto pase por debajo al hacer scroll */
+        top: 0; 
+        z-index: 10; 
         box-sizing: border-box;
         max-height: 15vh;
         padding: var(--space-sm) var(--space-xl) var(--space-sm)
           calc(var(--space-sm) + 44px + var(--space-md));
         border-bottom: 1px solid var(--color-border);
-        background: rgba(178, 161, 230, 0.95); /* Leve toque extra de opacidad para que no trasluzca el texto de fondo */
-        backdrop-filter: blur(4px); /* Suavizado elegante */
+        background: rgba(178, 161, 230, 0.95); 
+        backdrop-filter: blur(4px); 
         display: flex;
         align-items: center;
         gap: var(--space-md);
@@ -109,7 +109,7 @@ import { TextParserService } from '../../core/services/text-parser.service';
       .comments-text ::ng-deep p {
         text-align: justify;
         text-justify: inter-word;
-        text-indent: 2rem;
+        text-indent: 2rem; /* Sangría en primera línea para todos los párrafos estándar */
         color: #2e4a3b;
         margin: 0 0 var(--space-md) 0;
       }
@@ -143,7 +143,7 @@ import { TextParserService } from '../../core/services/text-parser.service';
       .comments-text ::ng-deep .columna-imagen {
         position: -webkit-sticky;
         position: sticky;
-        top: 18vh; /* Ajustado levemente para que ruede bien con el nuevo header flotante */
+        top: 18vh; 
       }
 
       .comments-text ::ng-deep .columna-imagen img {
@@ -178,6 +178,62 @@ import { TextParserService } from '../../core/services/text-parser.service';
         font-size: 1.05rem;
         line-height: 1.85;
         color: #2e4a3b;
+      }
+
+      /* ==========================================================================
+         ✨ NUEVO FORMATO: SECCIÓN COMPLETA TIPO INTRODUCCIÓN (TEXTO PLANO E IMÁGENES)
+         ========================================================================== */
+      
+      .comments-text ::ng-deep .bloque-completo {
+        width: 75%;
+        max-width: 950px;
+        margin: var(--space-2xl) auto;
+      }
+
+      /* 🖼️ Contenedor de la Imagen Centrada */
+      .comments-text ::ng-deep .bloque-completo figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: var(--space-2xl) 0;
+        padding: 0;
+      }
+
+      /* Elemento Imagen del bloque */
+      .comments-text ::ng-deep .bloque-completo figure img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        margin: var(--space-xs) auto; /* Forzar centrado del elemento img */
+      }
+
+      /* 🏷️ TÍTULO de la imagen: Sin sangría y totalmente alineado a la izquierda del bloque */
+      .comments-text ::ng-deep .bloque-completo figure .titulo-imagen,
+      .comments-text ::ng-deep .bloque-completo figure h3 {
+        text-align: left;
+        width: 100%;
+        text-indent: 0 !important; /* El candado: destruye la sangría heredada del "p" común */
+        margin: 0 0 var(--space-xs) 0;
+        font-family: var(--font-display);
+        font-size: 1.15rem;
+        font-weight: 500;
+        color: #2e4a3b;
+      }
+
+      /* 📝 NOTA/FUENTE de la imagen: Sin sangría y totalmente alineada a la izquierda del bloque */
+      .comments-text ::ng-deep .bloque-completo figure figcaption,
+      .comments-text ::ng-deep .bloque-completo figure .nota-imagen {
+        text-align: left;
+        width: 100%;
+        text-indent: 0 !important; /* El candado: destruye la sangría heredada del "p" común */
+        margin: var(--space-xs) 0 0 0;
+        font-size: 0.9rem;
+        font-style: italic;
+        color: var(--color-ink-muted);
+        line-height: 1.4;
       }
     `,
   ],
