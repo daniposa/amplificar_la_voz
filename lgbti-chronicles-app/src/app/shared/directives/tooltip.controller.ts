@@ -87,10 +87,10 @@ export class TooltipController {
     this.setTooltipInnerHtml(this.tooltipEl, this.tooltipHtml);
     
     this.tooltipEl.style.cssText = `
-      position: absolute; /* 📐 Cambiado a absolute para heredar las coordenadas locales del texto */
+      position: absolute;
       z-index: 2147483647;
       pointer-events: none;
-      width: 450px;
+      width: 520px; /* 📐 Ampliado de 450px a 520px para textos semilargos */
       max-width: 90vw;
       text-align: justify;
       text-justify: inter-word;
@@ -101,7 +101,6 @@ export class TooltipController {
     
     this.injectInternalStyles(this.tooltipEl);
 
-    // Aseguramos que el contenedor tenga una posición relativa de referencia
     const targetContainer = this.anchor.parentElement || document.body;
     if (targetContainer !== document.body) {
       targetContainer.style.position = 'relative';
@@ -119,9 +118,9 @@ export class TooltipController {
     root.className = 'app-tooltip app-tooltip--pinned';
     
     root.style.cssText = `
-      position: absolute; /* 📐 Cambiado a absolute para heredar las coordenadas locales del texto */
+      position: absolute;
       z-index: 2147483647;
-      width: 450px;
+      width: 520px; /* 📐 Ampliado de 450px a 520px para el cuadro fijo pinnado */
       max-width: 90vw;
       text-align: justify;
       text-justify: inter-word;
@@ -164,40 +163,45 @@ export class TooltipController {
 
   private injectInternalStyles(container: HTMLElement): void {
     const styleId = 'app-tooltip-dynamic-styles';
-    if (!document.getElementById(styleId)) {
-      const styleNode = document.createElement('style');
-      styleNode.id = styleId;
-      styleNode.innerHTML = `
-        .app-tooltip {
-          font-size: 0.92rem !important; 
-          line-height: 1.5 !important;
-          font-weight: normal !important;
-          background: #222222 !important; /* Estilo base de respaldo visual */
-          color: #ffffff !important;
-          padding: 12px !important;
-          border-radius: 6px !important;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
-        }
-        .app-tooltip .identificador {
-          display: block !important;
-          text-align: right !important;
-          text-indent: 0 !important;
-          margin-top: 12px !important;
-          width: 100% !important;
-          font-size: 0.85rem !important;
-          font-weight: normal !important;
-          font-style: normal !important;
-        }
-        .app-tooltip p {
-          text-align: justify !important;
-          text-justify: inter-word !important;
-          margin-bottom: 8px !important;
-          font-weight: normal !important;
-          text-indent: 0 !important;
-        }
-      `;
-      document.head.appendChild(styleNode);
+    const existingStyle = document.getElementById(styleId);
+    if (existingStyle) {
+      existingStyle.remove();
     }
+
+    const styleNode = document.createElement('style');
+    styleNode.id = styleId;
+    styleNode.innerHTML = `
+      .app-tooltip {
+        font-size: 0.92rem !important; 
+        line-height: 1.5 !important;
+        font-weight: normal !important;
+        background: #222222 !important;
+        color: #ffffff !important;
+        padding: 14px !important; /* Un pelín más de padding interno para equilibrar el nuevo ancho */
+        border-radius: 6px !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+      }
+      .app-tooltip .identificador {
+        display: block !important;
+        text-align: right !important;
+        text-indent: 0 !important;
+        margin-top: 12px !important;
+        width: 100% !important;
+        font-size: 0.85rem !important;
+        font-weight: normal !important;
+        font-style: normal !important;
+        color: #e0e0e0 !important;
+      }
+      .app-tooltip p {
+        text-align: justify !important;
+        text-justify: inter-word !important;
+        margin-bottom: 8px !important;
+        font-weight: normal !important;
+        text-indent: 0 !important;
+        color: #ffffff !important;
+      }
+    `;
+    document.head.appendChild(styleNode);
   }
 
   private attachRepositionListeners(): void {
@@ -221,24 +225,19 @@ export class TooltipController {
   private positionTooltip(): void {
     if (!this.tooltipEl) return;
     
-    // Al usar absolute, calculamos el offset relativo respecto al contenedor padre inmediato
     const leftOffset = this.anchor.offsetLeft;
     const topOffset = this.anchor.offsetTop;
     const width = this.anchor.offsetWidth;
     const tooltipWidth = this.tooltipEl.offsetWidth;
     const tooltipHeight = this.tooltipEl.offsetHeight;
     
-    // Centrar horizontalmente sobre la palabra
     let left = leftOffset + (width / 2) - (tooltipWidth / 2);
-    // Posicionar justo arriba de la palabra dejando 8px de margen
     let top = topOffset - tooltipHeight - 8;
     
-    // Si se sale por la parte superior del contenedor, lo mandamos abajo de la palabra
     if (top < 0) {
       top = topOffset + this.anchor.offsetHeight + 8;
     }
     
-    // Evitar desbordamiento en los extremos de la caja del texto
     if (left < 0) left = 4;
     
     this.tooltipEl.style.left = `${left}px`;
