@@ -156,6 +156,22 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           opacity: 0.82;
           transform: translate(-50%, -50%) scale(0.9);
         }
+        :-webkit-full-screen app-modal-content,
+      :fullscreen app-modal-content {
+        position: absolute !important;
+        z-index: 2147483647 !important; /* El valor máximo permitido por los navegadores */
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+
+      /* Si la cajita del tooltip se genera con una clase (por ejemplo .tooltip-box o .tooltip-container) */
+      :-webkit-full-screen .tooltip-box,
+      :fullscreen .tooltip-box,
+      :-webkit-full-screen .highlight-tooltip,
+      :fullscreen .highlight-tooltip {
+        z-index: 2147483647 !important;
+      }
       }
     `,
   ],
