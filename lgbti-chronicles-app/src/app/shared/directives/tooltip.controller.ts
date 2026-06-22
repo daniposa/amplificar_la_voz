@@ -86,10 +86,9 @@ export class TooltipController {
     this.tooltipEl.className = 'app-tooltip app-tooltip--ephemeral';
     this.setTooltipInnerHtml(this.tooltipEl, this.tooltipHtml);
     
-    // ✨ ACTUALIZADO: Forzamos ancho de 450px, texto justificado e inyectamos estilos para el identificador
     this.tooltipEl.style.cssText = `
       position: fixed;
-      z-index: 10000;
+      z-index: 2147483647; /* 🌌 Máximo nivel visual para Fullscreen */
       pointer-events: none;
       width: 450px;
       max-width: 90vw;
@@ -98,7 +97,11 @@ export class TooltipController {
     `;
     
     this.injectInternalStyles(this.tooltipEl);
-    document.body.appendChild(this.tooltipEl);
+
+    // 🪄 TU SOLUCIÓN: Buscamos el contenedor más cercano del texto para inyectarlo ahí dentro
+    const targetContainer = this.anchor.parentElement || document.body;
+    targetContainer.appendChild(this.tooltipEl);
+
     this.positionTooltip();
     this.attachRepositionListeners();
   }
@@ -109,10 +112,9 @@ export class TooltipController {
     const root = document.createElement('div');
     root.className = 'app-tooltip app-tooltip--pinned';
     
-    // ✨ ACTUALIZADO: Forzamos el mismo ancho y alineación justificada para el cuadro fijo
     root.style.cssText = `
       position: fixed;
-      z-index: 10001;
+      z-index: 2147483647; /* 🌌 Máximo nivel visual para Fullscreen */
       width: 450px;
       max-width: 90vw;
       text-align: justify;
@@ -140,18 +142,21 @@ export class TooltipController {
 
     this.tooltipEl = root;
     this.injectInternalStyles(this.tooltipEl);
-    document.body.appendChild(this.tooltipEl);
+
+    // 🪄 TU SOLUCIÓN: El cuadro fijo también se va adentro del árbol del DOM local
+    const targetContainer = this.anchor.parentElement || document.body;
+    targetContainer.appendChild(this.tooltipEl);
+
     this.positionTooltip();
     this.attachRepositionListeners();
   }
 
- private injectInternalStyles(container: HTMLElement): void {
+  private injectInternalStyles(container: HTMLElement): void {
     const styleId = 'app-tooltip-dynamic-styles';
     if (!document.getElementById(styleId)) {
       const styleNode = document.createElement('style');
       styleNode.id = styleId;
       styleNode.innerHTML = `
-        /* Reducimos la letra un toque en todo el contenedor del tooltip */
         .app-tooltip {
           font-size: 0.92rem !important; 
           line-height: 1.5 !important;
@@ -162,7 +167,7 @@ export class TooltipController {
           text-indent: 0 !important;
           margin-top: 12px !important;
           width: 100% !important;
-          font-size: 0.85rem !important; /* La firma un pelín más pequeña para que contraste */
+          font-size: 0.85rem !important;
         }
         .app-tooltip p {
           text-align: justify !important;
