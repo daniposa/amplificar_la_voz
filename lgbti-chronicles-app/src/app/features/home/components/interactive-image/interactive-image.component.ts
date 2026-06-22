@@ -216,7 +216,7 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
   }
 
   toggleFullscreen(): void {
-    const container = this.viewportRef.nativeElement;
+    const container = this.viewportRef.nativeElement.parentElement || this.viewportRef.nativeElement;
 
     if (!document.fullscreenElement) {
       container.requestFullscreen().catch((err) => {
