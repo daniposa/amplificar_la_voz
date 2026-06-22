@@ -87,23 +87,23 @@ export class TooltipController {
     this.setTooltipInnerHtml(this.tooltipEl, this.tooltipHtml);
     
     this.tooltipEl.style.cssText = `
-  position: fixed;
-  z-index: 2147483647;
-  pointer-events: none;
-  width: 450px;
-  max-width: 90vw;
-  text-align: justify;
-  text-justify: inter-word;
-  
-  /* 🪄 RESET DE HERENCIA: Para que no se vea en negrita ni herede márgenes del texto */
-  font-weight: normal !important;
-  text-indent: 0 !important;
-  font-style: normal !important;
-`;
+      position: fixed;
+      z-index: 2147483647;
+      pointer-events: none;
+      width: 450px;
+      max-width: 90vw;
+      text-align: justify;
+      text-justify: inter-word;
+      
+      /* 🪄 RESET DE HERENCIA: Cancela negritas, cursivas o sangrías del párrafo padre */
+      font-weight: normal !important;
+      text-indent: 0 !important;
+      font-style: normal !important;
+    `;
     
     this.injectInternalStyles(this.tooltipEl);
 
-    // 🪄 TU SOLUCIÓN: Buscamos el contenedor más cercano del texto para inyectarlo ahí dentro
+    // 🪄 Inyectamos dentro del contenedor local del texto (Tu idea para ganarle al Fullscreen)
     const targetContainer = this.anchor.parentElement || document.body;
     targetContainer.appendChild(this.tooltipEl);
 
@@ -117,20 +117,19 @@ export class TooltipController {
     const root = document.createElement('div');
     root.className = 'app-tooltip app-tooltip--pinned';
     
-    this.tooltipEl.style.cssText = `
-  position: fixed;
-  z-index: 2147483647;
-  pointer-events: none;
-  width: 450px;
-  max-width: 90vw;
-  text-align: justify;
-  text-justify: inter-word;
-  
-  /* 🪄 RESET DE HERENCIA: Para que no se vea en negrita ni herede márgenes del texto */
-  font-weight: normal !important;
-  text-indent: 0 !important;
-  font-style: normal !important;
-`;
+    root.style.cssText = `
+      position: fixed;
+      z-index: 2147483647;
+      width: 450px;
+      max-width: 90vw;
+      text-align: justify;
+      text-justify: inter-word;
+      
+      /* 🪄 RESET DE HERENCIA: Para el contenedor fijo pinnado */
+      font-weight: normal !important;
+      text-indent: 0 !important;
+      font-style: normal !important;
+    `;
 
     const closeBtn = document.createElement('button');
     closeBtn.type = 'button';
@@ -154,7 +153,7 @@ export class TooltipController {
     this.tooltipEl = root;
     this.injectInternalStyles(this.tooltipEl);
 
-    // 🪄 TU SOLUCIÓN: El cuadro fijo también se va adentro del árbol del DOM local
+    // 🪄 Inyectamos dentro del contenedor local del texto
     const targetContainer = this.anchor.parentElement || document.body;
     targetContainer.appendChild(this.tooltipEl);
 
@@ -171,6 +170,7 @@ export class TooltipController {
         .app-tooltip {
           font-size: 0.92rem !important; 
           line-height: 1.5 !important;
+          font-weight: normal !important;
         }
         .app-tooltip .identificador {
           display: block !important;
@@ -179,11 +179,15 @@ export class TooltipController {
           margin-top: 12px !important;
           width: 100% !important;
           font-size: 0.85rem !important;
+          font-weight: normal !important;
+          font-style: normal !important;
         }
         .app-tooltip p {
           text-align: justify !important;
           text-justify: inter-word !important;
           margin-bottom: 8px !important;
+          font-weight: normal !important;
+          text-indent: 0 !important;
         }
       `;
       document.head.appendChild(styleNode);
@@ -214,16 +218,14 @@ export class TooltipController {
     const rect = this.anchor.getBoundingClientRect();
     const tooltipRect = this.tooltipEl.getBoundingClientRect();
     
-    // 📐 Cálculo exacto usando la posición fija de la pantalla
+    // 📐 Posicionamiento absoluto respecto al viewport usando la coordenada real de la palabra
     let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
     let top = rect.top - tooltipRect.height - 8;
     
-    // Si no cabe arriba, lo mandamos abajo de la palabra
     if (top < 8) {
       top = rect.bottom + 8;
     }
     
-    // Evitamos que se salga por los lados de la pantalla
     if (left < 8) left = 8;
     if (left + tooltipRect.width > window.innerWidth - 8) {
       left = window.innerWidth - tooltipRect.width - 8;
