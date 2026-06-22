@@ -346,9 +346,9 @@ text: `
 
 <li>Comisión de la Verdad [CEV]. (2022a). Hasta la guerra tiene límites. Violaciones de los derechos humanos, infracciones al derecho internacional humanitario y responsabilidades colectivas. En <i>Hay futuro si hay verdad. Informe final</i> (pp. 1144). Comisión de la Verdad. https://www.comisiondelaverdad.co/hasta-la-guerra-tiene-limites</li>
 
-<liComisión de la Verdad [CEV]. (2022b). <i>Lineamientos técnico-políticos</i>. Comisión de la Verdad. https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</li>
+<li>Comisión de la Verdad [CEV]. (2022b). <i>Lineamientos técnico-políticos</i>. Comisión de la Verdad. https://www.comisiondelaverdad.co/lineamientos-tecnico-politicos</li>
 
-<liComisión de la Verdad [CEV]. (2022c). <i>Comisión inicia el despliegue exploratorio en macroregiones</i>. Comisión de la Verdad. https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones</li>
+<li>Comisión de la Verdad [CEV]. (2022c). <i>Comisión inicia el despliegue exploratorio en macroregiones</i>. Comisión de la Verdad. https://web.comisiondelaverdad.co/actualidad/noticias/comision-de-la-verdad-inicia-el-despliegue-exploratorio-en-macroregiones</li>
 
 <li>Comisión de la Verdad [CEV]. (2022d). <i>Proceso editorial</i>. Comisión de la Verdad. https://www.comisiondelaverdad.co/proceso-editorial</li>    
 
