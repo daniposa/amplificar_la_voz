@@ -213,8 +213,13 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
     this.isImageLoaded.set(true);
   }
 
-  toggleFullscreen(): void {
-    const container = this.viewportRef.nativeElement;
+ toggleFullscreen(): void {
+    // 🚀 EN LUGAR DE MAXIMIZAR SOLO EL CONTENEDOR INTERNO...
+    // Vamos a maximizar el elemento raíz del componente (o el documento si es necesario)
+    // Esto obliga al navegador a incluir los tooltips inyectados dinámicamente en la misma capa.
+    const container = document.querySelector('.comments-page') || 
+                      this.viewportRef.nativeElement.closest('main') || 
+                      this.viewportRef.nativeElement;
 
     if (!document.fullscreenElement) {
       container.requestFullscreen().catch((err) => {
