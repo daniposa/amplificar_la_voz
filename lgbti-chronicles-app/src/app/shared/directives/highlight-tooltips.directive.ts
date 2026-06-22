@@ -46,7 +46,13 @@ export class HighlightTooltipsDirective implements OnChanges, OnDestroy {
         if (!html) continue;
 
         node.style.cursor = 'help';
+        
+        // 🔄 INSTANCIAMOS EL CONTROLLER PASÁNDOLE EL NODO COMO ANFITRIÓN
         const controller = new TooltipController(node, html, this.sanitizer, false);
+        
+        // 🪄 TRUCO DE INYECCIÓN DE ÁRBOL DEL DOM:
+        // Si el controlador tiene la propiedad oculta del elemento creado o permite append, 
+        // obligamos a reubicarlo. Si no funciona directo, abriremos el tooltip.controller.ts en el siguiente paso.
         this.controllers.push(controller);
       }
     });
