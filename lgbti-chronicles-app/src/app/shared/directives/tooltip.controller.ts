@@ -87,14 +87,19 @@ export class TooltipController {
     this.setTooltipInnerHtml(this.tooltipEl, this.tooltipHtml);
     
     this.tooltipEl.style.cssText = `
-      position: fixed;
-      z-index: 2147483647; /* 🌌 Máximo nivel visual para Fullscreen */
-      pointer-events: none;
-      width: 450px;
-      max-width: 90vw;
-      text-align: justify;
-      text-justify: inter-word;
-    `;
+  position: fixed;
+  z-index: 2147483647;
+  pointer-events: none;
+  width: 450px;
+  max-width: 90vw;
+  text-align: justify;
+  text-justify: inter-word;
+  
+  /* 🪄 RESET DE HERENCIA: Para que no se vea en negrita ni herede márgenes del texto */
+  font-weight: normal !important;
+  text-indent: 0 !important;
+  font-style: normal !important;
+`;
     
     this.injectInternalStyles(this.tooltipEl);
 
@@ -112,14 +117,20 @@ export class TooltipController {
     const root = document.createElement('div');
     root.className = 'app-tooltip app-tooltip--pinned';
     
-    root.style.cssText = `
-      position: fixed;
-      z-index: 2147483647; /* 🌌 Máximo nivel visual para Fullscreen */
-      width: 450px;
-      max-width: 90vw;
-      text-align: justify;
-      text-justify: inter-word;
-    `;
+    this.tooltipEl.style.cssText = `
+  position: fixed;
+  z-index: 2147483647;
+  pointer-events: none;
+  width: 450px;
+  max-width: 90vw;
+  text-align: justify;
+  text-justify: inter-word;
+  
+  /* 🪄 RESET DE HERENCIA: Para que no se vea en negrita ni herede márgenes del texto */
+  font-weight: normal !important;
+  text-indent: 0 !important;
+  font-style: normal !important;
+`;
 
     const closeBtn = document.createElement('button');
     closeBtn.type = 'button';
@@ -199,15 +210,25 @@ export class TooltipController {
 
   private positionTooltip(): void {
     if (!this.tooltipEl) return;
+    
     const rect = this.anchor.getBoundingClientRect();
     const tooltipRect = this.tooltipEl.getBoundingClientRect();
-    let left = rect.left + rect.width / 2 - tooltipRect.width / 2;
+    
+    // 📐 Cálculo exacto usando la posición fija de la pantalla
+    let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
     let top = rect.top - tooltipRect.height - 8;
-    if (top < 8) top = rect.bottom + 8;
+    
+    // Si no cabe arriba, lo mandamos abajo de la palabra
+    if (top < 8) {
+      top = rect.bottom + 8;
+    }
+    
+    // Evitamos que se salga por los lados de la pantalla
     if (left < 8) left = 8;
     if (left + tooltipRect.width > window.innerWidth - 8) {
       left = window.innerWidth - tooltipRect.width - 8;
     }
+    
     this.tooltipEl.style.left = `${left}px`;
     this.tooltipEl.style.top = `${top}px`;
   }
