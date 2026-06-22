@@ -87,15 +87,13 @@ export class TooltipController {
     this.setTooltipInnerHtml(this.tooltipEl, this.tooltipHtml);
     
     this.tooltipEl.style.cssText = `
-      position: fixed;
+      position: absolute; /* 📐 Cambiado a absolute para heredar las coordenadas locales del texto */
       z-index: 2147483647;
       pointer-events: none;
       width: 450px;
       max-width: 90vw;
       text-align: justify;
       text-justify: inter-word;
-      
-      /* 🪄 RESET DE HERENCIA: Cancela negritas, cursivas o sangrías del párrafo padre */
       font-weight: normal !important;
       text-indent: 0 !important;
       font-style: normal !important;
@@ -103,8 +101,11 @@ export class TooltipController {
     
     this.injectInternalStyles(this.tooltipEl);
 
-    // 🪄 Inyectamos dentro del contenedor local del texto (Tu idea para ganarle al Fullscreen)
+    // Aseguramos que el contenedor tenga una posición relativa de referencia
     const targetContainer = this.anchor.parentElement || document.body;
+    if (targetContainer !== document.body) {
+      targetContainer.style.position = 'relative';
+    }
     targetContainer.appendChild(this.tooltipEl);
 
     this.positionTooltip();
@@ -118,14 +119,12 @@ export class TooltipController {
     root.className = 'app-tooltip app-tooltip--pinned';
     
     root.style.cssText = `
-      position: fixed;
+      position: absolute; /* 📐 Cambiado a absolute para heredar las coordenadas locales del texto */
       z-index: 2147483647;
       width: 450px;
       max-width: 90vw;
       text-align: justify;
       text-justify: inter-word;
-      
-      /* 🪄 RESET DE HERENCIA: Para el contenedor fijo pinnado */
       font-weight: normal !important;
       text-indent: 0 !important;
       font-style: normal !important;
@@ -153,8 +152,10 @@ export class TooltipController {
     this.tooltipEl = root;
     this.injectInternalStyles(this.tooltipEl);
 
-    // 🪄 Inyectamos dentro del contenedor local del texto
     const targetContainer = this.anchor.parentElement || document.body;
+    if (targetContainer !== document.body) {
+      targetContainer.style.position = 'relative';
+    }
     targetContainer.appendChild(this.tooltipEl);
 
     this.positionTooltip();
@@ -171,6 +172,11 @@ export class TooltipController {
           font-size: 0.92rem !important; 
           line-height: 1.5 !important;
           font-weight: normal !important;
+          background: #222222 !important; /* Estilo base de respaldo visual */
+          color: #ffffff !important;
+          padding: 12px !important;
+          border-radius: 6px !important;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
         }
         .app-tooltip .identificador {
           display: block !important;
@@ -215,21 +221,25 @@ export class TooltipController {
   private positionTooltip(): void {
     if (!this.tooltipEl) return;
     
-    const rect = this.anchor.getBoundingClientRect();
-    const tooltipRect = this.tooltipEl.getBoundingClientRect();
+    // Al usar absolute, calculamos el offset relativo respecto al contenedor padre inmediato
+    const leftOffset = this.anchor.offsetLeft;
+    const topOffset = this.anchor.offsetTop;
+    const width = this.anchor.offsetWidth;
+    const tooltipWidth = this.tooltipEl.offsetWidth;
+    const tooltipHeight = this.tooltipEl.offsetHeight;
     
-    // 📐 Posicionamiento absoluto respecto al viewport usando la coordenada real de la palabra
-    let left = rect.left + (rect.width / 2) - (tooltipRect.width / 2);
-    let top = rect.top - tooltipRect.height - 8;
+    // Centrar horizontalmente sobre la palabra
+    let left = leftOffset + (width / 2) - (tooltipWidth / 2);
+    // Posicionar justo arriba de la palabra dejando 8px de margen
+    let top = topOffset - tooltipHeight - 8;
     
-    if (top < 8) {
-      top = rect.bottom + 8;
+    // Si se sale por la parte superior del contenedor, lo mandamos abajo de la palabra
+    if (top < 0) {
+      top = topOffset + this.anchor.offsetHeight + 8;
     }
     
-    if (left < 8) left = 8;
-    if (left + tooltipRect.width > window.innerWidth - 8) {
-      left = window.innerWidth - tooltipRect.width - 8;
-    }
+    // Evitar desbordamiento en los extremos de la caja del texto
+    if (left < 0) left = 4;
     
     this.tooltipEl.style.left = `${left}px`;
     this.tooltipEl.style.top = `${top}px`;
