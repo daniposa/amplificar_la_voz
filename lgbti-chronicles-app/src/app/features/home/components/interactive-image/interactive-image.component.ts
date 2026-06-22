@@ -83,7 +83,7 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
         width: auto;
         height: auto;
         object-fit: contain;
-        z-index: 1; /* Imagen en la base */
+        z-index: 1;
       }
       
       .fullscreen-toggle-btn {
@@ -114,7 +114,7 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
 
       .hotspot-btn {
         position: absolute;
-        z-index: 3; /* ⬆️ Forzamos a las estrellas a flotar por encima de la imagen siempre */
+        z-index: 3;
         transform: translate(-50%, -50%);
         background: none;
         border: none;
@@ -142,8 +142,12 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
       }
 
       app-modal-content {
-        position: relative;
-        z-index: 999999 !important; 
+        z-index: 20; 
+      }
+
+      /* 🚨 FIX PARA LA CAPA DE PANTALLA COMPLETA NATIVA */
+      .image-container:fullscreen app-modal-content {
+        z-index: 99999999 !important;
       }
 
       @keyframes sparkle-pulse {
@@ -156,22 +160,6 @@ import type { CardData, Hotspot } from '../../../../core/models/content.model';
           opacity: 0.82;
           transform: translate(-50%, -50%) scale(0.9);
         }
-        :-webkit-full-screen app-modal-content,
-      :fullscreen app-modal-content {
-        position: absolute !important;
-        z-index: 2147483647 !important; /* El valor máximo permitido por los navegadores */
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-      }
-
-      /* Si la cajita del tooltip se genera con una clase (por ejemplo .tooltip-box o .tooltip-container) */
-      :-webkit-full-screen .tooltip-box,
-      :fullscreen .tooltip-box,
-      :-webkit-full-screen .highlight-tooltip,
-      :fullscreen .highlight-tooltip {
-        z-index: 2147483647 !important;
-      }
       }
     `,
   ],
@@ -183,8 +171,6 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
   readonly maxWidth = signal(0);
   readonly maxHeight = signal(0);
   readonly isFullscreen = signal(false);
-  
-  // 🔒 Signal del candado de estado de carga
   readonly isImageLoaded = signal(false);
 
   private resizeObserver?: ResizeObserver;
@@ -222,17 +208,13 @@ export class InteractiveImageComponent implements AfterViewInit, OnDestroy {
     }
   }
 
-  /**
-   * Se ejecuta exactamente cuando la imagen ya está dibujada
-   */
   onImageLoad(): void {
     this.updateBounds();
-    // 🔓 Abrimos el candado: la imagen ya tiene dimensiones reales, las estrellas pueden nacer seguras
     this.isImageLoaded.set(true);
   }
 
   toggleFullscreen(): void {
-    const container = this.viewportRef.nativeElement.parentElement || this.viewportRef.nativeElement;
+    const container = this.viewportRef.nativeElement;
 
     if (!document.fullscreenElement) {
       container.requestFullscreen().catch((err) => {
