@@ -47,7 +47,7 @@ text: `
 <li>«Hasta la guerra tiene límites» (sobre violaciones a los Derechos Humanos y el DIH),</li> 
 <li>«Cuando los pájaros no cantaban» (capítulo testimonial),</li>  
 <li>«Sufrir la guerra y rehacer la vida» (sobre impactos, resistencias y afrontamientos),</li>   
-<li>«La Colombia fuera de Colombia» (sobre exilios);</li>  
+<li>«La Colombia fuera de Colombia» (sobre exilios),</li>  
 <li>«Resistir no es aguantar» (sobre comunidades étnicas),</li>  
 <li>«No es un mal menor» (sobre niños, niñas y adolescentes), y</li>   
 <li>«Mi cuerpo es la verdad» (sobre mujeres y población LGBTIQ+).</li>   
