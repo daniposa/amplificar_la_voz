@@ -90,8 +90,12 @@ export class TooltipController {
       position: absolute;
       z-index: 2147483647;
       pointer-events: none;
-      width: 520px; /* 📐 Ampliado de 450px a 520px para textos semilargos */
+      width: 520px;
       max-width: 90vw;
+      max-height: 280px; /* 🛠️ Altura máxima para activar scroll en hover */
+      overflow-y: auto;   /* 🛠️ Scroll automático vertical si el texto se pasa */
+      word-wrap: break-word;
+      word-break: break-word;
       text-align: justify;
       text-justify: inter-word;
       font-weight: normal !important;
@@ -120,8 +124,12 @@ export class TooltipController {
     root.style.cssText = `
       position: absolute;
       z-index: 2147483647;
-      width: 520px; /* 📐 Ampliado de 450px a 520px para el cuadro fijo pinnado */
+      width: 520px;
       max-width: 90vw;
+      max-height: 280px; /* 🛠️ Altura máxima para activar scroll en el cuadro fijo */
+      overflow-y: auto;   /* 🛠️ Scroll automático vertical para fijados */
+      word-wrap: break-word;
+      word-break: break-word;
       text-align: justify;
       text-justify: inter-word;
       font-weight: normal !important;
@@ -177,9 +185,24 @@ export class TooltipController {
         font-weight: normal !important;
         background: #222222 !important;
         color: #ffffff !important;
-        padding: 14px !important; /* Un pelín más de padding interno para equilibrar el nuevo ancho */
+        padding: 14px !important;
         border-radius: 6px !important;
         box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+      }
+      /* 🛠️ Estilización fina y minimalista para la barra de scroll interna */
+      .app-tooltip::-webkit-scrollbar {
+        width: 6px !important;
+      }
+      .app-tooltip::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border-radius: 4px !important;
+      }
+      .app-tooltip::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.25) !important;
+        border-radius: 4px !important;
+      }
+      .app-tooltip::-webkit-scrollbar-thumb:hover {
+        background: rgba(255, 255, 255, 0.4) !important;
       }
       .app-tooltip .identificador {
         display: block !important;
@@ -199,6 +222,22 @@ export class TooltipController {
         font-weight: normal !important;
         text-indent: 0 !important;
         color: #ffffff !important;
+      }
+      .app-tooltip-close {
+        position: sticky;
+        top: 0;
+        float: right;
+        background: none;
+        border: none;
+        color: #aaaaaa;
+        font-size: 1.2rem;
+        cursor: pointer;
+        line-height: 1;
+        margin-left: 8px;
+        padding: 0;
+      }
+      .app-tooltip-close:hover {
+        color: #ffffff;
       }
     `;
     document.head.appendChild(styleNode);
