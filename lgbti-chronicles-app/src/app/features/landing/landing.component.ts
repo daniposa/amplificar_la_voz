@@ -95,6 +95,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         width: 70%;
         max-width: 1000px;
       }
+      
       .landing-title {
         font-family: var(--font-display);
         font-size: clamp(1.8rem, 5vw, 3.6rem); 
@@ -102,38 +103,41 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         color: #ffffff;
         line-height: 1.3;
         letter-spacing: 0.03em;
-        margin: 0 0 var(--space-2xl) 0;
+        margin: 0 auto var(--space-2xl) auto;
         text-shadow: 
           0 2px 4px rgba(0, 0, 0, 0.25), 
           0 4px 12px rgba(74, 67, 51, 0.2),
           0 10px 20px rgba(0, 0, 0, 0.15);
         -webkit-font-smoothing: antialiased;
-        min-height: 4em;
+        
+        /* 🛠️ SOLUCIÓN AL DESFASE: Asegura centrado simétrico estricto ocupando el contenedor base */
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: 140px; /* Caja fija para evitar saltos al cambiar entre idiomas */
         
         display: flex;
         align-items: flex-end;
         justify-content: center;
+        text-align: center;
         white-space: pre-line;
-
-        width: max-content !important; 
-        max-width: 90vw !important; 
-        
-        margin-left: auto !important;
-        margin-right: auto !important;
       }
+      
       .landing-buttons {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
+        align-items: stretch; /* 🛠️ Fuerza a que todos los botones midan exactamente lo mismo de alto */
         gap: var(--space-md);
       }
+      
       .lang-btn {
         display: flex;
         flex: 1 1 0;
         min-width: 0;
         flex-direction: column;
         align-items: center;
+        justify-content: center; /* Centra el contenido internamente si mide de más */
         text-align: center;
         padding: var(--space-lg) var(--space-md);
         border: 1px solid var(--color-border);
@@ -144,12 +148,14 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         transition: all 0.25s ease;
         box-shadow: var(--shadow-card);
       }
+      
       .lang-btn:hover {
         background: rgba(245, 240, 232, 0.75);
         border-color: var(--color-accent);
         box-shadow: var(--shadow-soft);
         transform: translateY(-2px);
       }
+      
       .btn-label {
         font-family: var(--font-display);
         font-size: 1.4rem;
@@ -157,6 +163,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         color: var(--color-ink);
         letter-spacing: 0.03em;
       }
+      
       .btn-sub {
         font-family: var(--font-body);
         font-size: 0.9rem;
@@ -164,24 +171,26 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         margin-top: var(--space-xs);
         font-style: italic;
       }
+      
       .comments-btn {
         border-color: var(--color-border-soft);
       }
+      
       .comments-btn .btn-label {
         font-size: 1.4rem;
         color: var(--color-ink);
       }
       
-      /* 🎯 SECCIÓN DE CRÉDITOS ACTUALIZADA CON CENTRADO */
       .credits {
         margin-top: var(--space-2xl);
         padding: var(--space-md) var(--space-lg); 
         border: 1px solid var(--color-border);
         border-radius: 8px;                         
-        text-align: center; /* ⬅️ Centra el contenedor general */
+        text-align: center;
         background: rgba(248, 244, 239, 0.65);     
         backdrop-filter: blur(2px);                 
       }
+      
       .credits-title {
         font-family: var(--font-display);
         font-size: 1.1rem;
@@ -192,29 +201,34 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         margin: 0 0 var(--space-md) 0;
         text-align: center;
       }
+      
       .credits-list {
         list-style: none;
         margin: 0;
         padding: 0;
       }
+      
       .credits-line {
         font-family: var(--font-body);
         font-size: 0.95rem;
         line-height: 1.8;
         color: var(--color-ink-muted);
         margin-bottom: var(--space-sm);
-        text-align: center; /* ⬅️ Centra las líneas de nombres */
+        text-align: center;
       }
+      
       .credits-line:last-child {
         margin-bottom: 0;
       }
+      
       .credits-label {
         color: var(--color-ink);
         font-weight: 600;
         display: block;                               
         margin-bottom: var(--space-xs);
-        text-align: center; /* ⬅️ Centra los subtítulos como "Integrantes del Semillero" */
+        text-align: center;
       }
+      
       .credits-names {
         font-style: italic;
         display: block;                               
@@ -230,6 +244,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         box-shadow: var(--shadow-card);
         text-align: left;
       }
+      
       .legal-three-columns {
         display: flex;
         flex-direction: row;
@@ -237,6 +252,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         justify-content: space-between;
         gap: var(--space-lg);
       }
+      
       .legal-col {
         display: flex;
         flex-direction: column;
@@ -253,6 +269,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         max-height: 58px;
         width: auto;
       }
+      
       .img-fundacion {
         max-height: 50px;
         width: auto;
@@ -262,6 +279,7 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         flex: 0 0 130px;
         align-items: center;
       }
+      
       .img-proyecto-redondo {
         max-height: 120px;
         width: auto;
@@ -272,22 +290,26 @@ import { PAGE_CONFIG, LANDING_BUTTONS, LANDING_CREDITS } from '../../core/data/c
         text-align: left;
         font-family: var(--font-body);
       }
+      
       .txt-patrimoniales {
         font-size: 0.95rem;
         font-weight: 600;
         color: var(--color-ink);
         margin: 0 0 var(--space-xs) 0;
       }
+      
       .txt-licencia {
         font-size: 0.85rem;
         color: var(--color-ink-muted);
         line-height: 1.4;
         margin: 0 0 var(--space-xs) 0;
       }
+      
       .cc-logo-wrapper {
         display: block;
         margin-top: 4px;
       }
+      
       .img-cc {
         height: 28px;
         width: auto;
