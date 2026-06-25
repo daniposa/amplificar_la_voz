@@ -1,5 +1,5 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withInMemoryScrolling } from '@angular/router'; // 🛠️ Importamos la función de scroll oficial
 
 import { routes } from './app.routes';
 
@@ -7,10 +7,13 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     
-    // 🛠️ Configuración compatible con tu versión de Angular para activar el scroll por fragmentos (#)
-    provideRouter(routes, {
-      anchorScrolling: 'enabled',
-      scrollPositionRestoration: 'top'
-    })
+    // 🛠️ Usamos withInMemoryScrolling, que es la forma correcta y tipada en tu versión de Angular
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        anchorScrolling: 'enabled',
+        scrollPositionRestoration: 'top'
+      })
+    )
   ]
 };
