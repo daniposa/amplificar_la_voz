@@ -14,7 +14,7 @@ text: `
 <p>A pesar de contar con antecedentes de violencia política estrechamente conectados con la violencia posterior, la Comisión toma el año 1958, con la creación del Frente Nacional, como hito inicial del conflicto armado y el 2016, con la firma del Acuerdo de Paz, como hito final. La década de 1995 al 2004 fue el periodo con más víctimas, aproximadamente el 45&nbsp;% de las víctimas totales.</p>
 
 <figure>
-<p class="titulo-imagen">Figura 1.<i>Línea de tiempo del conflicto armado colombiano a partir de la periodización de la Comisión de la Verdad</i></p>
+<p class="titulo-imagen">Figura 1.<i> Línea de tiempo del conflicto armado colombiano a partir de la periodización de la Comisión de la Verdad</i></p>
 <img 
     src="images/comentarios/linea es.png" 
     alt="Linea ES" 
@@ -25,7 +25,7 @@ text: `
   <p>Diferenciada pero latente, la violencia del conflicto se presentó en todo el territorio nacional colombiano, rural y urbano, e incluso cuenta con una dimensión internacional. Pueblos, montañas, ciudades, ríos, cañones, selvas, páramos, desiertos, barrios y veredas han sido escenarios del horror, pero también de la esperanza. La Comisión distingue entre 11 regiones: Amazonía; Antioquia, sur de Córdoba y Bajo Atrato Chocoano; Caribe; Centro; Eje Cafetero; Frontera Nororiental; Magdalena Medio; Nariño y Sur del Cauca; Orinoquía; Pacífico; y Valle y Norte del Cauca. Antioquia es el departamento con mayor número total de víctimas con un 18,64&nbsp;% para 2025 (Unidad para las Víctimas, 2025).</p>
   
   <figure>
-  <p class="titulo-imagen">Figura 2.<i>Mapa de Colombia a partir de la regionalización de la CEV</i></p>
+  <p class="titulo-imagen">Figura 2.<i> Mapa de Colombia a partir de la regionalización de la CEV</i></p>
 <img 
     src="images/comentarios/mapa es.png" 
     alt="Mapa ES" 
