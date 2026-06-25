@@ -126,8 +126,8 @@ export class TooltipController {
       z-index: 2147483647;
       width: 520px;
       max-width: 90vw;
-      max-height: 280px; /* 🛠️ Altura máxima para activar scroll en el cuadro fijo */
-      overflow-y: auto;   /* 🛠️ Scroll automático vertical para fijados */
+      max-height: 280px;
+      overflow-y: auto;
       word-wrap: break-word;
       word-break: break-word;
       text-align: justify;
@@ -137,6 +137,7 @@ export class TooltipController {
       font-style: normal !important;
     `;
 
+    // 🛠️ Cambiamos el botón para que no esté flotando suelto, sino posicionado de forma absoluta
     const closeBtn = document.createElement('button');
     closeBtn.type = 'button';
     closeBtn.className = 'app-tooltip-close';
@@ -151,6 +152,8 @@ export class TooltipController {
 
     const body = document.createElement('div');
     body.className = 'app-tooltip-body';
+    // 🛠️ Le damos un pequeño margen derecho al texto interno para que las palabras jamás toquen la X
+    body.style.paddingRight = '20px'; 
     this.setTooltipInnerHtml(body, this.tooltipHtml);
 
     root.appendChild(closeBtn);
@@ -224,17 +227,18 @@ export class TooltipController {
         color: #ffffff !important;
       }
       .app-tooltip-close {
-        position: sticky;
-        top: 0;
-        float: right;
+        position: absolute; /* 🛠️ Fija la X en relación al recuadro negro */
+        top: 8px;           /* 🛠️ Distancia desde el borde superior */
+        right: 12px;        /* 🛠️ Distancia desde el borde derecho */
+        z-index: 10;        /* 🛠️ Se asegura de quedar siempre por encima del texto */
         background: none;
         border: none;
         color: #aaaaaa;
-        font-size: 1.2rem;
+        font-size: 1.4rem;  /* 📐 Un pelín más grande para que sea fácil de pulsar */
         cursor: pointer;
         line-height: 1;
-        margin-left: 8px;
         padding: 0;
+        transition: color 0.15s;
       }
       .app-tooltip-close:hover {
         color: #ffffff;
