@@ -9,7 +9,7 @@
 export const COMMENTS_CONTENT = {
 text: `
 <div class="bloque-completo">
-<h2 id="introduccion">Introducción</h2>
+<h2>Introducción</h2>
 <p>El conflicto armado interno colombiano se enmarca en una lucha insurgente y contrainsurgente que ha durado más de 50 años e involucrado diversos actores: grupos guerrilleros (FARC-EP, ELN, EPL, M-19, etc.), grupos paramilitares (AUC, ACMM, etc.), la participación por acción y por omisión del Estado y sus aparatos represivos (fuerzas policiales, militares, judiciales, etc.) y otros actores políticos y económicos. Con más de nueve millones de víctimas, los distintos hechos victimizantes incluyen homicidios, desapariciones forzadas, violencias sexuales, desplazamientos forzados, amenazas, ataques indiscriminados, secuestros, torturas, reclutamientos forzados, despojos de tierras, entre otros. Según los datos recolectados por la Comisión de la Verdad [CEV] (2022a), el 80&nbsp;% de las víctimas fueron civiles y el hecho victimizante de mayor dimensión fue el desplazamiento forzado con 7&nbsp;752&nbsp;964 víctimas.</p>
 <p>A pesar de contar con antecedentes de violencia política estrechamente conectados con la violencia posterior, la Comisión toma el año 1958, con la creación del Frente Nacional, como hito inicial del conflicto armado y el 2016, con la firma del Acuerdo de Paz, como hito final. La década de 1995 al 2004 fue el periodo con más víctimas, aproximadamente el 45&nbsp;% de las víctimas totales.</p>
 
@@ -68,7 +68,7 @@ text: `
 </div>
 <hr>
 
-<h2 id="traduccion-acto-politico">La traducción como acto político </h2>
+<h2>La traducción como acto político </h2>
 <div class="seccion-lectura">
 <div class="columna-imagen">
  <img 
@@ -94,7 +94,7 @@ text: `
  </div>
  <hr style="border: none; height: 5px; background-color: #2c2420;">
 
-<h2 id="nuestro-proceso">Nuestro proceso</h2>
+<h2>Nuestro proceso</h2>
 <div class="seccion-lectura invertida">
 <div class="columna-texto">
 <p>
@@ -132,7 +132,7 @@ text: `
 
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<h2 id="que-es-testimonio">¿Qué es un testimonio?</h2>
+<h2>¿Qué es un testimonio?</h2>
 <div class="seccion-lectura">
 <div class="columna-imagen">
 <img 
@@ -155,7 +155,7 @@ text: `
 </div>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<h2 id="reconstruccion-yo-oral">La reconstrucción del «yo» oral y su traducción</h2>
+<h2>La reconstrucción del «yo» oral y su traducción</h2>
 <div class="seccion-lectura invertida">
 
 
@@ -183,7 +183,7 @@ text: `
 
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<h2 id="lo-que-dice-el-silencio">Lo que dice el silencio: develando lo no dicho</h2>
+<h2>Lo que dice el silencio: develando lo no dicho</h2>
 <div class="seccion-lectura">
 
   <div class="columna-imagen">
@@ -205,7 +205,7 @@ text: `
 </div>
 </div>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
-<h2 id="coexistir-en-el-texto">Coexistir en el texto: confluencia de registros y metáforas en testimonios sobre el conflicto armado</h2>
+<h2>Coexistir en el texto: confluencia de registros y metáforas en testimonios sobre el conflicto armado</h2>
 
 <div class="seccion-lectura invertida">
   <div class="columna-texto">
@@ -228,7 +228,7 @@ text: `
   
   <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<h2 id="cuando-traducimos">«Cuando traducimos, también hablamos de nosotras mismas»: traducción comunizante y con perspectiva de género</h2>  
+<h2>«Cuando traducimos, también hablamos de nosotras mismas»: traducción comunizante y con perspectiva de género</h2>  
 <div class="seccion-lectura">
 
   <div class="columna-imagen">
@@ -255,7 +255,7 @@ text: `
 </div>
 <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-<h2 id="cultura-fuera-de-lo-propio">La cultura que habita fuera de lo propio</h2>
+<h2>La cultura que habita fuera de lo propio</h2>
 <div class="seccion-lectura invertida">
 
   
@@ -283,7 +283,7 @@ text: `
 
   <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-  <h2 id="me-acostumbre-a-ser-invisible">Me acostumbré a ser invisible</h2>
+  <h2>Me acostumbré a ser invisible</h2>
   <div class="seccion-lectura">
 
   <div class="columna-imagen">
@@ -307,7 +307,7 @@ text: `
 </div>
   <hr style="border: none; height: 3px; background-color: #2c2420;">
 
-  <h2 id="referencias">Referencias</h2>
+  <h2>Referencias</h2>
 <ul>
 <li>Academia Colombiana de la Lengua. (2012). <i>Breve Diccionario de Colombianismos</i> (4a ed. Revisada). Bogotá, Colombia: Academia Colombiana de la Lengua.</li>
 
