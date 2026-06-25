@@ -8,6 +8,7 @@ interface SitemapItem {
   label: string;
   route: string;
   queryParams?: Record<string, string | number>;
+  fragment?: string;
   children?: SitemapItem[];
 }
 
@@ -77,6 +78,7 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
                 class="sitemap-link"
                 [routerLink]="item.route"
                 [queryParams]="item.queryParams ?? null"
+                [fragment]="item.fragment ?? null"
                 (click)="close()"
               >
                 {{ item.label }}
@@ -89,29 +91,11 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
                         class="sitemap-link depth-1"
                         [routerLink]="child.route"
                         [queryParams]="child.queryParams ?? null"
+                        [fragment]="child.fragment ?? null"
                         (click)="close()"
                       >
                         {{ child.label }}
                       </a>
-                      @if (child.children?.length) {
-                        <ul class="sitemap-sublist">
-                          @for (
-                            grandchild of child.children;
-                            track grandchild.route + grandchild.label
-                          ) {
-                            <li>
-                              <a
-                                class="sitemap-link depth-2"
-                                [routerLink]="grandchild.route"
-                                [queryParams]="grandchild.queryParams ?? null"
-                                (click)="close()"
-                              >
-                                {{ grandchild.label }}
-                              </a>
-                            </li>
-                          }
-                        </ul>
-                      }
                     </li>
                   }
                 </ul>
@@ -242,10 +226,6 @@ function chroniclesBranch(lang: Language, route: string): SitemapItem {
         color: var(--color-ink-muted);
         padding-left: var(--space-xl);
       }
-      .sitemap-link.depth-2 {
-        font-size: 0.85rem;
-        padding-left: calc(var(--space-xl) + var(--space-md));
-      }
     `,
   ],
 })
@@ -259,6 +239,19 @@ export class SitemapComponent {
     {
       label: LANDING_BUTTONS.find((b) => b.routerLink === '/comments')?.label ?? 'Comentarios',
       route: '/comments',
+      children: [
+        { label: 'Introducción', route: '/comments', fragment: 'introduccion' },
+        { label: 'La traducción como acto político', route: '/comments', fragment: 'traduccion-acto-politico' },
+        { label: 'Nuestro proceso', route: '/comments', fragment: 'nuestro-proceso' },
+        { label: '¿Qué es un testimonio?', route: '/comments', fragment: 'que-es-testimonio' },
+        { label: 'La reconstrucción del «yo» oral y su traducción', route: '/comments', fragment: 'reconstruccion-yo-oral' },
+        { label: 'Lo que dice el silencio: develando lo no dicho', route: '/comments', fragment: 'lo-que-dice-el-silencio' },
+        { label: 'Coexistir en el texto', route: '/comments', fragment: 'coexistir-en-el-texto' },
+        { label: '«Cuando traducimos, también hablamos de nosotras mismas»', route: '/comments', fragment: 'cuando-traducimos' },
+        { label: 'La cultura que habita fuera de lo propio', route: '/comments', fragment: 'cultura-fuera-de-lo-propio' },
+        { label: 'Me acostumbré a ser invisible', route: '/comments', fragment: 'me-acostumbre-a-ser-invisible' },
+        { label: 'Referencias', route: '/comments', fragment: 'referencias' }
+      ]
     },
   ];
 
